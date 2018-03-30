@@ -1,0 +1,70 @@
+
+@media only screen and (max-width: 940px) { 
+  
+    /* portfolio and our team images */
+	#our-team {
+	background: none;
+	}
+	
+	#our-portfolio {
+	background: none;
+	}
+
+	.grid figcaption p {
+	display: none;
+	}
+
+	/* APP SHOWCASE AREA */
+    .side-text {
+	padding-top: 15px;
+	}
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	/* PORTFOLIO AND OUR TEAM IMAGES */
+	#our-team {
+	background: none;
+	}
+
+	#our-portfolio {
+	background: none;
+	}
+    
+    /* CALL TO ACTION BUTTON STYLES */
+    a.radius-button-right {
+	font-size: 12px;
+	}
+
+	.request-button {
+	margin-top: 0px;
+	}
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    /* PORTFOLIO AND OUR TEAM IMAGES */
+	#our-team {
+	background: none;
+	}
+
+	#our-portfolio {
+	background: none;
+	}
+
+    /* CALL TO ACTION BUTTON STYLES */
+	.request-button {
+	margin-top: 0px;
+	}
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,597 @@
+/* ===== PRIMARY STYLES =====================================================
+   ========================================================================== */
+/*========================= global ===========================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {  
+  font-family: 'DinPro';  
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: url(../img/background/body.png);
+  background-attachment: fixed;
+}
+.b {
+  font-weight: bold;
+}
+hr {
+  height: 1px;
+  width: 1200px;
+  display: block;
+}
+/* ==================== HEADER ==========================================================
+=========================================================================================*/
+.header-bg {
+  width: 1200px;
+  margin: 0 auto;
+  height: 135px;
+  background: #fff;
+}
+.center950 {
+  padding-top: 20px;
+  width: 950px;
+  margin: 0 auto;  
+}
+.head-phone {
+  width: 340px;
+  float: right;
+  position: relative;
+  text-align: right;
+  padding-right: 60px;
+  text-align: right;
+}
+.seti {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.seti img{
+  padding-bottom: 10px;
+}
+.zvonok {
+  text-decoration: none;
+  width: 243px;
+  height: 45px;
+  text-align: center;
+  display: block;
+  background: rgba(255,167,80,1);
+  background: -moz-linear-gradient(top, rgba(255,167,80,1) 0%, rgba(255,141,62,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,167,80,1)), color-stop(100%, rgba(255,141,62,1)));
+  background: -webkit-linear-gradient(top, rgba(255,167,80,1) 0%, rgba(255,141,62,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,167,80,1) 0%, rgba(255,141,62,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,167,80,1) 0%, rgba(255,141,62,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,167,80,1) 0%, rgba(255,141,62,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa750', endColorstr='#ff8d3e', GradientType=0 );
+  border-radius: 3px;
+  color: #fff;
+  font-size: 23px;
+  padding-top: 5px;
+  font-weight: bold; 
+  float: right; 
+}
+.top-slider {
+  background: url(../img/background/slider-bg.png);
+  height: 460px;  
+  width: 1200px;
+  margin: 0 auto;
+}
+.attention {
+  background: url(../img/background/vnimanie.png);
+  width: 1200px;
+  height: 158px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
+  padding: 35px 0 0 35px;
+  color: #fff;
+}
+.osnovnie-uslugi-bg {
+  width: 1200px;
+  margin: 0 auto;
+  height: 785px;
+  background: #fff;
+}
+h1 {
+  font-size: 35px;
+  text-align: center;
+  color: #666666;
+  font-weight: bold;
+  padding: 20px;
+}
+.osn-left {  
+  float: left;
+  padding-left: 120px;
+}
+.osn-right {
+  width: 340px;
+  height: 665px;
+  float: right;
+  background: url(../img/background/right.jpg) no-repeat;
+  position: relative;
+  margin-right: 100px;
+  padding-top: 180px;
+}
+.osn-right ul{
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  list-style-image: url(../img/ist-style.png);
+  color: #666;
+  font-size: 19px;
+}
+.osn-left img{
+  vertical-align: middle;
+  padding-right: 20px;
+}
+.osn-left a{
+  vertical-align: middle;
+  text-decoration: none;
+  color: #666666;
+  padding: 0 15px 0 0; 
+  font-size: 19px;
+  font-weight: bold;
+}
+.osn-left a:hover{
+  text-decoration: underline;
+  color: #3590bc;
+  font-size: 20px; 
+}
+.osn-left li {
+  list-style: none;
+  padding-bottom: 9px;
+}
+.photos-bg {
+  width: 1200px;
+  margin: 0 auto;
+  background: url(../img/background/photos.png) repeat-x;
+  background-color: #fff;
+  
+}
+.photos {
+  width: 950px;
+  margin: 0 auto;  
+  padding-bottom: 30px;
+}
+/* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL */
+/* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL */
+.carousel  {
+   width: 900px; /* ширина всего блока */
+   margin: 0 auto;   
+}
+.carousel-wrapper {
+   width: 893px;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 6px; 
+}
+.carousel-items {
+   width: 10000px; /* устанавливаем большую ширину для набора элементов */
+   position: relative; /* позиционируем блок относительно основной области карусели */
+}
+.carousel-block {
+   float: left; /* выстраиваем все элементы карусели в ряд */
+   width: 305px; /* задаём ширину каждого элемента */   
+ }
+.carousel-button-left a, .carousel-button-right a{
+   width: 19px; 
+   height: 28px; 
+   position: relative;
+   top: 40px; 
+   cursor: pointer; 
+   text-decoration:none;
+}
+.carousel-button-left a{
+   float: left; 
+   background: url(../images/carousel-left.png) no-repeat; 
+}
+.carousel-button-right a{
+   float: right;
+   background: url(../images/carousel-right.png) no-repeat; 
+}
+/* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL */
+/* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL */
+.carousel2  {
+   width: 900px; /* ширина всего блока */
+   margin: 0 auto;   
+}
+.carousel-wrapper2 {
+   width: 438px;
+  overflow: hidden;
+  margin: 0px auto;
+  padding: 0px;  
+}
+.carousel-items2 {
+   width: 10000px; /* устанавливаем большую ширину для набора элементов */
+   position: relative; /* позиционируем блок относительно основной области карусели */
+}
+.carousel-block2 {
+   float: left; /* выстраиваем все элементы карусели в ряд */
+   width: 438px; /* задаём ширину каждого элемента */   
+ }
+.carousel-button-left2 a, .carousel-button-right2 a{
+   width: 39px; 
+   height: 70px; 
+   position: relative;
+   top: 60px; 
+   cursor: pointer; 
+   text-decoration:none;
+}
+.carousel-button-left2 a{
+   float: left; 
+   background: url(../images/carousel-leftex.png) no-repeat; 
+}
+.carousel-button-right2 a{
+   float: right;
+   background: url(../images/carousel-rightex.png) no-repeat; 
+}
+/* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL */
+/* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL *//* CAROUSEL */
+.carousel3  {
+   width: 900px; /* ширина всего блока */
+   margin: 0 auto;   
+}
+.carousel-wrapper3 {
+   width: 1000px;
+  overflow: hidden;
+  margin: 0px auto;
+  padding: 0px;
+  padding-left: 6px; 
+}
+.carousel-items3 {
+   width: 10000px; /* устанавливаем большую ширину для набора элементов */
+   position: relative; /* позиционируем блок относительно основной области карусели */
+}
+.carousel-block3 {
+   float: left; /* выстраиваем все элементы карусели в ряд */
+   width: 280px; /* задаём ширину каждого элемента */  
+   text-align: center; 
+ }
+.carousel-button-left3 a, .carousel-button-right3 a{
+   width: 39px; 
+   height: 70px; 
+   position: relative;
+   top: 60px; 
+   cursor: pointer; 
+   text-decoration:none;
+}
+.carousel-button-left3 a{
+   float: left; 
+   background: url(../images/carousel-leftcl.png) no-repeat; 
+}
+.carousel-button-right3 a{
+   float: right;
+   background: url(../images/carousel-rightcl.png) no-repeat; 
+}
+/* window */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 2;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+/* =========== ФОРМА ============= 
+================================== */
+.popup {          
+    left: 50%;
+    opacity: 0;
+    padding: 10px;
+    position: fixed;    
+    top: 40%;
+    visibility: hidden;
+    z-index: 10; 
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+ 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;   
+ 
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+}
+.feedback {
+  width: 525px;      
+  background: #fff;  
+  border-radius: 9px;
+  position: relative;
+  padding-bottom: 12px;
+}
+.feedback1 {
+  width: 525px;      
+  background: #fff;  
+  border-radius: 9px;
+  position: relative;
+  padding-bottom: 60px;
+}
+.feedbackf {  
+  width: 930px;  
+  border-radius: 9px;
+  position: relative;  
+  text-align: center;
+}
+.feedbackf img{
+ margin-right: 15px;
+ border-radius: 5px;
+ border: 1px solid #fff;
+}
+.feedbackf img:last-child{
+  margin-right: 0;
+}
+.pop-name {
+  text-align: center;
+  padding: 20px 0 5px 0;
+  color: #7b7b7b;
+  font-size: 22px;
+  font-weight: bold;
+}
+.feedback1 label{
+  color: #7b7b7b;
+  font-size: 19px;
+  padding-right: 15px;
+  line-height: 39px;
+}
+.feedback1 input {
+  width: 235px;
+  height: 30px;
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  font-size: 19px;
+  color: #666;
+}
+.feedback1 input[type="button"] {
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 131px;  
+  text-decoration: none;
+  width: 243px;
+  height: 45px;
+  text-align: center;
+  border: none;
+  text-shadow: 1px 1px 2px #666;  
+  background: rgba(255,167,80,1);
+  background: -moz-linear-gradient(top, rgba(255,167,80,1) 0%, rgba(255,141,62,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,167,80,1)), color-stop(100%, rgba(255,141,62,1)));
+  background: -webkit-linear-gradient(top, rgba(255,167,80,1) 0%, rgba(255,141,62,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,167,80,1) 0%, rgba(255,141,62,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,167,80,1) 0%, rgba(255,141,62,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,167,80,1) 0%, rgba(255,141,62,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa750', endColorstr='#ff8d3e', GradientType=0 );
+  border-radius: 3px;
+  color: #fff;
+  font-size: 23px;
+  padding-top: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.overlay:target+.popup {
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+}
+/* Кнопка закрытия окна  */
+.close {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #ccc;
+  height: 24px;
+  line-height: 24px;
+  position: absolute;
+  right: -10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  font-family: arial;
+  top: -10px;
+  width: 24px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+     border-radius: 15px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    font-size: 18px;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    line-height: 0.5;
+    padding-top: -3px;
+}
+.close:hover {
+    background-color: #e7cca0;
+}
+.popup p, .popup div {
+    margin-bottom: 10px;
+}/*window*/
+.pop-left {
+  float: left;
+  padding-left: 35px;
+}
+.preim-bg {
+  background: url(../img/background/preim-bg.png);
+  width: 1200px;
+  height: 339px;
+  margin: 0 auto;
+}
+.preim-top {
+  margin: 0 auto;
+  width: 780px;
+  padding-top: 40px;
+  padding-left: 20px;
+  text-align: center;
+}
+.preim-top p{
+  display: inline-block;
+  padding-right: 100px;  
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+.preim-top p:last-child{
+  padding-right: 0;
+}
+.akcia {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #666;
+  padding-top: 58px;
+}
+.examples-bg {
+  width: 1200px;
+  background: #fff;
+  margin: 0 auto;
+}
+.examples {
+  width: 621px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+.clients-bg {
+  width: 1200px;
+  margin: 0 auto;
+  background: url(../img/background/clients.png);
+}
+.clients {
+  width: 950px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+.b-form {
+  background: url(../img/background/b-form.png) repeat-x;
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+}
+.b-form-cont {
+  width: 950px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.b-form-cont input {
+  width: 275px;
+  height: 50px;
+  border: 1px solid #777;
+  border-radius: 3px;
+  font-size: 20px;
+  margin-right: 40px;
+  padding-left: 10px;
+  vertical-align: top;
+}
+.b-form-cont input[type="button"]{
+  text-decoration: none;
+  width: 275px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  text-shadow: 1px 1px 2px #666;  
+  border-radius: 3px;
+  color: #fff;
+  font-size: 23px;
+  padding-top: 0;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 0;  
+  padding-left: 0;
+  background: rgba(255,167,80,1);
+  background: -moz-linear-gradient(top, rgba(255,167,80,1) 0%, rgba(255,141,62,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,167,80,1)), color-stop(100%, rgba(255,141,62,1)));
+  background: -webkit-linear-gradient(top, rgba(255,167,80,1) 0%, rgba(255,141,62,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,167,80,1) 0%, rgba(255,141,62,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,167,80,1) 0%, rgba(255,141,62,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,167,80,1) 0%, rgba(255,141,62,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa750', endColorstr='#ff8d3e', GradientType=0 );
+}
+.footer {
+  width: 1200px;
+  margin: 0 auto;
+  height: 150px;
+  background: #fff;
+}
+.foot-cont {
+  width: 950px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.on-top {
+  float: right;
+  width: 125px;
+  height: 35px;
+  border-radius: 3px;
+  background: #c9c9c9;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 18px;
+  padding-top: 5px;
+  font-weight: bold;
+}
+.pop-text {
+  font-weight: normal;
+  text-align: left;
+  padding: 0 20px 0 20px;
+  color: #666;
+  margin: 0;
+}
+.number {
+  font-size: 29px; 
+  font-weight: bold; 
+  color:#3d92c2;  
+}

@@ -1,0 +1,219 @@
+
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+<title>Форма заказа</title>
+<style type="text/css">
+<!--
+.button {
+	BORDER-TOP-WIDTH: 0px; FONT-WEIGHT: bold; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 9pt; BORDER-BOTTOM-WIDTH: 0px; COLOR: white; FONT-FAMILY: Arial; BACKGROUND-COLOR:#003366; BORDER-RIGHT-WIDTH: 0px
+}
+.input {
+	BORDER-RIGHT: #7F9DB9 1px solid; BORDER-TOP: #7F9DB9 1px solid; BORDER-LEFT: #7F9DB9 1px solid; WIDTH: 220px; BORDER-BOTTOM: #7F9DB9 1px solid
+}
+.input2 {
+	BORDER-RIGHT: #7F9DB9 1px solid; BORDER-TOP: #7F9DB9 1px solid; BORDER-LEFT: #7F9DB9 1px solid; WIDTH: 40px; BORDER-BOTTOM: #7F9DB9 1px solid
+}
+.cod {
+	BORDER-RIGHT: #7F9DB9 1px solid; BORDER-TOP: #7F9DB9 1px solid; BORDER-LEFT: #7F9DB9 1px solid; WIDTH: 40px; BORDER-BOTTOM: #7F9DB9 1px solid
+}
+.phone {
+	BORDER-RIGHT: #7F9DB9 1px solid; BORDER-TOP: #7F9DB9 1px solid; BORDER-LEFT: #7F9DB9 1px solid; WIDTH: 117px; BORDER-BOTTOM: #7F9DB9 1px solid
+}
+.small {font-size: 9px;}
+.small2 {font-size: 11px;}
+
+-->
+</style>
+</head>
+
+<body style="background:none">
+
+     <FORM action="http://wolfgh.e-autopay.com/ordering/do_order.php" method=post name="order_form_5759" target="_parent" onSubmit="return checkForm_5759(this)">
+      <TABLE style="FONT-SIZE: 10pt; FONT-FAMILY: Arial" cellSpacing=2 cellPadding=2 width="98%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD align=right width="50%"><b>Фамилия*</b></TD>
+          <TD><INPUT name="fam" class=input value="" maxlength=20></TD></TR>
+        <TR>
+          <TD align=right width="50%">            <b>Имя*</b></TD>
+          <TD>            <INPUT name="name" class=input value="" maxlength=50></TD>
+</TR>
+        <TR>
+          <TD align=right width="50%">            <b>Отчество*</b></TD>
+          <TD>            <INPUT name="otch" class=input value="" maxlength=20></TD>
+</TR>
+        <TR>
+          <TD height="10" colSpan=2>          </TD>
+		</TR>
+        <TR>
+          <TD align=right width="50%" valign="top"><b>Страна*</b></TD>
+          <TD><select name="country_id" id="country_id" class="input">
+		  <option value="">Выберите страну</option>
+<option value="1">Россия</option>          </select></TD></TR>
+
+        <TR>
+          <TD align=right width="50%"><b>Область (край), район</b></TD>
+          <TD><INPUT name="area" class=input value="" maxlength="100"></TD></TR>
+        <TR>
+          <TD align=right width="50%"><b>Город*</b></TD>
+          <TD><INPUT name="city" class=input value="" maxlength="50"></TD></TR>
+
+
+        <TR>
+          <TD align=right width="50%"><b>Адрес (улица, дом, квартира...)*</b></TD>
+          <TD><TEXTAREA class=input name="address" rows="2" cols="20"></TEXTAREA></TD></TR>
+        <TR>
+          <TD align=right width="50%"><b>Почтовый индекс*</b></TD>
+          <TD><INPUT name="index" class=input value="" maxlength=10></TD></TR>
+        <TR>
+          <TD height="10" colSpan=2>          </TD>
+		</TR>
+        <TR>
+          <TD align=right width="50%"><b>E-mail*</b></TD>
+          <TD><INPUT name="email" class=input value="" maxlength=50></TD></TR>
+<TR>
+      <TD align=right valign="top" style="padding-top:5px;"><b>Телефон мобильный</b> +</TD>
+          <TD>
+		  
+		  <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><input name="cod_str_mob" class="cod" id="cod_str_mob" maxlength=3></td>
+    <td>&nbsp;</td>
+    <td align="center"><input name="cod_oper_mob" class="cod" id="cod_oper_mob" maxlength=5></td>
+    <td>&nbsp;</td>
+    <td><input name="phone_mob" class="phone" id="phone_mob" maxlength=10></td>
+  </tr>
+  <tr>
+    <td align="center" class="small">код<br>
+      страны</td>
+    <td>&nbsp;</td>
+    <td width="55" align="center" class="small">код<br>
+      оператора</td>
+    <td>&nbsp;</td>
+    <td align="center" valign="top" class="small">номер телефона</td>
+  </tr>
+</table>
+      </TD>
+		</TR>  
+		<TR>
+          <TD align=right valign="top" style="padding-top:5px;"><b>Телефон домашний</b> +</TD>
+          <TD nowrap="nowrap">
+		  
+		  <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><input name="cod_str_dom" class="cod" id="cod_str_dom" maxlength=3></td>
+    <td>&nbsp;</td>
+    <td align="center"><input name="cod_oper_dom" class="cod" id="cod_oper_dom" maxlength=5></td>
+    <td>&nbsp;</td>
+    <td><input name="phone_dom" class="phone" id="phone_dom" maxlength=10></td>
+  </tr>
+  <tr>
+    <td align="center" class="small">код<br>
+      страны</td>
+    <td>&nbsp;</td>
+    <td width="55" align="center" class="small">код<br>
+      города</td>
+    <td>&nbsp;</td>
+    <td align="center" valign="top" class="small">номер телефона</td>
+  </tr>
+</table>
+      </TD>
+		</TR>
+		<TR>
+          <TD height="15" colSpan=2>          <div align="center" class="small2">Необходимо обязательно указать хотя бы один номер телефона!</div></TD>
+		</TR>
+
+
+	
+	
+
+
+	
+		<TR>
+          <TD height="10" colSpan=2>          </TD>
+		</TR>
+
+
+        <TR>
+          <TD align=right width="50%"><b>Количество*</b></TD>
+          <TD><INPUT name="count" class=input2 value="1" maxlength=6>&nbsp;<INPUT class="button" type="submit" value="Оформить Заказ"></TD></TR>
+  	  
+</TBODY></TABLE>
+      <CENTER>
+<INPUT type="hidden" name="pay_mode" value="3">	  
+<INPUT type="hidden" name="tovar_id" value="5759">
+</CENTER></FORM>
+
+<script language="JavaScript">
+<!-- JavaScript
+
+function checkForm_5759(f)
+{
+ if((f.fam.value=="")||(f.name.value=="")||(f.otch.value=="")||(f.country_id.value=="")||(f.city.value=="")||(f.index.value=="")||(f.address.value==""))
+ {
+  alert("Вы указали не всю информацию!!! Все поля, отмеченные знаком '*', обязательны для заполнения!");
+  return false;
+ }
+
+ //var countries=new String("Россия");
+
+ //if(f.pay_mode.value=="3" && countries.indexOf(f.country.value)<0)
+ //{
+ // alert("Заказы наложенным платежом в страну '"+f.country.value+"' не принимаются!!!");
+ // return false;
+ //}
+
+ if(!f.count.value.match(/^[1-9]{1}[0-9]*$/i))
+ {
+	 alert ("Введите корректное количество заказываемого товара!");
+	 f.count.focus();
+	 return false;
+ }
+
+
+ if(!f.email.value.match(/^[\w]{1}[\w\.\-_]*@[\w]{1}[\w\-_\.]*\.[\w]{2,4}$/i))
+ {
+	 alert ("Введите корректно Ваш E-Mail адрес!");
+	 f.email.focus();
+	 return false;
+ }
+
+
+
+
+
+
+
+ var phone1=true;
+ var phone2=true;
+
+ if(!f.cod_str_mob.value.match(/^[0-9]+$/i) || !f.cod_oper_mob.value.match(/^[0-9]+$/i) || !f.phone_mob.value.match(/^[0-9]+$/i))
+  phone1=false;
+
+ if(!f.cod_str_dom.value.match(/^[0-9]+$/i) || !f.cod_oper_dom.value.match(/^[0-9]+$/i) || !f.phone_dom.value.match(/^[0-9]+$/i))
+  phone2=false;
+
+
+ if(!phone1 && !phone2)
+ {
+	 alert ("Введите полностью и корректно (допускаются только цифры) хотя бы один номер телефона!");
+	 return false;
+ }
+
+ if(confirm("Вы подтверждаете правильность введенной Вами информации?"))
+  return true;
+ else
+  return false;
+}
+// - JavaScript - -->
+</script>
+
+
+<div align="center">
+<font face="Arial" size="1"><b><a href="http://e-autopay.com/" target="_blank" style="text-decoration: none; color: #C0C0C0;">© E-AutoPay.com - сервис приема и оплаты заказов и партнерских программ</a></b></font>
+ </div>       
+    
+</body>
+</html>

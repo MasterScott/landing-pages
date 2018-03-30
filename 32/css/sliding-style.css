@@ -1,0 +1,130 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+#content{
+    margin:0 auto;
+    text-align:left;
+    width:980px;
+    position:relative;
+    height:100%; 
+    padding-top: 28px;   
+}
+#wrapper{           
+    width:980px;
+    overflow:hidden;
+    border-radius: 4px;
+    height: 400px;
+}
+#steps{
+    width:980px;
+	/*height:320px;*/
+    overflow:hidden;
+}
+.step{
+    float:left;
+    width:980px;
+    height: 400px;
+	/*height:320px;*/
+    position: relative;
+}
+
+#navigation{
+position: absolute;
+bottom: 0;
+right: 50%;
+margin-right: -50px;
+padding: 8px 0 0 5px;
+}
+#navigation ul{
+    list-style:none;	
+}
+#navigation ul li{
+	float:left;    
+    position:relative;
+	margin:0px 2px;
+}
+#navigation ul li a{
+    display:inline-block;
+    height:17px;    
+    color:#777;
+    outline:none;
+    font-weight:bold;
+    text-decoration:none;                 
+    width: 17px;        
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: 0 auto;
+    background:url(../img/background/one-slide.png) no-repeat center center;
+}
+#navigation img {
+    
+}
+#navigation ul li.selected a{
+    background:url(../img/background/selected-slide.png) no-repeat center center;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+.opisanie {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 25px;
+    line-height: 2;
+    width: 640px;
+}
+
+#steps2{
+    width:980px;
+    /*height:320px;*/
+    overflow:hidden;
+}
+#navigation2{
+position: absolute;
+bottom: 0;
+right: 50%;
+margin-right: -23px;
+padding: 8px 0 0 5px;
+}
+#navigation2 ul{
+    list-style:none;    
+}
+#navigation2 ul li{
+    float:left;    
+    position:relative;
+    margin:0px 2px;
+}
+#navigation2 ul li a{
+    display:inline-block;
+    height:17px;    
+    color:#777;
+    outline:none;
+    font-weight:bold;
+    text-decoration:none;                 
+    width: 17px;        
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: 0 auto;
+    background:url(../img/background/one-slide.png) no-repeat center center;
+}
+#navigation2 img {
+    
+}
+#navigation2 ul li.selected2 a{
+    background:url(../img/background/selected-slide.png) no-repeat center center;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+
+.step2{
+    float:left;
+    width:980px;
+    height: 450px;
+    /*height:320px;*/
+    position: relative;
+    background: url(../img/background/job.png) no-repeat top center;
+}

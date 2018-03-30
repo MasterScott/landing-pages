@@ -1,0 +1,87 @@
+.countbox
+{
+	color: #fff;
+	font-size: 35px;
+	height: 40px;
+	padding: 0;
+	font-family: 'PF-Agora-Slab-Pro-Medium';
+	text-shadow: 2px 3px 2px #388ABB;
+	line-height: 1;
+}
+.countbox .countbox-num
+{
+	float: left;
+	padding-right: 40px;
+}
+.countbox .countbox-space
+{
+	float: left;
+	height: 90px;
+	width: 8px;
+}
+.countbox-days1,.countbox-hours1,.countbox-mins1,.countbox-secs1,.countbox-days2,.countbox-hours2,.countbox-mins2,.countbox-secs2
+{	
+	background-repeat: no-repeat;
+	float: left;
+	height: 70px;
+	margin: 0 -4px 0 0;
+	text-align: left;
+	width: 26px;
+	z-index: 1;
+	padding-top: 2px;
+	font-family: 'PF-Agora-Slab-Pro-Medium';
+}
+
+.countbox-num:first-child {
+	font-size: 0;
+	padding-right: 20px;
+}
+
+.countbox-days-text,.countbox-hours-text,.countbox-mins-text,.countbox-secs-text
+{
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 14px !important;
+	position: absolute;
+	width: 55px;
+	color: #fff;	
+}
+
+.countbox-secs-text {
+	padding-left: 8px;
+}
+.countbox-hours-text:after
+{
+	content: "ч";
+	font-size: 35px;
+	display: block;
+	text-align: center;
+	padding-left: 55px;
+	font-family: 'PF-Agora-Slab-Pro-Medium';
+}
+.countbox-mins-text:after
+{
+	content: "м";
+	font-size: 35px;
+	display: block;
+	text-align: center;
+	padding-left: 55px;
+	font-family: 'PF-Agora-Slab-Pro-Medium';
+}
+.countbox-secs-text:after
+{
+	content: "с";
+	font-size: 35px;
+	display: block;
+	text-align: center;
+	padding-left: 45px;
+	font-family: 'PF-Agora-Slab-Pro-Medium';
+}
+.countbox-days1 span, .countbox-days2 span, .countbox-hours1 span, .countbox-hours2 span, .countbox-mins1 span, .countbox-mins2 span, .countbox-secs1 span, .countbox-secs2 span
+{
+	background-repeat: no-repeat;
+	display: block;
+	height: 40px;
+	position: absolute;
+	width: 25px;		
+}

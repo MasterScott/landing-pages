@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'museo_cyrl500';
+    src: url('museocyrl_500-webfont.eot');
+    src: url('museocyrl_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('museocyrl_500-webfont.woff') format('woff'),
+         url('museocyrl_500-webfont.ttf') format('truetype'),
+         url('museocyrl_500-webfont.svg#museo_cyrl500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo_sans_cyrl500';
+    src: url('museosanscyrl-500-webfont.eot');
+    src: url('museosanscyrl-500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('museosanscyrl-500-webfont.woff') format('woff'),
+         url('museosanscyrl-500-webfont.ttf') format('truetype'),
+         url('museosanscyrl-500-webfont.svg#museo_sans_cyrl500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DINProBold';
+    src: url('dinprobold.eot');
+    src: url('dinprobold.eot') format('embedded-opentype'),
+         url('dinprobold.woff') format('woff'),
+         url('dinprobold.ttf') format('truetype'),
+         url('dinprobold.svg#DINProBold') format('svg');
+}
+
+@font-face {
+    font-family: 'DINProMedium';
+    src: url('dinpromedium.eot');
+    src: url('dinpromedium.eot') format('embedded-opentype'),
+         url('dinpromedium.woff') format('woff'),
+         url('dinpromedium.ttf') format('truetype'),
+         url('dinpromedium.svg#DINProMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('opensans-regular-webfont.eot');
+    src: local('☺'), url('opensans-regular-webfont.woff') format('woff'), url('opensans-regular-webfont.ttf') format('truetype'), url('opensans-regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSansBold';
+    src: url('pt_sans-web-bold-webfont.eot');
+    src: local('☺'), url('pt_sans-web-bold-webfont.woff') format('woff'), url('pt_sans-web-bold-webfont.ttf') format('truetype'), url('pt_sans-web-bold-webfont.svg#PTSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

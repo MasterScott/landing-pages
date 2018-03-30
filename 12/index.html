@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Шаблоны</title>
+  <link type="text/css" rel="stylesheet" href="font/fonts.css">  
+  <link type="text/css" rel="stylesheet" href="css/global.css">    
+  <script type="text/javascript" src="js/libs/modernizr-2.6.1.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+  <script src="jquery.maskedinput.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>  
+  <link href="timer/s/fonts/open-sans-condensed/stylesheet.css" rel="stylesheet" type="text/css">
+  <link href="timer/s/cdtimer.css" rel="stylesheet" type="text/css">
+  <script src="timer/s/cdtimer.js" language="JavaScript" type="text/javascript"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="js/jquery.countdown.css" />
+</head>
+<body>  
+    <!-- /////////////////////////// Поп-ап \\\\\\\\\\\\\\\\\\\\\\\\ -->
+  <div class="center-980-pop">
+    <a href="#x" class="overlay-zvonokt" id="wind-zakaz-top"></a>  
+    <div class="popup-zvonokt">
+      <div class="wind-zakaz-top">
+        <p><span class="bold">ЗАПОЛНИТЕ ФОРМУ</span> И МЫ ВАМ<br>ОБЯЗАТЕЛЬНО ПЕРЕЗВОНИМ</p>
+        <form class="s_form" action="index1.php" method="POST">          
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Введите ваше имя*">          
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Введите ваш телефон*">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden"  name="adress" class="email" value="none">          
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="ОТПРАВИТЬ">
+        </form>
+      </div>       
+    </div> 
+  </div>
+<!-- ////////////////////////// ШАПКА-ШАПКА-ШАПКА \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->  
+  <div class="header">
+  <div class="center-980">    
+      <div class="header-top">
+        <p><span style="font-weight: bold;font-size: 19px;">ПРОИЗВОДСТВО И ПРОДАЖА ПЕЛЛЕТ</span><br>
+          <span style="font-size: 20px;">С ДОСТАВКОЙ ПО РФ, СНГ И ЕВРОПЕ</span></p>        
+        <div class="header-phone">
+          <p style="font-size: 20px;margin-left: 100px;"><img src="img/phone.png" alt=""></p>
+          <p style="font-weight: bold;vertical-align: top;text-align: right;font-size: 19px;padding-left: 10px;"><span style="font-size: 16px; color: #a4a4a4;">Телефон</span><br>
+              <span style="color: #e74c3c;">+7 (800) </span>000 00 00
+          </p>
+          <a href="#wind-zakaz-top">ЗАКАЗАТЬ ЗВОНОК</a></p>
+          <p style="float: right;font-size: 13px; color: #a4a4a4;font-weight: bold;">АДресс</p>
+        </div>        
+      </div> 
+      <h1><span style=" font-size: 28px;">ОПТОВЫЕ ПОСТАВКИ ТОПЛИВНЫХ ГРАНУЛ ОТ ПРОИЗВОДИТЕЛЯ</span><br>
+          СЭКОНОМЬТЕ НА ОТОПЛЕНИИ, ЭЛЕКТРОЭНЕРГИИ И ГВС ДО 800.000 РУБЛЕЙ В ГОД</h1>      
+  </div>
+  <div class="header-bottom-bg"> 
+  <div class="center-980"> 
+    <div class="header-bottom"> 
+    <div class="timer">
+      <div class="cdtimer default" id="cdtimer"></div>
+    </div>
+    <div class="header-form">
+      <p style="font-size: 42px;text-align: center;color: #fff;text-shadow: 2px 2px 5px #000;">АКЦИЯ</p>
+      <div style="padding-left: 20px;width: 180px; display: inline-block;font-size: 16px;color: #fff;"><p>Заполните форму<br>заявки прямо сейчас<br>и получите скидку до</p></div>
+      <div style="width: 110px; display: inline-block;font-size: 70px;color: #fff;text-shadow: 2px 2px 5px #000;">25%</div>
+      <div class="fform">     
+      <form class="s_form" action="index1.php" method="POST">
+        <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+        <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">
+        <input type="hidden"  name="email" class="email" value="none@none.ru">
+        <input class="s_text adress" type="text" name="adress" placeholder="Почта">
+        <input type="hidden" value="C" name="button">
+        <input type="hidden"  name="comment" value="None">
+        <input class="s_submit" type="button" value="ОТПРАВИТЬ">
+      </form>
+      </div>
+      <p style="color: #fff;text-align: center;margin-top: -20px;">Ваши контактные данные не будут<br>переданы третьим лицам</p>
+    </div>
+  </div>
+  </div>
+    </div>
+    </div>
+<!-- ///////////////////////// ОСНОВНОЙ КОНТЕНТ \\\\\\\\\\\\\\\\\\\\\\\--> 
+  <div class="center-980">
+    <div class="pellets">
+      <p><span style="color: #e74c3c;font-weight: bold;">Пеллеты</span> - это гранулы диаметром 6-8 мм, изготовленные<br>из отходов деревообработки, с минимальным количеством<br>влаги и очень высоким КПД сгорания.</p>
+    </div>
+    <h2><span style="color: #e74c3c;">МЫ ЯВЛЯЕМСЯ ПРОИЗВОДИТЕЛЕМ</span><br>ТОПЛИВНЫХ ГРАНУЛ</h2>       
+    <div class="top-choice">
+      <p style="font-size: 35px;font-weight: bold;text-align: left;">ПОЧЕМУ  <span style="border: 2px solid #e74c3c;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 10px; color: #e74c3c;padding: 0 8px 0 8px; ">3 567</span>  ЗАКАЗЧИКОВ ВЫБРАЛИ ИМЕННО НАС</p>    
+      <div class="choice">
+        <p><img src="img/top-choice1.jpg" alt="">Мы <span style='color: #e74c3c;'>5 лет</span> производим пеллеты</p><br>
+        <p><img src="img/top-choice2.jpg" alt="">Всегда в наличие более <span style='color: #e74c3c;'>40 тонн</span> пеллет</p>
+        <p><img src="img/top-choice3.jpg" alt="">При срочном заказе сделаем нужный Вам объем в <span style='color: #e74c3c;'>течение суток</span></p>
+        <p><img src="img/top-choice4.jpg" alt=""><span style='color: #e74c3c;'>Система скидок</span> оптовикам и постоянным клиентам</p>
+        <p><img src="img/top-choice5.jpg" alt="">Возможность <span style='color: #e74c3c;'>индивидуального</span> заказа упаковки</p>
+        <p><img src="img/top-choice6.jpg" alt=""><span style='color: #e74c3c;'>Сертифицированный поставщик</span> в более, чем 10 стран СНГ и Европы</p>
+        <p><img src="img/top-choice7.jpg" alt=""><span style='color: #e74c3c;'>Наличие собственного транспорта</span> экономит до 15% на логистике</p><br>
+        <img src="img/top-choice8.jpg" alt=""><p><span style='color: #e74c3c;'>Гарантированное исполнение сроков заказа.</span> Мы вернем Вам до 0,1% от<br>стоимости заказа за каждый день просрочки</p>
+        <p><img src="img/top-choice9.jpg" alt=""><span style='color: #e74c3c;'>Вежливые менеджеры</span> с большим опытом работы готовы ответить на все Ваши вопросы</p>    
+      </div>
+    </div>
+    <h2 style="margin-bottom: -30px; margin-top: -15px;">НАША ПРОДУКЦИЯ</h2>
+    <div class="order">
+      <div style="height: 280px;width: 200px;display: inline-block;">
+        <p>ПЕЛЛЕТЫ СЕРЫЕ</p>
+        <img src="img/Pellety-silv.png" alt="">
+        <p>ОТ 4290руб</p>
+        <a href="#zakaz1">ЗАКАЗАТЬ</a>
+      </div>
+      <div style="height: 280px;width: 200px;display: inline-block;">
+        <p>ПЕЛЛЕТЫ БЕЛЫЕ</p>
+        <img src="img/Pellety-white.png" alt="">
+        <p>ОТ 4990руб</p>
+        <a href="#zakaz2">ЗАКАЗАТЬ</a>
+      </div>       
+    </div> 
+          <a href="#x" class="overlay-zakaz-silv" id="zakaz1"></a>  
+      <div class="popup-zakaz-silv">
+      <div class="wind-zakaz-silv">
+        <p><span class="bold">ЗАПОЛНИТЕ ФОРМУ</span> И МЫ ВАМ<br>ОБЯЗАТЕЛЬНО ПЕРЕЗВОНИМ</p>
+        <form class="s_form" action="index1.php" method="POST">          
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Введите ваше имя*">          
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Введите ваш телефон*">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden"  name="adress" class="email" value="none">          
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="ЗАКАЗАТЬ">
+        </form>
+      </div>       
+      </div>
+      <a href="#x" class="overlay-zakaz-white" id="zakaz2"></a>
+      <div class="popup-zakaz-white">
+      <div class="wind-zakaz-white">
+        <p><span class="bold">ЗАПОЛНИТЕ ФОРМУ</span> И МЫ ВАМ<br>ОБЯЗАТЕЛЬНО ПЕРЕЗВОНИМ</p>
+        <form class="s_form" action="index1.php" method="POST">          
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Введите ваше имя*">          
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Введите ваш телефон*">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden"  name="adress" class="email" value="none">          
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="ЗАКАЗАТЬ">
+        </form>
+      </div>
+    </div>
+    </div>
+    <h2>ИНДИВИДУАЛЬНЫЙ ЗАКАЗ</h2>
+    <div class="zakaz-ind">
+      <div class="center-980">
+        <div style="float: left;text-shadow: 1px 1px 2px #000;">
+        <p style="font-size: 40px;color: #fff;padding: 50px 0 0 20px;">НЕ НАШЛИ ТО, ЧТО ВАМ НУЖНО?</p>
+        <p style="font-size: 21px;text-align: center;padding: 6px 0 0 0;color: #fff;">МЫ СМОЖЕМ СДЕЛАТЬ ПЕЛЛЕТЫ ПО ВАШЕМУ<br>ИНДИВИДУАЛЬНОМУ ЗАКАЗУ</p>
+        <p style="font-size: 30px; text-align: center;color: #fff;padding: 35px 0 0 0;">ОСТАВЬТЕ ИНДИВИДУАЛЬНЫЙ ЗАКАЗ<br>МЫ СДЕЛАЕМ ТО, ЧТО ВАМ НУЖНО</p>
+        </div>
+        <div style="float: right;display: inline-block;width: 310px;margin-right: 10px;">
+        <p style="font-size: 30px; text-align: center;color: #fff;padding: 35px 0 0 0;">ФОРМА ЗАКАЗА</p>
+        <div class="fform" style="margin-top: -17px;">     
+      <form class="s_form" action="index1.php" method="POST">
+        <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+        <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">
+        <input type="hidden"  name="email" class="email" value="none@none.ru">
+        <input class="s_text adress" type="text" name="adress" placeholder="Почта">
+        <input type="hidden" value="C" name="button">
+        <input type="hidden"  name="comment" value="None">
+        <input class="s_submit" type="button" value="ЗАКАЗАТЬ">
+      </form>
+      </div>
+      <p style="color: #fff;text-align: center;margin-top: -20px;">Ваши контактные данные не будут<br>переданы третьим лицам</p>
+      </div>      
+    </div>
+    </div>
+    <h2 style="margin-top: -50px;margin-bottom: 10px;">ДОСТАВКА</h2>
+    <div class="zakaz-dostavka">
+      <div class="center-980">
+        <div style="float: left;text-shadow: 1px 1px 2px #000;">
+        <p style="font-size: 28px;color: #fff;padding: 50px 0 0 47px;text-align: center;">ЗАКАЖИТЕ РАСЧЕТ СТОИМОСТИ ДОСТАВКИ<br>ДО ВАШЕГО ОБЪЕКТА</p>
+        <p style="font-size: 18px;text-align: center;padding: 15px 0 0 35px;color: #fff;">МЫ СНИЗИМ РАСХОДЫ НА ТРАНСПОРТИРОВКУ И ОПТИМИЗИРУЕМ<br>ЛОГИСТИКУ ЗАСЧЁТ СОБСТВЕННОГО ТРАНСПОРТА.<br>Также возможен самовывоз уже  готовой<br>продукции со склада в Москве – удобные подъездные<br>пути и транспортная развязка.</p>
+        </div>
+        <div style="float: right;display: inline-block;width: 310px;margin-right: 10px;">
+        <p style="font-size: 30px; text-align: center;color: #fff;padding: 15px 0 0 0;">ФОРМА ЗАКАЗА</p>
+        <div class="fform" style="margin-top: -17px;">     
+      <form class="s_form" action="index1.php" method="POST">
+        <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+        <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">
+        <input type="hidden"  name="email" class="email" value="none@none.ru">
+        <input class="s_text adress" type="text" name="adress" placeholder="Почта">
+        <input type="hidden" value="C" name="button">
+        <input type="hidden"  name="comment" value="None">
+        <input class="s_submit" type="button" value="ЗАКАЗАТЬ">
+      </form>
+      </div>
+      <p style="color: #fff;text-align: center;margin-top: -20px;">Ваши контактные данные не будут<br>переданы третьим лицам</p>
+      </div>      
+    </div>
+    </div>
+    <h2 style="margin-top: -50px;margin-bottom: 10px;">ОПТОВИКАМ И ДИЛЕРАМ</h2>
+    <div class="zakaz-opt">
+      <div class="center-980">
+        <div style="float: left;text-shadow: 1px 1px 2px #000;">
+        <p style="font-size: 26px;text-align: center;color: #fff;padding: 60px 0 0 37px;text-align: center;">ОПТОВЫЕ СКИДКИ ПРИ ЗАКУПКЕ ОТ 200 000руб</p>
+        <p style="font-size: 26px;text-align: center;padding: 15px 0 0 30px;color: #fff;">ДИЛЕРСКИЕ УСЛОВИЯ ПРЕДОСТАВЛЯЮТСЯ<br>ПРИ ЗАКУПКЕ ОТ 1 000 000руб</p>
+        <p style="font-size: 26px;text-align: center;padding: 15px 0 0 30px;color: #fff;">ДИЛЕР МОЖЕТ ПОЛУЧИТЬ СПЕЦИАЛЬНЫЕ ЦЕНЫ<br>ПРИ АВАНСОВОМ ПЛАТЕЖЕ ОТ 500 000р</p>
+        </div>
+        <div style="float: right;display: inline-block;width: 310px;margin-right: 10px;">
+        <p style="font-size: 30px; text-align: center;color: #fff;padding: 15px 0 0 0;">ФОРМА ЗАКАЗА</p>
+        <div class="fform" style="margin-top: -17px;">     
+      <form class="s_form" action="index1.php" method="POST">
+        <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+        <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">
+        <input type="hidden"  name="email" class="email" value="none@none.ru">
+        <input class="s_text adress" type="text" name="adress" placeholder="Почта">
+        <input type="hidden" value="C" name="button">
+        <input type="hidden"  name="comment" value="None">
+        <input class="s_submit" type="button" value="ЗАКАЗАТЬ">
+      </form>
+      </div>
+      <p style="color: #fff;text-align: center;margin-top: -20px;">Ваши контактные данные не будут<br>переданы третьим лицам</p>
+      </div>      
+      </div>
+      </div>
+      <h2 style="margin-top: -80px;">НАШЕ ПРОИЗВОДСТВО</h2>
+      <div class="our-production">
+      </div>
+      <h2>СЕРТИФИКАТЫ</h2>
+      <div class="certificate">
+      </div>
+      <h2>НАМ ДОВЕРЯЮТ</h2>
+      <div class="clients">
+      </div>
+      <h2>ОТЗЫВЫ <span style='color: #e74c3c;'>НАШИХ КЛИЕНТОВ</span></h2>
+      <div class="reviws">
+        <div class="reviw">
+          <div class="rev-cont">
+            <p>Очень долгое время наша компания является потребителем пеллет.
+Как известно многим фирмам, проходили через большое количество производителей и поставщиков, 
+пока не нашли того самого идеального. И именно эту фирму я хотел бы зарекомендовать 
+в качестве надежного поставщика. Мало того, что поставляют качественный продукт, так ещё и имеют свою логистическую сеть, что позволяет 
+нам очень во многом сэконоить не только время, но и деньги.</p>
+<p style="float: right; padding-top: 20px;">Михаил, ЗАО "Ковчег"</p>
+          </div>
+        </div>
+        <div class="reviw">
+          <div class="rev-cont">
+            <p>Берем гранулы только у этого производителя. Почему? Все очень просто - выполнили срочный заказ на Европу. Пока 
+все отказывались сделать такой объем за короткий срок, ребята сделали свое дело.  Безусловно, рекомендую.</p>
+<p style="float: right; padding-top: 20px;">Виктор Васильев, ООО "Регион"</p>
+          </div>
+        </div>
+        <div class="reviw">
+          <img src="img/reviw3.jpg" alt="">
+          <div class="rev-cont">
+            <p>Заказываем оптовые партии каждый месяц. Самое главное все быстро и в срок, бывают иногда небольшие накладки, 
+но все быстро и благополучно решается. Спасибо!</p>
+<p style="float: right; padding-top: 20px;">Евгений, ООО "ФНБ Инжиниринг"</p>
+          </div>
+        </div>
+        <div class="reviw">
+          <div class="rev-cont">
+            <p>Занимаюсь продажей пеллет уже достаточно долго - около трех лет. И, когда 
+мы начали работать вместе с этой фирмой, у нас не возникало никаких проблем с доставкой товара, 
+или его качеством. Всегда все на высоте. Вы лучшие, спасибо Вам!</p>
+<p style="float: right; padding-top: 20px;">Константин, Предприниматель</p>
+          </div>
+        </div>
+      </div>
+      <div class="form-bot">
+      <div class="center-980">
+        <div style="float: left;text-shadow: 1px 1px 2px #000;">
+        <p style="font-size: 34px;text-align: center;color: #fff;padding: 70px 0 0 107px;text-align: center;">ЕЩЕ ОСТАЛИСЬ ВОПРОСЫ?</p>
+        <p style="font-size: 20px;text-align: center;padding: 15px 0 0 100px;color: #fff;">Звоните</p>
+        <p style="font-size: 26px;text-align: center;padding: 15px 0 0 100px;color: #fff;">+ 7 (495) 540-51-28</p>
+        </div>
+        <div style="float: right;display: inline-block;width: 310px;margin-right: 10px;">
+        <p style="font-size: 30px; text-align: center;color: #fff;padding: 15px 0 0 0;">ФОРМА ЗАКАЗА</p>
+        <div class="fform" style="margin-top: -17px;">     
+      <form class="s_form" action="index1.php" method="POST">
+        <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+        <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">
+        <input type="hidden"  name="email" class="email" value="none@none.ru">
+        <input class="s_text adress" type="text" name="adress" placeholder="Почта">
+        <input type="hidden" value="C" name="button">
+        <input type="hidden"  name="comment" value="None">
+        <input class="s_submit" type="button" value="ЗАКАЗАТЬ">
+      </form>
+      </div>
+      <p style="color: #fff;text-align: center;margin-top: -20px;">Ваши контактные данные не будут<br>переданы третьим лицам</p>
+      </div>      
+      </div>
+      </div>
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\ ПОДВАЛ-ПОДВАЛ ///////////////////////////// -->   
+      <div class="center-980">
+      <div class="header-top">
+        <p><span style="font-weight: bold;font-size: 19px;">ПРОИЗВОДСТВО И ПРОДАЖА ПЕЛЛЕТ</span><br>
+          <span style="font-size: 20px;">С ДОСТАВКОЙ ПО РФ, СНГ И ЕВРОПЕ</span></p>        
+        <div class="header-phone">
+          <p style="font-size: 20px;margin-left: 100px;"><img src="img/phone.png" alt=""></p>
+          <p style="font-weight: bold;vertical-align: top;text-align: right;font-size: 19px;padding-left: 10px;"><span style="font-size: 16px; color: #a4a4a4;">Телефон</span><br>
+              <span style="color: #e74c3c;">+7 (800) </span>000 00 00
+          </p>
+          <a href="#wind-zakaz-but">ЗАКАЗАТЬ ЗВОНОК</a></p>            
+          <p style="float: right;font-size: 13px; color: #a4a4a4;font-weight: bold;">Адресс</p>
+        </div>        
+      </div>
+      <p style="text-align: center;padding-top: 30px;font-size: 18px;">2013 © Все права защищены</p>
+                   <a href="#x" class="overlay-zvonokb" id="wind-zakaz-but"></a>  
+             <div class="popup-zvonokb">
+                <div class="wind-zakaz-but">
+                  <p><span class="bold">ЗАПОЛНИТЕ ФОРМУ</span> И МЫ ВАМ<br>ОБЯЗАТЕЛЬНО ПЕРЕЗВОНИМ</p>
+                  <form class="s_form" action="index1.php" method="POST">          
+                    <input class="s_text nameinp sinp" type="text" name="name" placeholder="Введите ваше имя*">          
+                    <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Введите ваш телефон*">
+                    <input type="hidden"  name="email" class="email" value="none@none.ru">
+                    <input type="hidden"  name="adress" class="email" value="none">          
+                    <input type="hidden" value="C" name="button">
+                    <input type="hidden"  name="comment" value="None">
+                    <input class="s_submit" type="button" value="ОТПРАВИТЬ">
+                  </form>
+                </div>       
+              </div> 
+      </div>   
+    <script src="js/jquery.countdown.js"></script>
+  </body>
+</html>

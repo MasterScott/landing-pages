@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ШАБЛОН</title>
+  <link type="text/css" rel="stylesheet" href="css/global.css">     
+  <link type="text/css" rel="stylesheet" href="css/timer.css">  
+  <link type="text/css" rel="stylesheet" href="css/styles-carousel.css">  
+  <link type="text/css" rel="stylesheet" href="font/fonts.css">  
+  <link rel="stylesheet" href="css/sliding-style.css" type="text/css" media="screen"> 
+  <script type="text/javascript" src="js/timer.js"></script> 
+  <script type="text/javascript" src="js/libs/modernizr-2.6.1.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+  <script src="jquery.maskedinput.min.js"></script>  
+  <script type="text/javascript" src="main.js"></script>  
+  <script type="text/javascript" src="js/carousel.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />  
+</head>
+<body>
+    <!-- /////////////////////////// popup \\\\\\\\\\\\\\\\\\\\\\\\ --> 
+    <a href="#x" class="overlay-zvonoktop" id="wind-order-top"></a>  
+    <div class="popup-zvonokt">      
+      <!--<a class="close" title="Закрыть" href="#close"></a>-->
+      <div class="wind-top-full-size">
+        <div class="wind-order-top">          
+            <p>Заполните форму и мы<br>Вам перезвоним</p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="adress" placeholder="Телефон">
+            <input class="s_text adress" type="text" name="other" placeholder="Удобное время звонка">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="ЖМИТЕ">
+        </form>
+        </div>
+        </div>
+      </div>
+
+    <a href="#x" class="overlay-zvonokt" id="dom-brus"></a>  
+    <div class="popup-zvonokt">      
+      <!--<a class="close" title="Закрыть" href="#close"></a>-->
+      <div class="wind-top-full-size">
+        <div class="wind-order-top">          
+            <p>СОСТАВИТЬ СМЕТУ<br>ДОМ ИЗ БРУСА<br><br></p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="adress" placeholder="Телефон">
+            <input class="s_text adress" type="hidden" name="other" value="СМЕТА: ДОМ ИЗ БРУСА">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="ЖМИТЕ">
+        </form>
+        </div>
+       </div> 
+      </div>
+
+    <a href="#x" class="overlay-zvonokt" id="karkasno-shchitovoi"></a>  
+    <div class="popup-zvonokt">      
+      <!--<a class="close" title="Закрыть" href="#close"></a>-->
+      <div class="wind-top-full-size">
+        <div class="wind-order-top">          
+            <p>СОСТАВИТЬ СМЕТУ<br>ДОМ КАРКАСНО-ЩИТОВОЙ ИЛИ КАРКАСНЫЙ</p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="adress" placeholder="Телефон">
+            <input class="s_text adress" type="hidden" name="other" value="СМЕТА: ДОМ КАРКАСНО-ЩИТОВОЙ ИЛИ КАРКАСНЫЙ">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="ЖМИТЕ">
+        </form>
+        </div>
+       </div>
+      </div>
+
+    <a href="#x" class="overlay-zvonokt" id="srub"></a>  
+    <div class="popup-zvonokt">      
+      <!--<a class="close" title="Закрыть" href="#close"></a>-->
+      <div class="wind-top-full-size">
+        <div class="wind-order-top">          
+            <p>СОСТАВИТЬ СМЕТУ<br>ДОМ ИЗ СРУБА<br><br></p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="adress" placeholder="Телефон">
+            <input class="s_text adress" type="hidden" name="other" value="СМЕТА: ДОМ ИЗ СРУБА">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="ЖМИТЕ">
+        </form>
+        </div>
+       </div> 
+      </div>
+
+    <a href="#x" class="overlay-zvonokt" id="penoblock"></a>  
+    <div class="popup-zvonokt">      
+      <!--<a class="close" title="Закрыть" href="#close"></a>-->
+      <div class="wind-top-full-size">
+        <div class="wind-order-top">          
+            <p>СОСТАВИТЬ СМЕТУ<br>ДОМ ИЗ ПЕНОБЛОКОВ
+ИЛИ ГАЗОБЕТОНА</p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="adress" placeholder="Телефон">
+            <input class="s_text adress" type="hidden" name="other" value="СМЕТА: ДОМ ИЗ ПЕНОБЛОКОВ">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="ЖМИТЕ">
+        </form>
+        </div>
+       </div> 
+      </div>
+
+                <a href="#x" class="overlay-zvonokt" id="monolyte"></a>  
+    <div class="popup-zvonokt">      
+      <!--<a class="close" title="Закрыть" href="#close"></a>-->
+      <div class="wind-top-full-size">
+        <div class="wind-order-top">          
+            <p>СОСТАВИТЬ СМЕТУ<br>МОНОЛИТНЫЙ ДОМ<br><br></p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="adress" placeholder="Телефон">
+            <input class="s_text adress" type="hidden" name="other" value="СМЕТА: МОНОЛИТНЫЙ ДОМ">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="ЖМИТЕ">
+        </form>
+        </div>
+       </div> 
+      </div>
+
+    <a href="#x" class="overlay-zvonokt" id="cylindre-brus"></a>  
+    <div class="popup-zvonokt">      
+      <!--<a class="close" title="Закрыть" href="#close"></a>-->
+      <div class="wind-top-full-size">
+        <div class="wind-order-top">          
+            <p>СОСТАВИТЬ СМЕТУ<br>ДОМ ИЗ </span><br>
+ОЦИЛИНДРОВАННОГО БРУСА</p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="adress" placeholder="Телефон">
+            <input class="s_text adress" type="hidden" name="other" value="СМЕТА: ДОМ ИЗ ОЦИЛИНДРОВАННОГО БРУСА">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="ЖМИТЕ">
+        </form>
+        </div>
+       </div> 
+      </div>
+
+          <a href="#x" class="overlay-zvonokt" id="brick-house"></a>  
+    <div class="popup-zvonokt">      
+      <!--<a class="close" title="Закрыть" href="#close"></a>-->
+      <div class="wind-top-full-size">
+        <div class="wind-order-top">          
+            <p>СОСТАВИТЬ СМЕТУ<br>КИРПИЧНЫЙ ДОМ<br><br></p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="adress" placeholder="Телефон">
+            <input class="s_text adress" type="hidden" name="other" value="СМЕТА: КИРПИЧНЫЙ ДОМ">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="ЖМИТЕ">
+        </form>
+        </div>
+        </div>
+      </div>
+
+          <a href="#x" class="overlay-zvonokt" id="clue-brus"></a>  
+    <div class="popup-zvonokt">      
+      <!--<a class="close" title="Закрыть" href="#close"></a>-->
+      <div class="wind-top-full-size">
+        <div class="wind-order-top">          
+            <p>СОСТАВИТЬ СМЕТУ<br>ДОМ ИЗ КЛЕЕНОГО БРУСА
+(ФИНСКАЯ ТЕХНОЛОГИЯ)</p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="adress" placeholder="Телефон">
+            <input class="s_text adress" type="hidden" name="other" value="СМЕТА: ДОМ ИЗ КЛЕЕНОГО БРУСА (ФИНСКАЯ ТЕХНОЛОГИЯ)">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="ЖМИТЕ">
+        </form>
+        </div>
+       </div> 
+      </div>
+
+          <a href="#x" class="overlay-zvonokt" id="block-of-flats"></a>  
+    <div class="popup-zvonokt">      
+      <!--<a class="close" title="Закрыть" href="#close"></a>-->
+      <div class="wind-top-full-size">
+        <div class="wind-order-top">          
+            <p>СОСТАВИТЬ СМЕТУ<br>ЖИЛОЙ КОМПЛЕКС<br><br></p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="adress" placeholder="Телефон">
+            <input class="s_text adress" type="hidden" name="other" value="СМЕТА: ЖИЛОЙ КОМПЛЕКС">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="ЖМИТЕ">
+        </form>
+        </div>
+       </div> 
+      </div>
+
+      <a href="#x" class="overlay-zvonokt" id="free-smeta"></a>  
+      <div class="popup-zvonokt">      
+      <!--<a class="close" title="Закрыть" href="#close"></a>-->
+      <div class="wind-top-full-size">
+        <div class="wind-order-top">          
+            <p>ЗАЯВКА НА БЕСПЛАТНЫЙ РАСЧЕТ СМЕТЫ</p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="adress" placeholder="Телефон">
+            <input class="s_text adress" type="hidden" name="other" value="БЕСПЛАТНЫЙ РАСЧЕТ СМЕТЫ">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="ЖМИТЕ">
+        </form>
+        </div>
+       </div> 
+      </div>
+
+    <a href="#x" class="overlay-zvonokt" id="wind-order"></a> 
+    <div class="popup-zvonokt">      
+      <!--<a class="close" title="Закрыть" href="#close"></a>-->
+      <div class="wind-top-full-size">
+        <div class="wind-order-top">          
+            <p>Заполните форму и мы<br>Вам перезвоним</p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="adress" placeholder="Телефон">
+            <input class="s_text adress" type="text" name="other" placeholder="Удобное время звонка">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="ЖМИТЕ">
+        </form>
+        </div>
+        </div>
+      </div>          
+    
+  <!-- ALL CONTENS -->  
+    <div class="container">
+      <div class="head" id="head">
+        <a href="index.php"><img src="img/top-logo.jpg"></a>          
+        <div class="order-call">
+          <p class="zvaon-free">Звонки по России<br>со всех телефонов бесплатны</p>
+          <p class="number"><span>8 800</span> 000 00 00</p>
+          <a class="order-call-button" href="#wind-order">ЗАКАЖИТЕ ЗВОНОК</a>
+        </div>
+        <p class="description">Строительство домов и коттеджей в<br> Москве и Московской области.</p>
+      </div>
+
+      <div class="action1">
+        <div class="acton1-big-text">
+        <p><span>АКЦИЯ</span><br>При заказе строительства любого дома<br>
+                  предоставляется скидка 15% на все расходные материалы.</p>
+        </div>
+        <div class="top-carousel">
+       <div class="carousel2">    
+        <!--<div class="carousel-button-left2"><a href="javascript:void(0);">&nbsp;</a></div> 
+          <div class="carousel-button-right2"><a href="javascript:void(0);">&nbsp;</a></div>-->      
+            <div class="shadow-block2" style="padding-left:0px;">
+              <div class="t"><div class="b"><div class="m"><div class="m">
+              <div class="t"><div class="t"><div class="b"><div class="b">
+              <div class="carousel-wrapper2"> 
+               <div class="carousel-items2"> 
+
+                  <div class="carousel-block2">
+                    <img src="img/top-carousel/1.jpg">
+                  </div>
+                  
+                  <div class="carousel-block2">
+                    <img src="img/top-carousel/2.jpg">
+                  </div>
+
+               </div>
+            </div>
+         </div></div>
+         </div></div></div>
+         </div></div></div>
+      </div>   
+   </div>
+  </div>
+            <div class="timer">
+              <p class="timer-text">До конца<br>акции</p>
+              <div class="countbox"><div id="countbox1"> </div></div>       
+            </div>
+            <div class="acton-form">
+            <p class="act-form-text">ОСТАВЬТЕ ЗАЯВКУ<br>ПРЯМО СЕЙЧАС</p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="adress" placeholder="Телефон">
+            <input class="s_text adress" type="text" name="other" placeholder="Удобное время звонка">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="ЖМИТЕ">
+        </form>
+          </div>
+
+      </div>          
+          
+
+      <div class="hr-line1">
+      </div>      
+
+        <div class="inline4">
+          <img src="img/inline4-1.png">
+          <p>5 лет на рынке</p>
+        </div>
+
+        <div class="inline4">
+          <img src="img/inline4-2.png">
+          <p>1089<br> довольных <br>клиентов</p>
+        </div>
+        <div class="inline4">
+          <img src="img/inline4-3.png">
+          <p>3 года<br> гарантии на <br>дом</p>
+        </div>
+        <div class="inline4">
+          <img src="img/inline4-4.png">
+          <p>от 10 000р.<br> стоимость м²</p>
+        </div>
+
+        <div class="inline4">
+          <img src="img/inline4-5.png">
+          <p>Сроки<br> строительства <br> от 1 месяца</p>
+        </div>
+
+        <div class="inline4">
+          <img src="img/inline4-6.png">
+          <p>от 200 000р.<br> составляет<br> Ваша экономия</p>
+        </div>
+
+        <div class="inline4">
+          <img src="img/inline4-7.png">
+          <p>S=500 000м² жилой <br>комплекс в центре <br>г.Дмитров <br>построенный нами</p>
+        </div>
+
+        <div class="inline4">
+          <img src="img/inline4-8.png">
+          <p>Более 300<br> сотрудников</p>
+        </div>
+
+      <div class="hr-line2">
+      </div>
+
+      <p class="seven-reasons">ЧТО МЫ СТРОИМ:</p>
+
+      <div class="house">
+        <img src="img/house1.jpg"><br>
+        <p><span>ДОМ ИЗ БРУСА</span><br>Цена от 480 000р<p>
+          <a class="order-house" href="#dom-brus">СОСТАВИТЬ СМЕТУ</a>
+      </div>
+
+      <div class="house">
+        <img src="img/house2.jpg"><br>
+        <p><span>ДОМ КАРКАСНО-ЩИТОВОЙ
+ИЛИ КАРКАСНЫЙ</span><br>Цена от 500 000р<p>
+        <a class="order-house" href="#karkasno-shchitovoi">СОСТАВИТЬ СМЕТУ</a>
+      </div>
+
+      <div class="house">
+        <img src="img/house3.jpg"><br>
+        <p><span>ДОМ ИЗ СРУБА</span><br>Цена от 600 000р<p>
+        <a class="order-house" href="#srub">СОСТАВИТЬ СМЕТУ</a>
+      </div>
+      
+      <div class="house">
+        <img src="img/house4.jpg"><br>
+        <p><span>ДОМ ИЗ ПЕНОБЛОКОВ
+ИЛИ ГАЗОБЕТОНА</span><br>Цена от 900 000р<p>
+        <a class="order-house" href="#penoblock">СОСТАВИТЬ СМЕТУ</a>
+      </div>
+      <div class="house">
+        <img src="img/house5.jpg"><br>
+        <p><span>МОНОЛИТНЫЙ ДОМ</span><br>Цена от 900 000р<p>
+          <a class="order-house" href="#monolyte">СОСТАВИТЬ СМЕТУ</a>
+      </div>
+      <div class="house">
+        <img src="img/house6.jpg"><br>
+        <p><span>ДОМ ИЗ </span><br>
+ОЦИЛИНДРОВАННОГО БРУСА<br>Цена от 1 000 000р<p>
+        <a class="order-house" href="#cylindre-brus">СОСТАВИТЬ СМЕТУ</a>
+      </div>
+      <div class="house">
+        <img src="img/house7.jpg"><br>
+        <p><span>КИРПИЧНЫЙ ДОМ</span><br>Цена от 1 000 000р<p>
+        <a class="order-house" href="#brick-house">СОСТАВИТЬ СМЕТУ</a>
+      </div>
+      <div class="house">
+        <img src="img/house8.jpg"><br>
+        <p><span>ДОМ ИЗ КЛЕЕНОГО БРУСА
+(ФИНСКАЯ ТЕХНОЛОГИЯ)</span><br>Цена от 1 500 000р<p>
+        <a class="order-house" href="#clue-brus">СОСТАВИТЬ СМЕТУ</a>
+      </div>
+      <div class="house">
+        <img src="img/house9.jpg"><br>
+        <p><span>ЖИЛОЙ КОМПЛЕКС</span><br>Цена по запросу<p>
+        <a class="order-house" href="#block-of-flats">СОСТАВИТЬ СМЕТУ</a>
+      </div>
+      <a class="link1" href="#free-smeta">ОСТАВИТЬ ЗАЯВКУ НА БЕСПЛАТНЫЙ<br>РАСЧЕТ СМЕТЫ</a>
+
+      <div class="hr-line2">
+      </div>
+
+      <p class="seven-reasons">ПОЧЕМУ ВЫБИРАЮТ НАС</p>
+
+      <div class="reason">
+        <img src="img/reason1.jpg"><p><span>КАК МАЛЕНЬКОЕ, ТАК И БОЛЬШОЕ</span><br>
+Мы опытная компания возводящая не только частные дома и коттеджи, но и жилые комплексы.
+</p>
+      </div>
+      <div class="reason">
+        <img src="img/reason2.jpg"><p><span>БЕЗ НАКРУТОК</span><br>
+Мы работаем с заводами-изготовителями строительных материалов,
+поэтому цены на 30% ниже среднерыночных.</p>
+      </div>
+      <div class="reason">
+        <img src="img/reason3.jpg"><p><span>ВСЁ ДЛЯ ВАС</span><br>
+Нашим клиентам мы предоставляем рассрочку 0%.</p>
+      </div>
+      <div class="reason">
+        <img src="img/reason4.jpg"><p><span>ТОЧНО В СРОК</span><br>
+Мы сдаём все объекты точно в оговоренный срок.</p>
+      </div>
+      <div class="reason">
+        <img src="img/reason5.jpg"><p><span>НЕТ ГАСТРБАЙТЕРОВ</span><br>
+У нас работают только квалифицированные специалисты.</p>
+      </div>   
+
+      <div class="hr-line2">
+      </div>
+
+      <p class="seven-reasons">КАК МЫ РАБОТАЕМ</p>
+
+      <div class="how-we-make">
+      </div>
+
+      <div class="hr-line2">
+      </div>
+
+      <p class="seven-reasons">ОТЗЫВЫ</p>
+
+      <div class="reviv">
+        <img src="img/comentator1.jpg">
+        <p>Мы не сразу обратились к ребятам, заказали в другой компании, внесли предоплату. Привезли гнилой брус... Потом обратились в "Русский дворец". В этот же день приехал специалист и предложил нам несколько вариантов работы. В итоге мы сэкономили 319 000 рублей и отдохнули в Доминикане. Большое спасибо.<br>
+          <br>
+          Валерий Владимиров - таможенник.</p>
+      </div>
+      <div class="reviv">
+        <img src="img/comentator2.jpg">
+        <p>Давно хотели с мужем Виллу в Подмосковье. Нашли "Русский дворец" в интернете, сразу заказали расчет. Нам сделали просто чумовой проект дома!!!Все как я хотела, до мелочей! Цена нас не сильно волновала, но качество меня просто поразило. Они как-будто строят для себя. Отличная работа!<br>
+          <br>
+          Алина Абдуллаева - фрилансер, копирайтер.</p>
+      </div>
+
+      <a class="link2" href="#wind-order">ХОЧУ ПОСТРОИТЬ ДОМ!</a>
+
+
+      <p class="seven-reasons">НАШИ СЕРТИФИКАТЫ</p>
+
+      <div class="walets">
+        <a href="#certificate1" title="Увеличить"><img alt="" src="img/certificate1-min.jpg"></a>      
+        <a href="#certificate2" title="Увеличить"><img alt="" src="img/certificate2-min.jpg"></a>      
+        
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <a href="#x" class="overlay" id="certificate1"></a>
+        <div class="popup">    
+          <div class="feedbackf">
+            <a class="closef" title="Закрыть" href="#close"></a>         
+            <img alt=""  src="img/certificate1.jpg">        
+          </div>      
+        </div>
+
+        <a href="#x" class="overlay" id="certificate2"></a>
+        <div class="popup">    
+          <div class="feedbackf">
+            <a class="closef" title="Закрыть" href="#close"></a>         
+            <img alt=""  src="img/certificate2.jpg">        
+          </div>      
+        </div>
+      </div>
+      </div>
+      <div class="foter-bg">
+      <div class="footer">
+      <div class="contact">
+        <div class="order-call-a">
+          <p>Адресс</p>
+        </div>
+        <div class="order-call-b">
+          <p class="zvaon-free">Звонок бесплатный</p>
+          <p class="number"><span>8 800</span> 000 00 00</p>
+          <a class="order-call-button" href="#wind-order">ЗАКАЖИТЕ ЗВОНОК</a>
+        </div>
+      </div>
+
+          <div class="end">
+            <a href="index.php"><img src="img/logo2.png"></a>          
+           
+          </div>
+      </div>
+    </div>
+    <script src="js/jquery.countdown.js"></script>
+
+  </body>
+</html>

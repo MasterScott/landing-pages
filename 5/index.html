@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Шаблон</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+<header>
+	<a href="#">
+		<img src="images/logo.png" alt="ILS International Language Studies" class="logo"/>
+	</a>
+	<div class="flags">
+		<span class="flag us">США</span>
+		<span class="flag it">Италия</span>
+		<span class="flag fr">франция</span>
+		<span class="flag gb">великобритания </span>
+		<span class="flag es">испания</span>
+	</div>
+	<div class="phones">
+		<p>Есть вопросы? Звоните!!!</p>
+		<p>8 800 000 00 00</p>
+		<span>(Бесплатно из любой точки РФ)</span>
+		<div class="order-button"></div>
+	</div>
+</header>
+<h1 class="site_description">Обучение за рубежом!  Из любой точки России и СНГ!</h1>
+<section class="slider">
+	<div class="blueline"></div>
+	<div class="in">
+		<div class="info">
+			Английский в Великобритании<br/>
+			2 недели от 40 000 рублей  
+		</div>
+		<div class="form">
+			<p class="title">
+				Оставьте заявку,<br/>
+				и получите фотокнигу<br/>
+				о Вашей поездке в подарок!
+			</p>
+			<span class="hr"></span>
+			<form action="index1.php" method="post">
+			<input type="text" id="uname" class="uname" value="Ваше имя *" maxlength="255"/>
+			<input type="text" id="uphone" class="uphone" value="Ваш телефон *" maxlength="255"/>
+			<input type="text" id="umail" class="umail" value="Ваш E-Mail *" maxlength="255"/>
+			<textarea id="utext">Ваше сообщение</textarea>
+			<input type="submit"  value="Отправить"/>
+			</form>
+		</div>
+		<div class="counter">
+			<span class="arrow"></span>
+			<p>до конца  акции:</p>
+			<div class="timer">
+				<div class="go_time">
+					<div class="tim">
+						<div class="timer2">
+							<div class="container">
+								<div class="flip day1Play"></div><div class="flip dayPlay"></div>
+								<div class="flip hour2Play" style="background-position: 0px 0px;"></div><div class="flip hourPlay" style="background-position: 0px 3200px;"></div>
+								<div class="flip minute6Play" style="background-position: 0px 1200px;"></div><div class="flip minutePlay" style="background-position: 0px 1600px;"></div>
+								<div class="flip second6Play" style="background-position: 0px 0px;"></div><div class="flip secondPlay" style="background-position: 0px 800px;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="shadow"></div>
+<section class="portfolio">
+	<ul id="gallery_carousel">
+		<li><img src="images/portfolio/item1.png" alt=""/></li>
+		<li><img src="images/portfolio/item2.png" alt=""/></li>
+		<li><img src="images/portfolio/item3.png" alt=""/></li>
+		<li><img src="images/portfolio/item1.png" alt=""/></li>
+		<li><img src="images/portfolio/item2.png" alt=""/></li>
+		<li><img src="images/portfolio/item3.png" alt=""/></li>
+	</ul>
+	<a id="prev" class="prev" href="#">&lt;</a>
+	<a id="next" class="next" href="#">&gt;</a>
+</section>
+<section class="ww">
+	<h1>Почему наши клиенты снова к нам возвращаются!</h1>
+	<article>
+		<img src="images/ww/ww1.png" alt=""/>
+		Гарантия качества. ILS работает только с лучшими школами, где Вы будете учиться вместе 
+		с иностранными студентами. У вас всегда будет возможность попрактиковаться в знании языков
+	</article>
+	<article>
+		<img src="images/ww/ww2.png" alt=""/>
+		Широкий спектр школ, любой бюджет
+	</article>
+	<article>
+		<img src="images/ww/ww3.png" alt=""/>
+		Поездка под ключ: индивидуальный подбор курса, визовая поддержка, бронь билетов и любая другая помощь
+	</article>
+	<article>
+		<img src="images/ww/ww4.png" alt=""/>
+		Открытая информация. Мы всегда готовы предоставить Вам полный финансовый отчет по поездке и помочь 
+		найти самый выгодный вариант
+	</article>
+	<article>
+		<img src="images/ww/ww5.png" alt=""/>
+		Дополнительные услуги. Заказ трансферта, подбор гида, подбор экскурсий
+	</article>
+</section>
+<section class="hww">
+	<h2>Как мы работаем !</h2>
+	<img src="images/hww.jpg" alt=""/>
+</section>
+<section class="reviews">
+	<div class="in">
+		<h4>О нас говорят  наши клиенты</h4>
+		<div class="our_reviews" id="scrollbarX">
+			<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+			<div class="viewport">
+				<div class="overview">
+					<article>
+						<img src="images/authors/author1.png" alt=""/>
+						<h6>Николай Васильевич</h6>
+						<p>
+							Я крайне доволен курсом,которыйвыбрал. Атмосфера очень дружелюбная, к тому же в школе постоянно проходили 
+							какие-то мероприятия, где выделяется спеуиальная возможность пообщатьс с представителсями в неформальной 
+							обстановке.  Это как клуб. Вобщем, я в полном восторге! 
+						</p>
+					</article>
+					<article>
+						<img src="images/authors/author1.png" alt=""/>
+						<h6>Николай Васильевич</h6>
+						<p>
+							Я крайне доволен курсом,которыйвыбрал. Атмосфера очень дружелюбная, к тому же в школе постоянно проходили 
+							какие-то мероприятия, где выделяется спеуиальная возможность пообщатьс с представителсями в неформальной 
+							обстановке.  Это как клуб. Вобщем, я в полном восторге! 
+						</p>
+					</article>
+					<article>
+						<img src="images/authors/author1.png" alt=""/>
+						<h6>Николай Васильевич</h6>
+						<p>
+							Я крайне доволен курсом,которыйвыбрал. Атмосфера очень дружелюбная, к тому же в школе постоянно проходили 
+							какие-то мероприятия, где выделяется спеуиальная возможность пообщатьс с представителсями в неформальной 
+							обстановке.  Это как клуб. Вобщем, я в полном восторге! 
+						</p>
+					</article>
+					<article>
+						<img src="images/authors/author1.png" alt=""/>
+						<h6>Николай Васильевич</h6>
+						<p>
+							Я крайне доволен курсом,которыйвыбрал. Атмосфера очень дружелюбная, к тому же в школе постоянно проходили 
+							какие-то мероприятия, где выделяется спеуиальная возможность пообщатьс с представителсями в неформальной 
+							обстановке.  Это как клуб. Вобщем, я в полном восторге! 
+						</p>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="shadow"></div>
+	<div class="in">
+		<h3>Оставить заявку сейчас!</h3>
+		<div class="form">
+		<form action="index1.php" method="post">
+			<input type="text" class="uname" value="Ваше имя *" maxlength="255"/>
+			<input type="text" class="uphone" value="Ваш телефон *" maxlength="255"/>
+			<input type="text" class="umail" value="Ваш E-Mail *" maxlength="255"/>
+			<textarea>Ваше сообщение</textarea>
+			<input type="submit"  value="Отправить"/>
+			</form>
+		</div>
+	</div>
+</footer>
+<div class="fog"></div>
+<div class="popup">
+	<span class="close"></span>
+	<h6>Заказать звонок</h6>
+	<div class="form">
+	<form action="index1.php" method="post">
+		<p><label for="user_name1">Имя*</label><input type="text" name="user_name" id="user_name1"  class="user_name" value="Введите имя" maxlength="255"/></p>
+		<p><label for="user_phone1">Телефон*</label><input type="text" name="user_phone" id="user_phone1" class="user_phone" value="Введите телефон" maxlength="255"/></p>
+		<p class="submit"><input type="submit" value="Отправить"/></p>
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){$('#timer').xdretroclock({showHour:true,showMinute:true,showSecond:true,speedFlip:50,time:function(){var today=new Date();var BigDay=new Date("December 21, 2012");var timeLeft=(BigDay.getTime()-today.getTime());var time=new Date(timeLeft);time.setSeconds(time.getSeconds()-1);return time}})});
+</script>
+</body>
+</html>

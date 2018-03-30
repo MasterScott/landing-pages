@@ -1,0 +1,88 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+#content{
+    margin:0 auto;
+    text-align:left;
+    width:950px;
+    position:relative;
+    height:100%; 
+    padding-top: 28px;   
+}
+#wrapper{           
+    width:640px;
+    overflow:hidden;
+    border-radius: 4px;
+}
+#steps{
+    width:640px;
+	/*height:320px;*/
+    overflow:hidden;
+}
+.step{
+    float:left;
+    width:640px;
+    height: 396px;
+	/*height:320px;*/
+    position: relative;
+}
+#navigation{
+    height:396px;    
+    position: absolute;
+    top: 28px;
+    right: 5px;
+    width: 310px;
+}
+#navigation ul{
+    list-style:none;	
+}
+#navigation ul li{
+	float:left;
+    border-right:1px solid #ccc;
+    border-left:1px solid #ccc;
+    position:relative;
+	margin:0px 2px;
+}
+#navigation ul li a{
+    display:block;
+    height:99px;    
+    color:#777;
+    outline:none;
+    font-weight:bold;
+    text-decoration:none;             
+    background: url(../img/background/slider-li.png) no-repeat top right ;
+    width: 332px;    
+    margin-left: -22px;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+#navigation img {
+    vertical-align: middle;
+    padding-right: 10px;
+}
+#navigation ul li a:hover,
+#navigation ul li.selected a{
+    background:url(../img/background/slider-li-selected.png);
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+#navigation ul li a:hover:after,
+#navigation ul li.selected a:after{
+    content: "";
+    background: url(../img/background/slider-li-selected-after.png);
+    width: 22px;
+    height: 46px;
+}
+.opisanie {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 25px;
+    line-height: 2;
+    width: 640px;
+}

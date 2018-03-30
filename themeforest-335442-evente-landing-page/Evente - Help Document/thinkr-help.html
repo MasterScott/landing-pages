@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Evente - Help Document</title>
+	<link rel="stylesheet" media="screen" href="css/reset.css"/>
+	<link rel="stylesheet" media="screen" href="css/style.css"/>
+	<link type="text/css" rel="stylesheet" media="all" href="assets/highlight.css" />
+	<script type="text/javascript" src="assets/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="assets/highlight.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+			
+		});
+	</script>
+	</head>
+
+	<body>
+<div id="header_wrapper">
+      <div id="header"> <img src="Images/tansh-logo.jpg" width="80" height="80" alt="logo" class="logo" />
+    <p>Evente - Help document</p>
+  </div>
+      <div class="clear"></div>
+    </div>
+<div id="wrapper">
+      <div id="info_text">
+    <p>Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/tansh" target="_blank">here</a>. </p>
+    <p>I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.  Thanks so much!</p>
+  </div>
+      <div id="info">
+    <table>
+          <tr>
+        <td><strong>Theme Name </strong></td>
+        <td>:</td>
+        <td>Evente</td>
+      </tr>
+          <tr>
+        <td><strong>Created By </strong></td>
+        <td>:</td>
+        <td><a href="http://themeforest.net/user/tansh" target="_blank">Tansh</a></td>
+      </tr>
+          <tr>
+        <td><strong>Theme Support </strong></td>
+        <td>:</td>
+        <td><a href="http://themeforest.net/user/tansh" target="_blank">http://themeforest.net/user/tansh</a></td>
+      </tr>
+          <tr>
+        <td><strong>Latest Version </strong></td>
+        <td>:</td>
+        <td>1.2</td>
+      </tr>
+          <tr>
+        <td><strong>Created</strong></td>
+        <td>:</td>
+        <td>3 - July - 2011</td>
+      </tr>
+        </table>
+  </div>
+      <div class="content">
+    <h1>Find help for the topics listed below....</h1>
+    <p>Click to go directly for the particular point.</p>
+    <ul>
+          <li><a href="#form">Contact form</a></li>
+          <li><a href="#sub_form">Subscribe form</a></li>
+          <li><a href="#nivo">Nivo slider</a></li>
+          <li><a href="#cycle_test">Cycle plugin for testimonial</a></li>
+          <li><a href="#fancybox">Fancybox</a></li>
+          <li><a href="#countdown">Countdown</a></li>
+          <li><a href="#cufon">Cufon</a></li>
+          <li><a href="#tips">Customization tips</a></li>
+          <li><a href="#credits">Credits and sources</a></li>
+        </ul>
+  </div>
+      <div class="content">
+    <h1 id="form">Contact form - <a href="#info">top</a></h1>
+    <ul>
+          <li>Needs jqueries "jquery.validate.js" and "jquery.form.js", these are already attached in html.</li>
+          <li> You need to do / give following two things, <strong>to make contact form work</strong>....
+        <ul>
+              <li> Your email id <em><strong>in submit-form.php</strong></em> file </li>
+              <li class="none">
+            <pre class="code" lang="php">
+              
+ $to='yourname@mail.com';
+              </pre>
+          </li>
+              <li>Give path / url of php file "submit-form.php" <em><strong>in html</strong></em> as form action. <br/>
+            Here path / url is ---- http://yoursitename.com/php/submit-form.php.</li>
+              <li class="none">
+            <pre class="code" lang="html">  
+ <form id="form" method="post" action="http://yoursitename.com/php/submit-form.php">
+ <fieldset>
+ <p>
+ <label>Name</label>
+ <input name="name" />
+ </p>
+ </fieldset>
+ </form>
+    </pre>
+          </li>
+            </ul>
+      </li>
+          <li>Function for jquery validation is given in custom.js. No need to make changes there.
+      <li class="none">
+        <pre class="code" lang="js">
+            
+ $(function() {
+ var v = $("#form").validate({
+ submitHandler: function(form) {
+ $(form).ajaxSubmit({
+ target: "#result",
+ clearForm: true
+ });
+ }
+ });
+ });	
+            </pre>
+      </li>
+          </li>
+          <li> Upload all files. Form will work fine.</li>
+        </ul>
+    <h2>Other more info about contact form</h2>
+    <h3>How to change mail body?</h3>
+    <p class="beta">It can be changed in 'submit-form.php' file.</p>
+    <pre class="code" lang="php">
+              
+ $body='You have got a message...like this your desired text here'."\n\n";
+        </pre>
+    <h3>How to give fixed / particular subject name to receiving mail?</h3>
+    <p class="beta">If you want fix subject name for received mail, in case where u are not including subject field in contact form, it can be changed in 'submit-form.php' file.</p>
+    <pre class="code" lang="php">
+              
+ $subject = 'Fixed / particular subject name can be written here';
+        </pre>
+    <p>If subject field is included, then it will be like this.</p>
+    <pre class="code" lang="php">
+        
+ $subject = $subject;
+        </pre>
+    <h3>How to change success message (message displayed after send process complete)?</h3>
+    <p>Message which displays as result on send process complete, can be changed in php file, at place shown below.</p>
+    <pre class="code" lang="php"> 
+ if(mail($to, $subject, $body, $headers)) {
+ die('Your desired result text here');
+ } else {
+  die('Error: Mail failed');
+ }
+        </pre>
+    <h3>Why I'm getting error ..."There was an error sending your email. Please try again"</h3>
+    <p>Form do not work offline, you need to upload all necessary files first.</p>
+    <h3>How to add extra fields in contact form?</h3>
+    <ul>
+          <li>Add field html.</li>
+          <li>Add php for it, as it is added for other fields.</li>
+          <li>Choose suitable validation class for input field. Those are give in 'jquery.validate.js' approx. line no. 260 - 280.</li>
+        </ul>
+  </div>
+      <div class="clear"></div>
+      <div class="content">
+    <h1 id="sub_form">Subscribe form - <a href="#info">top</a></h1>
+    <ul>
+          <li>Needs jqueries "jquery.validate.js" and "jquery.form.js", these are already attached in html.</li>
+          <li> You need to do / give following two things, <strong>to make subscribe form work</strong>....
+        <ul>
+              <li> Your email id <em><strong>in subscribe-form.php</strong></em> file </li>
+              <li class="none">
+            <pre class="code" lang="php">
+              
+ $to='yourname@mail.com';
+              </pre>
+          </li>
+              <li>Give path / url of php file "subscribe-form.php" <em><strong>in html</strong></em> as form action. <br/>
+            Here path / url is ---- http://yoursitename.com/php/subscribe-form.php.</li>
+              <li class="none">
+            <pre class="code" lang="html">
+            
+ <form id="subform" method="post" action="http://yoursitename.com/php/subscribe-form.php">
+ <fieldset>
+ <p>
+ <label>Email</label>
+ <input name="email" />
+ </p>
+ </fieldset>
+ </form>
+    </pre>
+          </li>
+            </ul>
+      </li>
+          <li>Function for jquery validation is given in custom.js. No need to make changes there.
+      <li class="none">
+        <pre class="code" lang="js">
+            
+ $(function() {
+ var v = $("#subform").validate({
+ submitHandler: function(form) {
+ $(form).ajaxSubmit({
+ target: "#result_sub",
+ clearForm: true
+ });
+ }
+ });
+ });	
+            </pre>
+      </li>
+          </li>
+          <li> Upload all files. Form will work fine.</li>
+        </ul>
+    <h2>Other more info about subscribe form</h2>
+    <h3>How to change mail body of subscribe form?</h3>
+    <p class="beta">It can be changed in 'subscribe-form.php' file.</p>
+    <pre class="code" lang="php">
+              
+ $body='You have got a request for subscription...like this your message here'."\n\n";
+        </pre>
+    <h3>Where to change subject of mail?</h3>
+    <p class="beta">It can be changed in 'subscribe-form.php' file.</p>
+    <pre class="code" lang="php">
+              
+ $subject = 'Fixed / particular subject name can be written here';
+        </pre>
+    <h3>How to change success message (message displayed after send process complete)?</h3>
+    <p>Message which displays as result on send process complete, can be changed in php file, at place shown below.</p>
+    <pre class="code" lang="php"> 
+ if(mail($to, $subject, $body, $headers)) {
+ die('Your desired result text here');
+ } else {
+ die('Error: Mail failed');
+ }
+        </pre>
+    <h3>Why I'm getting error ..."There was an error sending your email. Please try again"</h3>
+    <p>Form do not work offline, you need to upload all necessary files first.</p>
+    <h3>How to add extra fields in subscribe form?</h3>
+    <ul>
+          <li>Add field html.</li>
+          <li>Add php for it, as it is added for other fields.</li>
+          <li>Choose suitable validation class for input field. Those are give in 'jquery.validate.js' approx. line no. 260 - 280.</li>
+        </ul>
+  </div>
+      <div class="clear"></div>
+      <div class="content">
+    <h1 id="nivo">Nivo slider - <a href="#info">top</a></h1>
+    <ul>
+          <li>Needs nivo slider css (nivo-slider.css) and jquery (jquery.nivo.slider.pack.js), these are already attached in html.</li>
+          <li>Images are listed in div id "slider" with class "nivoslider", these both are specified in custom.js</li>
+          <pre class="code" lang="html">
+
+ <div id="show">
+ <div id="slider" class="nivoSlider"> 
+ <img src="images/preview/slide-1.jpg" alt="image" height="220" width="430"> 
+ <img src="images/preview/slide-2.jpg" alt="image" height="220" width="430"> 
+ <img src="images/preview/slide-3.jpg" alt="image" height="220" width="430"> 
+ </div>
+ </div>
+          </pre>
+          <li>Function for nivo slider is in custom.js. There you can change effects, animation speed etc.</li>
+          <pre class="code" lang="js">    
+ $('#slider').nivoSlider({
+ effect:'random', // Specify sets like: 'fold,fade,sliceDown' or choose 'random' for mixed effects
+ slices:15, // For slice animations
+ boxCols: 8, // For box animations
+ boxRows: 4, // For box animations
+ animSpeed:500, // Slide transition speed
+ pauseTime:5000, // How long each slide will show
+ pauseOnHover:true,
+ directionNav:true, // Next & Prev navigation
+ directionNavHide:true, // Only show on hover
+ controlNav:false // 1,2,3... navigation
+ });
+      </pre>
+        </ul>
+    <h2>To replace slider with video</h2>
+    <p>Just remove the div '#slider' (all html code shown above). Just place your video link there.</p>
+    <p>If you don't need slider elsewhere also, remove the css, jquery for slider and slider fuction from custom.js.</p>
+  </div>
+      <div class="clear"></div>
+      <div class="content">
+    <h1 id="cycle_test">Cycle plugin for testimonial - <a href="#info">top</a></h1>
+    <ul>
+          <li>Needs cycle plugin jquery (jquery.cycle.all.min.js), which is already attached in html.</li>
+          <li>Function for cycle plugin is in custom.js. There you can change transition type, speed etc.</li>
+          <pre class="code" lang="js">    
+ $('.testimonial').cycle({
+ fx: 'fade', // choose your transition type, ex: fade, scrollUp, scrollLeft etc... 
+ speed: 1000,
+ timeout: 4000,  // milliseconds between slide transitions (0 to disable auto advance)
+ cleartypeNoBg:   true, // set to true to disable extra cleartype fixing (leave false to force background color setting on slides)
+ cleartype:!$.support.opacity,  // true if clearType corrections should be applied (for IE) 
+ pause:  1
+ });
+      </pre>
+        </ul>
+    <h2>How to add more testimonials?</h2>
+    <p>Testimonial are enlisted as, each in separate 'div'...inside div class entitled as 'testimonial'.</p>
+    <pre class="code" lang="html">  
+ <div class="testimonial">
+ <div>First testimonial</div>
+ <div>Second testimonial</div>
+ <div>Third testimonial</div>
+ ...and so on..
+ </div>
+        </pre>
+  </div>
+      <div class="clear"></div>
+      <div class="content">
+    <h1 id="fancybox">Fancybox - <a href="#info">top</a></h1>
+    <ul>
+          <li>Needs fancybox css (jquery.fancybox-1.3.4.css) and jquery (jquery.fancybox-1.3.4.js), these are already attached in html.</li>
+          <li>Function for fancybox is in custom.js</li>
+          <li>Give href of large image / image to be displayed on click</li>
+          <li>Give src of thumbnail</li>
+          <li>Height /  width of thumbnail, as per template design</li>
+          <li>Give title to large image</li>
+          <li>Rel - "next"  to link</li>
+        </ul>
+    <pre class="code" lang="html">  
+<li>
+<a href="images/preview/large-1.jpg" class="simple_image" rel="category" title="This is title of image 1">
+<img src="images/preview/thumb-1.jpg" width="146" height="76" alt="Image 1"/></a> 
+</li>
+
+    </pre>
+  </div>
+      <div class="clear"></div>
+      <div class="content">
+    <h1 id="countdown"> Countdown - <a href="#info">top</a></h1>
+    <pre class="code" lang="js"> 
+    $('#defaultCountdown').countdown({
+				until: new Date(2011, 8 - 1, 26, 0, 0, 0), 
+  </pre>
+    <ul>
+          <li>To get countdown cufonized specify font family in cusom.js and in jquery.countdown.js at line no. 202.</li>
+          <li>To chage date of countdown make changes in <strong>custom.js</strong> as shown below....
+        
+        Here countdown date is 26th of August<br/>
+        2011 .... year of countdown date<br/>
+        8 - 1 .... month of countdown date - 1 <br/>
+        26 .... countdown date </li>
+        </ul>
+  </div>
+      <div class="clear"></div>
+      <div class="content">
+    <h1 id="cufon">Cufon - <a href="#info">top</a></h1>
+    <ul>
+          <li>Needs default cufon js "cufon-yui.js" and js file for selected font. </li>
+          <li>Cufon js for the selected font can be created from <a href="http://cufon.shoqolate.com/generate/" target="_blank">http://cufon.shoqolate.com/generate/</a>.</li>
+          <li>If you need to use other font with cufon, you can create it at your own form link provided above.</li>
+        </ul>
+    <h2>How to remove cufon?</h2>
+    <p>Remove jquries listed below from html.</p>
+    <pre class="code" lang="js"> 
+ js/cufon-yui.js
+ js/Qlassik_Bold_700.font.js
+   </pre>
+    <p>Remove code for cufon from custom.js</p>
+    <pre class="code" lang="js"> 
+ //Cufon font replacement class/id
+Cufon.replace('h1,h2,h3,h4,#header p');  
+Cufon.replace('.button_1 a,.button_2 a',{textShadow: '0px 1px 0px #e80000'});    </pre>
+    <p><strong>In css</strong> - Specify which font you need to use for headings and others, along with font size.</p>
+  </div>
+      <div class="clear"></div>
+      <div class="content">
+    <h1 id="tips">Customization tips - <a href="#info">top</a></h1>
+    <ul>
+          <li> - If you are removing any jquery from index page, remember to remove its function form custom.js, otherwise it will affect page display in many browsers esp. IE.</li>
+          <li> - General layout of respective pages are given in css of each variation. </li>
+          <li> - Remember to specify width and heights to slider, gallery images or other images.</li>
+          <li> - Check paths for images, js, css, php files.</li>
+          <li> - <strong>Clear div is necessry </strong> at some places. Use clear div where ever you require while customization.</li>
+        </ul>
+  </div>
+      <div class="clear"></div>
+      <div class="content">
+    <h1 id="credits">Credits and sources - <a href="#info">top</a></h1>
+    <ul>
+          <li> I've referred and used jquery from files as listed.
+        <ul>
+              <li><a href="http://fancybox.net/" target="_blank">Fancybox</a></li>
+              <li><a href="http://nivo.dev7studios.com/">Jquery Nivo slider</a></li>
+              <li><a href="http://onehackoranother.com/projects/jquery/tipsy/" target="blank">Tipsy</a></li>
+              <li><a href="http://jquery.malsup.com/cycle/">Cycle plugin</a></li>
+              <li><a href="http://ten7.com/content/jquery-countdown-background-and-overlay">Countdown</a></li>
+            </ul>
+      </li>
+          <li> Fonts used -
+        <ul>
+              <li>Arial</li>
+              <li>Qlassik - fontsquirrel.com</li>
+            </ul>
+      <li> Social icons -
+        <ul>
+          <li> <a href="http://icondock.com/free/vector-social-media-icons">Vector Social Media Icons by IconDock.com</a> </li>
+        </ul>
+      </li>
+          </li>
+          <li> Images used for live demo are from-
+        <ul>
+              <li>http://www.sxc.hu/photo/1065781</li>
+              <li>http://www.sxc.hu/photo/595588</li>
+              <li>http://www.sxc.hu/photo/524549</li>
+              <li>http://www.sxc.hu/photo/1117048</li>
+              <li>http://www.sxc.hu/photo/1287061</li>
+              <li>http://www.sxc.hu/photo/325656</li>
+              <li>http://www.sxc.hu/photo/1338212</li>
+            </ul>
+      </li>
+        </ul>
+  </div>
+      <div class="clear"></div>
+    </div>
+</body>
+</html>

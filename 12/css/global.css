@@ -1,0 +1,853 @@
+/* ===== PRIMARY STYLES =====================================================
+   ========================================================================== */
+/*========================= global ===========================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {  
+  font-family: 'DinPro';
+  color: #333534;  
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: url(../img/background/body.png);
+}
+/* =============== ВСПЛЫВАЮЩИЕ ОКНА ======================= ===================
+============================================================ POP-UP============
+/////////////////////////////////////////////////////////////////////////////*/
+/*заказ звонка верхняя*/
+.overlay-zvonokt {
+    background-color: rgba(0, 0, 0, 0.0);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 2;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.overlay-zvonokt:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup-zvonokt {              
+    opacity: 0;
+    padding: 10px;
+    position: absolute;
+    right: -210px;
+    top: 210px; 
+    z-index: 10; 
+    visibility: hidden;       
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+ 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;   
+ 
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+}
+.wind-zakaz-top {
+  width: 379px;
+  height: 260px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  text-align: center; 
+  padding: 10px;  
+  background: #fff;  
+  position: relative;
+}
+.wind-zakaz-top:after {
+  content: "";
+  position: absolute;
+  background: url(../img/background/pointer-top.png) no-repeat;
+  width: 27px;
+  height: 18px;
+  top: -11px;
+  right: 110px;
+}
+.wind-zakaz-top input[type="text"] {
+  width: 340px;
+  height: 42px;
+  margin: 8px auto;  
+  font-size: 20px;
+  padding-left: 15px;
+  font-weight: normal;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  border: 1px solid #d4d4d4;
+}
+.wind-zakaz-top input[type="text"]:focus {
+  outline: none;
+}
+.wind-zakaz-top input[type="button"] {
+  background: url(../img/background/zakazat-zvonok.png) no-repeat;
+  height: 46px;
+  width: 215px;  
+  border: none;
+  color: #fff;
+  margin: 8px auto; 
+  font-size: 19px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 19px;  
+  text-decoration: none;
+  color: #6f5339;
+
+}
+.overlay-zvonokt:target+.popup-zvonokt {    
+    opacity: 1;
+    visibility: visible;
+}
+.wind-zakaz-top p{
+  font-size: 21px;
+}
+.rel-pos {
+  position: relative;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing: border-box;
+}
+/*заказ звонка нижняя*/
+.overlay-zvonokb {
+    background-color: rgba(0, 0, 0, 0.0);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;  
+    z-index: 2;  
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.overlay-zvonokb:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup-zvonokb {              
+    opacity: 0;
+    padding: 10px;
+    position: absolute;
+    right: -210px;
+    bottom: 0px;  
+    z-index: 10;  
+    visibility: hidden;    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+ 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;   
+ 
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+}
+.wind-zakaz-bot {
+
+  width: 379px;
+  height: 260px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  text-align: center; 
+  padding: 10px;  
+  background: #fff;  
+  position: relative;
+}
+.wind-zakaz-bot:after {
+  content: "";
+  position: absolute;
+  background: url(../img/background/pointer-bottom.png) no-repeat;
+  width: 27px;
+  height: 18px;
+  bottom: -15px;
+  right: 110px;
+}
+.wind-zakaz-bot input[type="text"] {
+  width: 340px;
+  height: 42px;
+  margin: 8px auto;  
+  font-size: 20px;
+  padding-left: 15px;
+  font-weight: normal;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  border: 1px solid #d4d4d4;
+}
+.wind-zakaz-bot input[type="text"]:focus {
+  outline: none;
+}
+.wind-zakaz-bot input[type="button"] {
+  width: 252px;
+  height: 44px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;  
+  border: none;
+  color: #fff;
+  margin: 8px auto; 
+  font-size: 19px;
+  cursor: pointer;
+  background: rgba(241,122,116,1);
+background: -moz-linear-gradient(left, rgba(241,122,116,1) 0%, rgba(211,75,68,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,122,116,1)), color-stop(100%, rgba(211,75,68,1)));
+background: -webkit-linear-gradient(left, rgba(241,122,116,1) 0%, rgba(211,75,68,1) 100%);
+background: -o-linear-gradient(left, rgba(241,122,116,1) 0%, rgba(211,75,68,1) 100%);
+background: -ms-linear-gradient(left, rgba(241,122,116,1) 0%, rgba(211,75,68,1) 100%);
+background: linear-gradient(to right, rgba(241,122,116,1) 0%, rgba(211,75,68,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17a74', endColorstr='#d34b44', GradientType=1 );
+}
+.overlay-zvonokb:target+.popup-zvonokb {    
+    opacity: 1;
+    visibility: visible;
+}
+.wind-zakaz-bot p{
+  font-size: 21px;
+}
+.center-980-pop {
+  margin: 0 auto;
+  width: 980px;
+  position: relative; 
+}
+/* =============================== END ===============================                      
+//////////////////////////////////|||||||||||||\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+=============================ШАПКА ========== ШАПКА ============= ШАПКА */
+.center-980 {
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+.header-top {
+  padding-top: 10px;  
+}
+.header-top p{
+  display: inline-block;
+}
+.header-phone {
+  display: inline-block;
+  width: 565px;
+  height: 50px;
+  position: relative;
+  float: right;
+}
+.header-phone a{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../img/background/zakazat-zvonok.png) no-repeat;
+  height: 46px;
+  width: 215px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 19px;  
+  text-decoration: none;
+  color: #6f5339;
+  padding-top: 10px;  
+}
+.header h1 {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.header-bottom-bg {
+  background: url(../img/background/header-bottom.png) no-repeat;
+  width: 1228px;
+  height: 519px;
+  margin: 0 auto;  
+}
+.header-bottom {
+  position: relative;
+}
+.header-form {
+  position: absolute;
+  right: 0;
+  width: 330px;
+  height: 420px;  
+  margin-top: 5px;  
+}
+.fform input {
+  padding-left: 30px;  
+  border: 1px solid #c6c6c6;
+  border-top: 2px solid #c6c6c6;
+  border-left: 2px solid #c6c6c6;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;    
+  height: 35px;
+  width: 265px;
+  margin: 0 0 10px 10px;
+  font-size: 16px;
+}
+.fform input:focus {
+outline: 0;
+}
+.fform input:nth-child(1){
+  background: url(../img/background/input-name.png) no-repeat;  
+  background-color: #fff;
+  background-position: 3% center;
+  margin-top: 20px; 
+}
+.fform input:nth-child(2){
+  background: url(../img/background/input-tel.png) no-repeat;
+  background-color: #fff;
+  background-position: 3% center;
+}
+.fform input:nth-child(4){
+  background: url(../img/background/input-maill.png) no-repeat;  
+  background-color: #fff;
+  background-position: 3% center;  
+}
+.fform input[type="button"]{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 295px;
+  height: 37px;    
+  background: url(../img/background/button-header-form.png) no-repeat; 
+  border: none;
+  color: #6f5338;  
+  font-size: 23px;  
+  cursor: pointer;
+  padding: 0;
+}
+.fform {
+  text-align: center;
+}
+.timer {
+  background: url(../img/background/table.png);
+  width: 321px;
+  height: 301px;
+  position: absolute;
+  top: 50px;
+  left: 300px;
+}
+.pellets {
+  width: 980px;
+  height: 152px;
+  background: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 10px;
+  margin-top: -45px;
+  padding: 10px 0 0 40px;
+  font-size: 29px;
+  text-align: center;
+  position: relative;
+}
+.pellets:after{
+  content: "";
+  width: 940px;
+  height: 22px;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  background: url(../img/hr-line.jpg) no-repeat;
+}
+.pellets:before{
+  content: "";
+  width: 46px;
+  height: 39px;
+  position: absolute;
+  top: 5px;
+  left: 75px;
+  background: url(../img/skobki.jpg) no-repeat;
+}
+h2 {
+  font-size: 35px;
+  text-align: center;
+  padding: 20px;
+}
+.top-choice {
+  height: 860px;
+  width: 980px;
+  background: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 10px;  
+  padding: 35px 0 0 40px;
+  font-size: 29px;  
+  position: relative;   
+}
+.top-choice img{
+  padding-right: 20px;
+  vertical-align: middle;  
+}
+.choice p{  
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 19px; 
+  font-weight: bold; 
+  padding-bottom: 3px;
+}
+.choice {
+  padding-top: 25px;
+}
+.order {
+  margin-top: 20px;
+  width: 979px;
+  height: 307px;
+  background: url(../img/background/zakaz-bg.jpg);
+  position: relative;
+  text-align: center;
+  padding-top: 18px;
+}
+.order a{
+  border: 2px solid #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 10px;
+  color: #fff;
+  padding: 0 8px 0 8px;
+  text-decoration: none;
+  margin: 5px auto;
+  display: block;
+  width: 160px;
+  font-size: 20px;
+}
+.order p {
+  color: #fff;
+  font-size: 20px;
+}
+/* POp UP форма для серых*/
+.overlay-zakaz-silv {
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 2;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.overlay-zakaz-silv:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup-zakaz-silv {              
+    display: inline-block;
+    left: 50%;
+    opacity: 0;
+    padding: 10px;
+    position: fixed;    
+    font: 14px Helvetica, Arial, Sans-Serif;
+    top: 40%;
+    visibility: hidden;
+    z-index: 10;
+ 
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+}
+.wind-zakaz-silv {
+  width: 379px;
+  height: 260px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  text-align: center; 
+  padding: 10px;  
+  background: #fff;  
+  position: relative;
+}
+.wind-zakaz-silv input[type="text"] {
+  width: 340px;
+  height: 42px;
+  margin: 8px auto;  
+  font-size: 20px;
+  padding-left: 15px;
+  font-weight: normal;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  border: 1px solid #d4d4d4;
+}
+.wind-zakaz-silv input[type="text"]:focus {
+  outline: none;
+}
+.wind-zakaz-silv input[type="button"] {
+  background: url(../img/background/zakazat-zvonok.png) no-repeat;
+  height: 46px;
+  width: 215px;  
+  border: none;
+  color: #fff;
+  margin: 8px auto; 
+  font-size: 19px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 19px;  
+  text-decoration: none;
+  color: #6f5339;
+
+}
+.overlay-zakaz-silv:target+.popup-zakaz-silv {    
+    opacity: 1;
+    visibility: visible;
+}
+.wind-zakaz-silv p{
+  font-size: 21px;
+}
+/* ФОРМА ДЛЯ БЕЛЫХ*/
+.overlay-zakaz-white {
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 2;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.overlay-zakaz-white:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup-zakaz-white {                      
+    display: inline-block;
+    left: 50%;
+    opacity: 0;
+    padding: 10px;
+    position: fixed;    
+    font: 14px Helvetica, Arial, Sans-Serif;
+    top: 40%;
+    visibility: hidden;
+    z-index: 10;
+ 
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+}
+.wind-zakaz-white {
+  width: 379px;
+  height: 260px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  text-align: center; 
+  padding: 10px;  
+  background: #fff;  
+  position: relative;
+}
+.wind-zakaz-white input[type="text"] {
+  width: 340px;
+  height: 42px;
+  margin: 8px auto;  
+  font-size: 20px;
+  padding-left: 15px;
+  font-weight: normal;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  border: 1px solid #d4d4d4;
+}
+.wind-zakaz-white input[type="text"]:focus {
+  outline: none;
+}
+.wind-zakaz-white input[type="button"] {
+  background: url(../img/background/zakazat-zvonok.png) no-repeat;
+  height: 46px;
+  width: 215px;  
+  border: none;
+  color: #fff;
+  margin: 8px auto; 
+  font-size: 19px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 19px;  
+  text-decoration: none;
+  color: #6f5339;
+
+}
+.overlay-zakaz-white:target+.popup-zakaz-white {    
+    opacity: 1;
+    visibility: visible;
+}
+.wind-zakaz-white p{
+  font-size: 21px;
+}
+.zakaz-ind {
+  background: url(../img/background/backgrr.jpg) no-repeat;
+  width: 1206px;
+  height: 369px;
+  margin: 0 auto;
+  margin-top: -5px;
+}
+.zakaz-dostavka {
+  background: url(../img/background/dostavka.jpg) no-repeat;
+  width: 1218px;
+  height: 352px;
+  margin: 0 auto;
+  margin-top: -5px;
+}
+.zakaz-opt {
+  background: url(../img/background/opt.jpg) no-repeat;
+  width: 1274px;
+  height: 377px;
+  margin: 0 auto;
+  margin-top: -5px;
+}
+.our-production {
+  background: url(../img/background/production.jpg) no-repeat;
+  height: 220px;
+  width: 980px;
+  margin: 0 auto;
+}
+.certificate {
+    background: url(../img/background/sertifikat.jpg) no-repeat;
+  height: 242px;
+  width: 980px;
+  margin: 0 auto;
+}
+.clients {
+  background: url(../img/background/clients.jpg) no-repeat;
+  height: 155px;
+  width: 980px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.reviws {
+  width: 980px;
+  margin: 0 auto;
+  margin-top: -40px;
+  padding-bottom: 25px;
+}
+.reviws img{
+ margin-top: 10px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ -ms-border-radius: 5px;
+ -o-border-radius: 5px;
+ border-radius: 5px;
+}
+.reviw {
+  padding-top: 50px;
+  display: inline-block;
+  width: 485px; 
+  vertical-align: top;
+  text-align: justify; 
+}
+.rev-cont {
+  float: right;
+  width: 400px;
+}
+.form-bot {  
+    background: url(../img/background/bottom.jpg) no-repeat;
+  height: 362px;
+  width: 1228px;
+  margin: 0 auto;
+}
+/* ============= POPUP ======================= */
+.overlay-zvonokb {
+    background-color: rgba(0, 0, 0, 0.0);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 2;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.overlay-zvonokb:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup-zvonokb {              
+    opacity: 0;
+    padding: 10px;
+    position: absolute;
+    right: -211px;
+    bottom: -20px;
+    z-index: 10; 
+    visibility: hidden;       
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+ 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;   
+ 
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+}
+.wind-zakaz-but {
+  width: 379px;
+  height: 260px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  text-align: center; 
+  padding: 10px;  
+  background: #fff;  
+  position: relative;
+}
+.wind-zakaz-but:after {
+  content: "";
+  position: absolute;
+  background: url(../img/background/pointer-bottom.png) no-repeat;
+  width: 27px;
+  height: 18px;
+  bottom: -17px;
+  right: 110px;
+}
+.wind-zakaz-but input[type="text"] {
+  width: 340px;
+  height: 42px;
+  margin: 8px auto;  
+  font-size: 20px;
+  padding-left: 15px;
+  font-weight: normal;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  border: 1px solid #d4d4d4;
+}
+.wind-zakaz-but input[type="text"]:focus {
+  outline: none;
+}
+.wind-zakaz-but input[type="button"] {
+  background: url(../img/background/zakazat-zvonok.png) no-repeat;
+  height: 46px;
+  width: 215px;  
+  border: none;
+  color: #fff;
+  margin: 8px auto; 
+  font-size: 19px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 19px;  
+  text-decoration: none;
+  color: #6f5339;
+
+}
+.overlay-zvonokb:target+.popup-zvonokb {    
+    opacity: 1;
+    visibility: visible;
+}
+.wind-zakaz-but p{
+  font-size: 21px;
+}

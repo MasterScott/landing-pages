@@ -1,0 +1,377 @@
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body
+	{
+		min-width: 1200px;
+		line-height: 2.25em;
+		min-height: 100%;
+	}
+
+	h1, h2, h3, h4, h5, h6
+	{
+		color: #444;
+		font-weight: 800;
+	}
+
+	h2
+	{
+		font-size: 2.25em;
+		margin: 0 0 1.1em 0;
+		line-height: 1em;
+	}
+	
+	h3
+	{
+		font-size: 1.35em;
+		margin: 0 0 2.25em 0;
+	}
+
+	.pad-right
+	{
+		margin-right: 1.5em;
+	}
+
+	.pad-left
+	{
+		margin-left: 1.5em;
+	}
+	
+	body.left-sidebar,
+	body.homepage
+	{
+	}
+
+		body.left-sidebar #content,
+		body.homepage #content
+		{
+			padding-left: 1.75em;
+		}
+
+	body.right-sidebar
+	{
+	}
+
+		body.right-sidebar #content
+		{
+			padding-right: 1.75em;
+		}
+	
+	.button
+	{
+		font-size: 1em;
+		padding: 0.8em 1.5em 0.8em 1.5em;
+	}
+
+		.button.big
+		{
+			font-size: 1.25em;
+			padding: 0.8em 0.9em 0.8em 0.9em;
+		}
+
+		.button.fa
+		{
+		}
+
+			.button.fa:before
+			{
+				margin-right: 0.5em;
+				top: 0.05em;
+			}
+	
+	.box
+	{
+		padding: 2em;
+	}
+		
+	.box-feature
+	{
+		padding: 0;
+	}
+		
+		.box-feature .inner
+		{
+			padding: 4em 2em 3em 2em;
+		}
+		
+		.box-feature h2
+		{
+			font-size: 1.35em;
+		}
+
+		.box-feature p
+		{
+			margin: 0;
+		}
+
+		.box-feature .image
+		{
+			position: relative;
+			margin: 0;
+		}
+
+			.box-feature .image img
+			{
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+
+/*********************************************************************************/
+/* Widgets                                                                       */
+/*********************************************************************************/
+
+	.widget-thumbnails
+	{
+	}
+
+		.widget-thumbnails .grid
+		{
+			margin: 0 0 3em 0;
+		}
+
+		.widget-thumbnails .image
+		{
+			margin: 0;
+		}
+	
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+	#header-wrapper
+	{
+		padding: 4.5em 0 1em 0;
+	}
+	
+	#features-wrapper
+	{
+		padding: 3em 0 3em 0;
+	}
+	
+	#main-wrapper
+	{
+		padding: 5em 0 5em 0;
+	}
+	
+	#footer-wrapper
+	{
+		padding: 6em 0 8em 0;
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+	}
+
+		#logo h1
+		{
+			float: left;
+			margin: 0 0.35em 0 0;
+			padding: 0.25em 0.2em 0.25em 0.2em;
+			font-size: 3.25em;
+			letter-spacing: 0.05em;
+		}
+
+		#logo span
+		{
+			line-height: 4.5em;
+			letter-spacing: 0.025em;
+			font-size: 0.9em;
+		}
+
+	#phone
+	{
+		text-align: right;
+	}
+	
+	#phone span
+		{
+			line-height: 2em;
+			letter-spacing: 0.025em;
+			font-size: 1.9em;
+		}
+	
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		padding: 6.25% 6.25% 3.5% 6.25%;
+	}
+
+		#banner h2
+		{
+			font-size: 2.5em;
+			margin: 0.1em 0 0.35em 0;
+		}
+
+		#banner p
+		{
+			font-size: 1.75em;
+			line-height: 1.35em;
+			margin: 0;
+		}
+		
+		#banner .button
+		{
+			float: right;
+			width: 65%;
+			margin-bottom: 0.5em;
+		}
+		
+			#banner .button.fa:before
+			{
+				position: absolute;
+				right: 0.15em;
+				top: 50%;
+				margin-top: -0.5em;
+			}
+
+		#banner .button.alt
+		{
+			margin-bottom: 0;
+		}
+		
+		#banner ul
+		{
+			margin-left: 2em;
+		}
+		.order-form {
+			float: right;
+		}
+		.order-form .order-btn {
+			width: 250px !important;
+			height: 48px;
+			font-size: 20px;
+			padding: 0;
+			font-weight: 400;
+			line-height: 48px;
+			border: 0;
+			
+		}
+		
+		.order-form input {
+			width: 250px;
+			height: 48px;
+			border-radius: 6px;
+			border: 1px solid #808181;
+			font-size: 15px;
+			color: #585858;
+			font-family: inherit;
+			padding-left: 15px;
+			margin-bottom: 15px;
+		}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+	}
+
+		#content h3
+		{
+			margin-top: 2.25em;
+		}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+	}
+	
+		#footer h2
+		{
+			font-size: 1.35em;
+		}
+
+	#copyright
+	{
+		padding: 4em 0 0 0;
+		text-align: center;
+	}
+	
+	
+.modal {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*MODALS---------------------------------------------------------------------------------------------------*/
+.modals .overlay{
+	display: none;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	position: fixed;
+	background: #000000;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+}
+.modal { 
+	display: none;
+	margin-left: -151px;
+	padding: 7px 27px 4px;
+	width: 321px;
+	position: fixed;
+	left: 50%;
+	top: 125px;
+	border: 1px solid #dadada;
+	background-color: #fff;
+	z-index: 10000;
+	border-radius: 6px;
+	box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.05);
+}
+.modal-form input, .modal-btn {
+	width: 263px;
+	min-height: 40px;
+	color: #444444;
+}
+.modal-form input {
+	margin-bottom: 5px;
+	border-radius: 6px;
+	padding-left: 23px;
+	font-size: 17px;
+	background: #FFFFFF;
+	border: 1px solid #EAEAEA;
+}
+.modal-form input.phone {
+	background: #FFFFFF;
+}
+.modal-btn {	
+	font-size: 22px;
+	color: #ffffff;
+}
+.modal .form-title {
+	color: #000;
+	margin-top: 0;
+}
+
+.close-btn {
+	display: block;
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	background: url(../images/close-btn.png) no-repeat 0 0;
+}
+.modal-form {
+	margin-top: 23px;
+}
+.call-you {
+	text-align: center;
+}
+.error{
+	border: 1px solid red !important;
+}
+#map{ width: 100%; height: 230px;}

@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Шаблон</title>
+  <link type="text/css" rel="stylesheet" href="font/fonts.css">    
+  <link type="text/css" rel="stylesheet" href="css/global.css">    
+  <link type="text/css" rel="stylesheet" href="css/timer.css">   
+  <script type="text/javascript" src="js/libs/modernizr-2.6.1.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+  <script src="jquery.maskedinput.min.js"></script>
+  <script type="text/javascript" src="js/carousel.js"></script>
+  <script type="text/javascript" src="js/timer.js"></script>
+  <script type="text/javascript" src="main.js"></script>  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />  
+  
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- Add mousewheel plugin (this is optional) -->
+<!-- <script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script> -->
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<!-- <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" /> -->
+<!-- <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script> -->
+<!-- <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script> -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
+</head>
+
+<body>  
+    <!-- /////////////////////////// Поп-ап \\\\\\\\\\\\\\\\\\\\\\\\ -->
+  <div class="center-980-pop">
+    <a href="#x" class="overlay-zvonokt" id="wind-zakaz-top"></a>  
+    <div class="popup-zvonokt">      
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="wind-zakaz-top">
+        <p><span class="bold">Заказажите обратный звонок</span></p>
+        <form class="s_form" action="index1.php" method="POST">          
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Ваше имя">
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Ваш телефон">
+          <input class="s_text adress" type="text" name="adress" placeholder="Ваш e-mail">
+          <input type="hidden"  name="mail" class="email" value="none@none.ru">                 
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="Отправить">
+        </form>
+      </div>       
+    </div> 
+  </div>  
+
+    <div class="header">
+      <p class="head-title"><span>Дизайн интерьера.</span><br>Создание дизайн-проектов<br>для качественного ремонта </p>
+      <a class="top-logo" href="index.php"><img alt="ВСТАВИТЬ ЛОГОТИП"  src="img/logo.png"></a>
+      <div class="contacts">
+        <p>Бесплатный звонок по всей России</p>
+        <p class="head-number"><span>8-800-000-00-20</span></p>
+        <p class="head-mail">email</p>
+      </div>
+      <p class="title">Качественно. Быстро. Недорого.<br><span>От замера до сдачи объекта под ключ.</span></p>
+      
+      <div class="big-image">
+        <img src="arrow.jpg" style="width: 100px; left: 650px; position: absolute;" />
+        <img src="plan.jpg" style="width: 180px; left: 755px; top: -20px; position: absolute;" />
+        <div class="baner-form" style="box-shadow: 0px 5px 10px #ccc; border-radius: 10px; padding: 20px; width: 250px; top: 105px;">
+          <p><span class="bold" style="font-size: 16px">Получите бесплатный замер и планировку:</span></p>
+          <form class="s_form" action="index1.php" method="POST">  
+            <input class="s_text adress" type="hidden" name="name" placeholder="Ваше имя" value="ОТПРАВЛЕНО С АКЦИИ">
+            <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Ваш телефон">
+            <input class="s_text adress" type="text" name="adress" placeholder="Ваш e-mail">
+            <input type="hidden"  name="mail" class="email" value="none@none.ru">                 
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">
+            <input class="s_submit" type="button" value="Получить планировку" style="font-size: 17px;">
+          </form>
+        </div>
+        <div id="top-timer" style="position: absolute; z-index: 1; left: 135px; top: 30px; background: white; opacity: 0.7; padding-right: 20px; padding-right: 100px; top: 50px">
+			<p class="timer-end">до окончания акции осталось:</p>
+			<div class="timer">
+			<!-- <div class="days-for-timer"><p class="conv-font" style="font-size: 35px; color: #fff;">00</p><p style="font-size: 13px;color: #000;padding-top: 5px;">Дней</p></div>  -->
+			<div class="countbox"><div id="countbox1"> </div></div>       
+        </div>
+      </div> 
+        <a class="order-ring" href="#wind-zakaz-top" style="width: 680px; left: 120px">Акция! Оставь заявку и получи <i>бесплатно</i> замер и планировку</a>
+        <div class="shadow-block3" style="padding-left:0px;">
+          <div class="t">
+            <div class="b">
+              <div class="m">
+                <div class="m">
+                  <div class="t">
+                    <div class="t">
+                      <div class="b">
+                        <div class="b">
+                          <div class="carousel-wrapper3"> 
+                            <div class="carousel-items3"> 
+                              <div class="carousel-block3">                 
+                                <img src="images/top-slider/1.png">
+                                <div class="img-description">
+                                    <p>Гостиная<br>в классическом стиле</p>
+                                </div>
+                              </div>
+                              <div class="carousel-block3">                 
+                                <img src="images/top-slider/2.png">
+                                <div class="img-description">
+                                    <p>Спальня<br>в стиле ар-деко</p>                                    
+                                </div>  
+                              </div>
+                              <div class="carousel-block3">                 
+                                <img src="images/top-slider/3.png">
+                                <div class="img-description">
+                                    <p>Кухня<br>в современном стиле</p>                                    
+                                </div>
+                              </div>
+                              <div class="carousel-block3">                 
+                                <img src="images/top-slider/4.png">
+                                <div class="img-description">
+                                    <p>Рабочая зона<br>в современном стиле</p>
+                                </div>
+                              </div>
+                              <div class="carousel-block3">                 
+                                <img src="images/top-slider/5.png">
+                                <div class="img-description">                                    
+                                    <p>Ванная комната<br>в стиле прованс </p>
+                                </div>
+                              </div>
+                              <div class="carousel-block3">                 
+                                <img src="images/top-slider/6.png">
+                                <div class="img-description">
+                                    <p>Оформление лестницы</p>
+                                </div>
+                              </div>                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>              
+      </div>
+    </div>
+
+	<!-- gallery -->
+	<div align="center" style="margin: 0 auto; margin-bottom: 50px; width: 1000px;">
+		<div style="font-size: 30px; margin-bottom: 30px">Смотрите наши работы</div>
+		<div style="display: inline-block; width: 300px; margin-bottom: 20px"><img src="work/ava1.jpg" style="width: 100%" /></a><br />Арт-кафе &laquo;Хаси Хаус&raquo;<br /><br /><a class="watchpr" href="work/ava1.jpg">Смотрите проект</a></div>
+		<div style="display: inline-block; width: 300px; margin-bottom: 20px"><img src="work/ava2.jpg" style="width: 100%" /></a><br />Дом, 200 м<sup style="font-size: 8px">2</sup><br /><br /><a class="watchpr" href="work/ava2.jpg">Смотрите проект</a></div>
+		<div style="display: inline-block; width: 300px; margin-bottom: 20px"><img src="work/ava3.jpg" style="width: 100%" /></a><br />Квартира-студия, 105 м<sup style="font-size: 8px">2</sup><br /><br /><a class="watchpr" href="work/ava3.jpg">Смотрите проект</a></div>
+		<div style="display: inline-block; width: 300px; margin-bottom: 20px"><img src="work/ava4.jpg" style="width: 100%" /></a><br />Квартира в современном стиле<br /><br /><a class="watchpr" href="work/ava4.jpg">Смотрите проект</a></div>
+		<div style="display: inline-block; width: 300px; margin-bottom: 20px"><img src="work/ava5.jpg" style="width: 100%" /></a><br />Квартира, 102 м<sup style="font-size: 8px">2</sup><br /><br /><a class="watchpr" href="work/ava5.jpg">Смотрите проект</a></div>
+		<div style="display: inline-block; width: 300px; margin-bottom: 20px"><img src="work/ava6.jpg" style="width: 100%" /></a><br />Студия в стиле глэм-рок<br /><br /><a class="watchpr" href="work/ava6.jpg">Смотрите проект</a></div>
+		<div style="display: inline-block; width: 300px; margin-bottom: 20px"><img src="work/ava7.jpg" style="width: 100%" /></a><br />Дом в Неверкино<br /><br /><a class="watchpr" href="work/ava7.jpg">Смотрите проект</a></div>
+		<div style="display: inline-block; width: 300px; margin-bottom: 20px"><img src="work/ava8.jpg" style="width: 100%" /></a><br />Двухкомнатная квартира, 56 м<sup style="font-size: 8px">2</sup><br /><br /><a class="watchpr" href="work/ava8.jpg">Смотрите проект</a></div>
+	</div>
+	<!-- /gallery -->
+
+    <div class="akcia">
+      <!-- <p class="akcia-p1">Акция!<br>Заявка на дизайн-проект<br><span class="bold-font"><strong><strike>950</strike> <span class="red-font">500</span> руб за м&#178;</strong></span></p> -->
+      <p class="akcia-p1"><span class="bold-font"><strong>Акция!</strong></span><br />Получите бесплатный замер и планировку</p>
+      <p class="timer-end">до окончания акции осталось:</p>
+      <div class="timer">
+        <!-- <div class="days-for-timer"><p class="conv-font" style="font-size: 35px; color: #fff;">00</p><p style="font-size: 13px;color: #000;padding-top: 5px;">Дней</p></div>  -->
+        <div class="countbox"><div id="countbox1"> </div></div>       
+      </div> 
+      <div class="baner-form">
+        <p><span class="bold" style="font-size: 16px">Заполните поля для получения:</span></p>
+        <form class="s_form" action="index1.php" method="POST">  
+          <input class="s_text adress" type="hidden" name="name" placeholder="Ваше имя" value="ОТПРАВЛЕНО С АКЦИИ">
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Ваш телефон">
+          <input class="s_text adress" type="text" name="adress" placeholder="Ваш e-mail">
+          <input type="hidden"  name="mail" class="email" value="none@none.ru">                 
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="Получить планировку" style="font-size: 17px;">
+        </form>
+      </div>    
+    </div>
+
+    <div class="solution-problems">
+      <div class="container">
+        <div class="sol-left">
+          <p class="solution-pp red">80% клиентов сталкиваются<br>со следующими проблемами:</p>
+          <ul>
+            <li>1.<p class="solution-li-p">Несоответствие цены и качества проекта. Дорого.</p></li>
+            <li>2.<p class="solution-li-p">Длительный срок разработки проекта &mdash;<br>от 2 до 6 месяцев.</p></li>
+            <li>3.<p class="solution-li-p">Безвкусный дизайн и отказ исправлять сделанную работу (3D изображения).</p></li>
+            <li>4.<p class="solution-li-p">Некачественное изготовление чертежей.</p></li>
+            <li>5.<p class="solution-li-p">Присутствие в проекте мебели, материалов, которые невозможно найти и купить.</p></li>
+          </ul>
+        </div>
+        <div class="sol-right">
+          <p class="solution-pp green">Как мы решаем эти проблемы:<br></p>
+          <ul>
+            <li>1.<p class="solution-li-p">Самые низкие цены за высокое качество.</p></li>
+            <li>2.<p class="solution-li-p">В течение нескольких лет мы разработали алгоритм быстрого, но качественного создания проектов. Поэтому разработка проекта занимает 2-5 недели.</p></li>
+            <li>3.<p class="solution-li-p">Работаем до тех пор, пока клиенту не понравится наш дизайн.<br>По нашим чертежам выполнены десятки проектов.</p></li>
+            <li>4.<p class="solution-li-p">Наши чертежи проходят контрольную проверку со специалистами в области ремонта и строительства.</p></li>
+            <li>5.<p class="solution-li-p">Мы включаем в проект только существующие элементы интерьера. Производим подбор мебели, материалов и т.д. вместе с клиентом.</p></li>
+          </ul>          
+        </div>
+      </div>
+    </div>
+
+    <div class="preimushchestva">
+      <p class="title">Почему именно наша дизайн-студия?</p><br />
+      <ul>
+        <li><img alt="art-record"  src="img/preimushchestvo1.png"><br><span>Доступная цена</span><br>Самое лучшее соотношение<br>&laquo;цена/качество&raquo;. </li>
+        <li><img alt="art-record"  src="img/preimushchestvo2.png"><br><span>Быстрое выполнение<br>проектов</span><br>от 2 до 5 недель на<br>дизайн-проект</li>
+        <li><img alt="art-record"  src="img/preimushchestvo3.png"><br><span>Работа на качество</span><br>Делаем, пока не<br>понравится.</li>
+        <li><img alt="art-record"  src="img/preimushchestvo4.png"><br><span>Экономия до 30%</span><br>Большой опыт,<br>уникальный алгоритм<br>создания проекта и<br>подбора мaтериалов.</li>
+        <li><img alt="art-record"  src="img/preimushchestvo5.png"><br><span>Собственная рабочая<br>бригада</span><br>25 квалифицированных<br>специалистов по<br>ремонту и отделке.</li>
+        <li><img alt="art-record"  src="img/preimushchestvo6.png"><br><span>Безопасность</span><br>Соблюдение пожарной и<br>охранной безопасности.<br>Подбор экологически<br>чистых материалов.</li>
+      </ul>
+    </div>
+
+    <div class="info-company-numbers">
+      <p class="title">О компании в цифрах</p>
+        <ul>
+          <li><img alt="art-record"  src="img/from-company1.png"><br>Более 6 лет<br>опыта</li>
+          <li><img alt="art-record"  src="img/from-company2.png"><br>Более 150<br>проектов</li>
+          <li><img alt="art-record"  src="img/from-company3.png"><br>Более 50<br>партнёров</li>
+          <li><img alt="art-record"  src="img/from-company4.png"><br>2-5 недели<br>на дизайн<br>проект</li>
+          <li><img alt="art-record"  src="img/from-company5.png"><br>Более 30<br>стилей<br>интерьера</li>
+        </ul>
+    </div>
+
+    <div class="we-have">
+      <p class="title">Дизайн-проект включает в себя</p>
+        <ul>
+          <li><img alt="art-record"  src="img/we-have1.png"><br>3D – визуализацию<br>дизайн-проекта</li>
+          <li><img alt="art-record"  src="img/we-have2.png"><br>Чертежи (планы,<br>расстановка, электрика,<br>светильники, развёртки и<br>т.д.)</li>
+          <li><img alt="art-record"  src="img/we-have3.png"><br>Смету затрат (элементы<br>интерьера: мебель, декор,<br>материалы, техника +<br>реальные цены)</li>
+          <li><img alt="art-record"  src="img/we-have4.png"><br>Диск с проектом в<br>электронном виде</li>
+          <li><img alt="art-record"  src="img/we-have5.png"><br>Купон на неделю<br>бесплатного подбора<br>элементов интерьера</li>
+        </ul>
+    </div>
+
+    <div class="to-later">
+        <a href="#bigg1" title="Увеличить"><img alt="art-record" src="images/to-later/little1.png"></a>      
+        <a href="#bigg2" title="Увеличить"><img alt="art-record" src="images/to-later/little2.png"></a>      
+        <a href="#bigg3" title="Увеличить"><img alt="art-record" src="images/to-later/little3.png"></a>        
+        <a href="#bigg4" title="Увеличить"><img alt="art-record" src="images/to-later/little4.png"></a>        
+        
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <a href="#x" class="overlay" id="bigg1"></a>
+        <div class="popup">    
+          <div class="feedbackf">
+            <a class="closef" title="Закрыть" href="#close"></a>         
+            <img alt="art-record"  src="images/to-later/big1.png">        
+          </div>      
+        </div>
+
+        <a href="#x" class="overlay" id="bigg2"></a>
+        <div class="popup">    
+          <div class="feedbackf">
+            <a class="closef" title="Закрыть" href="#close"></a>         
+            <img alt="art-record"  src="images/to-later/big2.png"> 
+          </div>      
+        </div>
+
+        <a href="#x" class="overlay" id="bigg3"></a>
+        <div class="popup">    
+          <div class="feedbackf">
+            <a class="closef" title="Закрыть" href="#close"></a>         
+            <img alt="art-record"  src="images/to-later/big3.png"> 
+          </div>      
+        </div>
+
+        <a href="#x" class="overlay" id="bigg4"></a>
+        <div class="popup">    
+          <div class="feedbackf">
+            <a class="closef" title="Закрыть" href="#close"></a>         
+            <img alt="art-record"  src="images/to-later/big4.png"> 
+          </div>      
+        </div>
+       
+    </div>
+
+    <div class="akcia">
+      <!-- <p class="akcia-p1">Акция!<br>Заявка на дизайн-проект<br><span class="bold-font"><strong><strike>950</strike> <span class="red-font">500</span> руб за м&#178;</strong></span></p> -->
+      <p class="akcia-p1"><span class="bold-font"><strong>Акция!</strong></span><br />Получите бесплатный замер и планировку</p>
+      <p class="timer-end">до окончания акции осталось:</p>
+      <div class="timer">
+        <!-- <div class="days-for-timer"><p class="conv-font" style="font-size: 35px; color: #fff;">00</p><p style="font-size: 13px;color: #000;padding-top: 5px;">Дней</p></div>  -->
+        <div class="countbox"><div id="countbox1"> </div></div>       
+      </div> 
+      <div class="baner-form">
+        <p><span class="bold" style="font-size: 16px">Заполните поля для получения:</span></p>
+        <form class="s_form" action="index1.php" method="POST">  
+          <input class="s_text adress" type="hidden" name="name" placeholder="Ваше имя" value="ОТПРАВЛЕНО С АКЦИИ">
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Ваш телефон">
+          <input class="s_text adress" type="text" name="adress" placeholder="Ваш e-mail">
+          <input type="hidden"  name="mail" class="email" value="none@none.ru">                 
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="Получить планировку" style="font-size: 17px;">
+        </form>
+      </div>    
+    </div>
+
+<!--
+  <div class="photos">
+    <div class="shadow-block" style="padding-left:0px;">
+          <div class="t">
+            <div class="b">
+              <div class="m">
+                <div class="m">
+                  <div class="t">
+                    <div class="t">
+                      <div class="b">
+                        <div class="b">
+                          <div class="carousel-wrapper"> 
+                            <div class="carousel-items"> 
+                              <div class="carousel-block">                 
+                                <a href="#image1" title="Увеличить"><img alt="art-record" src="images/1.png"></a>
+                              </div>
+                              <div class="carousel-block">                 
+                                <a href="#image2" title="Увеличить"><img alt="art-record" src="images/2.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image3" title="Увеличить"><img alt="art-record" src="images/3.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image4" title="Увеличить"><img alt="art-record" src="images/4.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image5" title="Увеличить"><img alt="art-record" src="images/5.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image6" title="Увеличить"><img alt="art-record" src="images/6.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image7" title="Увеличить"><img alt="art-record" src="images/7.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image8" title="Увеличить"><img alt="art-record" src="images/8.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image9" title="Увеличить"><img alt="art-record" src="images/9.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image10" title="Увеличить"><img alt="art-record" src="images/10.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image11" title="Увеличить"><img alt="art-record" src="images/11.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image12" title="Увеличить"><img alt="art-record" src="images/12.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image13" title="Увеличить"><img alt="art-record" src="images/13.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image14" title="Увеличить"><img alt="art-record" src="images/14.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image15" title="Увеличить"><img alt="art-record" src="images/15.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image16" title="Увеличить"><img alt="art-record" src="images/16.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image17" title="Увеличить"><img alt="art-record" src="images/17.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image18" title="Увеличить"><img alt="art-record" src="images/18.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image19" title="Увеличить"><img alt="art-record" src="images/19.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image20" title="Увеличить"><img alt="art-record" src="images/20.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image21" title="Увеличить"><img alt="art-record" src="images/21.png"></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>      
+        -->
+        
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        
+        <!--
+    <a href="#x" class="overlay" id="image1"></a>      
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <a class="next" href="#image2" title="Далее"></a>  
+        <a class="previovs" href="#image21" title="Назад"></a> 
+        <img alt="art-record"  src="images/BIG-PHOTOS/1.jpg">        
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image2"></a> 
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+         <a class="next" href="#image3" title="Далее"></a>  
+         <a class="previovs" href="#image1" title="Назад"></a> 
+        <img alt="art-record"  src="images/BIG-PHOTOS/2.jpg">        
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image3"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>   
+        <a class="next" href="#image4" title="Далее"></a>  
+        <a class="previovs" href="#image2" title="Назад"></a>                      
+        <img alt="art-record"  src="images/BIG-PHOTOS/3.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image4"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a> 
+        <a class="next" href="#image5" title="Далее"></a>  
+        <a class="previovs" href="#image3" title="Назад"></a>                
+        <img alt="art-record"  src="images/BIG-PHOTOS/4.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image5"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>  
+        <a class="next" href="#image6" title="Далее"></a>  
+        <a class="previovs" href="#image4" title="Назад"></a>               
+        <img alt="art-record"  src="images/BIG-PHOTOS/5.jpg">
+    </div>      
+    </div>
+
+    <a href="#x" class="overlay" id="image6"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a> 
+        <a class="next" href="#image7" title="Далее"></a>  
+        <a class="previovs" href="#image5" title="Назад"></a>                
+        <img alt="art-record"  src="images/BIG-PHOTOS/6.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image7"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a> 
+        <a class="next" href="#image8" title="Далее"></a>  
+        <a class="previovs" href="#image6" title="Назад"></a>                
+        <img alt="art-record"  src="images/BIG-PHOTOS/7.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image8"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>  
+        <a class="next" href="#image9" title="Далее"></a>  
+        <a class="previovs" href="#image7" title="Назад"></a>               
+        <img alt="art-record"  src="images/BIG-PHOTOS/8.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image9"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a> 
+        <a class="next" href="#image10" title="Далее"></a>  
+        <a class="previovs" href="#image8" title="Назад"></a>                
+        <img alt="art-record"  src="images/BIG-PHOTOS/9.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image10"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a> 
+        <a class="next" href="#image11" title="Далее"></a>  
+        <a class="previovs" href="#image9" title="Назад"></a>                
+        <img alt="art-record"  src="images/BIG-PHOTOS/10.jpg">
+    </div>      
+    </div>
+
+    <a href="#x" class="overlay" id="image11"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a> 
+        <a class="next" href="#image12" title="Далее"></a>  
+        <a class="previovs" href="#image10" title="Назад"></a>                
+        <img alt="art-record"  src="images/BIG-PHOTOS/11.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image12"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>  
+        <a class="next" href="#image13" title="Далее"></a>  
+        <a class="previovs" href="#image11" title="Назад"></a>               
+        <img alt="art-record"  src="images/BIG-PHOTOS/12.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image13"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a> 
+        <a class="next" href="#image14" title="Далее"></a>  
+        <a class="previovs" href="#image12" title="Назад"></a>                
+        <img alt="art-record"  src="images/BIG-PHOTOS/13.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image14"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a> 
+        <a class="next" href="#image15" title="Далее"></a>  
+        <a class="previovs" href="#image13" title="Назад"></a>                
+        <img alt="art-record"  src="images/BIG-PHOTOS/14.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image15"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>  
+        <a class="next" href="#image16" title="Далее"></a>  
+        <a class="previovs" href="#image14" title="Назад"></a>               
+        <img alt="art-record"  src="images/BIG-PHOTOS/15.jpg">
+    </div>      
+    </div>
+
+    <a href="#x" class="overlay" id="image16"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>    
+        <a class="next" href="#image17" title="Далее"></a>  
+        <a class="previovs" href="#image15" title="Назад"></a>
+        <img alt="art-record"  src="images/BIG-PHOTOS/16.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image17"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>  
+        <a class="next" href="#image18" title="Далее"></a>  
+        <a class="previovs" href="#image16" title="Назад"></a>               
+        <img alt="art-record"  src="images/BIG-PHOTOS/17.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image18"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a> 
+        <a class="next" href="#image19" title="Далее"></a>  
+        <a class="previovs" href="#image17" title="Назад"></a>                
+        <img alt="art-record"  src="images/BIG-PHOTOS/18.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image19"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>   
+        <a class="next" href="#image20" title="Далее"></a>  
+        <a class="previovs" href="#image18" title="Назад"></a>              
+        <img alt="art-record"  src="images/BIG-PHOTOS/19.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image20"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>   
+        <a class="next" href="#image21" title="Далее"></a>  
+        <a class="previovs" href="#image19" title="Назад"></a>              
+        <img alt="art-record"  src="images/BIG-PHOTOS/20.jpg">
+    </div>      
+    </div>
+
+    <a href="#x" class="overlay" id="image21"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>     
+        <a class="next" href="#image1" title="Далее"></a>  
+        <a class="previovs" href="#image20" title="Назад"></a>            
+        <img alt="art-record"  src="images/BIG-PHOTOS/21.jpg">
+    </div>      
+    </div>
+  </div>
+  -->
+
+    <div class="rewivs">
+      <br>      
+      <p class="title">Отзывы наших клиентов. Смотри...</p><br>
+      
+      <!-- video -->
+      <div style="margin-bottom: 50px;">
+      	<iframe width="700" height="400" src="http://www.youtube.com/embed/FRnJgSjoJLI?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- /video -->
+      
+      <div class="float-left">
+      <div class="rewiv-left">
+        <div class="podis-photo">
+          <img alt="art-record"  src="img/comentator1.png">
+          <p class="podpis">Светлана<br>Георгиевна</p>
+        </div>
+        <div class="coment-left">
+          <p>Сейчас купили новую квартиру и решили воспользоваться услугами дизайнеров. Не пожалели! Проект нам сделали быстро. По проекту подобрали все необходимые материалы. Строителей нам посоветовали дизайнеры. Всё очень цивильно по договору и в сроки. Перед глазами всегда были цены из проекта, так что обмануть нас было трудно).  Проект обошелся нам в 54300руб, но оно того стоит. Сейчас домой приятно идти с работы и друзей не стыдно позвать. Так что спасибо артрекорду.</p>
+        </div>
+      </div>
+      <div class="rewiv-left">
+        <div class="podis-photo">
+          <img alt="art-record"  src="img/comentator5.png">
+          <p class="podpis">Андрей</p>
+        </div>
+        <div class="coment-left">
+          <p> Всем привет. Мы с женой сразу решили обратиться к дизайнерам, потому что наслушались о «приключениях» с ремонтом от своих друзей. Не хотелось сталкиваться с проблемами, о которых все говорят. дизайн-проект очень сильно помог. За счёт него знали, где и что взять, что сколько стоит, а самое главное, что будет в итоге после ремонта, всё было видно на картинках 3D. Рабочим отдали чертежи по ним они собственно и сделали ремонт. Спасибо дизайнерам «Арт рекод».</p>
+        </div>
+      </div>
+      <div class="rewiv-left">
+        <div class="podis-photo">
+          <img alt="art-record"  src="img/comentator3.png">
+          <p class="podpis">Марина<br>Георгиевна</p>
+        </div>
+        <div class="coment-left">
+          <p>Благодарю за помощь! Быстро и действительно качественно. Я думала, что мне сделают просто красивые картинки ну и по материалам подскажут. А на самом деле получилась целая папка с чертежами и изображениями. Плюс смету сделали и по смете подобрали всё. Рабочие справились быстро очень. Есть небольшие отличия от того, что на картинке, но они минимальные. В принципе, нас предупреждали, что идеально реализовать не получится. Где то в процессе плитку поменяли, шторы тоже другие сшили нам. Но в целом не отрывались от проекта. получилось очень здорово. Ещё раз спасибо!</p>
+        </div>
+      </div>
+      </div>
+      <div class="rewiv-right">
+      <div class="rewiv-right">
+        <div class="podpis-photo">
+          <img alt="art-record"  src="img/comentator2.png">
+          <p class="podpis">Анна</p>
+        </div>
+        <div class="coment-right">
+          <p>Арт Рекорд – молодцы. Спасибо большое. Сэкономили моё время, создали гениальную идею и помогли воплотить её в реальность. Всегда мечтала о росписи стен и стеклянных полах) даже не представляю сколько бы я всё это делала сама. Я получила ответ на главные вопросы: что сделать? где взять? и сколько это мне будет стоить?</p>
+        </div>
+      </div>
+      <div class="rewiv-right">
+        <div class="podpis-photo">
+          <img alt="art-record"  src="img/comentator4.png">
+          <p class="podpis">Ольга</p>
+        </div>
+        <div class="coment-right">
+          <p>Нам посоветовали обратиться к дизайнерам арт рекорд. Что мне понравилось, так это то что на первой же встрече нам посчитали приблизительную стоимость всего ремонта вместе с материалами и работой отделочников и разбили всё по срокам. Обычно дизайнеры цену за дизайн-проект задирают выше 1000рублей за квадрат, а здесь очень доступная цена </p>
+        </div>
+      </div>
+      <div class="rewiv-right">
+        <div class="podpis-photo">
+          <img alt="art-record"  src="img/comentator.png">
+          <p class="podpis">Агнесса Видина</p>
+        </div>
+        <div class="coment-right">
+          <p>Спасибо дизайнерам АртРекорд. Мы сталкивались с дизайнерами, которые делали нам проект почти 4 месяца, мы прекратили с ними работу, так как сроки постоянно срывались. А здесь нам проект сделали за 3,5 недели, хотя площадь не меленькая 235 квадратных метров. Проект реализуется в настоящий момент, строители отзываются положительно о проекте.</p>
+        </div>
+      </div>
+      <div class="rewiv-right">
+        <div class="podpis-photo">
+          <img alt="art-record"  src="img/comentator.png">
+          <p class="podpis">Сергей Г.</p>
+        </div>
+        <div class="coment-right">
+          <p>Спасибо, за выполненную работу. Проект реализовали без проблем. Сэкономили и деньги, и время.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="walets">
+        <p class="title">Сертификаты и награды</p>
+        <br>
+        <a href="#certificate1" title="Увеличить"><img alt="art-record" src="images/certificates/certificate1-min.jpg"></a>      
+        <a href="#certificate2" title="Увеличить"><img alt="art-record" src="images/certificates/certificate2-min.jpg"></a>      
+        <a href="#certificate3" title="Увеличить"><img alt="art-record" src="images/certificates/certificate3-min.jpg"></a>        
+        <a href="#certificate4" title="Увеличить"><img alt="art-record" src="images/certificates/certificate4-min.jpg"></a>        
+        <a href="#certificate5" title="Увеличить"><img alt="art-record" src="images/certificates/certificate5-min.jpg"></a>
+        
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <a href="#x" class="overlay" id="certificate1"></a>
+        <div class="popup">    
+          <div class="feedbackf">
+            <a class="closef" title="Закрыть" href="#close"></a>         
+            <img alt="art-record"  src="images/certificates/certificate1.jpg">        
+          </div>      
+        </div>
+
+        <a href="#x" class="overlay" id="certificate2"></a>
+        <div class="popup">    
+          <div class="feedbackf">
+            <a class="closef" title="Закрыть" href="#close"></a>         
+            <img alt="art-record"  src="images/certificates/certificate2.jpg">        
+          </div>      
+        </div>
+
+        <a href="#x" class="overlay" id="certificate3"></a>
+        <div class="popup">    
+          <div class="feedbackf">
+            <a class="closef" title="Закрыть" href="#close"></a>         
+            <img alt="art-record"  src="images/certificates/certificate3.jpg">        
+          </div>      
+        </div>
+
+        <a href="#x" class="overlay" id="certificate4"></a>
+        <div class="popup">    
+          <div class="feedbackf">
+            <a class="closef" title="Закрыть" href="#close"></a>         
+            <img alt="art-record"  src="images/certificates/certificate4.jpg">        
+          </div>      
+        </div>
+
+        <a href="#x" class="overlay" id="certificate5"></a>
+        <div class="popup">    
+          <div class="feedbackf">
+            <a class="closef" title="Закрыть" href="#close"></a>         
+            <img alt="art-record"  src="images/certificates/certificate5.jpg">        
+          </div>      
+        </div>                        
+      </div>
+    
+
+    <div class="plan-of-job">
+      <p class="title">Схема работы с нами:</p>
+    </div>
+
+    <div class="partners">
+      <p class="title">Наши партнеры</p>
+    </div>
+
+    <div class="footer">
+      <a style="vertical-align: top;" class="top-logo" href="index.php"><img alt="ВСТАВИТЬ ЛОГО"  src="img/logo-min.png"></a>
+      <div class="footer-text">
+        <p>&copy; 2013 Название кампании<br>Все права защищены</p>
+        <hr>
+        <p>Реквизиты</p>
+      </div>
+      <div class="call-bottom">
+        <p>Бесплатный звонок по всей России</p>
+        <p class="head-number"><span>8-800-000-00-00</span></p>
+        <a class="order-ring bottom-a" href="#wind-zakaz-top">Заказать обратный звонок</a> 
+      </div>
+    </div>
+
+    <script src="js/jquery.countdown.js"></script>
+    <!-- Yandex.Metrika counter -->
+
+  </body>
+</html>

@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+<meta charset="UTF-8">
+<title>Бросай курить с Zerosmoke</title>
+<link rel="stylesheet" href="skins/605/css/main.css">
+<link rel="stylesheet" href="skins/605/css/colorbox.css">
+<link rel="stylesheet" href="css/reveal.css">	
+<link rel="stylesheet" href="css/reveal.css">	
+<link rel="icon" href="skins/605/animated_favicon.gif" type="image/gif" > 
+<script src="skins/605/js/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="skins/605/js/slides.min.jquery.js"></script>
+<script src="skins/605/js/jquery.validate.min.js"></script>
+<script src="skins/605/js/placeholder.js"></script>
+<!--<script src="http://zerosmoke.ru/skins/605/js/sisyphus.min.js"></script>-->
+<script src="skins/605/js/jquery.colorbox.js"></script>
+<script src="skins/605/js/form2.js"></script>
+<script src="skins/605/js/main.js"></script>
+<script type='text/javascript' src='http://rostgrudi.com/js/swfobject.js'></script>
+<link href="http://rostgrudi.com/css/messages.css" media="screen" rel="stylesheet" type="text/css" />
+<script type='text/javascript' src='http://rostgrudi.com/js/jquery.cookie.js'></script>
+<script type='text/javascript' src='http://rostgrudi.com/js/jquery.truncator.js'></script>
+<script type='text/javascript' src='http://rostgrudi.com/js/uppod.js'></script>
+<script type='text/javascript' src='http://rostgrudi.com/js/init2.js'></script>
+<script type="text/javascript" src="js/jquery.lwtCountdown-1.0.js"></script>
+<script type="text/javascript" src="js/jquery.reveal.js"></script>
+</head>
+<body><style>
+	span.hotprice {display: inline;}
+	div.trunc_desc p {
+		display: block;
+	};
+</style>
+<form Style='display:none;'><input type="hidden" id="user_country" value="UKR"/>	</form>
+<script>
+	var min_order_amount = 0;
+	var cur_kurs = new Array();
+	var cur_name = new Array();
+		cur_kurs['RUS'] = '1';
+	cur_name['RUS'] = 'руб.';
+		cur_kurs['BLR'] = '280.0';
+	cur_name['BLR'] = 'бел.руб.';
+		cur_kurs['AZE'] = '0.027';
+	cur_name['AZE'] = 'манат';
+		cur_kurs['KAZ'] = '5.3';
+	cur_name['KAZ'] = 'тенге';
+		cur_kurs['KGZ'] = '1.5123';
+	cur_name['KGZ'] = 'сом';
+		cur_kurs['UKR'] = '0.293';
+	cur_name['UKR'] = 'грн.';
+		cur_kurs['USA'] = '0.03';
+	cur_name['USA'] = '$';
+		cur_kurs['GEO'] = '0.055';
+	cur_name['GEO'] = 'лари';
+		cur_kurs['EST'] = '0.0244';
+	cur_name['EST'] = 'евро';
+		cur_kurs['MDA'] = '0.4';
+	cur_name['MDA'] = 'лей';
+		cur_kurs['ARM'] = '12.1';
+	cur_name['ARM'] = 'драм';
+		function price2currency(price, name){
+		price == parseFloat(price);
+		if(name == "RUS"){
+			return price + cur_name[name];
+		}
+		else{
+			return (price * cur_kurs[name]) + cur_name[name];
+		};
+	};
+</script>
+		          <script src="skins/605/js/graf.js"></script>	
+    <div class="header">
+			<div class="contayner">
+				<div class="head-line">
+					<div class="logo">
+						<img src="skins/605/img/logo.png" alt="">
+					</div>
+					<div class="head-text"></div>
+					<div class="clearfix"></div>
+				</div>
+				
+				<div class="head-slogan"></div>
+				<div class="head-button-wrap">
+				<div class="block3-left">				
+					<p class="p1">ВНИМАНИЕ РАСПРОДАЖА! <span>до конца акции осталось:</span></p>
+					
+					
+						<ul>
+							<li><span>дней</span></li>
+							<li><span>часов</span></li>
+							<li><span>минут</span></li>
+							<li><span>секунд</span></li>
+						</ul>
+						
+						<!-- Таймер обратного отсчета. Начало -->
+						<div id="countdown_dashboard">			
+
+							<div class="dash days_dash">				
+								<div class="digit"><div class="top" style="display: none;">0</div><div class="bottom" style="display: block;">0</div></div>
+								<div class="digit"><div class="top" style="display: none;">0</div><div class="bottom" style="display: block;">0</div></div>
+							</div>
+
+							<div class="dash hours_dash">				
+								<div class="digit"><div class="top" style="display: none;">0</div><div class="bottom" style="display: block;">0</div></div>
+								<div class="digit"><div class="top" style="display: none;">5</div><div class="bottom" style="display: block;">5</div></div>
+							</div>
+
+							<div class="dash minutes_dash">				
+								<div class="digit"><div class="top" style="display: none;">1</div><div class="bottom" style="display: block;">1</div></div>
+								<div class="digit"><div class="top" style="display: none;">8</div><div class="bottom" style="display: block;">8</div></div>
+							</div>
+
+							<div class="dash seconds_dash">				
+								<div class="digit"><div class="top" style="display: none;">5</div><div class="bottom" style="display: block;">5</div></div>
+								<div class="digit"><div class="top" style="display: block; overflow: hidden; height: 46.970035295923616px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">1</div><div class="bottom" style="display: block; overflow: hidden; height: 0.7848976026026762px;">2</div></div>
+							</div>
+
+						</div>
+						<!-- Таймер обратного отсчета. Окончание -->					
+						
+						<div style="margin-top: 80px;">
+								
+						<p class="p3" style="width: 166px;">Старая цена <span>1900</span> <span class="rb">руб.</span></p>
+						
+						<p class="p4" style="width: 176px;">Новая цена <span class="red">970</span> <span class="rb">руб.</span></p>			
+							</div>	<a href="#" data-reveal-id="myModal1" class="head-but"></a>			
+				</div>
+					
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="block1">
+			<div class="contayner">
+				<div class="video-wrap">
+                  <div width="348" height="230" style="width: 348px; height: 230px;" autoplay="true" uppod_style="http://hotdisk.org/styles/zerosmoke-b.txt" video_flash="http://www.hotdisk.org/zerosmoke.flv" video="http://www.hotdisk.org/zerosmoke_h264aac.mp4" class="uppod" id="player"></div>
+                </div>
+				<div class="block1-list">
+					<ul>
+						<li>— никаких пластырей;</li>
+						<li>— никакой жевательной резинки;</li>
+						<li>— никаких лекарств;</li>
+						<li>— никакой химии.</li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+				<div class="block1-main">
+					<div class="block1-text">
+						<h2>ЧТО ТАКОЕ <span class="bolder">ZEROSMOKE ?</span></h2>
+						<p>Оригинальный комплект Zerosmoke состоит из двух биомагнитов и руководства по применению.</p>
+						<p>Работают биомагниты следующим образом: крепятся на специальную точку наружного уха, отвечающую за контроль тяги к курению, и <span class="bolder">интенсивно воздействуют на вашу никотиновую зависимость подобно иглоукалыванию</span>, только без иголок. </p>
+						<p><span class="bolder colored">А покрытие из белого золота в 24 карата</span> действует, как натуральный проводник, помимо этого защищая Вас от любых аллергических реакций.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="block3"></div>
+		<div class="block4">
+			<div class="contayner">
+				<div class="block4-main">
+					<div class="block4-head">
+						<h3>КАК ПОЛЬЗОВАТЬСЯ <span class="bolder">ZEROSMOKE ?</span></h3>
+						<p>Zerosmoke использовать <span class="bolder">проще, чем любые другие способы</span> борьбы с курением.</p>
+					</div>
+					<div class="block4-but-wrap">
+						<a href="#" data-reveal-id="myModal1" class="block4-but"></a>
+					</div>
+					<div class="clearfix"></div>
+					<div class="block4-list-wrap">
+						<ul class="block4-list">
+							<li><div class="block4-num">1</div><p><span class="bolder">Возьмите магниты</span> на кончики пальцев.</p><div class="clearfix"></div></li>
+							<li><div class="block4-num">2</div><p><span class="bolder">Поместите магнит</span> меньшего размера 
+									на переднюю часть уха.</p><div class="clearfix"></div></li>
+							<li><div class="block4-num">3</div><p><span class="bolder">Поместите магнит</span> большего размера 
+									на заднюю часть уха.</p><div class="clearfix"></div></li>
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+					<div class="block4-text">
+						<div class="block4-text-l"><span class="colored">Zerosmoke надевается на ухо за считанные секунды</span>, и Вы можете приниматься за свои обычные дела. </div>
+						<div class="block4-text-r">
+							<p>За счёт своих природных свойств, <span class="bolder">биомагниты удерживаются на месте и не падают.</span></p>
+							<p>Не покупайте кота в мешке, давайте узнаем об этом эффективном и уникальном способе борьбы с сигаретной зависимостью подробнее!</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="block5">
+			<div class="contayner">
+				<div class="block5-main">
+					<h3>ПОДРОБНЕЕ О СОЗДАНИИ <span class="bolder">ZEROSMOKE</span></h3>
+					<p class="block5-first">Прежде, чем Zerosmoke стал спасением для миллионов курильщиков в США, Канаде, Европе, Японии и Австралии, продукт <span class="bolder">подвергался многочисленным исследованиям</span> и разрабатывался годами.</p>
+					<p>Сегодня уникальная технология Zerosmoke защищена всемирным патентом. Это высокотехнологичное медицинское устройство <span class="bolder">прошло целый ряд независимых испытаний и проверок</span>, чем доказало свою бесспорную эффективность и заявило о победе над курением на весь мир.</p>
+					<div class="block5-colored">
+						<p>Впечатляет?! Но и это еще не все. Для того, чтобы полностью развеять ваши сомнения, мы объясним Вам самое главное – <span class="colored">откуда вообще родилась идея метода, который использует Zerosmoke, почему и как он работает ?</span><br>
+						И поверьте, этот короткий экскурс в историю поможет Вам сделать окончательный и бесповоротный выбор в пользу Zerosmoke, а значит совершить первый важный шаг к тому, чтобы бросить курить безвозвратно!</p>
+					</div>
+					<div class="block5-but-wrap">
+						<a class="block5-but" href="#" data-reveal-id="myModal1"></a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div class="block6">
+			<div class="contayner">
+				<div class="block6-wrap">
+					<h3>НА ЧЕМ ОСНОВЫВАЕТСЯ ТЕХНОЛОГИЯ <span class="bolder">ZEROSMOKE ?</span></h3>
+					<p class="first">Принцип действия Zerosmoke основывается на <span class="bolder">аурикулотерапии</span> - фундаментальном открытии французского ученого и доктора Поля Ножье еще в 50-е годы прошлого века. </p>
+					<div class="block6-left">
+						<p>Суть открытия заключалась в том, что ухо по форме представляет собой перевёрнутый эмбрион человека, и каждая его часть связана с определённым участком тела. В следствие чего им же было обнаружено, что <span class="bolder">боль в любой части тела можно снять иглоукалыванием</span>, прижиганием, массажем или электрической стимуляцией определенных зон уха. </p>
+					</div>
+					<div class="block6-right">
+						<p>Позже эту методику переняла китайская медицина, и аурикулотерапия заслужила известность эффективного средства для облегчения боли, лечения соматических расстройств и химических зависимостей.</p>
+						<p>В 1997 году аурикулярная терапия была <span class="bolder">официально одобрена для использования в медицинских учреждениях США</span>, и до сих пор более тысячи реабилитационных центров только в Америке включают аурикулярную терапию в свои лечебные программы.</p> 
+						<p>А благодаря Zerosmoke миллионы людей<br> 
+						по всему миру сегодня могут позволить себе аурикулотерапию и избавиться от курения раз и навсегда!</p>
+						<div class="block6-attent">
+							<p><span class="colored">Не доверяйте подделкам.</span> Дешёвые копии товара представляют собой обычные маленькие магниты, 
+							не оказывающие никакого эффекта.</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div class="block7">
+			<div class="contayner">
+				<div class="block7-main">
+					<div class="block7-img"></div>
+					<div class="block7-text">
+						<div class="block7-slogan"></div>
+						<a href="#" data-reveal-id="myModal1" class="button2"></a>
+						<div class="block7-img2"></div>	
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div class="block8">
+			<div class="contayner">
+				<div class="block8-main">
+					<h4>РЕЗУЛЬТАТЫ ТЕСТИРОВАНИЯ <span class="bolder">ZEROSMOKE</span></h4>
+					<p class="colored">Процент бросивших курить за 25 дней тестирования</p>
+					<div class="label-graf"></div>
+					<div id="container" style="max-width: 960px; height: 182px; margin: 0 auto"></div>
+				</div>
+			</div>
+		</div>
+		<div class="block9">
+			<div class="contayner">
+				<div class="block9-main">
+					<h4>ОТЗЫВЫ О <span class="bolder">ZEROSMOKE</span></h4>
+					<div id="slider">
+					<div class="slides_container">
+					<div class="resp">
+						<div class="resp-top"></div>
+						<div class="resp-main">
+							<div class="resp-img"><img src="skins/605/img/resp-img1.jpg" alt=""></div>
+							<p class="author-resp"><span class="bolder">Полина Керчик,<br> </span>Санкт-Петербург, Россия.</p>
+							<div class="clearfix"></div>
+							<div class="resp-text">
+								<p>Курила сколько себя помню. Долго пробовала бросить. Ничего не получалось, ни с пластырями, ни с таблетками, пока не попробовала Zerosmoke. Очень удобная вещица. Через месяц уже забыла о том, что курила когда-то. Чувствую себя здоровой и независимой.<br> Спасибо!</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="resp-bottom"></div>
+					</div>
+					<div class="resp">
+						<div class="resp-top"></div>
+						<div class="resp-main">
+							<div class="resp-img"><img src="skins/605/img/resp-img2.jpg" alt=""></div>
+							<p class="author-resp"><span class="bolder">Вячеслав Жалейко,<br> </span>Киев, Украина.</p>
+							<div class="clearfix"></div>
+							<div class="resp-text">
+								<p>Всерьез задумался о том, чтобы бросить курить тогда, когда начало подкачивать здоровье. На таблетки у меня аллергия, поэтому ничего такого пробовать не стал. А вот Zerosmoke мне понравился. Надел магниты на уши и занимайся своими делами. Я и не заметил что перестал курить. Теперь, как заново родился! Всем советую!</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="resp-bottom"></div>
+					</div>
+					<div class="resp last-resp">
+						<div class="resp-top"></div>
+						<div class="resp-main">
+							<div class="resp-img"><img src="skins/605/img/resp-img3.jpg" alt=""></div>
+							<p class="author-resp"><span class="bolder">Антон Боринец,<br> </span>Минск, Беларусь.</p>
+							<div class="clearfix"></div>
+							<div class="resp-text">
+								<p>Я курил с 15 лет, потом несколько раз пытался бросить, но силы воли оказалось мало. Знакомый, который бросил, посоветовал Zerosmoke. Я согласился и не прогадал. И подумать не мог, что таким образом и так быстро можно избавиться от этой зависимости. Теперь курение в прошлом, и я счастлив.<br> Респект Zerosmoke!</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="resp-bottom"></div>
+					</div>
+					<div class="clearfix"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block10">
+			<div class="contayner">
+				<div class="sale-block">
+					<div class="sale-img"></div>
+					<div class="sale-text">
+						<h5>50% ПРОЦЕНТНАЯ СКИДКА ДЛЯ ВСЕХ!</h5>
+						<p>В честь международного дня борьбы с курением.<br>
+						С 6 декабря по 10 декабря 2013</p>
+						<span class="sale-arrow"></span>
+					</div>
+					<div class="clearfix"></div>	
+				</div>
+
+				
+			<div class="order-wrap">
+				<a name="form"></a>
+                    <form id="order_form"  action="http://zerosmoke.ru/order.php?skin=605" method="post"><input type="hidden" name="order" value="1"/>
+
+
+                                                            <div style="display:none;">
+                    <input product_id='87' class='product_check' id='product_check_87' type="checkbox" checked='checked'  name='product_check_87'/>                    Биомагниты Zerosmoke                    <p>
+	Zerosmoke</p>
+                    1000                    <input type='hidden' name='product_ids[]' value='87'/><input id='product_count_87' product_id='87' product_price="1000" class="product_count" name="product_count_87" type="text" value="1" />                    </div>
+                                             
+					<div class="order-form field-style">
+                     
+						<a name="order-form"></a>
+								<h3>ОФОРМЛЕНИЕ ДОСТАВКИ</h3>
+								<p class="del-info">Доставка осуществляется почтой или курьером во все регионы России, Украины, Казахстана, Беларуси. <span class="bolder">Оплата производится при получении.</span></p>
+								<p class="del-info act">Для уточнения данных вам позвонит наш менеджер по доставке.</p>
+								
+     
+                   <div class="block3-left" style="left:0px; top:0px;">				
+					<p class="p1" style="margin: 12px 0 34px 0;">ВНИМАНИЕ РАСПРОДАЖА! <span>до конца акции осталось:</span></p>
+					
+					
+						<ul>
+							<li><span>дней</span></li>
+							<li><span>часов</span></li>
+							<li><span>минут</span></li>
+							<li><span>секунд</span></li>
+						</ul>
+						
+						<!-- Таймер обратного отсчета. Начало -->
+						<div id="countdown_dashboard2">			
+
+							<div class="dash days_dash">				
+								<div class="digit"><div class="top" style="display: none;">0</div><div class="bottom" style="display: block;">0</div></div>
+								<div class="digit"><div class="top" style="display: none;">0</div><div class="bottom" style="display: block;">0</div></div>
+							</div>
+
+							<div class="dash hours_dash">				
+								<div class="digit"><div class="top" style="display: none;">0</div><div class="bottom" style="display: block;">0</div></div>
+								<div class="digit"><div class="top" style="display: none;">5</div><div class="bottom" style="display: block;">5</div></div>
+							</div>
+
+							<div class="dash minutes_dash">				
+								<div class="digit"><div class="top" style="display: none;">1</div><div class="bottom" style="display: block;">1</div></div>
+								<div class="digit"><div class="top" style="display: none;">8</div><div class="bottom" style="display: block;">8</div></div>
+							</div>
+
+							<div class="dash seconds_dash">				
+								<div class="digit"><div class="top" style="display: none;">5</div><div class="bottom" style="display: block;">5</div></div>
+								<div class="digit"><div class="top" style="display: block; overflow: hidden; height: 46.970035295923616px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">1</div><div class="bottom" style="display: block; overflow: hidden; height: 0.7848976026026762px;">2</div></div>
+							</div>
+
+						</div>
+						<!-- Таймер обратного отсчета. Окончание -->					
+						
+						<div style="margin-top: 140px;">
+								
+						<p class="p3" style="text-align:center;top:0px;left:0px;font-size:20px;">Старая цена <span style="font-size:29px;">1900</span> <span class="rb" style="font-size:21px;">руб.</span></p>
+						
+						<p class="p4" style="text-align:center;top:0px;left:0px;font-size:25px;">Новая цена <span class="red" style="font-size:41px;">970</span> <span class="rb" style="font-size:27px;">руб.</span></p>			
+							</div>				
+				</div>              
+                                                              
+                                              
+                                
+								<a href="#" data-reveal-id="myModal1" class="btn-submit"></a>
+							
+	
+					</div>
+            </form>
+					<div style="clear:both;"></div>
+				</div>
+			</div>
+		</div>
+  <script type="text/javascript">
+			// Устанавливаем счетчик
+			jQuery(document).ready(function() {
+			$('#countdown_dashboard').countDown({
+				targetOffset: {
+					'day': 		0,
+					'month': 	0,
+					'year': 	0,
+					'hour': 	5,
+					'min': 		25,
+					'sec': 		0,
+					'utc':     true,
+				},
+				omitWeeks: true	// Отключаем вывод количества недель			
+				});
+				
+				// Запускаем счет
+				function start() {
+				$('#countdown_dashboard2').startCountDown();
+				};
+				
+				$('#countdown_dashboard2').countDown({
+				targetOffset: {
+					'day': 		0,
+					'month': 	0,
+					'year': 	0,
+					'hour': 	5,
+					'min': 		25,
+					'sec': 		0,
+					'utc':     true,
+				},
+				omitWeeks: true	// Отключаем вывод количества недель			
+				});
+				
+				// Запускаем счет
+				function start() {
+				$('#countdown_dashboard2').startCountDown();
+				};
+				});				
+				
+		</script>			
+    <div class="footer">
+        <div class="contayner"><p style="margin: 40px 0 0 0;"><a href="#" data-reveal-id="myModal2" style="color: grey;font: 12px/12px 'Tahoma';">Политика конфиденциальности</a></p>
+            <p class="cont-info">© 2013 Zerosmoke Все права защищены.
+            Служба поддежки клиентов <a href="mailto:info@zerosmoke.ru">info@zerosmoke.ru</a></p>
+            <p class="rekv">ООО «СтартТрейд» ИНН 7811493342; ОГРН : 1117847197588; ОКПО 91943776; Адрес 192148, г. САНКТ-ПЕТЕРБУРГ, УЛ СЕДОВА, 17 ЛИТЕР Б ПОМ 10-Н; Свидетельство о государственной регистрации от 20.05.2011</p>
+        </div>
+    </div>
+<div id="myModal1" class="reveal-modal">
+    <p>Способ оплаты наложенным платежом Почтой России </p>
+    <img src="img/1234.gif" width="150" height="75">
+    <p>Оплата при получении посылки на руки, в ближайшем к Вашему дому почтовом отделении.</p>
+  <iframe src="zakaz.html" width="500" height="500" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" hspace="0" vspace="0" allowtransparency="true" style="background-color:transparent"></iframe><a class="close-reveal-modal">&#215;</a>
+	</div>
+	<div id="myModal2" class="reveal-modal">
+    <p style="font-size:20px;font-weight:700;">Политика конфиденциальности</p>
+	<p>текст текст текст текст текст текст текст текст текст текст текст текст </p>
+	<a class="close-reveal-modal">&#215;</a>
+    </div>
+</body>
+
+</html>
+<!--91.228.154.27-->
