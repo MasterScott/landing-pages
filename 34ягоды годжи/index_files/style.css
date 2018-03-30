@@ -1,0 +1,791 @@
+body {
+    color: #000;
+    font: 13px Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 1280px;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    height: 771px;
+    background: url("../index_files/header-bg.png") repeat-x 0 0;
+    margin: 0 auto;
+}
+
+header .center {
+    position: relative;
+    top: 6px;
+    /* design is not symmetrical, so need to align it */
+    left: 10px;
+    width: 1155px;
+    height: 765px;
+    margin: 0 auto;
+    z-index: 1;
+    background: url("../index_files/header-center-bg.png") no-repeat 0 0;
+}
+
+header .center .logo {
+    display: block;
+    background: url("../index_files/logo.png") no-repeat 0 0;
+    position: absolute;
+    z-index: 2;
+    top: 4px;
+    left: 19px;
+    width: 342px;
+    height: 82px;
+}
+
+header .center .tel {
+    position: absolute;
+    top: 19px;
+    right: 58px;
+}
+
+header .center .description {
+    position: absolute;
+    top: 211px;
+    right: 0;
+    width: 455px;
+}
+
+header .center .description h2 {
+    font-family: Conv_Roboto-Bold, serif;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+    padding-left: 100px;
+    padding-right: 80px;
+    margin-bottom: 17px;
+}
+
+header .center .description p {
+    padding-left: 75px;
+    padding-right: 57px;
+    margin-bottom: 5px;
+}
+
+header .center .description p span,
+header .center .composition ul li span {
+    font-weight: bold;
+}
+
+header .center .composition {
+    position: absolute;
+    z-index: 2;
+    top: 484px;
+    right: 0;
+    width: 395px;
+}
+
+header .center .composition h3 {
+    font-family: Conv_Roboto-Bold, serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+    color: #ab002c;
+}
+
+header .center .composition ul {
+    list-style-image: url("../index_files/header-ul-disc.png");
+}
+
+header .center .composition ul li {
+    width: 300px;
+    margin-left: 95px;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+header .center .bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+header .center .bottom .on-line {
+    background: url("../index_files/header-bottom-on-line-bg.png") no-repeat 0 0;
+    width: 308px;
+    height: 43px;
+    margin-left: 8px;
+    float: left;
+    padding: 18px 36px;
+    color: #4c4c4c;
+}
+
+header .center .bottom .on-line span {
+    font-family: Conv_Roboto-Bold, serif;
+    font-size: 27px;
+    line-height: 35px;
+    color: #9a207f;
+}
+
+header .center .bottom .buy-price {
+    float: right;
+    margin-right: 28px;
+    padding-top: 7px;
+}
+
+header .center .bottom .buy-price .price {
+    float: left;
+    padding-top: 5px;
+    font-family: Conv_Roboto-Bold, serif;
+    font-weight: bold;
+    font-size: 42px;
+    color: #f0ff00;
+
+}
+
+header .center .bottom .buy-price .buy-btn {
+    background: url("../index_files/header-buy-btn-bg.png") no-repeat 0 0;
+    float: right;
+    padding-bottom: 4px;
+    padding-right: 3px;
+}
+
+header .center .bottom .buy-price .buy-btn a {
+    display: block;
+    text-decoration: none;
+    width: 250px;
+    height: 66px;
+}
+section{
+    position:relative;top:-20px;
+}
+section .interaction {
+    background: url("../index_files/interaction-bg.jpg") repeat 0 0;
+    width: 100%;
+    height: 638px;
+    margin-top: -20px;
+    display: none;
+}
+
+.block-center {
+    width: 1105px;
+    margin: 0 auto;
+}
+
+section .interaction .block-center {
+    padding-top: 35px;
+}
+
+section .interaction .block-center h2 {
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 522px;
+    height: 63px;
+    font-family: Conv_Roboto-Bold, serif;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 54px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d20036;
+    background: url("../index_files/interaction-h2-bg.png") no-repeat 0 0;
+}
+
+section .interaction .block-center ul {
+    float: left;
+    list-style: none;
+    margin-top: 10px;
+}
+
+section .interaction .block-center > ul.first {
+    margin-right: 65px;
+}
+
+section .interaction .block-center ul li {
+    position: relative;
+    height: 68px;
+    width: 520px;
+    margin-top: 48px;
+    color: #fff;
+    z-index: 1;
+}
+
+section .interaction .block-center ul li > div {
+    margin: 0 10px 0 120px;
+    padding: 0 10px 0 40px;
+    background: url("../index_files/interaction-li-bg.png") repeat-x 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+section .interaction .block-center ul li > div > div {
+    display: table-cell;
+    vertical-align: middle;
+    width: 300px;
+    height: 68px;
+}
+
+section .interaction .block-center ul li.odd > div {
+    padding: 0 40px 0 10px;
+    margin: 0 10px 0 50px;
+}
+
+section .interaction .block-center ul li > span,
+section .interaction .block-center ul li > img {
+    position: absolute;
+    z-index: 2;
+}
+
+section .interaction .block-center ul li img {
+    top: -38px;
+    left: 0;
+}
+
+section .interaction .block-center ul li.odd img {
+    right: 0;
+    left: auto;
+}
+
+section .interaction .block-center ul li > span {
+    top: 0;
+    right: 0;
+    background: url("../index_files/interaction-number-bg.png") top right no-repeat;
+    width: 52px;
+    height: 68px;
+    display: block;
+    text-align: center;
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 68px;
+}
+
+section .interaction .block-center ul li.odd > span {
+    left: 0;
+    right: auto;
+    background-position: left top;
+}
+
+section .test {
+    /*
+    border-top: #fff solid 1px;
+    */
+    border-bottom: #fff solid 1px;
+    background-color: #b3489e;
+}
+
+section .test .block-center .clinic {
+    float: left;
+    width: 912px;
+    margin: 38px 0 34px;
+}
+
+section .test .block-center .clinic h3 {
+    font-family: Conv_Roboto-Bold, serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+section .test .block-center .clinic p {
+    padding-top: 15px;
+    font: 14px Arial, sans-serif;
+    line-height: 17px;
+    color: #fff;
+}
+
+section .test .block-center img {
+    float: right;
+    margin: 23px 0 19px;
+}
+
+section .product {
+    height: 436px;
+    background: url("../index_files/product-bg.png") repeat-x 0 0;
+}
+
+/* need for correct behavior in ie9, issue was related to border-radius with gradient */
+section .order-form .in {
+    z-index: 2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Gradient (GradientType=0, startColorstr=#d20036, endColorstr=#ab002c)";
+    background: rgb(210, 0, 54);
+    background: -moz-linear-gradient(90deg, rgb(210, 0, 54) 10%, rgb(170, 0, 44) 90%);
+    background: -webkit-linear-gradient(90deg, rgb(210, 0, 54) 10%, rgb(170, 0, 44) 90%);
+    background: -o-linear-gradient(90deg, rgb(210, 0, 54) 10%, rgb(170, 0, 44) 90%);
+    background: -ms-linear-gradient(90deg, rgb(210, 0, 54) 10%, rgb(170, 0, 44) 90%);
+    background: linear-gradient(180deg, rgb(210, 0, 54) 10%, rgb(170, 0, 44) 90%);
+}
+
+section .block-center .order-form-wrapper {
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+
+section .block-center .form {
+    color: #fff;
+    margin-top: 16px;
+    margin-left: 28px;
+    border-radius: 20px;
+    border: 4px solid #fff;
+    overflow: hidden;
+}
+
+section .block-center .form .in {
+    padding: 22px 21px 24px 19px;
+}
+
+section .block-center .flower {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    bottom: -20px;
+    right: -19px;
+}
+
+section .block-center .form input {
+    width: 255px;
+}
+
+section .block-center.form p.bottom a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+section .order-form p {
+    font-family: Conv_Roboto-Bold, serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+}
+
+section .order-form p > span {
+    font-family: Conv_Roboto-Bold, serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: #fff000;
+    text-transform: uppercase;
+}
+
+section .form .row {
+    padding: 15px 7px 0;
+}
+
+section .form .row label {
+    margin-right: 13px;
+    width: 65px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+section .form input {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    padding: 12px 10px 3px;
+    margin: 0;
+    height: 16px;
+    width: 255px;
+    line-height: 16px;
+    font-size: 15px;
+    background: url("../index_files/input-bg.png") no-repeat 0 0;
+}
+
+section .form input,
+section .form input:active,
+section .form input:focus {
+    outline: none;
+}
+
+section .form input.invalid {
+    background: url("../index_files/input-bg-invalid.png") no-repeat 0 0;
+}
+
+section .form .order-button {
+    background: url("../index_files/form-button.png") no-repeat 0 0;
+    margin: 22px auto 0;
+    width: 243px;
+    padding: 0 5px;
+}
+
+section .form .order-button a {
+    color: #fff;
+    text-shadow: 0px 1px 1px rgba(65, 112, 0, 1);
+    text-align: center;
+    font-family: Conv_Roboto-Bold, serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 19px 14px 22px;
+    display: block;
+}
+
+section .form p.bottom {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    padding: 12px 0 0 12px;
+    font-weight: normal;
+}
+
+section .product .block-center .discount {
+    float: right;
+    background: url("../index_files/discount-bg.png") no-repeat 0 -35px;
+    text-align: center;
+    padding: 176px 244px 155px 229px;
+}
+
+section .product .block-center .discount span:first-child {
+    font-size: 22px;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+section .product .block-center .discount span.new-price {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fff000;
+}
+
+section .forgery .our-sales {
+    position: relative;
+    float: left;
+    margin-top: 71px;
+    width: 280px;
+    padding-left: 100px;
+    background: url("../index_files/our-sales-bg.jpg") no-repeat 74px 6px;
+}
+
+section .forgery .our-sales img {
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+section .forgery .our-sales h3 {
+    font-family: Conv_Roboto-Bold, serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #9d1f81;
+}
+
+section .forgery .our-sales p {
+    font-family: Conv_Roboto-Bold, serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 6px;
+}
+
+section .forgery .our-sales p span {
+    color: #ea0042;
+}
+
+section .forgery .berries {
+    margin-top: 12px;
+    margin-left: 60px;
+}
+
+section .forgery .warning {
+    float: right;
+    margin-top: 76px;
+    width: 353px;
+    background: url("../index_files/warning-bg.png") no-repeat 0 0;
+}
+
+section .forgery .warning p {
+    padding: 31px 35px 28px;
+    font-family: Conv_Roboto-Bold, serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fefefe;
+}
+
+section .doctor-review {
+    padding-top: 15px;
+}
+
+section .doctor-review img {
+    position: relative;
+    z-index: 3;
+    float: left;
+    top: -5px;
+}
+
+section .review {
+    position: relative;
+    float: right;
+    padding: 26px 27px 28px 31px;
+    border: 3px dotted #d3d3d3;
+    border-radius: 20px;
+    behavior: url(css/PIE.htc);
+}
+
+section .review .dialog {
+    position: absolute;
+    z-index: 2;
+}
+
+section .review span {
+    float: right;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+section .review p {
+    padding-bottom: 6px;
+    font-size: 14px;
+}
+
+section .doctor-review .review {
+    width: 796px;
+}
+
+section .doctor-review .review .dialog {
+    background: url("../index_files/review-dialog-bg.png") no-repeat 0 0;
+    height: 72px;
+    width: 53px;
+    left: -53px;
+    top: 61px;
+}
+
+section .doctor-review .review h3 {
+    padding-bottom: 10px;
+    font-family: Conv_Roboto-Bold, serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #ea0042;
+}
+
+section .our-work h2,
+section .reviews h2 {
+    padding-top: 45px;
+    font-family: Conv_Roboto-Bold, serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    color: #ea0042;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section .our-work ul {
+    list-style: none;
+}
+
+section .our-work ul li {
+    float: left;
+}
+
+section .our-work ul .image {
+    width: 200px;
+}
+
+section .our-work ul .separator {
+    width: 76px;
+    height: 91px;
+    background: url("../index_files/our-work-arrow.png") no-repeat bottom;
+}
+
+section .our-work ul .image div {
+    text-align: center;
+    height: 91px;
+    padding-top: 28px;
+    padding-bottom: 11px;
+}
+
+section .our-work ul .image p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #843989;
+    text-align: center;
+}
+
+section .media {
+    width: 480px;
+    margin: 43px auto 0;
+}
+
+section .action {
+    margin-top: 50px;
+    background: url("../index_files/action-bg.png") repeat 0 0;
+}
+
+section .action .strip h2 {
+    background-color: #da1b5c;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 5px 0;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section .action .strip .shadow {
+    background: url("../index_files/strip-shadow.png") no-repeat center;
+    height: 20px;
+}
+
+section .action .block-center .picture {
+    float: left;
+    width: 550px;
+    padding-left: 19px;
+}
+
+section .action .block-center .picture .sale {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 37px;
+    color: #843989;
+    text-transform: uppercase;
+}
+
+section .action .block-center .picture > span {
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 55px;
+    color: #ea0042;
+    text-transform: uppercase;
+}
+
+section .action .block-center .picture .economy {
+    background: url("../index_files/economy-bg.png") no-repeat 0 0;
+    padding: 160px 35px 85px 250px;
+    width: 150px;
+    margin: -12px 0 0 75px;
+    font-size: 22px;
+    line-height: 22px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+section .action .block-center .picture .economy span {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 50px;
+    text-transform: none;
+}
+
+/* need for correct behavior in ie9, issue was related to border-radius with gradient */
+section .action .order-form .in {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Gradient (GradientType=0, startColorstr=#b3489e, endColorstr=#a440a4)";
+    background: rgb(179, 72, 158);
+    background: -moz-linear-gradient(90deg, rgb(179, 72, 158) 10%, rgb(164, 64, 164) 90%);
+    background: -webkit-linear-gradient(90deg, rgb(179, 72, 158) 10%, rgb(164, 64, 164) 90%);
+    background: -o-linear-gradient(90deg, rgb(179, 72, 158) 10%, rgb(164, 64, 164) 90%);
+    background: -ms-linear-gradient(90deg, rgb(179, 72, 158) 10%, rgb(164, 64, 164) 90%);
+    background: linear-gradient(180deg, rgb(179, 72, 158) 10%, rgb(164, 64, 164) 90%);
+}
+
+section .action .block-center .order-form-wrapper {
+    float: right;
+}
+
+section .action .block-center .flower {
+    top: -16px;
+    left: 9px;
+}
+
+section .action .block-center .form {
+    margin-top: 4px;
+    margin-right: 55px;
+    border-radius: 20px;
+}
+
+section .reviews {
+    margin-top: 6px;
+    display: none;
+}
+
+section .reviews > div {
+    float: left;
+    margin-left: 120px;
+    margin-top: 36px;
+    margin-bottom: 57px;
+}
+
+section .reviews > .first {
+    margin-left: 0;
+}
+
+section .reviews > div > span {
+    color: #9d1e80;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section .reviews > div > div {
+    border: #dfdfdf 1px solid;
+    border-radius: 5px;
+    behavior: url(css/PIE.htc);
+    background-color: #f9f9f9;
+}
+
+section .reviews > div > .photo {
+    padding: 7px;
+    margin-top: 4px;
+}
+
+section .reviews > div > .photo img {
+    display: block;
+}
+
+section .reviews > div > .review-item {
+    position: relative;
+    width: 260px;
+    padding: 17px 13px;
+    min-height: 81px;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+section .reviews > div .review-item .dialog {
+    position: absolute;
+    top: -17px;
+    right: 32px;
+    background: url("../index_files/review-item-dialog-bg.png") no-repeat 0 0;
+    z-index: 5;
+    width: 29px;
+    height: 17px;
+}
+
+footer .contacts {
+    padding: 16px 0 11px;
+    border-top: 4px solid #dfdfdf;
+}
+
+footer .contacts p {
+    width: 163px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 11px;
+    line-height: 12px;
+}
+
+footer .contacts p span {
+    text-decoration: underline;
+}

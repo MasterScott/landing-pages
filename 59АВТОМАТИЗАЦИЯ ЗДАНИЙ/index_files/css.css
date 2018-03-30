@@ -1,0 +1,228 @@
+* {margin:0;padding:0;border:0;outline:none;}
+li {list-style:none;}
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+@font-face {font-family:compm;src:url(compm.ttf) format("truetype");}
+@font-face {font-family:compr;src:url(compr.ttf) format("truetype");}
+@font-face {font-family:condm;src:url(condm.ttf) format("truetype");}
+@font-face {font-family:condr;src:url(condr.ttf) format("truetype");}
+
+
+@font-face {font-family:myrr;src:url(myrr.otf) format("opentype");}
+@font-face {font-family:myrc;src:url(myrc.otf) format("opentype");}
+@font-face {font-family:myrb;src:url(myrb.otf) format("opentype");}
+@font-face {font-family:myrbc;src:url(myrbc.otf) format("opentype");}
+@font-face {font-family:myrs;src:url(myrs.otf) format("opentype");}
+
+body {font-family:myrr;max-width:1920px;margin:0 auto;}
+
+/* Шапка сайта */
+#header {background:url(top_line.png);height:218px;}
+#header .head {width:1000px;margin:0 auto;overflow:hidden;}
+#header .logo {background:url(logo.png) no-repeat;width:248px;height:62px;float:left;margin:23px 0 0 0;}
+#header .contact {float:right;}
+#header .contact .number {color:#334554;font-family:condm;font-size:29px;line-height:29px;padding:13px 0 5px 0;}
+#header .contact button {background:url(button.png);width:311px;height:39px;display:block;font-family:condm;font-size:22px;color:#fff;text-transform:uppercase;cursor:pointer;}
+#header .contact .email {background:url(ico_email.png) no-repeat 0 5px;float:right;font-family:condr;font-size:21px;padding:0 0 0 21px;line-height:21px;margin:17px 0 0 0;}
+
+#header .title {font-size:39px;font-family:condr;text-align:center;line-height:37px;padding:23px 0 0 0;}
+#header .title div {font-size:45px;font-family:condm;text-transform:uppercase;}
+/* ----------- */
+
+/* Форма под шапкой */
+#form_top {background:url(top_form.jpg) no-repeat center 0;}
+#form_top .ft1000 {width:1000px;margin:0 auto;height:658px;}
+#form_top .form_t {background:url(form_t.png);width:288px;height:502px;float:right;margin:71px -16px 0 0;padding:11px 46px 0 46px;}
+#form_top .form_t input {background:url(img/input_t.png) no-repeat;width:252px;height:44px;padding:0 15px;font-family:myrr;font-size:16px;}
+#form_top .form_t label {display:block;}
+#form_top .form_t .in_name {font-size:20px;color:#bcdff5;text-shadow:0 1px 0 #002039;padding:8px 0;}
+#form_top .form_t .title {font-size:31px;font-family:myrc;text-align:center;color:#fff;padding:31px 0 0 0;}
+#form_top .form_t .title div {font-size:33px;}
+#form_top .form_t .title b {font-family:myrbc;}
+#form_top .form_t a {background:url(button_t.png);width:292px;height:53px;padding:12px 0 0 0;display:block;margin:20px 0 0 -4px;text-align:center;color:#143600;font-size:20px;font-family:condm;line-height:17px;text-shadow:0 1px 0 #69b331;}
+#form_top .form_t a span {font-size:26px;text-transform:uppercase;display:block;text-shadow:0 1px 0 #84c532;}
+/* --------------- */
+
+/* Акция */
+#action {background:url(action.png);}
+#action .a1000 {background:url(action_ip.png) no-repeat 0 17px;width:670px;margin:0 auto;height:217px;padding:33px 0 0 330px;}
+#action .title {line-height:55px;font-family:myrbc;font-size:45px;text-transform:uppercase;color:#02426c;text-shadow:0 1px 0 #fff;}
+#action .title b {font-weight:normal;font-family:myrb;text-transform:none;color:#000;}
+#action .title span {background:#fcfd00;}
+
+#action .text {padding:10px 0 0 33px;font-size:23px;line-height:24px;}
+#action .text b {color:#66b200;font-family:myrb;text-transform:uppercase;}
+
+#form_action {background:url(action_form.png);height:72px;}
+#form_action .fa1000 {width:1000px;margin:0 auto;overflow:hidden;padding:16px 0 0 0;}
+#form_action .fa1000 .text {font-family:myrs;font-size:22px;color:#fff;text-transform:uppercase;line-height:40px;padding:0 22px 0 0;float:left;}
+#form_action .fa1000 input {background:url(input_a.png);width:240px;padding:0 10px;height:40px;font-size:20px;font-family:myrr;}
+#form_action .fa1000 label {display:block;float:left;margin:0 11px 0 0;}
+#form_action .fa1000 a {background:url(button_a.png);width:226px;height:41px;float:left;display:block;font-family:condr;font-size:24px;color:#fff;text-align:center;line-height:41px;}
+/* ------ */
+
+/* timer */
+.time{padding:10px 0 0 33px;}
+
+.time *{vertical-align: top;} 
+.time ins{width: 10px;}
+.time ins{background-position: -300px -154px;}
+.time .etitle{position: absolute;width: 110px;font-size: 14px;text-align: center;left: 50%;margin-left: -47px;top: 55px;line-height: 30px;} 
+.c-block{display: inline-block;*display: inline;zoom: 1;margin: 0 18px 0 3px;padding: 4px 0 40px 3px;position: relative;background: transparent url(sprites.png) no-repeat -260px 0;}
+.c-block:before{content: '';position: absolute;left: 100%;top: 0;width: 31px;background: transparent url(sprites.png) no-repeat 100% -77px;height: 77px;}
+.bl-inner{position: relative;margin-right: -10px;height: 48px;background: transparent url(sprites.png) no-repeat -5px -48px;}
+.bl-inner span{display: none;font-size: 46px;color: #fff;line-height: 46px;margin-left: 2px;}
+.bl-inner:before{content: '';position: absolute;left: 100%;top: 0;width: 3px;background: transparent url(sprites.png) no-repeat -122px -48px;height: 48px;}
+.c-block-1{width: 20px;}
+.c-block-2{width: 45px;}
+.c-block-3{width: 70px;}
+/* ----- */
+
+/* Автоматизация */
+#avtom {background:url(avtom.png) repeat-x;height:357px;}
+#avtom .av1000 {width:1000px;margin:0 auto;}
+
+#avtom .title {font-family:compr;font-size:28px;padding:35px 0 0 0;}
+#avtom .title div {font-size:45px;line-height:45px;}
+#avtom .title div span {text-transform:uppercase;font-family:compm;}
+
+#avtom ul {overflow:hidden;padding:18px 0 0 0;}
+#avtom ul li {font-size:20px;float:left;line-height:18px;margin:0 105px 0 0;text-align:center;}
+#avtom ul li.last {margin:0;}
+#avtom ul li .src {height:51px;padding:0 0 12px 0;}
+#avtom ul li .src .timg {padding:5px 0 0 0;}
+/* ------------ */
+
+
+/* Система управления */
+#system {background:url(system.jpg) no-repeat center 0;height:775px;}
+#system .title {font-family:compm;font-size:45px;text-align:center;text-transform:uppercase;padding:0 0 37px 0;}
+#system .sys_ico {background:url(sys_ico.png) no-repeat 195px 0;height:638px;width:1000px;margin:0 auto;position:relative;text-transform:uppercase;font-family:myrb;color:#005e81;font-size:16px;line-height:18px;}
+#system .si1,#system .si2,#system .si3,#system .si4,#system .si5,#system .si6,#system .si7,#system .si8,#system .si9 {position:absolute;}
+
+#system .si1 {top:10px;left:325px;text-align:right;}
+#system .si2 {top:66px;left:132px;}
+#system .si3 {top:225px;left:17px;}
+#system .si4 {top:417px;left:44px;text-align:right;}
+#system .si5 {top:569px;left:169px;}
+#system .si6 {top:600px;right:256px;}
+#system .si7 {top:487px;right:38px;}
+#system .si8 {top:294px;right:10px;}
+#system .si9 {top:118px;right:75px;}
+/* ------------------- */
+
+/* Объекты */
+#objects {background:url(objects.jpg);height:377px;}
+#objects .ob1000 {width:1000px;margin:0 auto;padding:145px 0 0 0;}
+#objects .ob1000 .title {text-transform:uppercase;font-size:45px;font-family:compm;padding:0 0 17px 0;}
+
+#objects .ob1000 ul li {float:left;margin:0 32px 0 0;text-align:center;font-size:17px;line-height:18px;}
+#objects .ob1000 ul li.last {margin:0;}
+#objects .ob1000 ul li .src {height:74px;line-height:64px;}
+#objects .ob1000 ul li .src img {vertical-align: bottom;}
+/* ------ */
+
+/* Проблемы */
+#problems {background:url(problems.jpg) no-repeat center 0;height:948px;}
+#problems .p1000 {width:1000px;margin:0 auto;}
+#problems .p1000 .box_left {float:left;width:466px;padding:0 0 0 32px;}
+#problems .p1000 .box_left .title {font-size:31px;font-family:compr;line-height:33px;color:#d91e1e;padding:45px 0 53px 12px;}
+#problems .p1000 .box_left .title div {font-size:45px;font-family:compm;color:#000;text-transform:uppercase;}
+
+#problems .p1000 .box_left .problem {padding:0 0 29px 0;}
+#problems .p1000 .box_left .problem .name {background:url(title_p.png) no-repeat;font-family:compm;padding:0 0 15px 42px;font-size:23px;line-height:18px;}
+#problems .p1000 .box_left .problem .message {font-size:16px;line-height:15px;padding:0 0 0 42px;}
+
+
+#problems .p1000 .box_right {float:left;width:500px;}
+#problems .p1000 .box_right .title {font-size:37px;font-family:compr;line-height:33px;color:#22a200;padding:45px 0 53px 0;text-align:center;}
+#problems .p1000 .box_right .title div {font-size:45px;font-family:compm;color:#000;text-transform:uppercase;}
+
+#problems .p1000 .box_right .plus {padding:0 0 77px 20px;}
+#problems .p1000 .box_right .plus.last {padding:0 0 0 20px;}
+#problems .p1000 .box_right .plus .message {font-size:17px;padding:0 0 0 55px;}
+#problems .p1000 .box_right .plus .name {background:url(plus_p.png) no-repeat 0 5px;padding:0 0 11px 55px;font-family:myrb;font-size:18px;line-height:22px;text-transform:uppercase;}
+/* -------- */
+
+/* Гарантируем */
+#garant {background:url(garant.jpg) no-repeat center 0;height:1024px;}
+#garant .gar1000 {width:1000px;margin:0 auto;height:773px;overflow:hidden;}
+#garant .gar1000 .title {font-family:compr;font-size:73px;text-align:center;text-transform:uppercase;text-shadow:0 1px 0 #eef8fd;padding:40px 0 30px 0;}
+#garant .gar1000 ul {overflow:hidden;padding:0 0 25px 0;}
+#garant .gar1000 ul li {float:left;text-align:center;}
+#garant .gar1000 ul li.last {float:right;}
+#garant .gar1000 ul li.middle {float:none;margin:0 312px;}
+#garant .gar1000 ul li {font-size:20px;}
+#garant .gar1000 ul li b {font-family:myrb;}
+#garant .gar1000 ul li img {vertical-align: -14%;}
+
+#garant .form_g {width:600px;margin:0 auto;}
+#garant .form_g .title {font-family:compr;font-size:66px;text-align:center;text-transform:uppercase;color:#fff;padding:12px 0 4px 0;}
+#garant .form_g .line_input {overflow:hidden;padding:0 0 18px 0;}
+#garant .form_g input {background:url(input_g.png);height:44px;width:266px;font-family:myrr;font-size:20px;padding:0 13px;}
+#garant .form_g label {display:block;float:left;}
+#garant .form_g label.name {margin:0 10px 0 0;}
+#garant .form_g a {background:url(button_g.png);width:332px;height:65px;padding:16px 0 0 0;display:block;margin:0 auto;line-height:22px;font-family:condm;font-size:26px;text-align:center;color:#143600;text-shadow:0 1px 0 #6ab431;}
+#garant .form_g a span {font-size:34px;text-transform:uppercase;display:block;text-shadow:0 1px 0 #85c632;}
+/* ----------- */
+
+#partners {background:url(partners.png) repeat-x;height:96px;text-align:center;padding:30px 0 0 0;}
+
+/* Клиенты */
+#clients {width:1000px;margin:0 auto;overflow:hidden;}
+#clients .title {font-family:compm;font-size:45px;text-transform:uppercase;text-align:center;padding:25px 0;}
+#clients img {float:left;margin:0 15px 0 0;}
+#clients img.last {margin:0;}
+/* ------- */
+
+/* Лицензия */
+#license {width:1000px;margin:0 auto;overflow:hidden;padding: 0 0 40px 0;}
+#license .title {font-family:compm;font-size:45px;text-transform:uppercase;text-align:center;padding:25px 0;}
+#license .sert {margin:0 98px;}
+#license img {float:left;margin:0 15px 0 0;}
+/* -------- */
+
+/* Как мы работаем */
+#how_work {background:url(how_work.png) no-repeat center 0;height:543px;padding:35px 0 0 0;}
+#how_work .hw_ico {background:url(hw_ico.png);width:1005px;height:494px;margin:0 auto;position:relative;color:#a8ddff;font-size:17px;line-height:17px;text-align:center;}
+#how_work .hw_ico .hw1,#how_work .hw_ico .hw2,#how_work .hw_ico .hw3,#how_work .hw_ico .hw4,#how_work .hw_ico .hw5,#how_work .hw_ico .hw6,#how_work .hw_ico .hw7,#how_work .hw_ico .hw8,#how_work .hw_ico .hw9 {position:absolute;top:130px;}
+
+#how_work .hw_ico .hw1 {left:31px;} 
+#how_work .hw_ico .hw2 {left:228px;}
+#how_work .hw_ico .hw3 {left:431px;} 
+#how_work .hw_ico .hw4 {right:224px;} 
+#how_work .hw_ico .hw5 {right:0;} 
+#how_work .hw_ico .hw6 {top:321px;right:131px;} 
+#how_work .hw_ico .hw7 {top:321px;right:321px;} 
+#how_work .hw_ico .hw8 {top:321px;right:562px;} 
+#how_work .hw_ico .hw9 {top:321px;left:124px;} 
+#how_work .hw_ico .title {font-size:45px;font-family:compm;color:#fff;position:absolute;text-transform:uppercase;left:371px;top:231px;}
+/* ---------------- */
+
+/* Футер сайта */
+#footer {background:url(footer.jpg) no-repeat center 0;height:344px;}
+#footer .f1000 {width:595px;margin:0 auto;}
+#footer .f1000 .title {font-family:compr;font-size:66px;text-transform:uppercase;text-shadow:0 1px 0 #fff;padding:45px 0 0 0;}
+#footer .f1000 input {background:url(input_f.png);width:253px;height:44px;display:block;float:left;font-family:myrr;font-size:20px;padding:0 15px;}
+#footer .f1000 label {display:block;float:left;}
+#footer .f1000 label.name {margin:0 9px 0 0;}
+#footer .f1000 .line_input {overflow:hidden;padding:0 0 17px 0;}
+#footer .f1000 a {background:url(button_f.png);width:585px;height:71px;display:block;margin:0 0 0 -4px;font-family:condm;font-size:30px;text-align:center;text-transform:uppercase;color:#143600;text-shadow:0 1px 0 #73ba31;line-height:63px;}
+#footer .f1000 .adress {font-size:18px;}
+#footer .f1000 .adress b {font-family:myrb;}
+#footer .f1000 .number {padding:4px 0 0 0;font-size:18px;font-family:myrb;vertical-align:top;line-height:40px;}
+#footer .f1000 .number span {font-family:myrbc;font-size:40px;}
+#footer .f1000 .email {float:right;font-family:myrb;font-size:18px;line-height:30px;vertical-align:top;padding:10px 20px 0 0;}
+#footer .f1000 .email span {font-family:myrbc;font-size:30px;text-decoration:underline;}
+/* ----------- */
+
+<!--[if IE 6]>
+.time{display:none;}
+    <![endif]-->
+    <!--[if IE 7]>
+        .time{display:none;}
+    <![endif]-->
+    <!--[if IE 8]>
+        .time{display:none;}
+    <![endif]-->

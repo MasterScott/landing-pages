@@ -1,0 +1,82 @@
+/** Livetex Buttons **/
+.lt-button {
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    font-family: Arial,sans-serif;
+    /* ie 7*/
+    *display: inline;
+    *zoom:1;
+}
+.lt-button .lt-status {
+  display: none;
+}
+.lt-button .lt-title {
+    font-family: Arial, Helvetica, sans-serif;        
+    font-weight: bold;       
+        color: #fff;
+    text-shadow: 0 1px #444;
+        
+    overflow: hidden;
+}
+.lt-button .lt-subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    line-height: 1.2em;
+    white-space: nowrap;
+        color: #fff;
+    text-shadow: 0 1px #444;
+        
+    overflow: hidden;
+}
+
+/* Big button */
+#liveTexButton_45516 {        
+    width: 223px;
+    height: 100px;
+    }
+#liveTexButton_45516.lt-online { 
+    background: url('/img/big/blue.png') no-repeat left top;
+}
+#liveTexButton_45516.lt-offline {
+    background: url('/img/big//offline.png') no-repeat left top;
+}
+#liveTexButton_45516 .lt-image {
+    width: 68px;
+    height: 79px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background: url(/img/border-big.png) left top no-repeat;
+    overflow: hidden;
+    float: left;
+    text-align: left;
+    }
+#liveTexButton_45516 .lt-image img {
+    width: 60px;
+    height: 70px; 
+    margin-left: 4px;
+    margin-top: 5px;
+}
+#liveTexButton_45516 .lt-title {    
+        font-size: 14px;
+    text-align: left;
+    margin-top: 32px;
+        overflow: hidden;
+}
+#liveTexButton_45516 .lt-subtitle {
+        text-align: left;
+    }
+.lt-site .lt-title {
+    margin-top: 60px;
+}
+
+#liveTexButton_45516.lt-offline .lt-title,
+#liveTexButton_45516.lt-offline .lt-subtitle{
+    color: #717171;
+    text-shadow: 0 1px #fff;
+}
+

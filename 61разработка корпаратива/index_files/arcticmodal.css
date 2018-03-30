@@ -1,0 +1,32 @@
+.arcticmodal-overlay,
+.arcticmodal-container { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 1000; }
+.arcticmodal-container { overflow: auto; margin: 0; padding: 0; border: 0; border-collapse: collapse; }
+*:first-child+html .arcticmodal-container { height: 100% }
+.arcticmodal-container_i { height: 100%; margin: 0 auto; }
+.arcticmodal-container_i2 { padding: 24px; margin: 0; border: 0; vertical-align: middle; }
+.arcticmodal-error { padding: 20px; border-radius: 10px; background: #000; color: #fff; }
+.arcticmodal-loading { width: 80px; height: 80px; border-radius: 10px; background: #000 url(loading.gif) no-repeat 50% 50%; }
+
+
+.box-modal {
+	position: relative;
+	width: 400px;
+	padding: 16px; 
+	color: #000;
+	font: 14px got;
+	box-shadow: 0 0 0 6px rgba(153, 153, 153, .3);
+	border-radius: 6px; 
+	background: #fff url(../img/form_s.png) center center;
+}
+.box-modal h3 {
+font-size:20px;
+color:#fff;
+margin-bottom: 15px;}
+.box-modal_close { position: absolute; right: 10px; top: 6px; font-size: 14px; line-height: 15px; color: #fff; cursor: pointer; }
+.box-modal_close:hover { color: #000;text-decoration:underline; }
+ 
+.box-modal  .phone_i,.box-modal .name_i {width:205px;height:45px;padding:0 20px 0 47px;font-family:myrr;font-size:16px;}
+.box-modal  label {display:block;margin:0 auto 13px auto;}
+.box-modal  .phone_i {background:url(../img/input_t2.png);}
+.box-modal  .name_i {background:url(../img/input_t1.png);}
+.box-modal  a {background:url(../img/button_t.png);width:270px;height:53px;color:#233100;text-shadow:0 2px 0 #e2ff94;display:block;margin:0 auto;font-family:myrb;line-height:52px;font-size:24px;text-align:center;text-transform:uppercase;}

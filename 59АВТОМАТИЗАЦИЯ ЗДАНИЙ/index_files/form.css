@@ -1,0 +1,24 @@
+
+#form  label {width:282px;position:relative;}
+#form1 label {width:282px;position:relative;}
+#form2 label {width:260px;position:relative;} 
+#form3 label {width:292px;position:relative;} 
+#form4 label {width:283px;position:relative;} 
+
+
+
+#form .error-empty,#form1 .error-empty,#form2 .error-empty,#form3 .error-empty,#form4 .error-empty {
+	color: #FF0000;
+	display: none;
+	font-size: 22px;
+	line-height: 22px;
+	width:auto;
+	position: absolute;
+	z-index: 999;
+	right: 15px;
+	top: 15px;
+	float:left;
+}
+ 
+
+.success_wrapper .success {position:absolute;background:#fff;color:#fff;font-family:myrr;z-index:50;color:#000;padding:15px;} 

@@ -1,0 +1,1 @@
+if (typeof pluso != "undefined") pluso.setCounter("42", "http://goji-berries.com.ua/", undefined, undefined, undefined);

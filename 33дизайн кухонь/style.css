@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+body {
+	margin:0;
+	background:url(images/fon.jpg) repeat;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#303030;
+}
+/************ COLOR ************/
+
+.red {color:#652936;}
+.grey {color:#5b5b5b;}
+.black {color:#303030;}
+
+/************ FONTS ***********/
+.font-m {font-family:"Myriad Pro";}
+.font-g {font-family:Georgia, "Times New Roman", Times, serif;}
+
+/************ ZAGOLOVKI ************/
+h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color:#652936;
+	font-size:20px;
+	font-weight:bold;
+	line-height:20px;
+}
+h1 span {
+	font-size:15px;
+	color:#5b5b5b;
+	font-weight:normal;
+	padding-left:70px;
+}
+p {
+	line-height:18px;
+	margin:10px 0;
+}
+#menu-top span {
+	display:block;
+	font-family:"Myriad Pro";
+	font-size:18px;
+	float:left;
+	padding:15px;
+	margin-left:30px;
+}
+#menu-top span a:link, #menu-top span a:visited {
+	color:#303030;
+	font-weight:500;
+	text-decoration:none;
+}
+#menu-top span a:hover {
+	text-decoration:underline;
+}
+h2 {
+	font-family:"Myriad Pro";
+	color:#652936;
+	font-size:28px;
+	line-height:23px;
+	font-weight:normal;
+	text-align:right;
+	padding-right:30px;
+}
+#etap span {
+	float:left;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#626262;
+	text-align:center;
+	padding:0 2px;
+}
+h3 {
+	color:#652936;
+	font-size:24px;
+	font-family:"Myriad Pro";
+}
+#phone-1 {
+	font-size:18px;
+	float:right;
+	width:270px;
+}
+
+/*********** LINK *************/
+a:link, a:visited {
+	color:#568ac0;
+	text-decoration:underline;
+}
+a:hover {
+	text-decoration:none;
+}
+.knopka-1 {
+	display:block;
+	background:url(images/knopka.png);
+	width:191px;
+	height:62px;
+	float:right;
+	margin-right:350px;
+}
+.knopka-2 {
+	display:block;
+	background:url(images/knopka.png);
+	width:191px;
+	height:62px;
+}
+a.up {
+	display:block;
+	background:url(images/knopka-up.png) top center no-repeat;
+	width:211px;
+	line-height:45px;
+	padding-top:15px;
+	text-decoration:none;
+	color:#652936;
+	font-size:18px;
+	text-align:center;
+	position:fixed;
+	bottom:0px;
+	left:42%;
+	z-index: 1000;
+}
+
+.clr {clear:both;}
+
+#col-980 {
+	margin:0 auto;
+	width:980px;
+}
+
+#screen-1 {
+	background:url(images/screen-1.png) top center no-repeat;
+}
+#logo {
+	float:left;
+	width:240px;
+	padding-top:10px;
+}
+#menu-top {
+	float:left;
+	padding-top:17px;
+}
+#screen-2 {
+	background:url(images/girl-1.png) left bottom no-repeat;
+	padding-left:255px;
+	margin-top:185px;
+}
+#screen-3 {
+	background:url(images/screen-3.png) top center;
+	height:947px;
+}
+#col-750 {
+	width:750px;
+	margin:0 auto;
+	padding:70px 0 0 0;
+}
+
+/*********** OTZYV ************/
+#otziv-left {
+	background:url(images/otziv-left.png) top left no-repeat;
+}
+#otziv-bottom {
+	background:url(images/otziv-bottom.png) bottom right no-repeat;
+	padding:0 0 23px 19px;
+}
+#otziv {
+	background:#ffffff;
+	padding:15px;
+}
+
+#screen-4 {
+	background:url(images/line-2.jpg) bottom repeat-x;
+}
+#quality {
+	width:550px;
+	padding-right:170px;
+	margin:0 auto;
+	background:url(images/girl-2.png) bottom right no-repeat;
+}
+
+#screen-5 {
+	background:url(images/fon-darkred.png) repeat-x;
+	color:#ffffff;
+}
+#screen-5 #col-980 {
+	padding:15px 0;
+	background:url(images/fon-5.png) 20px 0px no-repeat;
+}
+#faq {
+	float:left;
+	margin-left:130px;
+	width:500px;
+}
+#faq  .accordion .trigger {
+	color: #dbb3bb;
+	margin: 10px 0px;
+	cursor: pointer;
+}
+#faq  .accordion .trigger:hover {
+	text-decoration: underline;
+}
+#faq  .accordion .trigger + div {
+	background: url(images/fon-otvet.png) repeat-y;
+	border-left: 5px solid #e49b3b;
+	padding: 2px 10px;
+}
+#faq  .accordion .trigger + div p {
+	margin: 10px 0px;
+}
+#form {
+	float:left;
+}
+#form .label {width: 80px;}
+#form input[type=text], #form  textarea {width: 228px;}
+
+#line-2 {
+	background:url(images/line-2.jpg) repeat-x;
+	height:22px;
+}
+#line-3 {
+	background:url(images/line-3.jpg) repeat-x;
+	height:22px;
+}
+
+/************ screen-6 ************/
+#screen-6 {
+	background:url(images/fon-6.png) left no-repeat;
+	margin:0 auto;
+	width:980px;
+
+}
+#sc-6 {
+	background:url(images/birka-green-big.png) bottom right no-repeat;
+	margin:0 auto;
+	padding:10px 0 0 20px;
+}
+
+/************ screen-7 ************/
+#screen-7 {
+	background:url(images/fon-darkred.png) repeat-x;
+	padding:15px 0;
+	color:#ffffff;
+}
+#col-1020 {
+	width:1020px;
+	height: 900px;
+	margin:0 auto;
+	background: url(images/fon-8.png) 0px 95% no-repeat;
+	position: relative;
+}
+#col-1020 a.highslide {position: absolute; border: none; display: inline-block; padding: 0px;}
+#col-1020 a.highslide:after {
+   position: absolute; display: block; background: url(images/mask.png) no-repeat; background-size: 100%;
+  top: 0px; left: 0px; z-index: 100;  opacity: 0.7; content: ' ';
+}
+#col-1020 a.highslide:hover:after {opacity: 0;}
+#col-1020 a.highslide img {border: none;}
+#col-1020 a#k1 {left: 83px; top: 10px;}
+#col-1020 a#k1 img, #col-1020 a#k1:after {width: 239px; height: 239px; border-radius: 120px;}
+#col-1020 a#k2 {left: 350px; top: 70px;}
+#col-1020 a#k2 img, #col-1020 a#k2:after {width: 144px; height: 144px; border-radius: 72px;}
+#col-1020 a#k3 {left: 515px; top: 0px;}
+#col-1020 a#k3 img, #col-1020 a#k3:after {width: 356px; height: 356px; border-radius: 178px;}
+#col-1020 a#k4 {left: 11px; top: 276px;}
+#col-1020 a#k4 img, #col-1020 a#k4:after {width: 188px; height: 190px; border-radius: 95px;}
+#col-1020 a#k5 {left: 230px; top: 225px;}
+#col-1020 a#k5 img, #col-1020 a#k5:after {width: 311px; height: 309px; border-radius: 155px;}
+#col-1020 a#k6 {left: 560px; top: 370px;}
+#col-1020 a#k6 img, #col-1020 a#k6:after {width: 165px; height: 165px; border-radius: 83px;}
+#col-1020 a#k7 {left: 736px; top: 316px;}
+#col-1020 a#k7 img, #col-1020 a#k7:after {width: 270px; height: 270px; border-radius: 135px;}
+#col-1020 a#k8 {left: 78px; top: 476px;}
+#col-1020 a#k8 img, #col-1020 a#k8:after {width: 155px; height: 155px; border-radius: 78px;}
+#col-1020 a#k9 {left: 287px; top: 570px;}
+#col-1020 a#k9 img, #col-1020 a#k9:after {width: 162px; height: 162px; border-radius: 81px;}
+#col-1020 a#k10 {left: 506px; top: 568px;}
+#col-1020 a#k10 img, #col-1020 a#k10:after {width: 189px; height: 190px; border-radius: 95px;}
+
+
+/************ screen-8 ************/
+#screen-8 {
+	background:url(images/screen-9.png) top center repeat-x;
+}
+#telephone {
+	float:left;
+	width:330px;
+}
+#social {
+	float:left;
+	width:320px;
+	padding-top:100px
+}
+#sale {
+	float:right;
+	background:url(images/birka-green.png) no-repeat right;
+	width:330px;
+	height:163px;
+}
+
+.reveal-modal input[type=text], .reveal-modal  textarea {width: 228px;}
+.reveal-modal h2 {text-align: left}
+.reveal-modal p {text-align: justify;}

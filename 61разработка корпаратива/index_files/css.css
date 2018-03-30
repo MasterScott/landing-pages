@@ -1,0 +1,292 @@
+* {margin:0;padding:0;border:0;outline:none;}
+
+body {max-width:1920px;margin:0 auto;}
+
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+@font-face {font-family:myrr;src:url(myrr.otf) format("opentype");}
+@font-face {font-family:myrb;src:url(myrb.otf) format("opentype");}
+@font-face {font-family:myrsb;src:url(myrsb.otf) format("opentype");}
+
+@font-face {font-family:dinb;src:url(dinb.ttf) format("truetype");}
+@font-face {font-family:got;src:url(got.ttf) format("truetype");}
+@font-face {font-family:gotb;src:url(gotb.ttf) format("truetype");}
+@font-face {font-family:hellb;src:url(hellb.ttf) format("truetype");}
+
+/* Шапка сайта */
+#header {padding:0 0 8px 0;}
+#header .h1000 {width:1000px;left:50%;margin:0 0 0 -500px;z-index:3;position:absolute;color:#fff;font-family:got;padding:33px 0 0 0;}
+#header .h1000 .logo {background:url(logo.png) no-repeat;min-height:52px;padding:12px 0 0 120px;font-family:gotb;font-size:18px;}
+#header .h1000 .contact {float:right;padding:10px 0 0 0;}
+#header .h1000 .contact button {background:url(button.png) no-repeat;width:242px;height:51px;font-family:myrb;cursor:pointer;font-size:20px;display:block;float:right;text-transform:uppercase;text-shadow:0 2px 0 #e2ff94;}
+#header .h1000 .contact .text {padding:2px 10px 0 0;float:right;font-size:14px;font-family:myrr;text-align:right;line-height:13px;}
+#header .h1000 .contact .text b {font-family:myrb;}
+#header .h1000 .contact .text span {font-size:24px;display:block;line-height:21px;}
+
+#header .h1000 .title {padding:21px 0 0 0;font-family:gotb;font-size:38px;text-align:center;text-transform:uppercase;}
+#header .h1000 .title span {font-size:26px;text-transform:none;line-height:23px;display:block;}
+
+#header .h1000 .form_t {background:url(form_t.png);width:334px;height:424px;float:right;margin:20px 0 0 0;}
+#header .h1000 .form_t .desc {font-size:26px;line-height:28px;text-align:center;padding:16px 0 24px 0;}
+#header .h1000 .form_t .desc b {text-transform:uppercase;font-weight:none;font-family:gotb;}
+#header .h1000 .form_t .email_i,#header .h1000 .form_t .phone_i,#header .h1000 .form_t .name_i {width:205px;height:45px;padding:0 20px 0 47px;font-family:myrr;font-size:16px;}
+#header .h1000 .form_t label {display:block;margin:0 auto 13px auto;}
+
+#header .h1000 .form_t .email_i {background:url(input_t3.png);}
+#header .h1000 .form_t .phone_i {background:url(input_t2.png);}
+#header .h1000 .form_t .name_i {background:url(input_t1.png);}
+
+#header .h1000 .form_t .input_t {background:url(input_t4.png);width:106px;height:35px;display:block;padding:0 13px 0 13px;font-family:myrr;font-size:16px;float:left; margin: 2px;}
+#header .h1000 .form_t .inp {overflow:hidden;padding:0 0 13px 31px;}
+#header .h1000 .form_t a {background:url(button_t.png);width:270px;height:53px;color:#233100;text-shadow:0 2px 0 #e2ff94;display:block;margin:70px auto;font-family:myrb;line-height:52px;font-size:24px;text-align:center;text-transform:uppercase;}
+/* ----------- */
+
+
+/* Слайдер */
+#header .flexslider {position:relative;margin:-25px auto;}
+#header .flexslider .flex-direction-nav a {display: none;}
+#header .flexslider .flex-direction-nav .flex-next {display:none;}
+#header .flexslider .flex-direction-nav .flex-prev {display:none;} 
+#header .flexslider .flex-control-nav li,.flex-direction-nav li {display:none;list-style:none;}
+#header .flexslider .slide1 {background:url(top1.jpg) no-repeat center 0;height:754px;}  
+#header .flexslider .slide2 {background:url(top2.jpg) no-repeat center 0;height:754px;}  
+#header .flexslider .slide3 {background:url(top3.jpg) no-repeat center 0;height:754px;}
+/* ------- */
+
+/* акции */
+#action {background:url(action.png) no-repeat center 0;height:168px;}
+#action .a1000 {width:811px;margin:0 auto;padding:0 0 0 189px;}
+#action .a1000 .title {font-size:29px;font-family:gotb;line-height:38px;padding:20px 0 0 0;}
+#action .a1000 .title div {font-size:39px;text-transform:uppercase;}
+#action .a1000 .title span{color:#fe0101;}
+
+/* timer */
+#action .time{float:right;}
+#action .time .name_t {font-size:17px;font-family:gotb;text-align:center;padding:22px 0 5px 0;}
+#action .time *{vertical-align: top;}
+#action .c-block{display: inline-block;*display: inline;zoom: 1;margin: 0 13px 0 3px;padding: 4px 0 0 3px;position: relative;}
+#action .c-block:before{content: '';position: absolute;left: 100%;top: 0;width: 31px;height: 77px;}
+#action .bl-inner{position: relative;margin-right: -10px;height: 48px;background: transparent url(sprites.png) no-repeat -5px -48px;}
+#action .bl-inner span{display: none;font-size: 46px;color: #fff;line-height: 46px;margin-left: 2px;}
+#action .bl-inner:before{content: '';position: absolute;left: 100%;top: 0;width: 3px;background: transparent url(sprites.png) no-repeat -122px -48px;height: 48px;}
+#action .c-block-1{width: 20px;}
+#action .c-block-2{width: 45px;}
+#action .c-block-3{width: 70px;}
+/* ----- */
+
+#action .a1000 .first_line {overflow:hidden;}
+#action .a1000 .form_a {overflow:hidden;padding:6px 0 0 0;}
+#action .a1000 .form_a input {width:178px;height:41px;font-family:myrr;font-size:16px;padding:0 20px 0 47px;}
+#action .a1000 .form_a input[type="text"] {background:url(input_a.png);}
+#action .a1000 .form_a input[type="tel"] {background:url(input_a2.png);}
+#action .a1000 .form_a label {margin:0 11px 0 0;display:block;float:left;}
+#action .a1000 .form_a a {background:url(button_a.png);width:299px;height:39px;float:left;display:block;font-size:16px;text-align:center;color:#fff;font-family:myrsb;line-height:39px;text-transform:uppercase;}
+/* ----- */
+
+/* Мы предлагаем */
+#we_do {background:url(wd.jpg) no-repeat center bottom;padding:0 0 90px 0;}
+#we_do .wd1000 {width:1000px;margin:0 auto;}
+#we_do .wd1000 .title {font-size:50px;font-family:got;text-align:center;text-transform:uppercase;line-height:120px;}
+/* ------------- */
+
+/* Прайсы */
+#prices {width:1000px;margin:0 auto;padding:20px 0 32px 0;}
+#prices .title {overflow:hidden;}
+#prices .title .title_p {background:url(title_p.png);width:332px;height:74px;padding:15px 0 0 0;display:block;float:left;font-family:gotb;text-align:center;text-transform:uppercase;font-size:25px;margin:0 2px 0 0;}
+#prices .title .title_p.last {margin:0;}
+#prices .title .title_p div span {color:#ff0000;font-size:27px;font-family:dinb;}
+#prices .title .title_p div b {font-size:15px;text-transform:none;line-height:27px;vertical-align:top;}
+
+#prices .boxes {background:url(bg_prices.png) no-repeat center 0;overflow:hidden;}
+#prices .box {font-family:tahoma;font-size:15px;width:332px;border-right:1px solid #b7d3d9;border-left:1px solid #b7d3d9;border-bottom:1px solid #b7d3d9;float:left;}
+#prices .box.center {border:0;border-bottom:1px solid #b7d3d9;}
+#prices .item {padding:10px 0 10px 18px;}
+#prices .item div,#prices .item2 div {background:url(gal.png) no-repeat 0 4px;padding:0 0 0 31px;}
+#prices .item span,#prices .item2 span {display:block;text-align:center;padding:9px 0 8px 0;}
+#prices .item .pitem,#prices .item2 .pitem {padding:9px 0 9px 0;}
+#prices .item2 {padding:10px 0 10px 18px;background:#f4fdff;}
+/* ----- */
+
+/* Форма */
+#form_s {background:url(form_s.png) no-repeat center 0;height:337px;}
+#form_s .title {text-align:center;font-size:33px;line-height:36px;font-family:gotb;color:#fff;text-transform:uppercase;padding:45px 0 17px 0;}
+#form_s .form {width:606px;margin:0 auto;}
+#form_s .form .email_i,#form_s .form .phone_i,#form_s .form .name_i {width:225px;height:45px;padding:0 20px 0 47px;font-family:myrr;font-size:16px;}
+#form_s .form label {display:block;margin:0 11px 8px 0;float:left;}
+#form_s .form .email_i {background:url(input_s3.png);}
+#form_s .form .phone_i {background:url(input_s2.png);}
+#form_s .form .name_i {background:url(input_s1.png);}
+
+#form_s .form .input_t {background:url(input_s5.png);width:116px;height:44px;display:block;padding:0 13px 0 13px;font-family:myrr;font-size:16px;float:left;margin:0 8px 0 0;}
+#form_s .form  .inp {overflow:hidden;padding:0 0 10px 0;}
+#form_s .form  a {background:url(button_t.png);width:270px;height:53px;color:#233100;text-shadow:0 2px 0 #e2ff94;display:block;margin:0 auto;font-family:myrb;line-height:52px;font-size:24px;text-align:center;text-transform:uppercase;}
+/* ------ */
+
+
+/* Проблемы + решения */
+#prob_p {background:url(problems_resh.png) repeat-y center 0;}
+#prob_p .pp1000 {width:1000px;margin:0 auto;overflow:hidden;}
+
+.titles_problems {width:1000px;margin:0 auto;overflow:hidden;font-family:gotb;font-size:35px;line-height:97px;padding:21px 0 0 0;}
+.titles_problems .title.first {width:404px;text-align:center;float:left;}
+.titles_problems .title.last {width:596px;text-align:center;float:right;}
+
+#prob_p .box-p {width:404px;float:left;}
+#prob_p .box-r {width:596px;float:right;}
+
+#prob_p .box-p .item.first {height:131px;padding:34px 0 0 0;border-bottom:1px solid #e6e6e6;}
+#prob_p .box-p .item.two {height:122px;padding:22px 0 0 0;border-bottom:1px solid #e6e6e6;}
+#prob_p .box-p .item.three {height:141px;padding:29px 0 0 0;border-bottom:1px solid #e6e6e6;}
+#prob_p .box-p .item.four {height:210px;padding:42px 0 0 0;border-bottom:1px solid #e6e6e6;}
+#prob_p .box-p .item.five {height:156px;padding:27px 0 0 0;border-bottom:1px solid #e6e6e6;}
+#prob_p .box-p .item.six {height:124px;padding:25px 0 0 0;border-bottom:1px solid #e6e6e6;}
+#prob_p .box-p .item.seven {height:155px;padding:24px 0 0 0;border-bottom:1px solid #e6e6e6;}
+#prob_p .box-p .item.eight {height:137px;padding:32px 0 0 0;border-bottom:1px solid #e6e6e6;}
+#prob_p .box-p .item.nine {height:157px;padding:23px 0 0 0;border-bottom:1px solid #e6e6e6;}
+#prob_p .box-p .item .src {float:left;}
+#prob_p .box-p .item .message {margin:0 0 0 126px;font-family:arial;font-size:15px;}
+#prob_p .box-p .item .title {font-size:16px;line-height:17px;font-family:myrb;padding:0 0 18px 0;}
+
+
+#prob_p .box-r .item.first {height:146px;padding:19px 0 0 39px;border-bottom:1px solid #e3d200;}
+#prob_p .box-r .item.two {height:139px;padding:5px 0 0 39px;border-bottom:1px solid #e3d200;}
+#prob_p .box-r .item.three {height:150px;padding:20px 0 0 39px;border-bottom:1px solid #e3d200;}
+#prob_p .box-r .item.four {height:230px;padding:22px 0 0 39px;border-bottom:1px solid #e3d200;}
+#prob_p .box-r .item.five {height:156px;padding:27px 0 0 39px;border-bottom:1px solid #e3d200;}
+#prob_p .box-r .item.six {height:139px;padding:10px 0 0 39px;border-bottom:1px solid #e3d200;}
+#prob_p .box-r .item.seven {height:155px;padding:24px 0 0 39px;border-bottom:1px solid #e3d200;}
+#prob_p .box-r .item.eight {height:154px;padding:15px 0 0 39px;border-bottom:1px solid #e3d200;}
+#prob_p .box-r .item.nine {height:170px;padding:10px 0 0 39px;border-bottom:1px solid #e3d200;}
+#prob_p .box-r .item .src {float:left;}
+#prob_p .box-r .item .message {margin:0 0 0 165px;font-family:tahoma;font-size:16px;line-height:17px;}
+#prob_p .box-r .item .title {background:url(title_r.png) no-repeat 0 3px;font-size:20px;line-height:21px;font-family:myrb;margin:5px 0 0 0;padding:0 0 13px 30px;text-transform:uppercase;}
+/* ------------------ */
+
+
+
+/* Форма */
+#form_p {background:url(form_p.jpg) no-repeat center 0;height:389px;}
+#form_p .formp {width:611px;margin:0 auto;padding:92px 0 0 30px;}
+#form_p .formp .title {font-size:38px;font-family:gotb;color:#fff;text-align:center;line-height:36px;text-transform:uppercase;padding:0 0 16px 0;}
+
+#form_p .formp .email_i,#form_p .formp .phone_i,#form_p .formp .name_i {width:225px;height:45px;padding:0 20px 0 47px;font-family:myrr;font-size:16px;}
+#form_p .formp label {display:block;margin:0 11px 8px 0;float:left;}
+#form_p .formp .email_i {background:url(input_p3.png);}
+#form_p .formp .phone_i {background:url(input_p2.png);}
+#form_p .formp .name_i {background:url(input_p1.png);}
+
+#form_p .formp a {background:url(button_p.png);width:290px;height:45px;color:#233100;text-shadow:0 1px 0 #e2ff94;display:block;float:left;font-family:myrb;line-height:45px;font-size:21px;text-align:center;text-transform:uppercase;}
+/* ----- */
+
+
+/* Доверяют */
+#dov {width:1000px;margin:0 auto;padding:23px 0 0 0;}
+#dov .title {line-height:88px;font-family:gotb;font-size:34px;text-transform:uppercase;text-align:center;}
+/* -------- */
+
+/* Фотографии */
+#photos {width:1000px;margin:0 auto;padding:0 0 49px 0;}
+#photos .title {text-align:center;text-transform:uppercase;font-family:gotb;font-size:48px;line-height:78px;padding:20px 0 0 0;}
+#photos .photo {position:relative;height:716px;}
+
+#photos .photo .photo1,#photos .photo .photo2,#photos .photo .photo3,#photos .photo .photo4,#photos .photo .photo5,#photos .photo .photo6,#photos .photo .photo7,#photos .photo .photo8,#photos .photo .photo9 ,#photos .photo .photo10,#photos .photo .photo11 {position:absolute;}
+#photos img {display:block;}
+#photos .photo .photo1 {left:0;top:0;}
+#photos .photo .photo2 {left:285px;top:0;}
+#photos .photo .photo3 {right:0;top:0;}
+#photos .photo .photo4 {left:0;top:230px;}
+#photos .photo .photo5 {left:285px;top:206px;}
+#photos .photo .photo6 {left:563px;top:263px;}
+#photos .photo .photo7 {right:0;top:263px;}
+
+#photos .photo .photo8 {left:0;bottom:0;}
+#photos .photo .photo9 {left:285px;bottom:0;}
+#photos .photo .photo10 {right:192px;bottom:0;}
+#photos .photo .photo11 {right:0;bottom:0;}
+/* ----------- */
+
+/* Сертификаты */
+#sert {background:url(bg_sert.png) repeat-x;border-top:2px solid #fff;padding:0 0 41px 0;}
+#sert .s1000 {width:1000px;margin:0 auto;overflow:hidden;}
+#sert .s1000 .title {font-family:gotb;font-size:48px;text-transform:uppercase;text-align:center;line-height:130px;}
+#sert .s1000 img {float:left;padding:0 16px 14px 0;}
+#sert .s1000 img.last {padding-right:0;}
+/* ----------- */
+
+/* Как работаем */
+#how_work {background:url(bg_hw.png) no-repeat center 0;height:417px;padding:60px 0 0 0;}
+#how_work .hw_ico {background:url(hw_ico.png) no-repeat center 0;position:relative;width:1000px;margin:0 auto;height:359px;}
+#how_work .hw_ico .hw1,#how_work .hw_ico .hw2,#how_work .hw_ico .hw3,#how_work .hw_ico .hw4,#how_work .hw_ico .hw5,#how_work .hw_ico .hw6 {position:absolute;font-size:16px;line-height:15px;font-family:myrr;}
+#how_work .hw_ico .hw1 div,#how_work .hw_ico .hw2 div,#how_work .hw_ico .hw3 div,#how_work .hw_ico .hw4 div,#how_work .hw_ico .hw5 div,#how_work .hw_ico .hw6 div {font-size:25px;font-family:myrsb;padding:0 0 9px 0;}
+#how_work .hw_ico .title {position:absolute;font-size:40px;line-height:35px;font-family:gotb;text-transform:uppercase;left:400px;top:141px;}
+#how_work .hw_ico .hw1 {left:170px;text-align:right;}
+#how_work .hw_ico .hw2 {right:105px;}
+#how_work .hw_ico .hw3 {right:85px;top:137px;}
+#how_work .hw_ico .hw4 {right:185px;top:287px;}
+#how_work .hw_ico .hw5 {left:233px;top:287px;text-align:right;}
+#how_work .hw_ico .hw6 {left:90px;top:150px;text-align:right;}
+/* ------------- */
+
+/* Футер сайта */
+#footer {background:url(footer.jpg) no-repeat center 0;height:316px;}
+#footer .f1000 {width:610px;margin:0 auto;padding:26px 0 0 0;}
+#footer .f1000 .title {font-family:gotb;line-height:73px;font-size:33px;color:#fff;text-align:center;text-transform:uppercase;}
+#footer .f1000 .email_i,#footer .f1000 .phone_i,#footer .f1000 .name_i {width:225px;height:45px;padding:0 20px 0 47px;font-family:myrr;font-size:16px;}
+#footer .f1000 label {margin:0 11px 8px 0;float:left;display:block;}
+#footer .f1000 .inp {overflow:hidden;}
+#footer .f1000 .email_i {background:url(input_f3.png);}
+#footer .f1000 .phone_i {background:url(input_f2.png);}
+#footer .f1000 .name_i {background:url(input_f1.png);}
+
+#footer .f1000 a {background:url(button_f.png);width:290px;height:45px;color:#233100;text-shadow:0 1px 0 #e2ff94;display:block;float:left;font-family:myrb;line-height:45px;font-size:21px;text-align:center;text-transform:uppercase;}
+
+#footer .f1000 .text {text-align:center;font-family:gotb;font-size:16px;text-transform:uppercase;padding:10px 0 0 0;}
+#footer .f1000 .text span {font-family:got;line-height:18px;display:block;text-transform:none;}
+#footer .f1000 .text h3 {line-height:26px;font-size:27px;}
+/* ------------- */
+
+#form_s .form .kol{width: 140px;}
+#form_s .form .date{width:140px;}
+@media only screen and  (max-width: 1024px) {
+#header{width:1000px;}
+#header .h1000{width:1000px;}
+#action {width:1000px;}
+#we_do{width:1000px;}
+#prices{width:1000px;}
+#form_s{width:1000px;}
+#prob_p {width:1000px;}
+#prob_p .pp1000 {width:1000px;}
+#form_p{width:1000px;}
+#dov{width:1000px;}
+#photos{width:1000px;}
+#sert{width:1000px;}
+#how_work{width:1000px;}
+#footer{width:1000px;}
+#header .h1000 .title{font-size:25px;}
+}
+
+
+
+
+
+
+#page-preloader {
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #313130;
+    z-index: 100500;
+}
+#page-preloader .spinner {
+    width: 280px;
+    height: 166px;
+    position: absolute;
+    left: 42%;
+    top: 45%;
+    background: url('spinner.gif') no-repeat 50% 50%;
+   
+}

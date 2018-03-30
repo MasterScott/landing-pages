@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Шаблон</title>
+<link href="css/template.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/jshowoff.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+<!--[if IE 6]>
+<script src="js/DD_belatedPNG.js"></script>
+<script>
+DD_belatedPNG.fix('*');
+</script>
+<link href="css/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<script type="text/javascript" src="js/jquery.jshowoff.min.js"></script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<script type="text/javascript">		
+	$(document).ready(function(){ $('#features1').jshowoff();$('#features2').jshowoff();$('#features3').jshowoff();
+$(function() {
+	$('a[rel*=leanModal]').leanModal({ top : 200, closeButton: ".modal-close", overlay:0.7 });       
+});
+});
+
+</script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript">
+// fix pre overflow in IE
+(function ($) {
+	$.fn.fixOverflow = function () {
+		if ($.browser.msie) {
+			return this.each(function () {
+				if (this.scrollWidth > this.offsetWidth) {
+					$(this).css({ 'padding-bottom' : '20px', 'overflow-y' : 'hidden' });
+				}
+			});
+		} else {
+			return this;
+		}
+	};
+})(jQuery);
+$('pre').fixOverflow();
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        scroll: 1,
+		visible: 3
+    });
+});
+</script>
+</head>
+<body>
+
+  <div id="form2" style="display: none; position: fixed; opacity: 1; z-index: 11000; left: 50%; margin-left: -219px; top: 200px;">
+    <div class="form">
+    	<div class="modal-close"></div>
+        <div class="form-inner">
+        <form action="">2
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="form3" style="display: none; position: fixed; opacity: 1; z-index: 11000; left: 50%; margin-left: -219px; top: 200px;">
+    <div class="form">
+    	<div class="modal-close"></div>
+        <div class="form-inner">
+        <form action="">3
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="form4" style="display: none; position: fixed; opacity: 1; z-index: 11000; left: 50%; margin-left: -219px; top: 200px;">
+    <div class="form">
+    	<div class="modal-close"></div>
+        <div class="form-inner">
+        <form action="">4
+        </form>
+      </div>
+    </div>
+  </div>
+  
+ <div class="header-bg">
+      <div class="container">
+        <div class="logoNdescript">
+        <a href="index.html"><img src="images/top-logo.png"></a>
+       <p class="description" style=" text-align:center;">Подбор линейного персонала за 1 месяц с гарантией пол года</p>
+        </div>
+
+        <div class="order-box">
+          <p class="telephone">+7 (800) <span class="width40-bold">000-00-00</span><br>
+          <span class="email">info@mail.ru</span>
+        </div> 
+
+      </div>
+    </div>
+
+    <div class="in-numbers">
+      <div class="numb container">
+      </div>
+    </div>
+	
+	
+	
+	
+	
+	
+<div class="two-line"></div>
+
+<div class="middle-form">
+    <div class="container">
+        <div class="top-form-contain">
+          <div class="contens-form">
+            <p class="form-descript"><span>закажите бесплатную</span><br>консультацию по </p>
+            <p class="form-big-text">ВАШЕЙ ВАКАНСИИ</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text  nameinp sinp" required type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp" required type="text" name="phone" placeholder="Телефон">          
+          <input class="s_text adress" required type="text" name="adress" placeholder="Почта">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="submit" value="ЗАКАЗАТЬ">
+        </form>
+          
+          </div>
+        </div>
+    </div>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+
+<div id="block3">
+  <div class="inner">
+  <h1>ПОЧЕМУ <br> МЫ? </h1>
+  <div class="pod4erkivanie"></div>
+  <div class="block left top">
+  	<img src="images/block3-img1.png" width="166" height="153" alt=""/>
+  	<h3>Экономическая целесообзарность</h3>
+  	 <p>Цена подбора 1,5 оклада</p>
+	
+	
+	
+  </div>
+  <div class="block mid top">
+  	<img src="images/block3-img2.png" width="166" height="153" alt=""/>
+  	<h3>Оперативность</h3>
+  <p> Первые 5 профессионально отобранных кандидатов
+уже через 2 недели </p>
+
+  </div>
+  
+  <div class="block right top">
+  	<img src="images/block3-img3.png" width="166" height="153" alt=""/>
+<h3>Большой опыт</h3>
+<p> Большой опыт подбора среднего и обслуживающего персонала от секретаря, офис-менеджера до бухгалтера и менеджера по продажам. </p>
+</div>
+  <div class="block left bottom">
+  	<img src="images/block3-img4.png" width="166" height="153" alt=""/>
+  <h3>Минимальная погрешность</h3>
+<p>Мы оцениваем не только профильный опыт работы и результаты, но и компетенции по общепризнаной модели оценки компитенций </p>
+
+  </div>
+  <div class="block mid bottom">
+  	<img src="images/block3-img5.png" width="166" height="153" alt=""/>
+  <h3>Профессионализм</h3>
+<p>Вы доверяете свою вакансию успешным рекрутерам и профессионалам по оценке персонала с опытом работы более 10 лет
+ </p>  </div>
+  <div class="block right bottom">
+  	<img src="images/block3-img6.png" width="166" height="153" alt=""/>
+    <h3>Качество</h3>
+	<p>Клиентоориентированность для нас - не лозунг 
+ </p>
+  </div>
+  </div>
+  </div>
+
+
+ 
+  <div class="two-line"></div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    	<div class="hover">
+	<div class="contain yes-no">
+
+    <div class="no">
+      <p class="title2">ПРОБЛЕМЫ С КОТОРЫМИ СТАЛКИВАЮТСЯ 95% КЛИЕНТОВ:</p>
+      <ul>
+        <li><span>АГЕНТСТВА ДОЛГО ИЩУТ КАНДИДАТОВ</span><br>
+            Срок закрытия вакансии может быть несколько<br>
+            месяцев
+        </li>
+        <li><span>МАЛО И ПЛОХО</span><br>
+       Показывают мало качественно отобранных кандидатов
+        </li>
+        <li><span>НЕТ ИНДИВИДУАЛЬНОГО ПОДХОДА</span><br>
+      Сотрудники агентств не вникают в специфику клиента, подбирают людей шаблонно
+        </li>
+       
+      </ul>
+    </div>
+
+    <div class="yes">
+      <p class="title2 blue">ПОЧЕМУ СТОИТ РАБОТАТЬ ИМЕННО С НАМИ?</p>
+      <ul>
+      <ul>
+        <li><span>БЫСТРОДЕЙСТВИЕ</span><br>
+           Мы не набираем огромный портфель заказов, мы предпочитаем работать с небольшим количеством клиентов, для которых мы доступны в режиме 24/7. Мы гарантируем 5 качественных кандидатов уже в первые 2 недели работы
+        </li>
+        <li><span>ВЫБИРАЕМ ЛУЧШИХ</span><br>
+           Мы не просто ищем и представляем резюме, мы внимательно исследуем потенциал кандидатов, их сильные и слабые стороны, чтобы клиент сделал обоснованное решение о выборе будущего сотрудника
+        </li>
+        <li><span>КВАЛИФИЦИРОВАННЫЕ СПЕЦИАЛИСТЫ</span><br>
+Мы умеем говорить с собственниками бизнеса на одном языке. Мы подробно собираем информацию о корпоративной культуре компании клиента и особенностях вакансии. Это существенно увеличивает эффективность подбора и адаптацию нового сотрудника.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    <div id="block7">
+	<div class="inner">
+ <h1>о нас<br />
+    <strong>хорошо отзываются</strong></h1>
+    <table width="100%" border="0">
+  <tr>
+    <td><div class="left"></div><div class="text"><strong>Мария, г. Москва</strong><br/>
+Обратилась в агенство по подбору персонала т.к хотела отдохнуть от бизнеса, и была приятно удивлена человеком которого они мне нашли. Рекомендую. </div>
+</td>
+    <td><div class="left1"></div><div class="text"><strong>Светлана, г. Москва</strong><br/>
+Очень довольна! Всё было сделано за 2 недели как и договаривались, благодарю еще раз!</div>
+</td>
+  </tr>
+  <tr>
+    <td><div class="left2"></div><div class="text"><strong>Михаил, г. Москва</strong><br/>
+Все понравилось. Менеджер мастер своего дела, ничуть не пожалел что обратился именно к Вам!</div>
+</td>
+    <td><div class="left3"></div><div class="text"><strong>Сергей, г. Москва</strong><br/>
+Работа выполнена качественно и профессионально. Очень доволен новым сотрудником, работает непокладая рук, условия договора выполнили и сроки не нарушили, молодци! Рекомендую. </div>
+</td>
+  </tr>
+</table>
+
+  	</div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+    <div class="header1">
+    <p class="my-header">о нас хорошо отзываются<br><span class="big-title"> и нам доверяют</span></p>
+    </div>
+			
+			<div class="clients">
+			 <img src="images/logas.png" alt="Logs"/>
+    </div>
+  
+  
+  
+  
+  
+  <div class="middle-form">
+    <div class="container">
+        <div class="top-form-contain">
+          <div class="contens-form">
+            <p class="form-descript"><span>закажите бесплатную</span><br>консультацию по </p>
+            <p class="form-big-text">ВАШЕЙ ВАКАНСИИ</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text  nameinp sinp" required type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp" required type="text" name="phone" placeholder="Телефон">          
+          <input class="s_text adress" required type="text" name="adress" placeholder="Почта">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="submit" value="ЗАКАЗАТЬ">
+        </form>
+          
+          </div>
+        </div>
+    </div>
+    </div>
+
+  
+</body>
+</html>

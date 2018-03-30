@@ -1,0 +1,563 @@
+/* Label Styles */
+/**
+* @package Livetex Label
+* @version 1.0
+* @author andrey.g@livetex.ru Andrey Garbuzov
+* @company LiveTex //livetex.ru Сервисы для коммуникации с посетителями сайта
+*/
+:focus::-webkit-input-placeholder { color: transparent }
+:focus::-moz-placeholder          { color: transparent }
+:focus:-moz-placeholder           { color: transparent }
+
+/**
+ * Cobrowse
+ */
+.lt-shadow-field {
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: absolute;
+    z-index: 10000;
+}
+.lt-cobrowse-close {
+    position: absolute;
+    z-index: 10001;
+    width: 26px;
+    height: 26px;
+    background: url(/img/cobrowse-close.png) no-repeat 0 0;
+    cursor: pointer;
+    right: 5px;
+    top: 5px;
+}
+.lt-invite {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+    padding: 0;
+    margin: 0;
+}
+.lt-invite.lt-hidden {
+    display: none;
+}
+.lt-call-title {
+    display: none !important;
+}
+.lt-invite .lt-label {
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat no-repeat;
+}
+.lt-invite .lt-label-bg {
+    display: none;
+    background-repeat: no-repeat;
+}
+.lt-invite .lt-content {
+    width: 310px;
+    height: 334px;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transition: visibility 0s 0.6s linear;
+    transition: visibility 0s 0.6s linear;
+}
+.lt-content .lt-op-info {
+    height: 90px;
+    padding: 0;
+    margin: 0;
+}
+.lt-content .lt-operator {
+    float: left;
+    width: 68px;
+    height: 78px;
+    background: url(/img/label/photo-bg.png) no-repeat left top;
+    margin: 13px 14px 0 14px;
+    padding: 0;
+}
+.lt-content .lt-operator img {
+    width: 60px;
+    height: 70px;
+    margin: 4px 0 0 4px;
+    padding: 0;
+}
+.lt-content .lt-title {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    overflow: hidden;
+}
+.lt-content .lt-name {
+    float: left;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.4em;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 8px 0 0 0;
+    padding: 0;
+    width: 210px;
+    overflow: hidden;
+    white-space: normal;
+}
+.lt-content .lt-depart {
+    clear: left;
+    float: left;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.4em;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    white-space: normal;
+}
+.lt-content .lt-greet {
+    width: 282px;
+    height: 102px;
+    float: left;
+    text-align: left;
+    clear: both;
+    margin: -10px 0 10px 14px;
+    padding: 0;
+    overflow: hidden;
+    background: url(/img/label/say.png) no-repeat left top;
+}
+.lt-content .lt-greet p {
+    display: block;
+    height: 66px;
+    margin: 27px 10px 10px 10px;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    line-height: 16px;
+    color: #333;
+    overflow: hidden;
+    white-space: normal;
+}
+.lt-content .lt-choice {
+  display: none;
+  clear: both;
+}
+.lt-content .lt-call-me-form, .lt-content .lt-group-label {
+  display: none;
+  clear: both;
+}
+.lt-content .lt-header {
+  display: none;
+}
+.lt-content .lt-btn-call-later {
+  margin-top: 0px;
+  margin-left: 13px;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #694600;
+  text-shadow: 0 1px rgba(255,255,255,.49);
+  /* width: 140px; */
+  height: 31px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #f9c845;
+  -webkit-box-shadow: 0 1px 1px rgba(2,2,2,.61), inset 0 1px rgba(255,255,255,.63);
+  -moz-box-shadow: 0 1px 1px rgba(2,2,2,.61), inset 0 1px rgba(255,255,255,.63);
+  box-shadow: 0 1px 1px rgba(2,2,2,.61), inset 0 1px rgba(255,255,255,.63);
+  border: solid 1px #b46600;
+  background-image: -webkit-linear-gradient(bottom, #eb9128, #f9c845);
+  background-image: -moz-linear-gradient(bottom, #eb9128, #f9c845);
+  background-image: -o-linear-gradient(bottom, #eb9128, #f9c845);
+  background-image: linear-gradient(to top, #eb9128, #f9c845);
+} 
+.lt-content .lt-btn-start-chat {
+  margin-top: 0px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #224b00;
+  text-shadow: 0 1px rgba(255,255,255,.49);
+  width: 130px;
+  height: 31px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #72b127;
+  -webkit-box-shadow: 0 1px 1px rgba(2,2,2,.61), inset 0 1px rgba(255,255,255,.63);
+  -moz-box-shadow: 0 1px 1px rgba(2,2,2,.61), inset 0 1px rgba(255,255,255,.63);
+  box-shadow: 0 1px 1px rgba(2,2,2,.61), inset 0 1px rgba(255,255,255,.63);
+  border: solid 1px #26740b;
+  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.26), rgba(255,255,255,.26));
+  background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.26), rgba(255,255,255,.26));
+  background-image: -o-linear-gradient(bottom, rgba(0,0,0,.26), rgba(255,255,255,.26));
+  background-image: linear-gradient(to top, rgba(0,0,0,.26), rgba(255,255,255,.26));
+}
+.lt-content .lt-textarea {
+    width: 282px;
+    height: 75px;
+    padding: 0;
+    margin: 0 0 0 14px;
+    position: relative;
+    clear: left;
+    text-align: left;
+    background: url(/img/label/textarea.png) 0 0 no-repeat;
+}
+.lt-content .lt-textarea textarea {
+    width: 258px;
+    height: 54px;
+    position: absolute;
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+    border: 0;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    color: #333;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    box-shadow: none;
+}
+.lt-content label {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,.46);
+  display: block;
+  padding: 8px 15px 0 15px; 
+}
+.lt-content label input {
+  width: 270px;
+  height: 30px;
+  margin: 5px 0;
+  padding: 0 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px rgba(255,255,255,.2), inset 0 1px rgba(96,131,151,.22);
+  -moz-box-shadow: 0 1px rgba(255,255,255,.2), inset 0 1px rgba(96,131,151,.22);
+  box-shadow: 0 1px rgba(255,255,255,.2), inset 0 1px rgba(96,131,151,.22);
+  border: solid 1px rgba(148,148,148,.7);
+}
+
+.lt-content  input.error {
+  border: solid 1px #b22424;
+  background-color: #ffd7d7;
+}
+.lt-content .lt-group-select {
+  background: linear-gradient(to bottom, #FBFBFB 0%, #F6F6F6 50%, #FCFCFC 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: 1px solid #C8C8C8;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 5px 0 0 0;
+  width: 270px;
+  padding: 4px 6px;
+  vertical-align: top;
+}
+.lt-content .lt-back-link {
+  margin: 22px 0 0 53px;
+  padding: 0;
+  display: block;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  text-decoration: underline;
+  color: #fff;
+  width: 91px;
+  cursor: pointer;
+  float: left;
+}
+.lt-content .lt-btn-send-lead {
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #224b00;
+  text-shadow: 0 1px rgba(255,255,255,.49);
+  width: 130px;
+  height: 31px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #72b127;
+  -webkit-box-shadow: 0 1px 1px rgba(2,2,2,.61), inset 0 1px rgba(255,255,255,.63);
+  -moz-box-shadow: 0 1px 1px rgba(2,2,2,.61), inset 0 1px rgba(255,255,255,.63);
+  box-shadow: 0 1px 1px rgba(2,2,2,.61), inset 0 1px rgba(255,255,255,.63);
+  border: solid 1px #26740b;
+  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.26), rgba(255,255,255,.26));
+  background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.26), rgba(255,255,255,.26));
+  background-image: -o-linear-gradient(bottom, rgba(0,0,0,.26), rgba(255,255,255,.26));
+  background-image: linear-gradient(to top, rgba(0,0,0,.26), rgba(255,255,255,.26));
+}
+.lt-content .lt-cancel-chat-link {
+  display: none;
+}
+.lt-content .lt-cancel {
+    margin: 23px 0 0 75px;
+    padding: 0;
+    display: block;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    text-decoration: underline;
+    color: #fff;
+    width: 91px;
+    cursor: pointer;
+    float: left;
+}
+.lt-content .lt-send {
+    display: block;
+    margin: 13px 0 0 13px;
+    padding: 0;
+    width: 116px;
+    height: 38px;
+    float: left;
+    cursor: pointer;
+    background: url(/img/label/button.png) 0 0 no-repeat transparent;
+    outline: none;
+    border: none;
+    border-collapse: collapse;
+    text-indent: -3000px;
+}
+.lt-content .lt-send:hover {
+    background-position: left center;
+}
+.lt-content .lt-send:active {
+    position: relative;
+    top: 1px;
+    background-position: left bottom;
+}
+.lt-content .lt-footer {
+  display: none;
+}
+.lt-invite iframe {
+    display: none;
+}
+.lt-frame iframe {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: block;
+    border: none;
+}
+.lt-frame .lt-invite-message {
+    display: none;
+}
+.lt-lead .lt-label-bg {
+    display: block;
+    background-repeat: no-repeat;
+}
+.lt-lead .lt-content {
+    width: 360px;
+    height: 540px;
+}
+.lt-lead .lt-invite-message {
+    display: none;
+}
+
+/* Call me back */
+.lt-call-me .lt-textarea {
+  display: none;
+}
+.lt-call-me .lt-send {
+  display: none;
+}
+.lt-call-me .lt-cancel {
+  font-size: 12px;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  width: auto;
+  margin: 0;
+}
+.lt-call-me .lt-choice {
+  display: block;
+}
+
+/* Call Lead */
+.lt-call-lead .lt-greet{
+  display: none;
+}
+.lt-call-lead .lt-textarea {
+  display: none;
+}
+.lt-call-lead .lt-cancel {
+  display: none;
+}
+.lt-call-lead .lt-send {
+  display: none;
+}
+.lt-call-lead .lt-call-me-form {
+  display: block;
+}
+
+/* Start Chat Form */
+.lt-start-chat  .lt-cancel {
+  display: none;
+}
+.lt-start-chat .lt-cancel-chat-link {
+  margin: 23px 0 0 75px;
+  padding: 0;
+  display: block;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  text-decoration: underline;
+  color: #fff;
+  width: 91px;
+  cursor: pointer;
+  float: left;
+}
+
+.lt-send-confirm {
+  display: none;
+}
+.lt-confirm-block {
+  display: none;
+   width: 100%;
+  height: 95px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,.46);
+  text-align: center;
+  padding-top: 190px;
+  background-image:url(/img/label/lid-tick.png);
+  background-position:center center;
+  background-repeat:no-repeat;
+  text-align:center;
+  position:relative;
+  z-index: 100;
+}
+
+.lt-call-confirm .lt-op-info, .lt-call-confirm .lt-greet, .lt-call-confirm .lt-textarea, .lt-call-confirm .lt-cancel, .lt-call-confirm .lt-send {
+  display: none;
+}
+
+/* Send lead confirm block */
+.lt-call-confirm .lt-confirm-block {
+  display: block;
+ 
+}
+
+
+.lt-active .lt-content {
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s linear;
+  transition: visibility 0s 0s linear;
+}
+
+
+ 
+    /* Большой ярлык */
+    .lt-invite .lt-logo {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background: url(/img/label/logo-anim.png) 0 0 no-repeat;
+        bottom: 9px;
+        left: 7px;
+        z-index: 3;
+        margin: 0;
+        padding: 0;
+    }
+    .lt-offline .lt-logo, .lt-lead .lt-logo {
+        background: url(/img/label/livetex-logo-blue.png) 0 0 no-repeat;
+        animation: none;
+        -webkit-animation: none;
+    }
+        
+     
+    /********************* LEFT ********************/
+    .lt-invite {
+        width: 40px;
+        height: 178px;
+        left: 0;
+        top: 200px;       
+    }
+    .lt-animate {
+        -webkit-transition: width 0.6s cubic-bezier(0, 1, .64, 1), height 0s 0.6s linear;
+        transition: width 0.6s cubic-bezier(0, 1, .64, 1), height 0s 0.6s linear; 
+    }
+    .lt-label {
+        top: 0;
+        right: 2px;
+        width: 40px;
+        height: 178px;
+        background: url(/img/label/green/left/online.png) no-repeat left top;     
+    }
+    .lt-active {
+        width: 346px;
+        height: 334px;
+        -webkit-transition: width 0.6s cubic-bezier(0, 1, .64, 1), height 0s 0s linear;
+        transition: width 0.6s cubic-bezier(0, 1, .64, 1), height 0s 0s linear;
+    }
+    .lt-logo {
+        bottom: 10px;
+        left: 7px;
+    }
+    .lt-content {
+        top: 0;
+        right: 38px;
+        background: url(/img/label/green/left/background.png) no-repeat right bottom; 
+    }
+    .lt-offline .lt-label{
+        background: url(/img/label/gray/left/offline.png) no-repeat right top;
+    }
+    .lt-offline .lt-content {
+        background: url(/img/label/gray/left/background.png) no-repeat right bottom;
+    }
+    .lt-lead .lt-label {
+        padding-bottom: 9px;
+        width: 39px;
+        height: auto;
+        background: url(/img/label/green/left/lead-big-bottom.png) no-repeat right bottom;
+    }
+    .lt-lead .lt-label-bg {
+        padding-top: 10px;
+        height: auto;
+        padding-bottom: 28px;
+        background: url(/img/label/green/left/lead-big-top.png) no-repeat right top;
+    }
+    .lt-lead .lt-logo {
+        position: absolute;
+        left: 7px;
+        bottom: 9px;
+    }
+    .lt-lead {
+        margin: 0;
+        padding: 0;
+        width: 40px;
+        height: 164px;
+    }
+    .lt-lead .lt-content {
+        background: url(/img/label/green/left/background.png) no-repeat right bottom;
+    }
+    .lt-lead .lt-text {
+        background: url(/img/lead/vertical/big/0.png) no-repeat left top;
+        width: 40px;
+        height: 117px;     
+    }
+    .lt-lead.lt-active {
+        width: 398px;
+        height: 540px;
+    }    
+    
+    
+/* Calls */
+ /*Custom CSS */
+
+

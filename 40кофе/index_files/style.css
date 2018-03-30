@@ -1,0 +1,361 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+@font-face {
+    font-family: Font;
+    src: url(../index_files/coffee_font.ttf);
+}
+h1{
+    font-family: Font, sans-serif;
+    font-size: 45px;
+    text-indent: 90px;
+    margin: 15px 0 30px 0;
+    line-height: 50px;
+}
+h2{
+    font-family: PT Sans, sans-serif;
+    font-weight: bold;
+    font-size:20px;
+    color:#1e8c16;
+    text-transform: uppercase;
+    margin:20px 0;
+}
+h4{
+    font-family: Font, sans-serif;
+    font-size: 35px;
+    color:#262626;
+    text-align: center;
+    margin: 20px 0 25px 0;
+}
+body {
+	line-height: 1;
+    font-family: PT Sans;
+    color:#2c2c2c;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	width: 100%;
+}
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+.banner .wrapper.container_12{
+    position: relative;
+}
+p{
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.shadow{
+    text-shadow:2px 2px 4px #ccc;
+}
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 117px;
+    font-family: Font, sans-serif;
+    background: url(../index_files/head_shadow.jpg) no-repeat bottom center;
+}
+.logo a{
+    display:block;
+    width: 194px;
+    height: 117px;
+    background: url(../index_files/logo.png) no-repeat;
+    text-indent: -9999px;
+}
+.logo_f a{
+    display:block;
+    width: 315px;
+    height: 199px;
+    background: url(../index_files/logo_f.png) no-repeat;
+    text-indent: -9999px;
+}
+.contacts p{
+    font-size: 25px;
+    line-height: 27px;
+    margin: 10px 0 7px 0;
+}
+.contacts p span{
+    font-size: 24px;
+}
+a.callback, input.callback{
+    display: block;
+    width: 206px;
+    height: 19px;
+    background: url(../index_files/callback_button.png) no-repeat;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0;
+    float: right;
+    text-decoration: none;
+    border: none;
+}
+/* Middle
+-----------------------------------------------------------------------------*/
+.banner{
+    background: url(../index_files/banner.jpg) no-repeat top center;
+    height: 632px;
+}
+.text_bg{
+    width: 825px;
+    padding: 20px 0;
+    margin: -15px 0 50px -68px;
+}
+.text_bg p, .text_bg h2{
+    padding: 0 40px 0 90px;
+}
+.text_bg_top{
+    background: url(../index_files/text_bg_top.jpg) no-repeat center top;
+    height: 29px;
+}
+.text_bg_mid{
+    background: url(../index_files/text_bg_mid.jpg) repeat-y center center;
+}
+.text_bg_bot{
+    background: url(../index_files/text_bg_bot.jpg) no-repeat center bottom;
+    height: 53px;
+}
+.advantages{
+    background: url(../index_files/advantages.jpg) no-repeat center;
+    height: 352px;
+    margin-bottom: -20px;
+}
+.advantages a, .advantages p{
+    display: block;
+    font-family: Font, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fefafa;
+    text-align: center;
+    text-decoration: none;
+}
+.advantages a{
+    width: 290px;
+height: 290px;
+position: absolute;
+top: 9px;
+}
+#sertification1, #srochnayadost {
+margin-top: 193px;
+}
+.advantages table{
+    width: 100%;
+    position: relative;
+}
+.advantages table td{
+    padding-top: 200px;
+}
+.advantages .one{
+    width: 19%;
+}
+.advantages .two{
+    width: 26%;
+}
+.advantages .three{
+    width: 18%;
+}
+.comments{
+    font-family: Font, sans-serif;
+    background: url(../index_files/comments_bg.jpg) no-repeat center top;
+    height: 707px;
+    font-size: 20px;
+    margin:25px 0 0 0;
+}
+.comments table{
+    text-align: center;
+    width: 830px;
+    margin: 115px auto auto;
+}
+.comments table p{
+    padding: 20px;
+}
+.heart_cup{
+    background: url(../index_files/heart_cup.jpg);
+    width:317px;
+    height:344px;
+    position:absolute;
+    right:-327px;
+}
+.text_bg_cont{
+    position: relative;
+}
+.text_bg_cont p, .text_bg_cont h2{
+    position: relative;
+    z-index: 2;
+}
+.cup{
+    background: url(../index_files/cup.png);
+    width:463px;
+    height:377px;
+    position:absolute;
+    left:-348px;
+    top: -53px;
+}
+
+#inline2 {
+padding: 20px;
+width: 700px;
+}
+#spanclouse {
+padding: 2px 6px 2px 6px;
+background-color: rgb(99, 199, 52);
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+cursor: pointer;
+float: right;
+position: relative;
+top: 30px;
+right: 8px;
+}
+.cb_form{
+    display: inline-block;
+    background: url(../index_files/white_opacity_84.png);
+    border-radius:15px;
+    box-shadow: -7px -6px 10px #ddd;
+    padding: 20px 25px;
+    font-family: Font,sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    left: 80px;
+    top: 130px;
+}
+#formposition {
+width: 400px;
+margin: 0 auto;
+}
+.cb_form3{
+    background: url(../index_files/white_opacity_84.png);
+    border-radius: 15px;
+    box-shadow: 0px 8px 28px;
+    padding: 20px 25px;
+    font-family: Font,sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 382px;
+    margin: 0 auto;
+    border: 4px solid rgb(99, 199, 52);
+/*    position: absolute;
+    left: 80px;
+    top: 130px;*/
+}
+
+.cb_form table, .cb_form3 table{
+    width:100%;
+}
+.cb_form td, .cb_form3 td{
+    text-align: center;
+}
+.cb_form .send_t, .cb_form3 .send_t{
+    background: url(../index_files/send_button_t.png) no-repeat center center;
+    width: 254px;
+    height: 51px;
+    float: none;
+    margin: 0 auto;
+}
+.cb_form p, .cb_form3 p{
+    font-size: 20px;
+}
+.cb_form input, .cb_form3 input{
+    background: url(../index_files/input_bg.png) no-repeat center center;
+    border: none;
+    width: 226px;
+    height: 35px;
+    text-align: center;
+    color: #4d4d4d;
+    font-family: Font,sans-serif;
+    font-size: 22px;
+    margin:4px;
+    padding: 0 10px;
+}
+.bot_form{
+    background: url(../index_files/bot_form_bg.jpg) no-repeat center top;
+    height:1014px;
+    position: relative;
+}
+.bot_form .cb_form .send_t{
+    color:#fff;
+}
+.bot_form .cb_form p{
+    font-size:25.44px;
+    padding: 10px 0;
+}
+.bot_form .cb_form{
+    position: absolute;
+    width:300px;
+    margin:20px auto 0;
+    display: block;
+    left: 330px;
+    top: 150px;
+    box-shadow: none;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	height: 199px;
+	background: url(../index_files/footer_bg.jpg) no-repeat top center;
+}
+.footer .contacts p, .footer .contacts p span{
+    color: #fff;
+    font-family: Font,sans-serif;
+    font-size: 36px;
+    line-height: 43px;
+    margin-top: 25px;
+}
+.footer a.callback{
+    width: 279px;
+    height: 19px;
+    background: url(../index_files/callback_button_f.png) no-repeat;
+    font-size: 30px;
+    padding: 18px 0;
+    font-family: Font,sans-serif;
+}

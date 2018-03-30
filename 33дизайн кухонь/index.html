@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Шаблон</title>
+<link href="sendform.css" rel="stylesheet" type="text/css" />
+<link href="reveal.css" rel="stylesheet" type="text/css" />
+<link href="highslide/highslide.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="highslide/highslide-with-gallery.min.js" type="text/javascript"></script>
+<script src="highslide/highslide-config.js" type="text/javascript"></script>
+<script src="sendform.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script src="acc.js" type="text/javascript"></script>
+<script src="jquery.reveal.js" type="text/javascript"></script>
+<script type="text/javascript">
+ hs.graphicsDir = 'highslide/graphics/';
+ sendForm.on.zakaz = function() {$('.reveal-modal-bg').trigger('click');}
+ // плавная прокрутка страницы к якорю
+ $(function(){
+   $('a.goto').click(function(){
+     $("html, body").animate({scrollTop: $(this.href.replace(/^[^#]+/,'')).offset().top}, "slow");
+	 return false;
+   })
+ });
+ // этапы работы - плавное приподнимание "кружков"
+ $(function(){
+   $('#etap span.pic > img').mouseover(function(){
+     $(this).animate({'margin-top': -7, 'margin-bottom': 7},200);
+   }).mouseout(function(){
+     $(this).animate({'margin-top': 0, 'margin-bottom': 0},200);
+   });
+ });
+</script>
+</head>
+
+<body>
+
+<a name="up" id="up"></a>
+<div id="screen-1">
+  <div id="col-980">
+    <div id="logo">
+      <h1>Дизайнер кухонь<br />
+        <span>Альбина</span></h1>
+      <p style="padding-top:15px"><img src="images/phone-red.png" alt="Телефон" width="41" height="47" hspace="5" align="left" /> <span class="font-m grey" style="font-size:14px">Звоните сейчас!</span><br />
+        <span class="font-g red" style="font-size:17px"><strong>(800) 000-00-00</strong></span></p>
+      <p style="padding-top:15px"><a href="#" data-reveal-id="modal-zvonok"><strong>ЗАКАЗАТЬ ЗВОНОК</strong></a></p>
+    </div>
+    <div id="menu-top">
+	  <span><a href="#otzyvy" class="goto">Отзывы</a></span>
+	  <span><a href="#faq" class="goto">Вопросы</a></span>
+	  <span><a href="#portfolio" class="goto">Портфолио</a></span>
+	  <span><a href="#" data-reveal-id="modal-zakaz">Заказать</a></span>
+      </ul>
+    </div>
+    <div class="clr"></div>
+    
+	<div id="modal-zvonok" class="reveal-modal medium">
+    <a class="close-reveal-modal">×</a>
+	<form id="zakaz" action="sendmail.php" method="post" ajax>
+	  <input type="hidden" name="mode" value="zvonok" />
+      <h3 align="center"><font color="#a20000">Обратный звонок</font></h3>
+	  <p>Я свяжусь с Вами в удобное Вам время.</p>
+	  <table>
+        <tbody>
+          <tr>
+            <td>Ваше имя<span style="color: red">*</span>:&nbsp;&nbsp;</td>
+            <td><input type="text" name="name" required /></td>
+          </tr>
+          <tr>
+            <td>Ваш телефон<span style="color: red">*</span>:&nbsp;&nbsp;</td>
+            <td><input type="text" name="phone" required /></td>
+          </tr>
+          <tr>
+			<td>Желательное время:&nbsp;&nbsp;</td>
+			<td><input type="text" name="time" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Заказать" onclick="yaCounter21464884.reachGoal('zvonok'); return true;"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+	</div>
+	
+    <!-- screen-2 -->
+    
+    <div id="screen-2">
+      <h2>Как создается Ваша кухонная мебель:</h2>
+      <div id="etap">
+	    <span class="pic"><img src="images/etap-1.png" width="84" height="87" alt="Звонок" /><br />Звонок</span>
+		<span><img src="images/etap-strelka.png" width="20" height="87" /></span>
+		<span class="pic"><img src="images/etap-2.png" width="84" height="87" alt="Замер" /><br />Замер</span>
+		<span><img src="images/etap-strelka.png" width="20" height="87" /></span>
+		<span class="pic"><img src="images/etap-3.png" width="84" height="87" alt="Дизайн-проект" /><br />Дизайн-проект</span>
+		<span><img src="images/etap-strelka.png" width="20" height="87" /></span>
+		<span class="pic"><img src="images/etap-4.png" width="84" height="87" alt="Рекомендации" /><br />Рекомендации</span>
+		<span><img src="images/etap-strelka.png" width="20" height="87" /></span>
+		<span class="pic"><img src="images/etap-5.png" width="84" height="87" alt="Выбор мебельной компании" /><br />Выбор мебельной<br />компании</span>
+		<span><img src="images/etap-strelka.png" width="20" height="87" /></span>
+		<span class="pic"><img src="images/etap-6.png" width="84" height="87" alt="Изготовление" /><br />Изготовление</span>
+		</div>
+      <div class="clr"></div>
+      <h3>Как бесплатно получить эксклюзивный дизайн кухни?</h3>
+      <p align="justify">Надоели стандартные предложения мебельных салонов. Хочется чего-то особого. Кухня, которой больше ни у кого нет.   Созданную именно для меня, с учетом всех моих желаний.</p>
+      <p align="justify">Чтобы не тратить время на походы по магазинам и салонам. Избежать общения с продавцами – не хочу, чтобы они мне «втюхивали», что они хотят, а не то, что я хочу. </p>
+      <p align="justify">Сохранить своё бесценное время и нервы.</p>
+      <p align="justify">Не гадать, где мне сделают кухню качественно и в срок. Пусть кто-то другой уже проверит надёжность мебельной фабрики и предложит на выбор ту, которая четко справится с моим заказом. Чтобы со мной персонально общался дизайнер. Профессионал. И, при этом, заплатить только за саму кухонную мебель, а не за услуги дизайнера! </p>
+      <div id="phone-1"><img src="images/phone-blue.png" alt="Телефон" width="55" height="47" hspace="12" align="left" /> <span class="red" style="font-size:20px">Звоните сейчас!<br />
+        <span class="black"><strong>(846) 206-03-35</strong></span></span> </div>
+      <p align="justify">Эх, мечта… Хотя, почему мечта?</p>
+      <p class="red">Ведь можно обратиться к профессиональному дизайнеру кухонь!</p>
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+
+<!-- screen 3 -->
+
+<a name="otzyvy" id="otzyvy"></a>
+<div id="screen-3">
+  <div id="col-750">
+    <h3>Отзывы клиентов</h3>
+    <div id="otziv-left">
+      <div id="otziv-bottom">
+        <div id="otziv">
+          <p><img src="images/otzyv1-face.png" alt="Круглова Лидия Ивановна" width="170" align="left" style="margin-right:15px;" /> <span class="grey" style="font-size:16px">Круглова Лидия Ивановна, 46 лет</span></p>
+          <p align="justify">У нас очень маленькая невместительная кухня, да еще и с колонкой.  Очень хотелось визуально увеличить пространство, сохранив при этом место для большого количества посуды. Над нашим проектом работало сразу 2 дизайнера, Кристина и Эльмира – дизайнер из мебельной компании, в которую мы пришли по совету Кристины. Девочкам удалось справиться с поставленной задачей.</p>
+          <p align="justify"><a href="#" data-reveal-id="modal-otzyv1">Читать отзыв полностью...</a></p>
+        </div>
+      </div>
+    </div>
+	<div id="modal-otzyv1" class="reveal-modal big">
+      <a class="close-reveal-modal">×</a>
+	  <h2 class="vopros">«Даже для телевизора  нашлось место!»</h2>
+		<img src="images/otzyv1-face.png" alt="Круглова Лидия Ивановна" width="170" align="left" style="margin-right:15px;" />
+		<span class="grey" style="font-size:16px">Круглова Лидия Ивановна, 46 лет</span>
+		<p>У нас очень маленькая невместительная кухня, да еще и с колонкой.  Очень хотелось визуально увеличить пространство, сохранив при этом место для большого количества посуды. Над нашим проектом работало сразу 2 дизайнера, Кристина и Эльмира – дизайнер из мебельной компании, в которую мы пришли по совету Кристины. Девочкам удалось справиться с поставленной задачей. За счет того, что левая сторона имеет нестандартно- узкую глубину, на кухне стало просторней. Причем этой глубины достаточно для готовки. Вбольшой, глубокий  пенал рядом с окном  уместилась вся моя посуда. Очень удобно, что духовой шкаф приподнят, больше не приходится нагибаться. Даже для телевизора нашлось место))) Сподручно расположили шкаф для ложек и вилок, под плитой (удобно готовить) и рядом с мойкой.  Несмотря на то, что кухня устанавливалась несколько дней, некоторые элементы еще довозились, мебель встала ровно, без щелей. Монтажник Егор выполнил работу качественно, аккуратно спрятал колонку. Цветовое решение выбирали всей семьей. Получилось ярко, что радует по утрам. Большое спасибо всем, кто трудился над нашей мебелью.</p>
+		<p><strong>Задача:</strong> Увеличить пространство, при этом сохранив вместимость для кухонных принадлежностей.</p>
+		<p><strong>Решение задачи:</strong> Уменьшение глубины рабочей поверхности и шкафов по левой стене до 35см. Вместительный пенал для кухонной утвари. Отдельная зона для хранения подсолнечного масла и моющих средств  – бутылочница.</p>
+		<p><strong>Описание кухни:</strong> Фасады и столешница выполнены в пластике, стеновая панель – фотопечать на каленом стекле. Между мойкой и выдвижными ящиками находится бутылочница. Вытяжка встроенная над вар. Панелью. Сушка на 60см,в горизонтальном шкафу слева от мойки. Размер  гарнитура  1600×2000мм.</p>
+		<p><strong>Стоимость:</strong> 70 000 руб.</p>
+		<div style="height:260px; width:100%; background:url(images/otziv/otzyv1-panorama.png) center no-repeat;" class="link"><a href="images/otziv/21.jpg" class="highslide" onclick="return hs.expand(this,config1)" title="Нажмите, чтобы увидеть больше">
+		  <div style="position: relative; left:385px; height:253px; width:243px; float:left;"></div>
+		  </a><a href="images/otziv/kruglova3.jpg" class="highslide" onclick="return hs.expand(this,config1)" title="Нажмите, чтобы увидеть больше">
+		  <div style="position: relative; left:-103px; height:116px; width:116px; border-radius:116px; float:left;"></div>
+		  </a><a href="images/otziv/kruglova1.jpg" class="highslide" onclick="return hs.expand(this,config1)" title="Нажмите, чтобы увидеть больше">
+		  <div style="position: relative; left:-143px; height:158px; width:158px; top:94px; border-radius:158px; float:left"></div>
+		  </a><a href="images/otziv/kruglova4.jpg" class="highslide" onclick="return hs.expand(this,config1)" title="Нажмите, чтобы увидеть больше">
+		  <div style="position: relative; left:122px; height:140px; width:140px; top:112px; border-radius:140px; float:left;"></div>
+		  </a><a href="images/otziv/kruglova5.jpg" class="highslide" onclick="return hs.expand(this,config1)" title="Нажмите, чтобы увидеть больше">
+		  <div style="position: relative; left:75px; height:121px; width:121px; top:0px; border-radius:121px; float:left;"></div>
+		  </a>
+		  <div class="clear"></div>
+	    </div>
+  	</div>
+	
+    <div id="otziv-left">
+      <div id="otziv-bottom">
+        <div id="otziv">
+          <p><img src="images/otzyv2-face.png" alt="Круглова Лидия Ивановна" width="170" align="left" style="margin-right:15px;" /> <span class="grey" style="font-size:16px">Семья Меркуловых</span></p>
+          <p align="justify">С Кристиной знакомы уже давно. Когда-то работали вместе в банке, а потом она ушла в мебельное производство. Когда сделали ремонт в квартире встал вопрос о покупке мебели, не задумываясь позвонила старой знакомой. Кристина сразу посоветовала несколько организаций в которые лучше обратиться. В уютной обстановке за чашкой чая дизайнер показала нам множество материалов и объяснила, что наиболее практично. </p>
+          <p align="justify"><a href="#" data-reveal-id="modal-otzyv2">Читать отзыв полностью...</a> </p>
+        </div>
+      </div>
+    </div>
+	<div id="modal-otzyv2" class="reveal-modal big">
+      <a class="close-reveal-modal">×</a>
+	  <h2 class="vopros">«У нас маленький ребенок…»</h2>
+	<img src="images/otzyv2-face.png" alt="Круглова Лидия Ивановна" width="170" align="left" style="margin-right:15px;" /> <span class="grey" style="font-size:16px">Семья Меркуловых</span>
+    <p>С Кристиной знакомы уже давно. Когда-то работали вместе в банке, а потом она ушла в мебельное производство. Когда сделали ремонт в квартире встал вопрос о покупке мебели, не задумываясь позвонила старой знакомой. Кристина сразу посоветовала несколько организаций в которые лучше обратиться. Приехав в первую, дальше не поехали даже смотреть. В уютной обстановке за чашкой чая дизайнер показала нам множество материалов и объяснила, что наиболее практично в использовании. Для меня это особенно важно, потому что у нас маленький ребенок. Главным при заказе мебели была функциональность и безопасность, исходя из этого девочки создавали проект. Духовой шкаф было решено приподнять на необходимое расстояние, чтобы наша малышка до него не достала. Вместительные выдвижные ящики под плитой уместили все мои кастрюли. Удобно расположена зона для ложек и вилок и с мойкой рядом и с плитой. На механизмы мы с мужем не скупились, поставили везде немецкую фурнитуру с плавным закрыванием. Очень хотелось, что бы кухня была  не яркой, но при этом интересной. Девочки сразу нашли удачное цветовое решение и даже помогли подобрать в тон обеденную зону. Там же заказали и технику для кухни, и еще шкаф в коридор. Привезли все в один день, достаточно быстро установили. Большое спасибо дизайнерам Кристине и Эльмире за работу, выполненную с любовью. Скоро будем делать ремонт у родителей, теперь за мебелью только к Вам!</p>
+    <p><strong>Задача:</strong> функциональная кухня, безопасная для маленького ребенка,  что бы ненадоедала яркостью, но при этом была не блеклой и интересной.</p>
+    <p><strong>Решение задачи:</strong> для того что бы кухня была функциональной и вместительной в нижней части мы сделали большие выдвижные ящики по 80см. Выдвижные ящики способствуют максимальному обзору всей, находящийся в них утвари, чего не скажешь о распашных шкафах. Наверху всего 3 шкафа, за счет этого кухня кажется облегченной и не громоздкой. Так как верхние шкафы по 60см, они вмещают в себя все необходимое.  Для безопасности ребенка духовой шкаф приподнят. Все выдвижные ящики оснащены доводчиками с плавным закрыванием. Что касается цветового решения, то одним из самых спокойных и уютных цветов является бежевый, здесь он основной. Чтобы кухня смотрелась не скучно мы построили ее на контрасте с темно- коричневым, и  каждый фасад выделили коричневой окантовкой.  Добавили стеновую панель с фотографией ночного города и кухня заиграла.</p>
+    <p><strong>Описание:</strong> фасады и столешница – пластик, стеновая панель – фотопечать на каленом стекле, выдвижные механизмы – немецкие доводчики Hettich, сушка  на 60см, над мойкой в правом крайнем шкафу. Размер гарнитура 3400мм</p>
+    <p class="otvet"><strong>Стоимость:</strong> 91000 руб.+ техника( 3 предмета)  48000 руб.</p>
+    <div style="height:250px; width:100%; background:url(images/otziv/otzyv2-panorama.png) center no-repeat;" class="link"><a href="images/otziv/3.jpg" class="highslide" onclick="return hs.expand(this,config1)" title="Нажмите, чтобы увидеть больше">
+      <div style="position: relative; left:31px; height:118px; width:118px; border-radius:118px; float:left"></div>
+      </a><a href="images/otziv/1.jpg" class="highslide" onclick="return hs.expand(this,config1)" title="Нажмите, чтобы увидеть больше">
+      <div style="position: relative; left:14px; height:168px; width:168px; top:73px; border-radius:168px; float:left"></div>
+      </a><a href="images/otziv/4.jpg" class="highslide" onclick="return hs.expand(this,config1)" title="Нажмите, чтобы увидеть больше">
+      <div style="position: relative; left:388px; height:119px; width:119px; top:123px; border-radius:119px; float:left"></div>
+      </a><a href="images/otziv/2.jpg" class="highslide" onclick="return hs.expand(this,config1)" title="Нажмите, чтобы увидеть больше">
+      <div style="position: relative; left:376px; height:180px; width:180px; top:1px; border-radius:180px; float:left"></div>
+      </a></div>
+	</div>
+	
+    <div id="otziv-left">
+      <div id="otziv-bottom">
+        <div id="otziv">
+          <p><img src="images/otzyv3-face.png" alt="Юдин Сергей" width="170" align="left" style="margin-right:15px;" /> <span class="grey" style="font-size:16px">Юдин Сергей</span></p>
+          <p align="justify">Кухню заказывал на дачу в студию. Хотел чтобы все было в молодежном стиле, с прибамбасами в виде доводчиков и двойных подъемников. Проект накидали сразу после замера, цена устроила. Договор заключили быстро без лишних заморочек. Кухня отлично вписалась в мой интерьер.  Пацанам, которые собирали кухню -  респект, ребята с юмором, быстро нашли с ними общий язык!</p>
+          <p align="justify"><a href="#" data-reveal-id="modal-otzyv3">Читать отзыв полностью...</a> </p>
+        </div>
+      </div>
+    </div>
+	<div id="modal-otzyv3" class="reveal-modal big">
+      <a class="close-reveal-modal">×</a>
+	  <h2 class="vopros">«Хотел, чтобы все было в молодежном стиле»</h2>
+      <img src="images/otzyv3-face.png" alt="Юдин Сергей" width="170" align="left" style="margin-right:15px;" /> <span class="grey" style="font-size:16px">Юдин Сергей</span>
+    <p>Кухню заказывал на дачу в студию. Хотел чтобы все было в молодежном стиле, с прибамбасами в виде доводчиков и двойных подъемников. Проект накидали сразу после замера, цена устроила. Договор заключили быстро без лишних заморочек. Кухня отлично вписалась в мой интерьер.  Пацанам, которые собирали кухню -  респект, ребята с юмором, быстро нашли с ними общий язык! Кухня очень нравится, особенно балдею, когда психанешь с размаху дверью, а она плавно доводится.  Всем спасибо! Кстати, отличный вариант для тех, кому некогда заниматься бегатней по мебельным салонам.</p><br />
+	<p><strong>Задача:</strong> спроектировать максимально функциональную кухню в стиле модерн, вписать в общий интерьер студии.</p>
+	<p><strong>Решение:</strong> Кухня выполнена в классическом  сочетании цветов, которые вписываются в любой интерьер. Такое сочетание является универсальным, т.к. если со временем изменить даже цвет стен, полов, или добавить яркие пятна в виде штор и диванов кухня останется и будет хорошо сочетаться с любыми изменениями интерьера. Прямые линии придают минимализм  и молодежность в дизайне. Стандартная обеденная зона – стол со стульями заменена на остров  со  стеклом и подсветкой, который так же выполняет функцию бара. Так же спрятали в пенал холодильник. Благодаря всему этому в комнате нет ощущения, того что находишься на кухне, в целом уютно. </p>
+	<p><strong>Описание:</strong> Фасады и столешница выполнены в пластике, стеновая панель – фотопечать на каленом стекле. Слева от мойки находится посудомоечная машина на 450мм. Сушка справа от мойки на 70см. Для более удобного использования сушки, поставлены двойные подъемники австрийского производителя «Blum». Секция под ложки и вилки находится между мойкой и плитой.</p>
+	<p><strong>Стоимость:</strong> 130 000 руб. +  техника (4 предмета) 99 000  руб.</p>
+	<br /><br />
+      <div style="height:260px; width:100%; background:url(images/otziv/otzyv3-panorama.png) center no-repeat;" class="link">
+		<a href="images/otziv/yudin.jpg" class="highslide" onclick="return hs.expand(this,config1)" title="Нажмите, чтобы увидеть больше">
+      <div style="position: relative; left:338px; height:253px; width:330px; float:left;"></div>
+      </a><a href="images/otziv/yudin1.jpg" class="highslide" onclick="return hs.expand(this,config1)" title="Нажмите, чтобы увидеть больше">
+      <div style="position: relative; left:-238px; height:116px; width:116px; border-radius:116px; float:left;"></div>
+      </a><a href="images/otziv/yudin2.jpg" class="highslide" onclick="return hs.expand(this,config1)" title="Нажмите, чтобы увидеть больше">
+      <div style="position: relative; left:-278px; height:158px; width:158px; top:94px; border-radius:158px; float:left"></div>
+      </a><a href="images/otziv/yudin4.jpg" class="highslide" onclick="return hs.expand(this,config1)" title="Нажмите, чтобы увидеть больше">
+      <div style="position: relative; left:73px; height:140px; width:140px; top:112px; border-radius:140px; float:left;"></div>
+      </a><a href="images/otziv/yudin3.jpg" class="highslide" onclick="return hs.expand(this,config1)" title="Нажмите, чтобы увидеть больше">
+      <div style="position: relative; left:24px; height:121px; width:121px; top:0px; border-radius:121px; float:left;"></div>
+      </a>
+    </div>
+	</div>
+  </div>
+</div>
+
+<!-- screen-4 -->
+<div id="screen-4">
+  <div id="quality">
+    <p class="red" align="justify">&nbsp;</p>
+    <p class="red" align="justify"><strong style="font-size:16px; line-height:16px">Уверенность в качестве</strong><br />
+      приобретенной кухонной мебели и выполненных работ. </p>
+    <p align="justify" style="font-size:11px">Потому что я рекомендую фабрику, заботясь больше о долгосрочном результате, чем о сиюминутной выгоде. Надежность и порядочность компании — вот обязательное условие для сотрудничества. </p>
+    <p align="justify" style="font-size:11px"><span class="red" style="font-size:14px">Существует еще одно правило:</span><br />
+      С моими клиентами работает самая опытная и профессиональная бригада. А значит, Вашим проектом занимаются лучшие мастера компании. Которые уже доказали на деле свой высокий уровень.</p>
+<div style="height:20px"></div>
+  </div>
+</div>
+
+<!-- screen-5 -->
+<div id="screen-5">
+  <div id="col-980">
+    <div id="faq">
+     <p><strong style="font-size: 16px;">Часто задаваемые вопросы</strong></p>
+     <div class="accordion">
+	   <div class="trigger"> <span class="vopros"><strong>Почему мои услуги бесплатны?</strong></span> </div>
+	   <div>
+		  <p>Мои услуги бесплатны для Вас, как для Заказчика. Потому, что мне оплачивают фабрики-производители мебели. За приведенного клиента. В итоге, все довольны.</p>
+		  <p>Вы - потому что бесплатно получили эксклюзивный дизайн мебели. И проверенную надёжную фабрику, которая воплотит его в жизнь.</p>
+		  <p>Мебельная фабрика - получает заказ.</p>
+		  <p>Я - получаю вознаграждение от мебельной фабрики.</p>
+	</div>
+		<div class="trigger"> <span class="vopros"><strong>А  проектируете Вы мебель <em>кроме </em>кухонь?</strong></span> </div>
+		<div>
+		  <p>Да, оформление комплексных заказов также входит в мои  услуги.</p>
+		  <p>И если Вы хотите <em>полностью</em> обставить мебелью коттедж или квартиру, да еще и  в едином стиле, то это, конечно, возможно.  Так как производители, с которыми я работаю, делают <em>любую</em> корпусную мебель. Будь то кухни, детские, гостиные, прихожие,  шкафы-купе или гардеробные. </p>
+		</div>
+		<div class="trigger"> <span class="vopros"> <strong>Сколько  стоят  ваши  услуги? </strong> </span> </div>
+		<div>
+		  <p>Если Вы являетесь жителем г. Самара или Самарской  области, то для вас мои услуги абсолютно бесплатны.
+		  <p>Единственное за что вы платите деньги – это замер (непосредственно мастеру).  Стоимость замера по городу 1000 руб. Его проводит  квалифицированный замерщик со специальным оборудованием.</p>
+		  <p>На  самом деле мои услуги оцениваются достаточно высоко, но их стоимость готовы  полностью проплачивать мебельные компании, желая сотрудничать со мной на  постоянной основе.</p>
+		</div>
+		<div class="trigger"> <span class="vopros"><strong>Из каких материалов изготавливается  Ваша мебель?</strong></span> </div>
+		<div>
+		  <p>Я работаю с компаниями, которые используют в своей работе только материалы  импортного производства (Италия, Америка, Германия, иногда Турция).</p>
+		  <p>Хотите сэкономить? Уменьшить стоимость проекта можно за счет  замены импортной фурнитуры на российскую. Но фасадные материалы — только импорт.  Это обязательное условие.</p>
+		  <p>И все для того, чтобы Вы получили настоящее удовольствие от  использования такой кухни<em>: </em>различная  фурнитура с доводчиками, волшебные уголки, корзины и прочие функциональные  примочки. </p>
+		</div>
+		<div class="trigger"> <span class="vopros"><strong>На  какие гарантии я могу рассчитывать?</strong> </span> </div>
+		<div>
+		  <p>В основном, все мебельные производители дают гарантию на  мебель 12 месяцев. Исключение составляет единственная организация, создающая  шкафы-купе и гостиные, производства Канады. Они дают гарантию на свою мебель  пожизненно (мебель категории люкс). </p>
+		</div>
+		<div class="trigger"> <span class="vopros"><strong>Какие  гарантии даете Вы?</strong></span> </div>
+		<div>
+		  <p>Так как мои услуги для Вас являются бесплатными, то  единственной гарантией того, что Вы попадете в надежные руки, являются  фотографии и отзывы моих клиентов.</p>
+		  <p>Если Вы хотите гарантий, прописанных на  бумаге, мы с Вами заключаем договор. В этом случае, я довожу свою работу вплоть  до установки мебели. И несу ответственность за качество предоставленных мной  услуг. Такие услуги уже будут платными для Вас.</p>
+		</div>
+     </div>
+     <div class="clr"></div>
+    </div>
+    <div id="form">
+      <p><strong style="font-size: 14px; color: #e49b3b;">Остались вопросы? Задавайте их сейчас!</strong></p>
+    <form class="sendmail" method="post" action="sendmail.php" ajax>
+	  <input type="hidden" name="mode" value="vopros" />
+      <div class="label">Ваше имя<span style="color: red">*</span>:</div>
+      <div><input type="text" name="name" value="" required /></div>
+      <div class="label">Телефон<span style="color: red">*</span>:</div>
+      <div><input type="text" name="phone" value="" required /></div>
+      <div class="label">E-mail:</div>
+      <div><input type="text" name="email" value="" /></div>
+      <div class="label">Вопрос:</div>
+      <div><textarea name="message" rows="8"></textarea></div>
+      <div class="submit">
+        <input type="submit" value="Отправить" onclick="yaCounter21464884.reachGoal('zvonok'); return true;" />
+      </div>
+    </form>
+
+    </div>
+    <div class="clr"></div>
+  </div>
+</div>
+<div id="line-3"></div>
+
+<!-- screen-6 -->
+<div id="screen-6">
+<div id="sc-6">
+  <p class="red" style="font-size:16px"><strong>Почему мои услуги бесплатны для Вас, как для Заказчика?</strong></p>
+  <p style="font-size:13px;"><em>Мои услуги бесплатны потому, что мне оплачивают фабрики-производители мебели. <br />
+    За приведенного клиента.</em></p>
+  <p><img src="images/list1.png" width="28" height="28" hspace="10" align="left" />Вы получаете эксклюзивный дизайн мебели. <br />
+    И проверенную надёжную фабрику, которая воплотит его в жизнь.</p>
+  
+  <p><img src="images/list2.png" width="28" height="28" hspace="10" align="absmiddle" />Мебельная фабрика - получает заказ.<a href="#" class="knopka-1" data-reveal-id="modal-zakaz"></a>
+  </p>
+  <p><img src="images/list3.png" width="28" height="28" hspace="10" align="absmiddle" />Я - получаю вознаграждение от мебельной фабрики.<br /><br />
+  </p>
+  
+</div>
+</div>
+
+<!-- dcreen-7 -->
+<a name="portfolio" id="portfolio"></a>
+<div id="line-2"></div>
+<div id="screen-7"><p align="center" style="font-size:20px"><strong>Мои работы</strong></p></div>
+<div id="line-3"></div>
+<div id="portfolio">
+<div id="col-1020">
+ <a href="images/kitchens/1t.jpg" id="k1" class="highslide" onclick="return hs.expand(this,config1)"><img src="images/kitchens/1t.jpg" alt="" /></a>
+ <a href="images/kitchens/2t.jpg" id="k2" class="highslide" onclick="return hs.expand(this,config1)"><img src="images/kitchens/2t.jpg" alt="" /></a>
+ <a href="images/kitchens/3t.jpg" id="k3" class="highslide" onclick="return hs.expand(this,config1)"><img src="images/kitchens/3t.jpg" alt="" /></a>
+ <a href="images/kitchens/4t.jpg" id="k4" class="highslide" onclick="return hs.expand(this,config1)"><img src="images/kitchens/4t.jpg" alt="" /></a>
+ <a href="images/kitchens/5t.jpg" id="k5" class="highslide" onclick="return hs.expand(this,config1)"><img src="images/kitchens/5t.jpg" alt="" /></a>
+ <a href="images/kitchens/6t.jpg" id="k6" class="highslide" onclick="return hs.expand(this,config1)"><img src="images/kitchens/6t.jpg" alt="" /></a>
+ <a href="images/kitchens/7t.jpg" id="k7" class="highslide" onclick="return hs.expand(this,config1)"><img src="images/kitchens/7t.jpg" alt="" /></a>
+ <a href="images/kitchens/8t.jpg" id="k8" class="highslide" onclick="return hs.expand(this,config1)"><img src="images/kitchens/8t.jpg" alt="" /></a>
+ <a href="images/kitchens/9t.jpg" id="k9" class="highslide" onclick="return hs.expand(this,config1)"><img src="images/kitchens/9t.jpg" alt="" /></a>
+  <a href="images/kitchens/10t.jpg" id="k10" class="highslide" onclick="return hs.expand(this,config1)"><img src="images/kitchens/10t.jpg" alt="" /></a>
+</div>
+</div>
+
+<!-- screen-8 -->
+<div id="screen-8">
+<div id="col-980">
+<div id="telephone">
+  <p style="color:white; padding-top:60px"><span class="font-m" style="font-size:22px; line-height:22px">Звоните сейчас!</span><br />
+<span class="font-g" style="font-size:32px; line-height:32px">(800) 000-00-00</span></p>
+  <a href="#" class="knopka-2" data-reveal-id="modal-zakaz"></a>
+</div>
+<div id="social"><script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,gplus" style="width:150px; margin-left:auto; margin-right:auto;"></div>
+  </div>
+<div id="sale"></div>
+<div class="clr"></div>
+</div>
+</div>
+<a href="#up" class="up goto">вверх</a>
+
+<div id="modal-zakaz" class="reveal-modal medium">
+    <a class="close-reveal-modal">×</a>
+	<form id="zakaz" action="sendmail.php" method="post" ajax>
+      <h3 align="center"><font color="#a20000">Заказать дизайн мебели</font></h3>
+	  <p>Я свяжусь с Вами в удобное Вам время.</p>
+	  <table>
+        <tbody>
+          <tr>
+            <td>Ваше имя<span style="color: red">*</span>:&nbsp;&nbsp;</td>
+            <td><input type="text" name="name" required /></td>
+          </tr>
+          <tr>
+            <td>Ваш телефон<span style="color: red">*</span>:&nbsp;&nbsp;</td>
+            <td><input type="text" name="phone" required /></td>
+          </tr>
+          <tr>
+			<td>Желательное время:&nbsp;&nbsp;</td>
+			<td><input type="text" name="time" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Заказать" onclick="yaCounter21464884.reachGoal('zvonok'); return true;"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+</div>
+
+</body>
+</html>

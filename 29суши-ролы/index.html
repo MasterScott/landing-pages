@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Шаблон</title>
+  <link type="text/css" rel="stylesheet" href="font/fonts.css">  
+  <link type="text/css" rel="stylesheet" href="css/global.css">    
+  <link type="text/css" rel="stylesheet" href="css/timer.css">
+  <script type="text/javascript" src="js/libs/modernizr-2.6.1.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+  <script src="jquery.maskedinput.min.js"></script>
+  <script type="text/javascript" src="js/timer.js"></script>
+  <script type="text/javascript" src="main.js"></script>  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />  
+</head>
+<body>  
+    <!-- /////////////////////////// Поп-ап \\\\\\\\\\\\\\\\\\\\\\\\ -->
+  <div class="center-980-pop">
+    <a href="#x" class="overlay-zvonokt" id="wind-zakaz-top"></a>  
+    <div class="popup-zvonokt">      
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="wind-zakaz-top">
+        <p><span class="bold">ЗАПОЛНИТЕ ФОРМУ</span> И МЫ ВАМ<br>ОБЯЗАТЕЛЬНО ПЕРЕЗВОНИМ</p>
+        <form class="s_form" action="index1.php" method="POST">          
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Введите ваше имя*">          
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Введите ваш телефон*">
+          <input type="hidden"  name="mail" class="email" value="none@none.ru">
+          <input type="hidden"  name="adress" class="email" value="none">          
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="ОТПРАВИТЬ">
+        </form>
+      </div>       
+    </div> 
+  </div>
+<!-- ////////////////////////// ШАПКА-ШАПКА-ШАПКА \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->  
+  <div class="my-background">
+    <div class="header-bg">              
+      <div class="header-top">  
+        <div class="palki"></div>
+        <a class="top-logo" href="index.php"><img src="img/logo.png"></a>
+        <div class="header-phone">
+          <p style="font-size: 20px; padding-left: 8px; ">Есть вопросы? Звоните!</p>
+          <p style="color: #d24a43;font-size: 33px;padding-left: 8px;">8 800 <span style="font-size: 40px;">123 45 67</span></p>
+          <a href="#wind-zakaz-top">Заказать</a>
+          <p style="font-size: 19px;">Звонок по России бесплатно!</p>
+        </div>       
+      </div>  
+      <p class="header-bg-title">УСТРОЙСТВО ДЛЯ ПРИГОТОВЛЕНИЯ <br><span>СУШИ И РОЛЛОВ</span></p>
+      <div class="four-steps"><p>4 ПРОСТЫХ ШАГА ДЛЯ ПРИГОТОВЛЕНИЯ</p></div>
+     <div class="steps-position">
+       <div class="step1"></div>
+       <div class="step2"></div>
+       <div class="step3"></div>
+        <div class="step4"></div>
+      </div>      
+    </div>
+    <div class="baner">
+      <p class="baner-sale">ТОЛЬКО СЕЙЧАС<br>
+      <span>СКИДКА<br></span>
+      + специальный подарок</p>    
+      <p class="sreeteen">-30%</p>
+      <img class="baner-sushezi" src="img/sushezi.png">
+      <p class="price-actual"><span>1000p </span><br>700p</p>
+      <div class="red-line"></div>
+      <p class="end-action">ДО КОНЦА АКЦИИ:</p>
+      <div class="timer">
+        <div class="days-for-timer"><p style="font-size: 35px; color: #000000;">00</p><p style="font-size: 13px;color: #fff;">Дней</p></div>      
+<!--! --><div class="countbox"><div id="countbox1"> </div></div>       
+      </div> 
+      </div>
+      <div class="video-reg">   
+        <object styleid="videoplayer995" type="application/x-shockwave-flash" data="player/uppod-video.swf" width="560" height="400"><param name="bgcolor" value="#ffffff" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="movie" value="player/uppod-video.swf" /><param name="flashvars" value="comment=&amp;st=styles/video171-1022.txt&amp;file=../video/sushezi.flv" /></object>
+        <div class="big-form">
+          <p class="buy-sush">КУПИТЬ <span>SUSHEZI</span></p>
+          <form class="s_form" action="index1.php" method="POST">
+              <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+              <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">
+              <input type="hidden"  name="email" class="email" value="none@none.ru">
+              <input class="s_text adress" type="text" name="mail" placeholder="Почта">
+              <input class="s_text adress" type="text" name="adress" placeholder="Точный адрес">
+              <input type="hidden" value="C" name="button">
+              <input type="hidden"  name="comment" value="None">
+            <input class="s_submit" type="button" value="ЗАКАЗАТЬ">
+          </form>
+          <p style="text-align: center;font-size: 24px;margin-top: -5px;">ОПТОМ</p>
+        </div>
+      </div>
+      <div class="why">
+        <p class="title"><span>ПОЧЕМУ <span style="font-weight: bold;">SUSHEZI</span></span></p>
+        <div class="therefore">
+          <h1>ПРОСТ В ИСПОЛЬЗОВАНИИ</h1>
+          <p>Действует по принципу «Шприца», выдавливая<br>идеально ровные роллы. Вам не потребуется<br>специальных навыков или умений<br>для приготовления роллов</p>
+        </div>
+        <div class="therefore">
+          <h1>ЭКОНОМИТ ВРЕМЯ</h1>
+          <p>Вы получаете готовый ролл за две минуты.<br>В суши-барах время приготовления заказа<br>в среднем 30 минут</p>
+        </div>
+        <div class="therefore">
+          <h1>ЭКОНОМИТ ДЕНЬГИ</h1>
+          <p>Приобретение Sushezi окупится для Вас уже после<br>второго использования. Согласитесь, выгоднее<br>купить ингредиенты и сделать  роллы своими руками,<br>чем переплачивать кому-то за приготовление</p>
+        </div>
+        <div class="therefore">
+          <h1>НЕ ТРЕБУЕТ ОСОБОГО УХОДА</h1>
+          <p>Просто положите его в посудомоечную машину<br>или раковину, вместе с остальной посудой,<br>сполосните водой, и Sushezi снова готов к<br>использованию</p>
+        </div>
+        <div class="therefore">
+          <h1>ПОДХОДИТ ДЛЯ ИЗГОТОВЛЕНИЯ<br>КОНДИТЕРСКИХ ИЗДЕЛИЙ ИЗ ТЕСТА</h1>
+          <p>Порадуйте себя и своих близких кондитерскими<br>изделиями, ведь с Sushezi это стало гораздо<br>проще и быстрее</p>
+        </div>
+        <div class="therefore">
+          <h1>СДЕЛАН ИЗ ВЫСОКОКАЧЕСТВЕННЫХ<br>МАТЕРИАЛОВ</h1>
+          <p>Корпус ударопрочный, не боится падений. Sushezi<br>прослужит Вам не один год и будет радовать<br>вкусными роллами всю семью. Безопасен для детей</p>
+        </div>
+      </div>
+      <div class="solution">
+        <div class="no">
+          <p>НЕ УМЕЕШЬ ДЕЛАТЬ СУШИ?<br>РОЛЛЫ ПОЛУЧАЮТСЯ НЕ РОВНЫМИ<br>И НЕ КРАСИВЫМИ? НЕ ХОЧЕШЬ<br>ТРАТИТЬ МНОГО ВРЕМЕНИ И СИЛ<br>НА ЛЮБИМОЕ БЛЮДО?</p>
+        </div>
+        <div class="yes">
+          <p><span style="font-weight: bold;">SUSHEZI!</span> С НИМ ВСЁ ЛЕГКО И ПРОСТО<br>РОЛЛЫ ИДЕАЛЬНОЙ КРУГЛОЙ ФОРМЫ<br>ЗА 2 МИНУТЫ. БЕЗ ЛИШНИХ УСИЛИЙ И<br>ДЕНЕЖНЫХ ТРАТ</p>
+          <a href="#wind-zakaz-top">ХОЧУ!</a>
+        </div>
+      </div>
+      <div class="baner">
+          <p style="font-size: 23px;display: block; width: 530px;margin-left:100px;padding-top:50px;text-align:center; color: #fff;">СДЕЛАВ ПОКУПКУ ПРЯМО СЕЙЧАС<br>ВЫ БЕСПЛАТНО ПОЛУЧИТЕ ФИРМЕННЫЕ<br>РЕЦЕПТЫ ПО ПРИГОТОВЛЕНИЮ<br>ИДЕАЛЬНОГО РИСА ДЛЯ SUSHEZI</p>
+          <p class="end-action">ДО КОНЦА АКЦИИ:</p>
+        <div class="timer">
+        <div class="days-for-timer"><p style="font-size: 35px; color: #000000;">00</p><p style="font-size: 13px;color: #fff;">Дней</p></div>      
+<!--! --><div class="countbox"><div id="countbox2"> </div></div>
+        </div> 
+      </div>
+      <div class="preim">
+        <h1 class="title"><span style="font-weight: bold;">ПРЕИМУЩЕСТВА</span>, КОТОРЫЕ ВЫ ПОЛУЧИТЕ,<br>ЗАКАЗАВ <span style="font-weight: bold;">SUSHEZI</span> У НАС</h1>
+        <div style="margin-left: 80px;" class="one-preim">
+          <p><span>NEW!</span><br>УНИКАЛЬНЫЙ<br>ТОВАР</p>
+        </div>
+        <div class="one-preim">
+          <p><span>3 СПОСОБА</span><br>ПОЛУЧИТЬ<br>SUSHEZI</p>
+        </div>
+        <div style="padding-top: 15px;" class="one-preim">
+          <p><span>100%<br>ГАРАНТИЯ</span><br>ВОЗВРАТА<br>ДЕНЕГ</p>
+        </div>
+        <div style="padding-top: 70px;" class="one-preim">
+          <p><span>НИЗКАЯ<br>ЦЕНА</span></p>
+        </div>
+        <h1 class="title">КАК МЫ РАБОТАЕМ!</h1>
+          <ul>
+            <li><img src="img/li1.png">Принимаем звонки<br>и обрабатываем<br>заявки</li>
+            <li><img src="img/li2.png">Уточняем способ<br>и время доставки</li>
+            <li><img src="img/li3.png">Доставляем товар</li>
+            <li><img src="img/li4.png">Вы получаете свой<br>Sushezi<br>и наслаждаетесь</li>            
+          </ul>
+      </div>
+          <div class="reviws">
+    <p class="title"><span>ОТЗЫВЫ <span style="font-weight: bold;">НАШИХ КЛИЕНТОВ</span></span></p>
+    <div class="reviw">
+      <div class="reviw-left">
+        <img src="img/reviw-avatar.png" alt="Сухие пайки">
+        <p style="margin-top: -20px;"><span>Иван Алексеевич</span><br>34 года</p>
+      </div>
+      <div class="reviw-right">
+        <p>Заказал услугу в данной компании и был очень доволен результатом.
+Обслуживание на высшем уровне, качество выполненной работы впечатляет. Сделали все быстро, качественно, а главное и для меня оказалось выгодно. А по окончании работ сделали подарок. В общем я очень доволен, всегда буду обращаться в данную компанию, а ткже советовать всем своим друзьям и близким. </p>
+      </div>
+    </div>
+    <div class="reviw">
+      <div class="reviw-left">
+        <img src="img/reviw-avatar.png" alt="Сухие пайки">
+        <p style="margin-top: -20px;"><span>Иван Алексеевич</span><br>34 года</p>
+      </div>
+      <div class="reviw-right">
+        <p>Заказал услугу в данной компании и был очень доволен результатом.
+Обслуживание на высшем уровне, качество выполненной работы впечатляет. Сделали все быстро, качественно, а главное и для меня оказалось выгодно. А по окончании работ сделали подарок. В общем я очень доволен, всегда буду обращаться в данную компанию, а ткже советовать всем своим друзьям и близким. </p>
+      </div>
+    </div>
+    <div class="reviw">
+      <div class="reviw-left">
+        <img src="img/reviw-avatar.png" alt="Сухие пайки">
+        <p style="margin-top: -20px;"><span>Иван Алексеевич</span><br>34 года</p>
+      </div>
+      <div class="reviw-right">
+        <p>Заказал услугу в данной компании и был очень доволен результатом.
+Обслуживание на высшем уровне, качество выполненной работы впечатляет. Сделали все быстро, качественно, а главное и для меня оказалось выгодно. А по окончании работ сделали подарок. В общем я очень доволен, всегда буду обращаться в данную компанию, а ткже советовать всем своим друзьям и близким. </p>
+      </div>
+    </div>
+    <div class="reviw">
+      <div class="reviw-left">
+        <img src="img/reviw-avatar.png" alt="Сухие пайки">
+        <p style="margin-top: -20px;"><span>Иван Алексеевич</span><br>34 года</p>
+      </div>
+      <div class="reviw-right">
+        <p>Заказал услугу в данной компании и был очень доволен результатом.
+Обслуживание на высшем уровне, качество выполненной работы впечатляет. Сделали все быстро, качественно, а главное и для меня оказалось выгодно. А по окончании работ сделали подарок. В общем я очень доволен, всегда буду обращаться в данную компанию, а ткже советовать всем своим друзьям и близким. </p>
+      </div>
+    </div>          
+    </div>
+      <div class="baner">
+        <p class="buy-sush" style="font-weight: bold;margin-left: -180px;volor: #fff;">ОСТАВИТЬ ЗАЯВКУ СЕЙЧАС</p>
+        <div class="bform">          
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя"><br>
+            <input style="background: url(img/background/input-tel.png) no-repeat;background-color: #fff;background-position: 3% center;"class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">              
+          <input type="hidden"  name="mail" class="email" value="none@none.ru">
+          <input type="hidden"  name="adress" class="email" value="none">          
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+            <input class="s_submit" type="button" value="ЗАКАЗАТЬ">            
+          </form>          
+        </div>
+        <p class="end-action">ДО КОНЦА АКЦИИ:</p>
+        <div class="timer">    
+          <div class="days-for-timer"><p style="font-size: 35px; color: #000000;">00</p><p style="font-size: 13px;color: #fff;">Дней</p></div>      
+<!--! --> <div class="countbox"><div id="countbox3"> </div></div>
+        </div> 
+      </div>
+      <div class="footer"> 
+        <div class="palki-bot"></div>
+        <a class="my-logo"href="index.php"><img src="img/logo.png"></a>
+        <a class="bot-but" href="#wind-zakaz-top">ЗАКАЗАТЬ ЗВОНОК</a><a class="bot-but" href="#wind-zakaz-top">ДЛЯ ОПТОВИКОВ</a>
+        <div class="header-phone-foot">
+          <p style="font-size: 20px; padding-left: 8px; ">Есть вопросы? Звоните!</p>
+          <p style="color: #ff0000;font-size: 33px;margin-left: -28px;"><img src="img/tryba.png"> 8 800 <span style="font-size: 38px;font-weight: bold;">123 45 67</span></p>          
+          <p style="font-size: 19px;">Звонок по России бесплатно!</p>
+        </div>
+        <p class="copy-right">2013 &copy; Все права защищены</p>
+      </div>
+  </div>
+    <script src="js/jquery.countdown.js"></script>
+  </body>
+</html>

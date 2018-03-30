@@ -1,0 +1,70 @@
+
+form .ajax-wait {
+	text-align: center;
+	font: 11px Verdana;
+	padding: 20px 0px 0px 0px;
+	background: url(images/waiting.gif) 50% 5px no-repeat;
+	display: none;
+}
+form.sender .ajax-wait {
+	display: block;
+}
+form.sender input[type="submit"] {
+	display: none;
+}
+form .field-error-box {
+	padding: 4px 5px;
+	font: 11px Verdana;
+	background: #f8cdcd;
+	border: 1px solid red;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px #888;
+	color: #000;
+}
+form .field-error-box:before {
+	width: 100px;
+	height: 8px;
+	position: absolute;
+	margin-top: -10px;
+	background: url(images/feba.png) 20px 0px no-repeat;
+	content: '';
+}
+form .error {
+	border: 1px solid red;
+}
+form .empty {
+	color: #aaa;
+}
+
+
+form.sendmail {
+	font: 13px Verdana;
+	width: 300px;
+	margin: 0px auto;
+}
+
+form.sendmail label, form.sendmail .label {
+	width: 80px;
+	display: block;
+	clear: both;
+	float: left;
+	padding-top: 2px;
+}
+
+form.sendmail label + div, form.sendmail .label + div {
+	margin-left: 80px;
+}
+
+form.sendmail input[type=text], form.sendmail textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+	font: 13px Arial;
+}
+form.sendmail input[type=text].error, form.sendmail textarea.error {
+	border: 1px solid red;
+}
+
+form.sendmail .submit {
+	text-align: center;
+}

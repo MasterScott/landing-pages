@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url('518310547-CG.eot');
+    src: url('518310547-CG.eot?#iefix') format('embedded-opentype'),
+    url('518310547-CG.svg#Century Gothic') format('svg'),
+    url('518310547-CG.woff') format('woff'),
+    url('518310547-CG.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url('244354249-CGBold.eot');
+    src: url('244354249-CGBold.eot?#iefix') format('embedded-opentype'),
+    url('244354249-CGBold.svg#Century Gothic') format('svg'),
+    url('244354249-CGBold.woff') format('woff'),
+    url('244354249-CGBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

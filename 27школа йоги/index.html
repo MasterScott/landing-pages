@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Шаблон</title>
+<!-- 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="icon" type="image/png" href="img/fav.jpg">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="fonts/fonts.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.reveal.js"></script>
+		<script src="js/countdown.js"></script>
+		<script src="js/scroll.js"></script>
+		<script src="http://maps.googleapis.com/maps/api/js?sensor=true" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+				google_maps(); // Load google maps onload page
+
+				function google_maps() {
+                var latlng = new google.maps.LatLng(53.533676,49.317241);
+                var settings = {
+                  zoom: 16,
+                  center: latlng,
+                  mapTypeControl: true,
+                  mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+                  navigationControl: false,
+                  navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+              };
+			 	var map = new google.maps.Map(document.getElementById("google_map"), settings);
+			  	var myLatlng = new google.maps.LatLng(53.533676,49.317241);
+
+			  	var myOptions = {
+	    zoom: 16,
+	    center: myLatlng,
+	    mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+
+    var yoga = new google.maps.LatLng(53.533721,49.319987);
+
+    var iconBase = 'img/';
+			var marker = new google.maps.Marker({position: yoga,map: map,icon: iconBase + 'marker.png'});
+	}
+
+
+				$('#countdown_dashboard').countDown({
+						targetDate: {
+							'day': 		21,
+							'month': 	12,
+							'year': 	2013,
+							'hour': 	17,
+							'min': 		34,
+							'sec': 		15	}
+					});
+				$('#countdown_dashboardd').countDown({
+						targetDate: {
+							'day': 		21,
+							'month': 	12,
+							'year': 	2013,
+							'hour': 	17,
+							'min': 		34,
+							'sec': 		15	}
+					});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="fixed_menu">
+			<div class="wrapper">
+				<nav>
+					<a href="#hdr">О нас</a>
+					<a href="#lessons">Занятия</a>
+					<a href="#course">Виды курсов</a>
+					<a href="#five">5 проблем</a>
+					<a href="#old">Наш центр</a>
+					<a href="#hdww">Как мы работаем</a>
+					<a href="#video">Наши клиенты</a>
+					<a href="#feedback">Отзывы</a>
+					<a href="#map">Контакты</a>
+				</nav>
+			</div>
+		</div>
+		<header id="hdr">
+			<div class="wrapper">
+				<a href="#" id="logo" class="pull-left"></a>
+				<h1 class="pull-left">Центр занятий йогой в Тольятти</h1>
+				<div class="phone pull-right">
+					<a href="tel:+79276181435">+7 (800) 000-00-00</a>
+				</div>
+				<a href="#" class="btn pull-right order" data-reveal-id="phone">Заказать обратный звонок</a>
+				<div class="clr"></div>
+				<div class="block">
+					<h2>Акция</h2>
+					<div class="best">Успей заказать <span>БЕСПЛАТНОЕ</span> занятие</div>
+					<div class="timer">
+						<p>До конца акции осталось:</p>
+						<div id="countdown_dashboard">
+							<!-- <div class="dash weeks_dash">
+								<span class="dash_title">недель</span>
+								<div class="digit">0</div>
+								<div class="digit">0</div>
+								</div>-->
+							<div class="dash days_dash">
+								<div class="digit">0</div>
+								<div class="digit">0</div>
+							</div>
+							<div class="dash hours_dash">
+								<!--  -->
+								<div class="digit">0</div>
+								<div class="digit">0</div>
+							</div>
+							<div class="dash minutes_dash">
+								<!-- <span class="dash_title">минут</span> -->
+								<div class="digit">0</div>
+								<div class="digit">0</div>
+							</div>
+							<div class="dash seconds_dash">
+								<!-- <span class="dash_title">секунд</span> -->
+								<div class="digit">0</div>
+								<div class="digit">0</div>
+							</div>
+							<div class="clr"></div>
+						</div>
+					</div>
+				</div>
+				<div class="form pull-right">
+					<img src="img/ugol.png" alt="">
+					<div class="form_in">
+						<h3>Оставьте заявку на посещение центра йоги</h3>
+						<form action="index1.php" method="POST">
+							<input name="name" type="text" autocomplete="off" class="man" placeholder="Имя:">
+							<input name="phone" type="text" autocomplete="off" class="phone" placeholder="Телефон:">
+							<input type="submit" class="btn" value="Оставить заявку">
+						</form>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<img src="img/girl.png" alt="" class="girl">
+			</div>
+		</header>
+		<div id="yoga">
+			<div class="wrapper">
+				<h2>Йога</h2>
+				<div class="divider"></div>
+				<ul class="pull-left">
+					<li>Улучшит общее самочувствие</li>
+					<li>Укрепит иммунную систему</li>
+					<li>Вернет подвижность суставов</li>
+					<li>Поднимает жизненный тонус</li>
+				</ul>
+				<ul class="pull-right">
+					<li>Снимет развитие искривления позвоночника</li>
+					<li>Развеет депрессивное состояние и усталость</li>
+					<li>Нормализует кровяное давление и пищеварение</li>
+					<li>Снимает нервную возбудимость</li>
+				</ul>
+				<div class="clr"></div>
+				<p>Йога - путь к здоровью и долголетию!</p>
+			</div>
+		</div>
+		<div id="reasons">
+			<div class="wrapper">
+				<h2><span class="purple">12 причин</span> прийти<br> в Yoga Studio Vishnu</h2>
+				<ol class="pull-left">
+					<li>
+						<div class="number">1</div>
+						<div class="after_number">Мы любим свою работу </div>
+						<div class="clr"></div>
+					</li>
+					<li>
+						<div class="number">2</div>
+						<div class="after_number">У нас работают только квалифицированные преподаватели </div>
+						<div class="clr"></div>
+					</li>
+					<li>
+						<div class="number">3</div>
+						<div class="after_number">Специально подготовленный зал для занятий йогой </div>
+						<div class="clr"></div>
+					</li>
+					<li>
+						<div class="number">4</div>
+						<div class="after_number">Весь необходимый инвентарь для практики </div>
+						<div class="clr"></div>
+					</li>
+					<li>
+						<div class="number">5</div>
+						<div class="after_number">Ежегодные Йога туры в Индию и другие страны </div>
+						<div class="clr"></div>
+					</li>
+					<li>
+						<div class="number">6</div>
+						<div class="after_number">Выезды на природу </div>
+						<div class="clr"></div>
+					</li>
+				</ol>
+				<ol class="pull-right">
+					<li>
+						<div class="number">7</div>
+						<div class="after_number">Практика по методу Б.К.С. Айенгара </div>
+						<div class="clr"></div>
+					</li>
+					<li>
+						<div class="number">8</div>
+						<div class="after_number">Разнообразие курсов: для новичков, беременных, преподавателей и для детей </div>
+						<div class="clr"></div>
+					</li>
+					<li>
+						<div class="number">9</div>
+						<div class="after_number">Индивидуальные занятия с выездом на дом </div>
+						<div class="clr"></div>
+					</li>
+					<li>
+						<div class="number">10</div>
+						<div class="after_number">У нас в студии мы можете приобрести индийскую продукцию,сладости и литературу </div>
+						<div class="clr"></div>
+					</li>
+					<li>
+						<div class="number">11</div>
+						<div class="after_number">Студия находится в центре города в ТРК “Капитал” </div>
+						<div class="clr"></div>
+					</li>
+					<li>
+						<div class="number">12</div>
+						<div class="after_number">Вкусный чай после занятий </div>
+						<div class="clr"></div>
+					</li>
+				</ol>
+				<div class="clr"></div>
+			</div>
+		</div>
+		<div id="lessons">
+			<div class="wrapper">
+				<h2>Наши <span class="purple">занятия</span></h2>
+				<div class="divider"></div>
+				<div class="item">
+					<img src="img/item/1.jpg" alt="">
+					<div class="mask"></div>
+					<div class="date">09.06.2013</div>
+				</div>
+				<div class="item">
+					<img src="img/item/2.jpg" alt="">
+					<div class="mask"></div>
+					<div class="date">Индия 2013</div>
+				</div>
+				<div class="item last">
+					<img src="img/item/3.jpg" alt="">
+					<div class="mask"></div>
+					<div class="date">27.04.2013</div>
+				</div>
+				<div class="item">
+					<img src="img/item/4.jpg" alt="">
+					<div class="mask"></div>
+					<div class="date">Индия 2011</div>
+				</div>
+				<div class="item">
+					<img src="img/item/5.jpg" alt="">
+					<div class="mask"></div>
+					<div class="date">07.04.2013</div>
+				</div>
+				<div class="item last">
+					<img src="img/item/6.jpg" alt="">
+					<div class="mask"></div>
+					<div class="date">Индия 2010</div>
+				</div>
+			</div>
+		</div>
+		<div id="video">
+			<div class="wrapper">
+				<div class="pull-left">
+					<img src="img/deniska.png" alt="">
+					<h3>Денис</h3>
+					<p>Йога – это способ существования. Практика развивается постепенно, переходя от более простых асан к более сложным. 
+						<br>Ваша школа мне очень помогла, спасибо Вам большое!
+					</p>
+				</div>
+				<div class="pull-right">
+					<iframe width="330" height="211" src="http://www.youtube.com/embed/8RcSKnNbMpQ" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="clr"></div>
+				<a href="#" class="btn" data-reveal-id="phone">Закажите обратный звонок</a>
+			</div>
+		</div>
+		<div id="course">
+			<div class="wrapper">
+				<h2>Виды <span class="purple">курсов</span></h2>
+				<div class="divider"></div>
+				<div class="block-3">
+					<div class="item">
+						<h3>Класс для детей</h3>
+						<div class="bordered">
+							<img src="img/class/1.png" alt="">
+							<p>Расписание современного ребенка порой гораздо полнее, чем режим дня взрослого работающего человека.</p>
+						</div>
+						<a href="#" class="btn" data-reveal-id="phone">Оставить заявку</a>
+					</div>
+					<div class="item">
+						<h3>Начальный класс</h3>
+						<div class="bordered">
+							<img src="img/class/2.png" alt="">
+							<p>Основное внимание уделяется позам стоя, которые делают тело сильнее и пластичнее и, таким образом, готовят его к выполнению более сложных асан. </p>
+						</div>
+						<a href="#" class="btn" data-reveal-id="phone">Оставить заявку</a>
+					</div>
+					<div class="item last-1">
+						<h3>Класс для
+							беременных
+						</h3>
+						<img src="img/class/3.png" alt="">
+						<p>это уникальный комплекс асан, специально разработанный для этого периода. 
+							А так же для физической подготовки будущих мам к родам.
+						</p>
+						<a href="#" class="btn" data-reveal-id="phone">Оставить заявку</a>
+					</div>
+					<div class="clr"></div>
+				</div>
+				<p class="last">У нас в студии вы можете обучиться и стать преподавателем!</p>
+			</div>
+		</div>
+		<div id="five">
+			<div class="wrapper">
+				<h2><span class="purple">5 проблем,</span> при выборе цетра йоги</h2>
+				<ul class="no pull-left">
+					<li>Непрофессионализм преподавателя</li>
+					<li>Плохой зал для практики</li>
+					<li>Отсутствие инвентаря</li>
+					<li>Халатное отношение к клиентам</li>
+					<li>Неоправданно завышеная <br>цена</li>
+				</ul>
+				<ul class="yes pull-right">
+					<li>У нас все инструктора являются дипломированными специалистами с многолетним стажем практики.</li>
+					<li>Чистый и уютных зал</li>
+					<li>Весь необходимый инвентарь</li>
+					<li>Первое занятие бесплатное!</li>
+					<li>Приемлемые цены</li>
+				</ul>
+				<div class="clr"></div>
+				<img src="img/paren.png" alt="" class="par">
+			</div>
+		</div>
+		<div id="hdww">
+			<div class="wrapper">
+				<h2>Как мы <span class="purple">работаем</span></h2>
+				<div class="divider"></div>
+				<div class="item pull-left">
+					<img src="img/steps/1.png" alt="">
+					<p>Вы звоните <br>нам</p>
+				</div>
+				<div class="item pull-left">
+					<img src="img/steps/2.png" alt="">
+					<p>Приходите <br>на бесплатное занятие</p>
+				</div>
+				<div class="item pull-left">
+					<img src="img/steps/3.png" alt="">
+					<p>Выбираем подходящий курс для Вас</p>
+				</div>
+				<div class="item pull-left">
+					<img src="img/steps/4.png" alt="">
+					<p>Приходите заниматься в Yoga Studio Vishnu</p>
+				</div>
+				<div class="clr"></div>
+				<h2>Наш <span class="purple">центр</span></h2>
+			</div>
+		</div>
+		<div id="old">
+			<div class="wrapper">
+				<img src="img/oldman.png" alt="">
+			</div>
+		</div>
+		<div id="feedback">
+			<div class="wrapper">
+				<h2>Отзывы <span class="purple">учеников</span></h2>
+				<div class="divider"></div>
+					<div class="roll">
+						<div class="pull-left">
+							<div class="item">
+								<h3>Мария</h3>
+								<span class="date">21.09.2013</span>
+								<p>Уже год, как я активно посещаю йогу и очень довольна этим. С тех пор, как я начала заниматься, заметила, что тело становится всё более гибким, хочется все время держать позвоночник прямым!</p>
+							</div>
+							<div class="item">
+								<h3>Анна</h3>
+								<span class="date">11.04.2013</span>
+								<p>После занятия йогой у меня резко улучшилось настроение и самочувствие. Всем советую, ведь здоровье это основа счастливой жизни.</p>
+							</div>
+							<div class="item">
+								<h3>Владислава</h3>
+								<span class="date">24.02.2013</span>
+								<p>Занимаюсь йогой сравнительно давно. Поменяла кучу цетров и остановилась на выборе Yoga studio Vishnu. Классные преподаватели и приемлемые цены.</p>
+							</div>
+						</div>
+						<div class="pull-right">
+							<div class="item">
+								<h3>Евгения</h3>
+								<span class="date">27.03.2013</span>
+								<p>Йога передо мной открыла новые и интересные перспективы. Очень нравится то, что здесь организуются выездные семинары в другие страны (Йога - Туры). Меня все устраивает и поэтому продолжу здесь заниматься.</p>
+							</div>
+							<div class="item">
+								<h3>Иван</h3>
+								<span class="date">20.08.2013</span>
+								<p>Я долго изучал йогу по книжкам и видео-уроком. Очень ценю то, что учение здесь проходит в лучших традициях жанра Б.К.С. Айенгара.</p>
+							</div>
+							<div class="item">
+								<h3>Василий</h3>
+								<span class="date">12.09.2013</span>
+								<p>Раньше были тяжелые проблемы со спиной. Врачи запрещали мне заниматься любой подвижной деятельностью. Но проигноривовав их, я начал заниматься йогой. Я был в шоке, спустя пол года занятий я был здоров как бык</p>
+							</div>
+						</div>
+						<div class="clr"></div>
+						<br>
+						<br>
+						<br>
+						
+						<div class="clr"></div>
+						<br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="offer">
+			<div class="wrapper">
+				<h2>Акция!</h2>
+				<div class="pull-left">
+					<div class="besplatno">
+						Успей заказать <span>БЕСПЛАТНОЕ</span> занятие!
+					</div>
+					<p>До конца акции осталось:</p>
+					<div id="countdown_dashboardd">
+							<!-- <div class="dash weeks_dash">
+								<span class="dash_title">недель</span>
+								<div class="digit">0</div>
+								<div class="digit">0</div>
+								</div>-->
+							<div class="dash days_dash">
+								<div class="digit">0</div>
+								<div class="digit">0</div>
+							</div>
+							<div class="dash hours_dash">
+								<!--  -->
+								<div class="digit">0</div>
+								<div class="digit">0</div>
+							</div>
+							<div class="dash minutes_dash">
+								<!-- <span class="dash_title">минут</span> -->
+								<div class="digit">0</div>
+								<div class="digit">0</div>
+							</div>
+							<div class="dash seconds_dash">
+								<!-- <span class="dash_title">секунд</span> -->
+								<div class="digit">0</div>
+								<div class="digit">0</div>
+							</div>
+							<div class="clr"></div>
+						</div>
+				</div>
+				<div class="pull-right">
+					<h3>Оставить заявку</h3>
+					<form action="index1.php" method="POST" class="form_in">
+						<input name="name" type="text" autocomplete="off" class="man" placeholder="Имя:">
+						<input name="phone" type="text" autocomplete="off" class="phone" placeholder="Телефон:">
+						<input type="submit" class="btn" value="Оставить заявку">
+					</form>
+				</div>
+				<div class="clr"></div>
+			</div>
+		</div>
+		<div id="map">
+			<div class="wrapper">
+				<div class="contacts">
+					<h2>Как нас <span class="purple">найти</span></h2>
+					<p class="address">Адресс</p>
+					<a href="адресс">Адресс сайта</a>
+					<p class="phone">+7 (800) 000-00-00</p>
+					<br/>
+					<p style="font-syze: 20px; margin-bottom: 5px;">пн-пт  08:00-21:00</p>
+					<p style="font-syze: 20px; margin-bottom: 5px;">сб,вс 10:00-11:00</p>
+					<br/>
+					<img src="img/n2.jpg" alt="" style="width: 420px; height: 210px;">
+				</div>
+			</div>
+		<div id="google_map"></div>
+		</div>
+
+		<div class="modal-windows">
+			<div id="phone" class="reveal-modal">
+			     <h4>Заказать</h4>
+			     <form action="index1.php" method="POST">
+			     <p><input name="name" type="text" autocomplete="off" placeholder="Введите Ваше Имя"></p>
+			     <p><input name="email" type="email" autocomplete="off" placeholder="Введите Ваш е-мейл"></p>
+			     <p><input name="phone" type="text" autocomplete="off" placeholder="Введите Ваш номер телефона"></p>
+			     <p><input type="submit" value="Отправить"></p>
+			     </form>
+			     <a class="close-reveal-modal">&#215;</a>
+			</div>
+		</div>
+<!-- Yandex.Metrika informer -->
+<a href="http://metrika.yandex.ru/stat/?id=22571485&amp;from=informer"
+target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/22571485/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:22571485,lang:'ru'});return false}catch(e){}"/></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter22571485 = new Ya.Metrika({id:22571485,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/22571485" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+	</body>
+</html>

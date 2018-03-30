@@ -1,0 +1,356 @@
+/****Form****/
+.form_zakaz{}
+.form_zakaz1{margin-top: 90px;}
+.modal .form_zakaz1 {margin-top:0}
+.form_zakaz #form label {
+width: 130px;
+padding: 0 0 0 15px;
+}
+
+.form_zakaz1 #form label {
+width: 220px;
+padding: 0 0 0 0px;
+}
+
+.form_zakaz .btns {
+text-align:center;
+}
+.form_zakaz h3 {
+
+}
+
+/****Form****/
+.form_zakaz2{
+display: block;
+width: 100%;
+position: relative;
+text-align: center;}
+
+.form_zakaz2 #form2 label, 
+.form_zakaz2 #form4 label{
+width: 270px;
+float: left;
+clear: none;
+
+}
+.form_zakaz2 .btns {
+text-align:center;
+
+padding-top: 0px;
+}
+.form_zakaz2 .btns a.btn{
+font-size: 22px;
+
+}
+
+#form2 {
+	padding: 0px 60px;
+}
+#form {
+	padding: 10px 170px;
+}
+.form-modal {
+padding: 0 60px;
+}
+
+#form input,
+.form-modal input,
+#form6 input,
+#form7 input {
+	width: 256px;
+	height: 32px;
+	background: url(../img/input2.png)no-repeat;
+	float: left;
+	padding: 0 0 0 15px;
+	border: none;
+	font: 18px "Tahoma";
+	
+}
+
+#form2 input{
+width: 256px;
+height: 35px;
+background: url(../img/input2.png)no-repeat;
+float: left;
+padding: 0 0 0 15px;
+border: none;
+font: 18px "Tahoma";
+margin: 0 auto 5px;
+}
+
+#form textarea {
+	border: none;
+	background: #f1f1f1;
+	font-size:12px;
+	color:#5f5f4d;
+	height: 230px;
+	outline: medium none;
+	overflow: auto;
+	padding: 12px 14px 8px;
+	width: 100%;
+	position: relative;
+	resize:none;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	
+}
+#form label {
+	position:relative;
+	display: block;
+	min-height: 50px;
+	width: 305px;
+	float: left;
+}
+
+
+#form .error, #form .empty {
+	color: #FF0000;
+	display: none;
+	font-size: 11px;
+	line-height:14px;
+	width:auto;
+	position: absolute;
+	z-index: 999;
+	right: 5px;
+	top: 12px;
+	float:left;
+}
+
+
+
+#form.contact .error, #form.contact .empty {
+	top: 7px;
+}
+
+#form .error-empty {
+	display:none;
+	float:left;
+}
+
+.btns {
+	position:relative;
+	overflow:hidden;
+	padding-bottom: 1px;
+
+}
+
+
+.btns a.btn {
+	
+	cursor: pointer;
+
+
+}
+
+#form .message {
+	width: 100%;
+}
+
+
+.message br {
+	height: 0;
+	line-height: 0;
+}
+
+#form .success {
+	border: none;
+	display: none;
+	position: absolute;
+	width: 280px;
+	background: #f1f1f1;
+	text-align: center;
+	padding: 20px 10px;
+	z-index: 999;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+}
+
+
+
+.success_wrapper {
+	position: relative;	
+}
+
+
+.form_zakaz #form2 label {
+width:280px;
+
+}
+
+
+#form2,
+.form-modal,
+#form4,
+#form5,
+#form6,
+#form7,
+#form8 {
+	padding-top: 5px;
+}
+
+
+#form8 input {
+	border: none;
+	font-size:12px;
+	background: #f1f1f1;
+	color:#5f5f4d;
+	line-height: 18px;
+	padding: 8px 14px 8px;
+	outline: medium none;
+	width: 100%;
+	height: 40px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+}
+
+#form2 textarea,
+.form-modal textarea,
+#form4 textarea,
+#form5 textarea,
+#form6 textarea,
+#form7 textarea,
+#form8 textarea {
+	border: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #fff;
+	font-size:12px;
+	height: 100px;
+	color:#5f5f4d;
+	outline: medium none;
+	overflow: auto;
+	padding: 12px 14px 8px;
+	width: 100%;
+	position: relative;
+	resize:none;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+	float:left;
+	font: 18px "Tahoma";
+	margin: 0;
+}
+#form1 label,
+#form2 label,
+#form3 label,
+.form-modal label,
+#form4 label,
+#form5 label,
+#form6 label,
+#form7 label,
+#form8 label {
+	position:relative;
+	display: block;
+	min-height: 50px;
+	float: left;
+	width: 270px;
+}
+#form4 label{
+width: 285px;
+}
+
+#form2 label,
+#form3 label{
+min-height: 10px;
+}
+
+
+#form1 .error, #form1 .empty,
+#form2 .error, #form2 .empty,
+#form3 .error, #form3 .empty,
+.form-modal .error, .form-modal .empty,
+#form4 .error, #form4 .empty,
+#form5 .error, #form5 .empty,
+#form6 .error, #form6 .empty,
+#form7 .error, #form7 .empty,
+#form8 .error, #form8 .empty {
+	color: #FF0000;
+	display: none;
+	font-size: 11px;
+	line-height:10px;
+	width:auto;
+	position: absolute;
+	z-index: 999;
+	right: 5px;
+	top: 12px;
+	float:left;
+}
+
+
+
+
+
+#form2.contact .error, #form2.contact .empty,
+.form-modal.contact .error, .form-modal.contact .empty,
+#form4.contact .error, #form4.contact .empty,
+#form5.contact .error, #form5.contact .empty,
+#form6.contact .error, #form6.contact .empty,
+#form7.contact .error, #form7.contact .empty,
+#form8.contact .error, #form8.contact .empty {
+	top: 7px;
+}
+
+#form2 .error-empty,
+.form-modal .error-empty,
+#form4 .error-empty,
+#form5 .error-empty,
+#form6 .error-empty,
+#form7 .error-empty,
+#form8 .error-empty {
+	display:none;
+	float:left;
+}
+
+
+
+#form2 .message,
+.form-modal .message,
+#form4 .message,
+#form5 .message, 
+#form6 .message,
+#form7 .message, 
+#form8 .message {
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+margin-bottom: 10px;
+}
+
+#form1 .success,
+#form2 .success,
+.form-modal .success,
+#form4 .success,
+#form5 .success,
+#form6 .success,
+#form7 .success,
+#form8 .success {
+	color:#000;
+	border: none;
+	display: none;
+	position: absolute;
+	width: 280px;
+	background: #f1f1f1;
+	text-align: center;
+	padding: 20px 10px;
+	z-index: 999;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+}
+#form1 .success {
+
+left: 40px;
+top: 5px;
+
+}
+
+
