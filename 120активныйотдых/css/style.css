@@ -1,0 +1,291 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic);
+
+/*
+	Halcyonic 3.1 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Global                                                                        */
+/*********************************************************************************/
+
+/* Basic */
+
+	body
+	{
+		
+	}
+
+	body, input, textarea, select
+	{
+		color: #474f51;
+		font-size: 13.5pt;
+		font-family: 'Open Sans Condensed';
+		line-height: 1.85em;
+		font-weight: 300;
+	}
+
+	ul, ol, p, dl
+	{
+		margin: 0 0 2em 0;
+	}
+
+	a
+	{
+		text-decoration: underline;
+	}
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+
+	section > :last-child, .last-child
+	{
+		margin-bottom: 0 !important;
+	}
+
+/* Multi-use */
+
+	.link-list
+	{
+	}
+	
+		.link-list li
+		{
+			padding: 0.2em 0 0.2em 0;
+		}
+		
+		.link-list li:first-child
+		{
+			padding-top: 0 !important;
+			border-top: 0 !important;
+		}
+		
+		.link-list li:last-child
+		{
+			padding-bottom: 0 !important;
+			border-bottom: 0 !important;
+		}
+
+		#content .link-list li
+		{
+			border-bottom: solid 1px #e2e6e8;
+		}
+
+		#footer .link-list li
+		{
+			border-top: solid 1px #e0e4e6;
+			border-bottom: solid 1px #b5bec3;
+		}
+
+	.quote-list
+	{
+	}
+	
+		.quote-list li
+		{
+			padding: 1em 0 1em 0;
+			overflow: hidden;
+		}
+		
+		.quote-list li:first-child
+		{
+			padding-top: 0 !important;
+			border-top: 0 !important;
+		}
+
+		.quote-list li:last-child
+		{
+			padding-bottom: 0 !important;
+			border-bottom: 0 !important;
+		}
+
+			.quote-list li img
+			{
+				float: left;
+			}
+
+			.quote-list li p
+			{
+				margin: 0 0 0 90px;
+				font-size: 1.2em;
+				font-style: italic;
+			}
+			
+			.quote-list li span
+			{
+				display: block;
+				margin-left: 90px;
+				font-size: 0.9em;
+				font-weight: 400;
+			}
+
+		#content .quote-list li
+		{
+			border-bottom: solid 1px #e2e6e8;
+		}
+
+		#footer .quote-list li
+		{
+			border-top: solid 1px #e0e4e6;
+			border-bottom: solid 1px #b5bec3;
+		}
+	
+	.check-list
+	{
+	}
+
+		.check-list li
+		{
+			padding: 0.7em 0 0.7em 45px;
+			font-size: 1.2em;
+			background: url('images/icon-checkmark.png') 0px 1.05em no-repeat;
+		}
+		
+		.check-list li:first-child
+		{
+			padding-top: 0 !important;
+			border-top: 0 !important;
+			background-position: 0 0.3em;
+		}
+
+		.check-list li:last-child
+		{
+			padding-bottom: 0 !important;
+			border-bottom: 0 !important;
+		}
+
+		#content .check-list li
+		{
+			border-bottom: solid 1px #e2e6e8;
+		}
+
+		#footer .check-list li
+		{
+			border-top: solid 1px #e0e4e6;
+			border-bottom: solid 1px #b5bec3;
+		}
+		
+	.feature-image
+	{
+		display: block;
+		margin: 0 0 2em 0;
+		outline: 0;
+	}
+	
+		.feature-image img
+		{
+			display: block;
+			width: 100%;
+		}
+
+	.bordered-feature-image
+	{
+		display: block;
+		background: #fff ;
+		padding: 10px;
+		box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.15);
+		margin: 0 0 1.5em 0;
+		outline: 0;
+	}
+	
+		.bordered-feature-image img
+		{
+			display: block;
+			width: 100%;
+		}
+	
+	.button-big
+	{
+		display: inline-block;
+		background: #ed391b;
+		color: #fff;
+		text-decoration: none;
+		font-size: 1.75em;
+		font-weight: 300;
+		padding: 15px 45px 15px 45px;
+		outline: 0;
+		border-radius: 0;
+		
+		background: #474F51;
+		text-shadow: -1px -1px 1px rgba(0,0,0,0.5);
+	}
+
+	.button-big:hover
+	{
+		background: #545e61;
+	}
+
+	.button-big:active
+	{
+		background: #303638;
+	}
+	
+ul.contact
+		{
+		
+		}
+
+			ul.contact li
+			{
+				color: #fff;
+				position: relative;
+				text-shadow: none;
+				padding: 1.3em 0 1.3em 7em;
+			}
+
+				ul.contact li h3
+				{
+					position: absolute;
+					left: 0;
+					top: 1.3em;
+					font-size: 1.1em;
+				}
+
+				ul.contact li p
+				{
+					margin: 0;
+				}
+			
+			ul.contact li:first-child
+			{
+				padding-top: 0;
+			}
+
+				ul.contact li:first-child h3
+				{
+					top: 0;
+				}
+	
+	.order-btn {
+		width: 230px;
+		height: 48px;
+		padding: 0;
+		outline: none;
+		border: 0;
+		font-size: 24px;
+		font-family: inherit;
+		vertical-align: top;
+		line-height: 48px;
+	}
+	.order-form {
+		font-size: 0;
+		line-height: 0;
+		vertical-align: top;
+	}
+	.order-form input[type="text"] {
+		width: 230px;
+		height: 48px; 
+		padding: 0;
+		margin: 0;
+		margin-right: 10px;
+		padding: 0;
+		border: 1px solid #758285;
+		padding-left: 10px;
+		vertical-align: top;
+		
+	
+	}

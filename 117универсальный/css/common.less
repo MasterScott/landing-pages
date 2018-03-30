@@ -1,0 +1,67 @@
+@charset "utf-8";
+*{
+	-webkit-text-size-adjust: 100%;
+}
+
+/* ололошеньки */
+
+/* Каркас */
+
+@container_width: 980px; /* Ширина центрального контейнера */
+
+
+/* Модальные окна */
+
+@modal_top: 150px; /* положение */
+
+
+/* Формы */
+
+@error_color: red;
+
+.container { 
+	margin: 0 auto;
+	width: @container_width; 
+}
+
+
+
+/* Header */
+
+.header.fixed{
+	.position(fixed,0,0);
+	width:100%;	
+}
+
+/* Формы */
+input{
+	border:1px solid #ddd;
+}
+input.error{
+	border-color:@error_color;
+}
+input.success{
+	border-color:green;
+}
+/* Модальные окна */
+
+.modals{
+	
+}
+.modals > div{
+	display:none;
+	position:fixed;
+	top: @modal_top;
+	left: 50%;	
+}
+#overlay{
+	.position(fixed,150,50);
+}
+
+/* Примеси */
+
+.position(@pos:static,@top:auto,@left:auto){
+	position:@pos;
+	top:@top;
+	left:@left;
+}
