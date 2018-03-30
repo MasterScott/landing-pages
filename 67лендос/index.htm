@@ -1,0 +1,1843 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0028)http://www.creatance.nl/#top -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Creatance</title>
+<link rel="shortcut icon" href="http://www.creatance.nl/images/favicon.ico">
+
+<script id="facebook-jssdk" src="./index_files/all.js"></script><script async="" src="./index_files/analytics.js"></script><script type="text/javascript">
+  <!--
+  if (screen.width <= 800) {
+    window.location = "http://m.creatance.nl";
+  }
+  //-->
+</script>
+
+
+
+
+<!-- Welkom in de code. Doe alsof je thuis bent. -->
+
+
+
+
+<!-- <script type="text/javascript" src="js/jquery1.4.2.js"></script> -->
+<script type="text/javascript" src="./index_files/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="./index_files/jquery-ui-1.8.2.custom.min.js"></script>
+<script type="text/javascript" src="./index_files/login.js"></script>
+<script type="text/javascript" src="./index_files/remindme.js"></script>
+<script type="text/javascript" src="./index_files/fadein.js"></script>
+<script type="text/javascript" src="./index_files/imagescale.js"></script>
+<script type="text/javascript" src="./index_files/resizefont.js"></script>
+<script type="text/javascript" src="./index_files/backgroundchange.js"></script>
+<script type="text/javascript" src="./index_files/jquery.inview.min.js"></script>
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+<script type="text/javascript" src="./index_files/jquery.tipsy.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('a[href^="#"]').bind('click.smoothscroll',function (e) { 
+	    e.preventDefault();
+	 
+	    var target = this.hash,
+	    $target = $(target);
+	 
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top-40
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+			
+	    });
+	});
+});
+</script>
+
+<script>
+
+            
+function onLoad() {
+    window.onscroll = function() {
+        var biggerdiv = document.getElementById('bigger');
+        var smallerdiv = document.getElementById('small');
+        var windowScroll = window.pageYOffset;
+            
+        biggerdiv.style.backgroundPosition = '0' +'px ' +(windowScroll/2)+"px";
+        smallerdiv.style.top = 0-(windowScroll/2) + 'px';
+    }
+}
+            
+            
+        </script>
+        
+      <script>
+		
+$(document).ready(function(){
+	
+	$('.menu:eq(1) a').each(function(){
+		var th=this;
+		$($(th).attr('href')).parents('[class^="div"]').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+			if(isInView){
+				$('.menu:eq(1) a').removeClass('active');
+				$(th).addClass('active');
+			}
+		});
+	});
+	$(window).bind('scroll',function(e){
+		
+   		parallaxScroll();
+   	});
+ 
+   	function parallaxScroll(){
+   		var scrolledY = $(window).scrollTop();
+		$('.bgWrapper').css('background-position','center -'+((scrolledY*0.2))+'px');
+		$('.ontwerper').css('top','-'+((scrolledY*1.1))+'px');
+		$('.programmeur').css('top','-'+((scrolledY*0.8))+'px');
+		$('.illustrator').css('top','-'+((scrolledY*0.5))+'px');
+		$('.fotograaf').css('top','-'+((scrolledY*0.5))+'px');
+		$('.webdeveloper').css('top','-'+((scrolledY*0.5))+'px');
+		$('.animator').css('top','-'+((scrolledY*0.3))+'px');
+		$('.filmmaker').css('top','-'+((scrolledY*0.3))+'px');
+		$('.copywriter').css('top','-'+((scrolledY*0.9))+'px');
+		
+   	}
+ 
+});
+
+</script>
+
+<script>
+
+var leftInit = $(".scroll_fixed").offset().left;
+var top = $('.scroll_fixed').offset().top - parseFloat($('.scroll_fixed').css('margin-top').replace(/auto/, 0));
+
+
+$(window).scroll(function(event) {
+    var x = 0 - $(this).scrollLeft();
+    var y = $(this).scrollTop();
+
+    // whether that's below the form
+    if (y >= top) {
+        // if so, ad the fixed class
+        $('.scroll_fixed').addClass('fixed');
+    } else {
+        // otherwise remove it
+        $('.scroll_fixed').removeClass('fixed');
+    }
+    
+    $(".scroll_fixed").offset({
+        left: x + leftInit
+    });
+    
+});
+
+</script>
+
+
+<link href="./index_files/css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript">
+	$(function () {
+    function run_animation(elements, delay, duration, i) {
+    var i = i || 0;
+    elements[i].delay(delay).fadeToggle(duration, function() {
+        elements[i].fadeOut(duration, function() {
+            i = (i + 1) % elements.length;
+            run_animation(elements, delay, duration, i);
+        });
+    });
+}
+
+var el = [$('.pointer1'), $('.pointer2'), $('.pointer3'), $('.pointer4'), $('.pointer5'), $('.pointer6')];
+run_animation(el, 50, 900);
+});
+	</script>
+	
+	<script type="text/javascript">
+	    	$(window).bind("scroll", function() {
+    	if ($(this).scrollTop() > 100) {
+    	    $("#menufade").fadeIn();
+    	} else {
+    	    $("#menufade").stop().fadeOut();
+    	}
+});
+		
+		
+   	</script>
+    
+   
+ <script>
+function colorSet(){
+    document.getElementById('regio').style.color="black";
+}
+</script>
+
+    
+<style type="text/css">
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  
+   
+}
+
+
+
+#menuwrapper {
+	width: 100%;
+	position: relative;
+		}
+	
+	
+.menu {
+	color: #FFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	text-align: right;
+	position: relative;
+	float: right;
+	margin-right: 22px;
+	line-height:53px;
+		}
+		
+.menulogo {
+	float: left;
+	margin-left: 10px;
+	margin-top: 8px;
+			}
+		
+.menulogo a:hover{
+	
+	opacity:0.8;
+	filter:alpha(opacity=80);
+		}	
+
+
+.menu a:link{color:#FFFFFF; text-decoration:none;}
+	
+.menu a:hover, .menu a.active
+	{
+	border-bottom: solid 2px white;
+	}
+	
+.menu a:visited
+	{
+		color:#FFF;
+	border-bottom: solid 2px white;
+	}
+
+
+.login {
+		margin-right: 21px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+
+#menufade {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	border: 0px;
+	text-align: right;
+	vertical-align: 50%;
+	z-index: 999;	
+}
+
+
+
+.div1 {
+	background-image:url(index_files/bg.jpg);
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+	height: 100%;
+  	width: 100%;
+	position: relative;
+	z-index: 99;
+	text-align: center;
+	 margin: 0px auto; 
+	 display: table;
+
+	
+}
+
+
+.logo {
+	background:url(index_files/logo1.png); background-size:cover;
+	width:30%; 
+	height:20%; 
+	margin: 0 auto;
+	z-index: 998;
+	background-size:contain;
+	background-repeat:no-repeat;
+	top: 30%;
+	margin-left: -15%;
+    left: 50%;
+	position: absolute;
+	
+	  }
+	  
+.slogan {
+	z-index: 100;
+	top: 50%;
+	font-family:Open Sans;
+	font-size: 16px;
+	font-weight:700;
+	color: #FFF;
+	width: 40%;  /* could be anything */
+	margin-left: -20%;
+    left: 50%;
+	position: absolute;
+	
+	  }
+	  
+
+.pointers {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.pointer1 { /* ontwerper */
+	left: 7%;
+	top: 75%;
+	position: absolute;
+	display:none;
+}
+
+.pointer2 { /* copywriter */
+	left: 80%;
+	top: 70%;
+	position: absolute;
+	display:none;
+}
+
+.pointer3 { /* programmeur */
+	left: 40%;
+	top: 70%;
+	position: absolute;
+	display:none;
+}
+.pointer4 { /* webdeveloper */
+	left: 20%;
+	top: 70%;
+	position: absolute;
+	display:none;
+}
+.pointer5 { /* fotograaf */
+	left: 50%;
+	top: 75%;
+	position: absolute;
+	display:none;
+}
+.pointer6 { /* illustrator */
+	left: 60%;
+	top: 70%;
+	position: absolute;
+	display:none;
+}
+
+
+
+/* --------------------------------------------
+LOGIN
+---------------------------------------------*/
+
+
+h1 {
+	float:left;
+	font-size:14px;
+	color:#fff;
+	margin-top:20px;
+}
+
+h2 {
+	color:#19677e;
+	font:italic 15px Georgia,times,sans-serif;
+}
+
+.login_btn {
+	text-decoration:none;
+	font-family: 'Open Sans', sans-serif;
+	font-size:13px;
+	margin-top:11px;
+	background:#FFF;
+	float:right;
+	height:32px;
+	z-index: 999999;
+}
+.login_btn:hover {
+	background:#A7D5E4;
+	color:#FFF;
+		}
+	
+.login_btn span {
+	color:#333;
+	float:left;
+	padding:0 10px 0 10px;
+	text-align:center;
+	margin-top: 8px;
+	
+}
+
+#content {
+	height:733px;
+	
+}
+#login_box {
+	display:none;
+	width:236px;
+	margin:2px 0 200px 0px;
+	right: 14px;
+	position: fixed;
+	z-index: 9999;
+	
+}
+#tab {
+	background:#FFF;
+	width:80px;
+	float:right;
+	height:48px;
+	margin-top: 2px;
+	position:relative;
+	z-index:999;
+	
+	
+}
+#login_vergeten {
+	font-style:italic;
+	font-size: 11px;
+	font-weight: 400;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin-left:10px;
+	}
+	
+#login_vergeten a:link{color:#999; text-decoration:underline;}
+	
+#login_vergeten a:hover{
+	color:#000000;
+	
+	}
+	
+#tab .login_btn {
+	float:left;
+	margin:9px 0 0 9px;
+	
+}
+
+#login_box_content {
+	background:#fff;
+	float:left;
+	width:236px;
+	margin-top: 0px;	
+}
+#login_form {
+	margin:9px 0 0 9px;
+}
+#login_form input[type=text],#login_form input[type=password] {
+	border:1px solid #09C;
+	font:12px Open Sans;
+	height:37px;
+	width:204px;
+	margin-top:10px;
+	padding-left:10px;
+	margin-right: 10px;
+}
+
+
+
+#login_form input[type=submit] {
+	border:none;
+	background:#333;
+	color:#fff;
+	float:right;
+	margin:9px 9px 9px 0;
+	width:56px;
+	height: 29px;
+}
+
+#login_form a:hover input[type=submit]{
+		background-color:#0F0;
+		color:#FF0000;
+	
+}
+
+
+
+/* --------------------------------------------
+DIV 2 / WAT IS CREATANCE
+---------------------------------------------*/
+
+.div2{
+	background-color:#A7D5E4;
+	min-height: 100%;
+	width:100%;
+	
+}
+
+#div2wrapper {
+	width: 35%;
+	top: 113%;
+	margin-left: 25%;
+	margin-right: 25%;
+	position:absolute;
+		}
+
+.titel1{
+	font-family: 'Fjalla One', sans-serif;	
+	position:relative;
+	color:#3F3F3E;
+	z-index: 5;
+	line-height: 105%;
+	letter-spacing:1px;
+	
+		}
+		
+.tekst1{
+	font-family: 'Open Sans', sans-serif;	
+	position:relative;
+	color:#3F3F3E;
+	font-size:13px;
+	z-index: 999999;
+	margin-top: 5%;
+		}
+
+
+
+.ontwerper{
+	position:fixed;
+	background:url(index_files/ontwerper.png);
+	width:400px; 
+	height:100px; 
+	margin-left:60%;
+	margin-top:80%;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+		}
+		
+.copywriter{
+	position:fixed;
+	background:url(index_files/copywriter.png);
+	background-size:300px;
+	background-repeat:no-repeat;
+	width:400px; 
+	height:100px; 
+	margin-left:80%;
+	margin-top:80%;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+		}		
+
+.programmeur{
+	position:fixed;
+	background:url(index_files/programmeur.png);
+	background-size:300px;
+	background-repeat:no-repeat;
+	width:400px; 
+	height:100px; 
+	margin-left:70%;
+	margin-top:87%;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+		}
+
+
+.illustrator{
+	position:fixed;
+	background:url(index_files/illustrator.png);
+	background-repeat:no-repeat;
+	width:400px;
+	height:100px;
+	left:60%;
+	top:25%;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	z-index: 0;
+	
+	}
+
+.fotograaf{
+	position:fixed;
+	background:url(index_files/fotograaf.png);
+	background-repeat:no-repeat;
+	background-size:300px;
+	width:400px;
+	height:100px;
+	margin-left:60%;
+	margin-top:80%;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+	
+	}
+	
+.webdeveloper{
+	position:fixed;
+	background:url(index_files/webdeveloper.png);
+	background-repeat:no-repeat;
+	background-size:400px;
+	width:400px;
+	height:100px;
+	margin-left:55%;
+	margin-top:40%;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+	
+	}
+	
+.animator{
+	position:fixed;
+	background:url(index_files/animator.png);
+	background-repeat:no-repeat;
+	width:400px;
+	height:100px;
+	left:50%;
+	margin-top:45%;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	
+	}
+
+.filmmaker{
+	position:fixed;
+	background:url(index_files/filmmaker.png);
+	background-repeat:no-repeat;
+	width:400px;
+	height:100px;
+	left:70%;
+	margin-top:35%;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	
+	}
+		
+
+
+	
+/* --------------------------------------------
+ANCHORS
+---------------------------------------------*/	
+
+
+.anchor{
+	position:absolute;
+	margin-top:0%;
+		}
+		
+.anchor2{
+	position:absolute;
+	margin-top:20%;
+		}
+
+
+/* --------------------------------------------
+SCROLLBUTTONS
+---------------------------------------------*/
+
+.scrollbtn1{
+	position:absolute;
+	left: 50%;
+	right: 50%;
+	bottom: 2%;
+	
+}
+
+.scrollbtn1 a:hover{
+	
+	opacity:0.7;
+	filter:alpha(opacity=70);
+		}
+	
+.scrollbtnup2{
+	position:absolute;
+	left: 50%;
+	right: 50%;
+	margin-top:2%;
+	
+}
+
+.scrollbtnup2 a:hover{
+	
+	opacity:0.7;
+	filter:alpha(opacity=70);
+		}
+		
+.scrollbtn2{
+	position:absolute;
+	left: 50%;
+	right: 50%;
+	top: 190%;
+	
+}
+
+.scrollbtn2 a:hover{
+	
+	opacity:0.7;
+	filter:alpha(opacity=70);
+		}
+		
+.scrollbtnup3{
+	position:absolute;
+	left: 50%;
+	right: 50%;
+	top:2%;
+}
+
+.scrollbtnup3 a:hover{
+	
+	opacity:0.7;
+	filter:alpha(opacity=70);
+		}
+		
+		
+.scrollbtn3{
+	position:absolute;
+	left: 50%;
+	right: 50%;
+	bottom: 5%;
+}
+
+.scrollbtn3 a:hover{
+	
+	opacity:0.7;
+	filter:alpha(opacity=70);
+		}
+
+.scrollbtnup4{
+	position:absolute;
+	left: 50%;
+	right: 50%;	
+	top:2%;
+}
+
+.scrollbtnup4 a:hover{
+	
+	opacity:0.7;
+	filter:alpha(opacity=70);
+		}
+
+.scrollbtn4{
+	position:absolute;
+	left: 50%;
+	right: 50%;	
+	bottom: 5%;
+}
+
+.scrollbtn4 a:hover{
+	
+	opacity:0.7;
+	filter:alpha(opacity=70);
+		}
+		
+.scrollbtnup5{
+	position:absolute;
+	left: 50%;
+	right: 50%;	
+	top:2%;
+}
+
+.scrollbtnup5 a:hover{
+	
+	opacity:0.7;
+	filter:alpha(opacity=70);
+		}
+
+.scrollbtn5{
+	position:absolute;
+	left: 50%;
+	right: 50%;	
+	bottom: 5%;
+}
+
+.scrollbtn5 a:hover{
+	
+	opacity:0.7;
+	filter:alpha(opacity=70);
+		}
+
+.scrollbtnup6{
+	position:absolute;
+	left: 50%;
+	right: 50%;	
+	margin-top:5%;
+}
+
+.scrollbtnup6 a:hover{
+	
+	opacity:0.7;
+	filter:alpha(opacity=70);
+		}
+
+.scrollbtn5{
+	position:absolute;
+	left: 50%;
+	right: 50%;	
+	bottom: 5%;
+}
+
+.scrollbtn5 a:hover{
+	
+	opacity:0.7;
+	filter:alpha(opacity=70);
+		}
+
+
+
+/* --------------------------------------------
+DIV 3 / NETWERK
+---------------------------------------------*/
+
+
+.div3{
+	background-color:#3F3F3E;
+	min-height: 100%;
+	position: absolute;
+	width:100%;
+	
+}
+
+#div3wrapper {
+	width: 35%;
+	top: 13%;
+	margin-left: 60%;
+	position:absolute;
+		}
+
+.titel3{
+	font-family: 'Fjalla One', sans-serif;	
+	position:relative;
+	color:#FFF;
+	line-height: 105%;
+	letter-spacing:1px;
+		}
+		
+.tekst3{
+	font-family: 'Open Sans', sans-serif;	
+	position:relative;
+	color:#FFF;
+	font-size:13px;
+	width: 70%;
+	margin-top:20px;
+		}
+		
+.ontwerperfade{
+	position:absolute;
+	background:url(index_files/fade/ontwerperfade.png);
+	background-size:130px;
+	background-repeat:no-repeat;
+	width:400px; 
+	height:100px; 
+	left:50%;
+	margin-left:-300px;
+	margin-top:100px;
+		}
+		
+.ontwerperfade2{
+	position:absolute;
+	background:url(index_files/fade/ontwerperfade.png);
+	background-size:130px;
+	background-repeat:no-repeat;
+	width:400px; 
+	height:100px; 
+	left:50%;
+	margin-left:-150px;
+	margin-top:280px;
+		}
+		
+.copywriterfade{
+	position:absolute;
+	background:url(index_files/fade/copywriterfade.png);
+	background-size:130px;
+	background-repeat:no-repeat;
+	width:400px; 
+	height:100px; 
+	left:50%;
+	margin-left:-170px;
+	margin-top:460px;
+		}
+		
+.illustratorfade{
+	position:absolute;
+	background:url(index_files/fade/illustratorfade.png);
+	background-size:130px;
+	background-repeat:no-repeat;
+	width:400px; 
+	height:100px; 
+	left:50%;
+	margin-left:-470px;
+	margin-top:360px;
+		}
+		
+.webdeveloperfade{
+	position:absolute;
+	background:url(index_files/fade/webdeveloperfade.png);
+	background-size:130px;
+	background-repeat:no-repeat;
+	width:400px; 
+	height:100px; 
+	left:50%;
+	margin-left:-270px;
+	margin-top:600px;
+		}
+		
+.programmeurfade{
+	position:absolute;
+	background:url(index_files/fade/programmeurfade.png);
+	background-size:130px;
+	background-repeat:no-repeat;
+	width:400px; 
+	height:100px; 
+	left:50%;
+	margin-left:-420px;
+	margin-top:680px;
+		}
+		
+
+.fadeline1{
+	position:absolute;
+	background:url(index_files/fade/fadeline1.png);
+	background-repeat:no-repeat;
+	width:400px; 
+	height:400px; 
+	left:50%;
+	margin-left:-220px;
+	margin-top:120px;
+		}
+		
+.fadeline2{
+	position:absolute;
+	background:url(index_files/fade/fadeline2.png);
+	background-repeat:no-repeat;
+	width:400px; 
+	height:400px; 
+	left:50%;
+	margin-left:-420px;
+	margin-top:125px;
+		}
+
+.fadeline3{
+	position:absolute;
+	background:url(index_files/fade/fadeline3.png);
+	background-size:110px;
+	background-repeat:no-repeat;
+	width:400px; 
+	height:400px; 
+	left:50%;
+	margin-left:-125px;
+	margin-top:290px;
+		}
+		
+.fadeline4{
+	position:absolute;
+	background:url(index_files/fade/fadeline4.png);
+	background-repeat:no-repeat;
+	background-size:110px;
+	width:400px; 
+	height:400px; 
+	left:50%;
+	margin-left:-210px;
+	margin-top:470px;
+		}
+
+.fadeline5{
+	position:absolute;
+	background:url(index_files/fade/fadeline5.png);
+	background-repeat:no-repeat;
+	width:400px; 
+	height:400px; 
+	left:50%;
+	margin-left:-355px;
+	margin-top:292px;
+		}
+		
+.fadeline6{
+	position:absolute;
+	background:url(index_files/fade/fadeline6.png);
+	background-repeat:no-repeat;
+	width:400px; 
+	height:400px; 
+	left:50%;
+	margin-left:-340px;
+	margin-top:605px;
+		}
+		
+.fadeline7{
+	position:absolute;
+	background:url(index_files/fade/fadeline7.png);
+	background-repeat:no-repeat;
+	width:400px; 
+	height:400px; 
+	left:50%;
+	margin-left:-350px;
+	margin-top:353px;
+		}
+		
+.fadeline8{
+	position:absolute;
+	background:url(index_files/fade/fadeline8.png);
+	background-repeat:no-repeat;
+	background-size:100px;
+	width:400px; 
+	height:400px; 
+	left:50%;
+	margin-left:-430px;
+	margin-top:376px;
+		}
+
+/* --------------------------------------------
+DIV 4 / PROJECT
+---------------------------------------------*/
+
+
+.div4{
+	background-image:url(index_files/div4bg.jpg); background-size:cover;
+	min-height: 70%;
+	position: absolute;
+	width:100%;
+	top: 300%;
+}
+
+#div4wrapper {
+	width: 80%;
+	top: 20%;
+	left: 20%;
+	position:absolute;
+		}
+
+.titel4 {
+	font-family: 'Fjalla One', sans-serif;	
+	position:relative;
+	color:#FFF;
+	font-size:70px;
+	line-height: 105%;
+	letter-spacing:1px;
+		}
+		
+.tekst4{
+	font-family: 'Open Sans', sans-serif;	
+	position:relative;
+	color:#FFF;
+	font-size:13px;
+	width: 50%;
+	margin-top: 1%;
+		}
+
+
+
+
+				#wrapper {
+				background-color: #FFF;
+				width: 100%;
+				height: 200px;
+				padding-top: 25px;
+				margin: -120px 0 0 0;
+				position: absolute;
+				left: 0;
+				top: 70%;
+				opacity:0.95;
+	filter:alpha(opacity=95);
+				
+			}
+			
+			.slidetitel {
+			font-family: 'Fjalla One', sans-serif;
+			color: #3F3F3E;
+			font-size:30px;
+			margin-left: 0px;
+			padding-top: 1%;
+			}
+			
+			.slidetekst {
+			font-family: 'Open Sans', sans-serif;
+			color: #3F3F3E;
+			font-size:13px;
+			width: 50%;
+			padding-top: 2%; 
+			}
+			
+		
+			
+			#tabs > div {
+				width: 800px;
+				height: 250px;
+				float: left;
+				
+				}
+				
+			#tabs img {
+				display: block;
+				position:absolute;
+				margin-top: 30px;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: 8%;
+			}
+			#tabs h3 {
+				font-size: 40px;
+				line-height: 20px;
+				margin: 60px 0 20px 0;
+				font-family: 'Fjalla One', sans-serif;
+				display: none;
+				
+			}
+
+			#tabs #blue img {
+			
+				
+				
+			}
+			#tabs #pink img {
+				margin-top: 40px;
+				
+			}
+			#tabs #white img {
+				
+			}
+			
+			#pager {
+				width: 700px;
+				left:50%;
+				position: absolute;
+				margin-top: -75px;
+				margin-bottom: 25px;
+				margin-left: -640px;
+				text-align: center;
+				font-family: 'Fjalla One', sans-serif;
+				
+			}
+			#pager a {
+				border: none;
+				background-color:#B4B4B4;
+				border-bottom: none;
+				border-left: none;
+				border-color: #FFF;
+				color: #999;
+				font-size: 20px;
+				text-decoration: none;
+				line-height: 30px;
+				display: inline-block;
+				height: 30px;
+				padding-right:30px;
+				padding-left:30px;
+				padding-top:10px;
+				padding-bottom:10px;
+				margin-left: 5px;
+				
+			}
+			#pager a:hover {
+				color: #3F3F3E;
+			}
+			#pager a:first-child {
+				border-left: none;
+			}
+			#pager a.selected {
+				background-color: #FFF;
+				color: #3F3F3E;
+			}
+	
+	
+/* --------------------------------------------
+DIV 5 / PROJECT 2
+---------------------------------------------*/
+
+		
+.div5{
+	background-color:#FFF;
+	min-height: 100%;
+	position: absolute;
+	width:100%;
+	top: 370%;
+}
+
+
+#div5wrapper {
+	width: 30%;
+	top: 13%;
+	margin-left: 55%;
+	position:absolute;
+		}
+
+.titel5{
+	font-family: 'Fjalla One', sans-serif;	
+	position:relative;
+	color:#FFF;
+	line-height: 109%;
+	letter-spacing:1px;
+	color: #A7D5E4;
+		}
+		
+.tekst5{
+	font-family: 'Open Sans', sans-serif;	
+	position:relative;
+	color:#FFF;
+	font-size:13px;
+	color: #3F3F3E;
+	margin-top: 20px;
+		}
+		
+#project1wrapper {
+	width: 18%;
+	top: 15%;
+	margin-left: 16%;
+	position:absolute;
+		}	
+
+#project2wrapper {
+	width: 18%;
+	top: 15%;
+	margin-left: 41%;
+	position:absolute;
+		}
+		
+#project3wrapper {
+	width: 18%;
+	top: 15%;
+	margin-left: 66%;
+	position:absolute;
+		}
+			
+.project1{
+	position:relative;
+	background:url(index_files/project1.png);
+	background-size:196px;
+	background-repeat:no-repeat;
+	width:196px; 
+	height:194px; 
+	margin-top:-100px;
+	left:25%;
+	margin-left: -100px;
+	}			
+
+
+.project2{
+	position:relative;
+	background:url(index_files/project2.png);
+	background-size:196px;
+	background-repeat:no-repeat;
+	width:196px; 
+	height:194px; 
+	margin-top:-190px;
+	left:50%;
+	margin-left: -100px;
+	}
+	
+.project3{
+	position:relative;
+	background:url(index_files/project3.png);
+	background-size:196px;
+	background-repeat:no-repeat;
+	width:196px; 
+	height:194px; 
+	margin-top: -190px;
+	left:75%;
+	margin-left: -100px;
+	}	
+
+/* --------------------------------------------
+DIV 6 / AANMELDEN / COMING SOON
+---------------------------------------------*/
+
+
+.div6{
+	background-image: url(index_files/bg2.jpg);
+background-repeat:repeat;
+	min-height: 90%;
+	position: absolute;
+	width:100%;
+	top: 430%;
+}
+
+#div6wrapper {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 8%;
+	
+	
+		}
+		
+.titel6{
+	font-family: 'Fjalla One', sans-serif;	
+	position:relative;
+	color:#3F3F3E;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20%;
+	line-height: 105%;
+	letter-spacing:1px;
+	
+		}
+		
+.tekst6{
+	font-family: 'Open Sans', sans-serif;	
+	position:relative;
+	color:#3F3F3E;
+	font-size:13px;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 5%;
+		}
+	
+
+
+#remindmeformwrapper{
+	
+	width: 100%;
+	 margin-top: 5%;
+	 float: left;
+    position: relative;
+	    overflow: hidden;
+}
+
+
+#nav {
+    left: 50%;
+    padding: 10px;
+	float: left;
+    position: relative;
+}
+
+
+#remindmeform input[type=text]{
+	border: 1;	
+	font:12px Open Sans;
+	height:37px;
+	width:226px;
+	margin: 0 auto;
+	padding-left:10px;
+    margin-right:30px;
+	outline-color:#A7D5E4;
+	float: left;
+    position: relative;
+ right: 50%;
+	
+	
+}
+
+#remindmeformbutton {
+	border:none;
+	background:#333;
+	color:#fff;
+	width:110px;
+	height: 40px;
+	font-family: Open Sans;
+	font-size: 12px;
+	float: left;
+    position: relative;
+	right: 50%;
+}
+
+#remindmeformbutton:hover{
+	
+	background:#6FC6DF;
+	cursor: hand; cursor: pointer;
+
+}
+
+#remindmeformbutton:hover{
+	
+	background:#6FC6DF;
+	cursor: hand; cursor: pointer;
+
+}
+
+
+.remindmedropdown {
+   width: 240px;
+   height: 44px;
+   font-family: Open Sans;
+ 	float: left;
+    position: relative;
+   background-color: #FFF;
+   padding: 10px;
+   margin-right: 30px;
+   outline-color:#A7D5E4;
+   color:#999;
+right: 50%;
+}
+  
+.remindmedropdown option { color: black; }
+
+.remindmedropdown option[disabled]:first-child { 
+	display: none;
+}
+
+
+.remindmeformfout {
+	
+	font-family: 'Open Sans', sans-serif;	
+	color:red;
+	font-size:13px;
+	right: 50%;
+	float: left;
+    position: relative;
+		}
+
+.like { 
+	width: 350px;
+	margin-left: -175px;
+	margin: 0 auto;
+	margin-top: 12%;
+}
+
+
+/* --------------------------------------------
+DIV 7 / FOOTER
+---------------------------------------------*/
+
+
+.div7{
+	background-color:#3F3F3E;
+	height: 80px;
+	position: absolute;
+	width:100%;
+	top: 520%;
+}
+
+#div7wrapper{
+	width: 750px;
+	margin: 0 auto;
+	margin-top: 30px;
+	position: relative;
+	
+}
+
+#div7tekst{
+	position: absolute;
+	font-family: Open Sans;
+	font-size: 12px;
+	color: #B4B4B4;
+}
+
+
+#div7tekst a:link{
+	color: #B4B4B4;
+}
+
+#div7tekst a:visited{
+	color: #B4B4B4;
+}
+
+
+#div7tekst a:hover{
+	color: #FFF;
+}
+
+#div7tekstbold{
+	position: absolute;
+	font-family: Open Sans;
+	font-size: 14px;
+	font-weight:700;
+	color: #FFF;
+	}
+	
+.sociallogo{
+	position: absolute;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	}
+	
+.sociallogo:hover{
+	opacity:1;
+	filter:alpha(opacity=100);
+	}
+
+
+.opl {
+position:relative;
+top:150px;
+left:0px;
+z-index:9;
+}
+.opl a {
+width:73px;
+height:56px;
+text-indent:-9999px;
+display:block;
+background:url('https://s3.amazonaws.com/onepagelove/one-page-love-award.png') no-repeat;
+}
+
+.csswinner{
+position:absolute;
+top:310px;
+left:0px;
+z-index:9;
+}
+.csswinner a{
+width:78px;
+height:57px;
+text-indent:-9000px;
+display:block;
+background:url(index_files/nominee-white-left.png) no-repeat;
+}
+
+
+</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41300924-1', 'creatance.nl');
+  ga('send', 'pageview');
+
+</script>
+
+
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_connect_bar_container div,.fb_connect_bar_container span,.fb_connect_bar_container a,.fb_connect_bar_container img,.fb_connect_bar_container strong{background:none;border-spacing:0;border:0;direction:ltr;font-style:normal;font-variant:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal;vertical-align:baseline}.fb_connect_bar_container{position:fixed;left:0 !important;right:0 !important;height:42px !important;padding:0 25px !important;margin:0 !important;vertical-align:middle !important;border-bottom:1px solid #333 !important;background:#3b5998 !important;z-index:99999999 !important;overflow:hidden !important}.fb_connect_bar_container_ie6{position:absolute;top:expression(document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px":body.scrollTop+"px")}.fb_connect_bar{position:relative;margin:auto;height:100%;width:100%;padding:6px 0 0 0 !important;background:none;color:#fff !important;font-family:"lucida grande", tahoma, verdana, arial, sans-serif !important;font-size:13px !important;font-style:normal !important;font-variant:normal !important;font-weight:normal !important;letter-spacing:normal !important;line-height:1 !important;text-decoration:none !important;text-indent:0 !important;text-shadow:none !important;text-transform:none !important;white-space:normal !important;word-spacing:normal !important}.fb_connect_bar a:hover{color:#fff}.fb_connect_bar .fb_profile img{height:30px;width:30px;vertical-align:middle;margin:0 6px 5px 0}.fb_connect_bar div a,.fb_connect_bar span,.fb_connect_bar span a{color:#bac6da;font-size:11px;text-decoration:none}.fb_connect_bar .fb_buttons{float:right;margin-top:7px}
+.fbpluginrecommendationsbarleft,.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}.fbpluginrecommendationsbarleft{left:10px}.fbpluginrecommendationsbarright{right:10px}</style></head>
+
+<body style="font-size: 912px;">
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./index_files/oDB-fAAStWy.htm" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./index_files/oDB-fAAStWy(1).htm" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/nl_NL/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+     
+<div class="div1" id="top">
+	  	<div id="menuwrapper">
+            
+
+            
+   			 <div class="login">
+        
+                <a href="http://www.creatance.nl/#" class="login_btn"><span>LOG IN</span></a>
+                <div id="login_box" style="display: none;">
+                    <div id="tab"><a href="http://www.creatance.nl/..." class="login_btn"><span>LOG IN</span></a></div>
+                    <div id="login_box_content"></div>
+                    <div id="login_box_content">
+                        <form id="login_form" method="post" action="http://www.creatance.nl/login">
+                            <input type="text" name="email" placeholder="E-MAILADRES">
+                            <input type="password" name="password" placeholder="WACHTWOORD">
+                            	
+                            <input type="submit" name="aanmeldformbutton" value="Log in">
+                        </form>
+                        <div id="login_vergeten" style="line-height:80%;">
+                                <br>
+                                <a href="http://www.creatance.nl/wachtwoordvergeten.php">wachtwoord vergeten?</a>
+                            	</div>
+                    </div>
+                </div>
+ 			</div>
+  
+
+  
+	          	 <div class="menu">
+     <a href="http://www.creatance.net/" title="Creatance in English"><img src="./index_files/en.png" onmouseover="src=&#39;images/en_over.png&#39;" onmouseout="src=&#39;images/en.png&#39;" style="width:20px"></a>
+    		 &nbsp; &nbsp; &nbsp;
+    		<a href="http://www.creatance.nl/#watiscreatance">WAT IS CREATANCE?</a>
+            &nbsp; &nbsp; &nbsp;
+            <a href="http://www.creatance.nl/#netwerk">HET NETWERK</a>
+            &nbsp; &nbsp; &nbsp;
+            <a href="http://www.creatance.nl/#project">PROJECTEN</a>
+            &nbsp; &nbsp; &nbsp;
+            <a href="http://www.creatance.nl/#aanmelden">AANMELDEN</a> &nbsp; 
+
+			</div>
+ </div>
+
+
+
+<div id="menufade" style="display: none; opacity: 1; background-color: rgb(63, 63, 62);">
+<div id="menuwrapper">
+    <div class="menulogo">
+                <a href="./index_files/index.htm"><img src="./index_files/logo1.png" height="35" border="0"></a>
+                </div>
+    
+
+    
+   			 <div class="login">
+        
+                <a href="http://www.creatance.nl/#" class="login_btn"><span>LOG IN</span></a>
+                <div id="login_box">
+                    <div id="tab"><a href="http://www.creatance.nl/..." class="login_btn"><span>LOG IN</span></a></div>
+                    <div id="login_box_content"></div>
+                    <div id="login_box_content">
+                        <form id="login_form">
+                            <input type="text" placeholder="E-mailadres">
+                            <input type="password" placeholder="Wachtwoord">
+                            	<div id="login_vergeten" style="line-height:80%;">
+                                <br>
+                                <a href="http://www.creatance.nl/wachtwoordvergeten.php">wachtwoord vergeten?</a>
+                            	</div>
+                            <input type="submit" value="Log in">
+                        </form>
+                    </div>
+                </div>
+ 			</div>
+  
+
+	          	 <div class="menu">
+    			   		
+            <a href="http://www.creatance.nl/#watiscreatance" class="active">WAT IS CREATANCE?</a>
+            &nbsp; &nbsp; &nbsp;
+            <a href="http://www.creatance.nl/#netwerk" class="">HET NETWERK</a>
+            &nbsp; &nbsp; &nbsp;
+            <a href="http://www.creatance.nl/#project" class="">PROJECTEN</a>
+            &nbsp; &nbsp; &nbsp;
+            <a href="http://www.creatance.nl/#aanmelden" class="">AANMELDEN</a> &nbsp; 
+
+			</div>
+ </div>
+</div>
+
+<a href="http://htmlinspiration.com/creatance/522/" target="_blank" title="Creatance featured on HTML Inspiration" style="position:absolute; z-index:9; top:70px; left:0;border:0;"><img src="./index_files/htmlinspiration-whiteL.png" width="66" alt="html inspiration | HTML/CSS Web Design Inspiration"></a>
+
+<div class="opl"><a href="http://onepagelove.com/" title="Creatance featured on One Page Love" target="_blank"></a></div>
+
+
+<a href="http://www.csslight.com/user/detail/Creatance_2533" title="Creatance featured on CSS Light" style="width:80px;height:20px;position:absolute;top:240px;left:0px;z-index:9;text-indent:-9999px;background: url(http://www.csslight.com/ribbons/csslight-ribbon-left.png) no-repeat;background-size:80px;" target="_blank"></a>
+
+<div class="csswinner"><a href="http://csswinner.com/details/creatance/5029/" target="_blank" title="Creatance nominated for a CSS Award">your site name</a></div>
+
+<div class="logo" style="max-width: 30%; min-width:200px;"></div>
+
+<div class="slogan">NETWERK VOOR CREATIEVE PROFESSIONALS</div>
+
+<div class="pointers">
+
+<div class="pointer1" style="display: none;">
+<img style="width:160px; height:64px; class=" pointer1"="" src="./index_files/pointer1.png">
+</div>
+
+<div class="pointer2" style="display: none;">
+<img style="width:100px; height:40px; class=" pointer2"="" src="./index_files/pointer2.png">
+</div>
+
+<div class="pointer3" style="display: none;">
+<img style="width:160px; height:64px; class=" pointer3"="" src="./index_files/pointer3.png">
+</div>
+
+<div class="pointer4" style="display: none;">
+<img style="width:100px; height:40px; class=" pointer4"="" src="./index_files/pointer4.png">
+</div>
+
+<div class="pointer5" style="display: none;">
+<img style="width:140px; height:56px; class=" pointer5"="" src="./index_files/pointer5.png">
+</div>
+
+<div class="pointer6" style="display: block; opacity: 0.8940053768033609;">
+<img style="width:140px; height:56px; class=" pointer5"="" src="./index_files/pointer6.png">
+</div>
+
+</div>
+
+
+<div class="scrollbtn1" align="center"><a href="http://www.creatance.nl/#watiscreatance"><img src="./index_files/arrow.png" width="50" height="35" border="0"></a></div>
+
+</div>
+
+
+
+<div class="div2">
+
+<div class="scrollbtnup2" align="center"><a href="./index_files/index.htm"><img src="./index_files/arrowup.png" width="50" height="35" border="0"></a></div>
+
+
+<div class="anchor" id="watiscreatance">&nbsp;</div>
+
+<div id="div2wrapper">
+<div class="titel1" align="left" style="font-size:6%">CREATANCE IS HET NETWERK VOOR PROFESSIONALS IN DE CREATIEVE SECTOR.</div>
+<div class="tekst1" align="left">Je bent een creatief professional en je hebt een tof idee. Het enige wat je nog nodig hebt zijn de juiste mensen om het te verwezenlijken. Sterker nog: de beste mensen. Maar waar vind je die? <br><br>
+Op Creatance.</div>
+</div>
+
+
+<div class="programmeur" style="top: 0px;"></div>
+<div class="illustrator" style="top: 0px;"></div>
+<div class="copywriter" style="top: 0px;"></div>
+<div class="ontwerper" style="top: 0px;"></div>
+<div class="fotograaf" style="top: 0px;"></div>
+<div class="muzikant"></div>
+<div class="animator" style="top: 0px;"></div>
+<div class="filmmaker" style="top: 0px;"></div>
+<div class="programmeur" style="top: 0px;"></div>
+<div class="webdeveloper" style="top: 0px;"></div>
+
+
+<div class="scrollbtn2" align="center"><a href="http://www.creatance.nl/#netwerk"><img src="./index_files/arrow.png" width="50" height="35" border="0"></a></div>
+
+
+</div>
+
+
+<div class="div3">
+
+<div class="anchor" id="netwerk">&nbsp;</div>
+
+<div class="scrollbtnup3" align="center"><a href="http://www.creatance.nl/#watiscreatance"><img src="./index_files/arrowup.png" width="50" height="35" border="0"></a></div>
+
+<div id="div3wrapper">
+<div class="titel3" align="left" style="font-size:6%">ONTWERPER, ONTMOET PROGRAMMEUR. PROGRAMMEUR, ONTMOET ONTWERPER.</div>
+<div class="tekst3" align="left">Als ontwerper ken je waarschijnlijk veel ontwerpers. Als programmeur ken je waarschijnlijk veel programmeurs. Bij het werken aan projecten is het wel zo handig dat je ook veel mensen kent buiten je eigen vakgebeid. Creatance gaat hier voor zorgen.</div>
+</div>
+
+
+<div class="ontwerperfade" style="display: none;"></div>
+<div class="ontwerperfade2" style="display: none;"></div>
+<div class="copywriterfade" style="display: none;"></div>
+<div class="illustratorfade" style="display: none;"></div>
+<div class="programmeurfade" style="display: none;"></div>
+<div class="webdeveloperfade" style="display: none;"></div>
+<div class="fadeline1" style="display: none;"></div>
+<div class="fadeline2" style="display: none;"></div>
+<div class="fadeline3" style="display: none;"></div>
+<div class="fadeline4" style="display: none;"></div>
+<div class="fadeline5" style="display: none;"></div>
+<div class="fadeline6" style="display: none;"></div>
+<div class="fadeline7" style="display: none;"></div>
+<div class="fadeline8" style="display: none;"></div>
+<div class="fadeline9" style="display: none;"></div>
+
+
+<div class="scrollbtn3" align="center"><a href="http://www.creatance.nl/#project"><img src="./index_files/arrow.png" width="50" height="35" border="0"></a></div>
+
+</div>
+
+<div class="div4">
+
+<div class="anchor" id="project"></div>
+
+<div class="scrollbtnup4" align="center"><a href="http://www.creatance.nl/#netwerk"><img src="./index_files/arrowup.png" width="50" height="35" border="0"></a></div>
+
+
+<div id="div4wrapper">
+<div class="titel4" align="left" style="font-size:10%">SAMEN STA JE STERKER.</div>
+
+<div class="tekst4" align="left">Als creatief professional kun je het nooit alleen. Creatief of technisch: iedereen heeft zijn eigen talent. Creatance brengt ze samen. Expertise, samenwerking en wederzijdse inspiratie tillen het project naar een hoger niveau. Een creatieve synergie: dat is het doel.
+<br><br>
+Hoe? Volg de volgende drie stappen.
+</div>
+</div>
+
+
+</div>
+
+<div class="div5">
+<div class="project1"></div>
+<div class="project2"></div>
+<div class="project3"></div>
+<div id="project1wrapper">
+	<div class="titel5" align="left" style="font-size:3%">1. WAT IS JE PLAN?</div>
+	
+    <div class="tekst5" style="margin-top: 55px;">Het begint allemaal met dat ene geweldige idee. Een nieuwe website, een film of een innovatieve app, het kan allemaal. Wie heb je nodig om van dit idee werkelijkheid te maken?</div>
+
+</div>
+
+<div id="project2wrapper">
+<div class="titel5" align="left" style="font-size:3%">2. SELECTEER JE DREAMTEAM</div>
+
+<div class="tekst5">Als je weet welke mensen je nodig hebt, plaats je je contactadvertentie. Hierin leg je je plan uit en laat je weten welke taken er zijn. Uit de reacties hierop kies je jouw ideale teamgenoten uit. Jouw eigen netwerk kan hierbij ook meehelpen door mensen aan jou aan te bevelen. Zo leer je bij elk project nieuwe mensen kennen en zie je je netwerk snel groeien.</div>
+
+</div>
+
+<div id="project3wrapper">
+<div class="titel5" align="left" style="font-size:3%">3. SAMEN AAN DE SLAG</div>
+
+<div class="tekst5" style="margin-top: 55px;">Als je je team geselecteerd hebt komt het leukste gedeelte: iets maken! Creatance geeft jouw team een pagina met hierop de mogelijkheid om berichten te plaatsen, deadlines te stellen en de voortgang van je project in de gaten te houden.</div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+<div class="div6">
+<div class="scrollbtnup6" align="center"><a href="http://www.creatance.nl/#project"><img src="./index_files/arrowup.png" width="50" height="35" border="0"></a></div>
+<div class="anchor2" id="aanmelden"></div>
+
+
+<div id="div6wrapper">
+
+<div class="titel6" align="center" style="font-size:6%">WE ZIJN DE PUNTJES OP DE I AAN HET ZETTEN.</div>
+
+<div class="tekst6" align="center">Creatance staat op het punt om te lanceren. Op de hoogte blijven? Like ons op Facebook of laat je e-mailadres achter, dan sturen we je een mailtje als Creatance bij jou in de buurt online is!</div>
+
+
+</div>
+
+<div id="remindmeformwrapper">
+	<div id="nav">
+<form id="remindmeform" method="post" action="http://www.creatance.nl/#aanmelden">
+<input type="text" placeholder="E-MAILADRES" name="email" id="email"><select id="regio" name="regio" class="remindmedropdown" onchange="colorSet()">
+    <option value="" selected="" disabled="">REGIO</option>
+    <option value="1">Arnhem</option>
+    <option value="2">Assen</option>
+    <option value="3">Amsterdam</option>
+    <option value="4">Den Bosch</option>
+    <option value="5">Den Haag</option>
+    <option value="15">Eindhoven</option>
+    <option value="6">Groningen</option>
+    <option value="7">Haarlem</option>
+    <option value="8">Leeuwarden</option>
+    <option value="9">Lelystad</option>
+    <option value="10">Maastricht</option>
+    <option value="11">Middelburg</option>
+    <option value="12">Rotterdam</option>
+    <option value="13">Utrecht</option>
+    <option value="14">Zwolle</option>
+</select><input id="remindmeformbutton" name="remindmeformbutton" type="submit" value="VERSTUUR">
+
+</form>
+
+<div class="remindmeformfout">
+</div>
+
+
+	</div>
+</div>
+<div class="like">
+<div class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/creatanceNL" data-width="350" data-show-faces="false" data-stream="false" data-show-border="false" data-header="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FcreatanceNL&amp;locale=nl_NL&amp;sdk=joey&amp;show_border=false&amp;show_faces=false&amp;stream=false&amp;width=350"><span style="vertical-align: bottom; width: 350px; height: 70px;"><iframe name="f384e163d8" width="350px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="./index_files/like_box.htm" style="border: none; visibility: visible; width: 350px; height: 70px;" class=""></iframe></span></div>
+</div>
+
+
+</div>
+
+<div class="div7">
+
+<div id="div7wrapper">
+<div id="div7tekstbold">CONTACT</div>
+
+<div id="div7tekst" style="margin-left:90px; top:2px;"><a href="mailto:info@creatance.nl">info@creatance.nl</a></div>
+
+<div id="div7tekstbold" style="margin-left:250px;">VOLG CREATANCE</div>
+
+<div class="sociallogo" style="margin-left:400px;"><a href="http://www.facebook.com/creatanceNL"><img src="./index_files/facebook.png" border="0" width="20" height="20"></a></div>
+<div class="sociallogo" style="margin-left:426px;"><a href="http://www.twitter.com/CreatanceNL"><img src="./index_files/twitter.png" border="0" width="20" height="20"></a>
+
+
+</div>
+<div class="sociallogo" style="margin-left:460px;display:none;"><a href="http://www.instagram.com/"><img src="./index_files/instagram.png" border="0" width="20" height="20"></a></div>
+
+	
+<div id="div7tekstbold" style="margin-left:500px;">CREATANCE IN ENGLISH</div>
+
+
+
+<div id="div7tekst" style="margin-left:680px; top:2px;"><a href="http://www.creatance.net/">www.creatance.net</a></div>
+</div>
+
+		</div>
+
+
+
+
+
+<div style="border-style: solid; border-width: 2px 0px 2px 2px; border-top-left-radius: 5px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 5px; display: block; box-sizing: content-box; font-style: normal; font-variant: normal; font-weight: normal; font-size: 13px; line-height: 18px; font-family: Arial, Helvetica, sans-serif; width: 10px; height: 20px; padding: 0px; margin: 0px; overflow: hidden; position: fixed; top: 50px; right: 0px; text-align: left; -webkit-transition: all 0.2s; transition: all 0.2s; z-index: 99999; cursor: pointer; border-color: rgb(141, 197, 11); opacity: 0.5; background: rgb(255, 255, 255);"><div title="SaveFrom.net помощник 2.70" style="display: inline-block; box-sizing: content-box; width: 16px; height: 16px; margin: 0px; padding: 2px; overflow: hidden; vertical-align: middle; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAACOklEQVQ4y42TTWgTURSFz3sv00maJqVWg6LiD7VUdGERQQnoQlS6sStxVVBULE0XoiDFjejChaC4qCCIKBQE0U1XpYoLFX9AXLbVVhR/UInGTjKZeTOTee+6aKdO2iAeuJvDd8+73MtjRIRIT2ud5d3GdOsLdP0150VEyLN3LGIiPxGHPE8RDEApAkCLAuboiInE45ArwxIAhKHWWhPiFYak40zdBCMzazpyy9btcsuoIAcEUktuIB0HVUASScAtozIu8n3F359e9m36+j4BAHa1erzqTB7mjK0HAE8qaVB9QOBBAoDt2tvKzuRFIroHYIgDwEC3NWQV3YJlyZn5ADcIFOLlS+UCgGXJGavoFga6rSEAYPErRLozsXqqOUtddfsp4+2Rrd82L2YTDz53nDST2Q1ps42STZlmVdMrBGvmQa1SBwqe5c8qB+8Kg//0Att1/Fnme5WPbHgq026qpjEh2A4A4Ew4XBh2GHor615KJH9oVctoUmkAUIpe+yLoYUSECw8zufZ2MWoYfCf+Q7WaflUqqd7z++3iwg4ujadXpVr4fcPk+X82+/q5rOpD5w4435cs8cwoW7s8mxoxTb6nUbPv6ye/KrLvSi99ibwlVzh9m23M5MwbqTTfF/elox/ZRb//6lH6EPcbnnHwJutsaRPX0q2iBwCcshqrzqpTwydoejHbMAAABq+zLSLDLgOAsunscIEmGnELAYwxBoABEABMAKm9x7AdAB7fwhsAEoAPQM397rnGP/fQK/eKCl8BAAAAAElFTkSuQmCC); background-position: 50% 50%; background-repeat: no-repeat;"></div></div></body></html>

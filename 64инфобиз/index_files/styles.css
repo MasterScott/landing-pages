@@ -1,0 +1,94 @@
+body {
+	background: #8e1617;
+}
+.page {
+	background: #fff;
+	width: 1000px;
+	border: 3px solid #720809;
+	border-radius: 15px;
+	padding: 0px;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.55);
+	-moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.55);
+	box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.55);
+	margin: 0 auto;
+}
+
+.content {
+	padding: 20px;
+}
+
+body {
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size: 20px;
+}
+
+.box1 {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	text-align: left;
+	letter-spacing: 0px;
+	font-size: 30px;
+	font-weight: 400;
+	font-style: normal;
+	border: 6px dashed #e06455;
+	background-color: #fffbdf;
+	padding: 20px;
+	width: 600px;
+	border-radius: 14px;
+	text-shadow: 1px 1px 0px rgba(255,255,255,0.8);
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #262120;
+	-webkit-box-shadow: inset 0 0 60px rgba(148,192,218,.83);
+	-moz-box-shadow: inset 0 0 60px rgba(148,192,218,.83);
+	box-shadow: inset 0 0 110px rgba(246,221,147,.93);
+}
+
+.box1 ol { font-size: 20px; }
+
+.box2 {
+	font-size: 18px;
+	line-height: 41px;
+	letter-spacing: 1px;
+	color: #3e3e3e;
+	margin-top: 10px;
+	text-align: left;
+	letter-spacing: 0px;
+	font-weight: 400;
+	font-style: normal;
+	padding: 0 50px;
+	border: 2px solid #ded894;
+	background-color: #fffcda;
+	padding: 30px;
+	width: 600px;
+	border-radius: 14px;
+	text-shadow: 1px 1px 0px rgba(255,255,255,0.8);
+	margin: 30px auto;
+	margin-bottom: 42px;
+}
+
+.box3 {
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0px;
+	color: #303e47;
+	margin-bottom: 42px;
+	margin-top: 0px;
+	text-align: left;
+	letter-spacing: 0px;
+	font-weight: 400;
+	font-style: normal;
+	padding: 20px 30px;
+	border: 4px dashed #5d6b72;
+	background-color: #eaf1f5;
+	width: 600px;
+	border-radius: 14px;
+	text-shadow: 1px 1px 0px rgba(255,255,255,0.8);
+	margin: 30px auto;
+	background: url(../img/back2.png);
+}
+
+h1,h2,h3,h4 { text-align: center; }
+h1 span, h2 span, h3 span, p span { color: #720809; }
+p { text-align: center;}

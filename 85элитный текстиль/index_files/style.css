@@ -1,0 +1,640 @@
+@import url(reset.css);
+
+#wrapper {
+    width: 100%;
+    outline:0px solid #cc0000;
+    background: url(../images/bg.jpg) fixed center center;
+    padding-top: 20px;
+	padding-bottom: 80px;
+    }
+
+#content {
+    width: 1000px;
+    outline:0px solid #000000;
+    background-color: #ffffff;
+    margin: 0px auto;
+    padding-bottom: 20px;
+}
+
+.clear {
+    height: 0; font-size: 0; overflow: hidden; clear: both;
+}
+
+/* Начало блока шапка*/
+
+#logo1 {
+    float: left;
+    padding-bottom: 5px;
+    margin-left: 30px;
+}
+
+#logo h1 {
+    padding-top: 20px;
+    margin-left: 300px;
+    width: 410px;
+    text-align: center;
+}
+
+#headerleft {
+    float: left;
+}
+
+#logo p{
+    margin: 10px 0 10px 300px;
+    width: 410px;
+    font: 17px "Myriad Pro";
+    color: #333333;
+    text-align: center;
+    line-height: 1.8;
+}
+
+#phone {
+    float: right;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.tel{
+    font: bold 25px "Myriad Pro";
+    color: #990000;
+    padding-top: 10px;
+}
+.tel span{
+    font: bold 18px Arial;
+    color: #000000;
+    padding-top: 10px;
+}
+.zakazzv {
+    padding-top: 10px;
+}
+
+/* Конец блока шапка*/
+
+
+/* Начало блока формы*/
+
+#zayavka {
+    margin-top: 0px;
+    
+}
+
+#bigimg {
+    position: relative;
+}
+
+#bigimg img.bigimg{
+    position: relative;
+}
+
+
+
+#bigimg p span {
+    font: Bold 18px "Myriad Pro";
+    color: #990000;
+}
+
+
+#form {
+    width: 240px;
+    height: 365px;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+}
+#form p.legend1{
+    font: Bold 25px "Myriad Pro", sans-serif;
+    color: #990000;
+}
+#form p.legend2{
+    font: 20px "Myriad Pro", sans-serif;
+    color: #333333;
+}
+#form p.legend2 span{
+    font:Bold 20px "Myriad Pro", sans-serif;
+    color: #333333;
+}
+
+#form p {
+    text-align: center;
+}
+
+#form p.dokonca {
+    font: Bold 18px "Myriad Pro", sans-serif;
+    color: #333333;
+    margin-top: 5px;
+}
+
+#form p.otpravit {
+    margin-top: 8px;
+}
+
+.input {
+    font: Bold 18px "Myriad Pro", sans-serif;
+    color: #333333;
+    text-align: center;
+    height: 35px;
+    width: 208px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    border: none;
+    margin: 5px;
+}
+input.input:focus:-moz-placeholder{
+   color: transparent;
+   }
+ 
+input.input:focus::-webkit-input-placeholder{
+   color: transparent;
+   }
+
+.input::-webkit-input-placeholder { /* для webkit браузеров */
+	font: 18px "Myriad Pro";
+    color: #999999;
+}
+.input:-moz-placeholder { /* для браузеров mozilla */
+	font: 18px "Myriad Pro";
+    color: #999999;
+}
+
+.popup p{
+    font: Bold 18px "Myriad Pro", sans-serif;
+    color: #333333;
+    margin-top: 6px;
+    text-align: center;
+}
+
+
+/* Конец блока формы*/
+
+/* Начало блока триггеры*/
+
+#triggers {
+    width: 1000px;
+    height: 100px;
+    background-image: url(../images/triggerybg.jpg);
+    background-repeat: no-repeat;
+    margin-top: 13px;
+}
+
+
+#triggers p {
+    float: left;
+}
+
+#triggers p span {
+    float: left;
+    width: 175px;
+    font: bold 18px "Myriad Pro";
+    color: #333333;
+    line-height: 1.5;
+}
+
+#triggers img {
+    float: left;
+}
+
+#triggers p.trigger1{
+    margin: 9px 0 0 59px;
+}
+
+#triggers p.trigger2{
+    margin: 9px 0 0 83px;
+}
+
+#triggers p.trigger3{
+    margin: 9px 0 0 63px;
+}
+
+#triggers p.trigger1 span{
+    margin: 0px 0 0 17px;
+}
+
+#triggers p.trigger2 span{
+    margin: 0px 0 0 17px;
+}
+
+#triggers p.trigger3 span{
+    margin: 0px 0 0 17px;
+}
+
+/* Конец блока триггеры*/
+
+
+/* Начало блоков*/
+
+#blocks {
+    width: 970px;
+    margin: 0px auto 30px auto;
+    text-align: center;
+}
+
+#block1 {
+    width: 469px;
+    height: 376px;
+    background-image: url(../images/bgblock.jpg);
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 5px;
+}
+#block2 {
+    width: 469px;
+    height: 376px;
+    background-image: url(../images/bgblock.jpg);
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 20px;
+}
+
+#blocks h2{
+    font: Bold 28px "Myriad Pro";
+    color: #990000;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#blocks h3{
+    font: 18px "Myriad Pro";
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#blocks h4{
+    font:bold 22px "Myriad Pro";
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#blocks p.cena {
+    font: Bold 22px "Myriad Pro";
+    color: #333333;
+    margin:30px auto 5px auto;
+}
+
+#blocks img.img {
+    margin-top: 30px;
+    
+}
+/* Начало блоков2*/
+span.zacherk {
+    text-decoration: line-through;
+}
+span.red {
+    font: Bold 22px "Myriad Pro";
+    color: #990000;
+}
+
+/* Конец блоков*/
+
+#blocks2 {
+    width: 970px;
+    margin: 0px auto 30px auto;
+    text-align: center;
+}
+
+#block1 {
+    width: 469px;
+    height: 376px;
+    background-image: url(../images/bgblock.jpg);
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 5px;
+}
+#block2 {
+    width: 469px;
+    height: 376px;
+    background-image: url(../images/bgblock.jpg);
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 20px;
+}
+
+#blocks2 h2{
+    font: Bold 28px "Myriad Pro";
+    color: #990000;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#blocks2 h3{
+    font: 18px "Myriad Pro";
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#blocks2 h4{
+    font: bold 20px "Myriad Pro";
+    color: #990000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#blocks2 p.cena {
+    font: Bold 22px "Myriad Pro";
+    color: #333333;
+    margin:20px auto 5px auto;
+}
+
+#blocks2 img.img {
+    margin-top: 10px;
+    
+}
+/* Конец блоков2*/
+
+/* Начало формы2*/
+#form2 {
+    margin: 0 auto;
+    width: 953px;
+    height: 310px;
+    background-image: url(../images/bgform.jpg);
+    background-repeat: repeat;
+}
+#form2 p.legend1{
+    padding-top: 5px;
+    font: Bold 25px "Myriad Pro", sans-serif;
+    color: #990000;
+}
+#form2 p.legend2{
+    font: 18px "Myriad Pro", sans-serif;
+    color: #333333;
+    line-height: 1.8;
+}
+#form2 p.legend2 span{
+    font:Bold 20px "Myriad Pro", sans-serif;
+    color: #333333;
+}
+
+#form2 p {
+    text-align: center;
+}
+
+#form2 p.otpravit {
+    margin-top: 5px;
+}
+
+#form2 .input {
+    font: Bold 18px "Myriad Pro", sans-serif;
+    color: #333333;
+    text-align: center;
+    width: 311px;
+    height: 37px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    border: 1px solid #999999;
+    margin: 2px;
+}
+
+#form3 {
+    margin: 30px auto;
+    width: 953px;
+    height: 299px;
+    background-image: url(../images/bgform.jpg);
+    background-repeat: no-repeat;
+}
+#form3 p.legend1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font: Bold 25px "Myriad Pro", sans-serif;
+    color: #990000;
+}
+
+#form3 p {
+    text-align: center;
+}
+
+#form3 p.otpravit {
+    margin-top: 8px;
+}
+
+#form3 .input {
+    font: Bold 18px "Myriad Pro", sans-serif;
+    color: #333333;
+    text-align: center;
+    width: 311px;
+    height: 37px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    border: 1px solid #999999;
+    margin: 5px auto;
+}
+
+/* Конец формы2*/
+
+#otzyvy1 {
+    margin: 0 auto;
+    width: 953px;
+    height: 341px;
+    background-image: url(../images/bgotzyvy.jpg);
+    background-repeat: no-repeat;
+}
+
+#otzyvy1 h2{
+    font: Bold 22px "Myriad Pro";
+    color: #990000;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+#otzyvy1 p{
+    font: 18px "Myriad Pro";
+    color: #333333;
+    padding: 20px 10px 0 10px;
+}
+#otzyvy1 a{
+    display: block;
+    font: 18px "Myriad Pro";
+    color: #990000;
+    padding: 10px 10px 0 10px;
+}
+
+#otzyvy2 {
+    margin: 0 auto;
+    width: 953px;
+    height: 536px;
+    background-image: url(../images/bgotzyvy2.jpg);
+    background-repeat: no-repeat;
+}
+
+#otzyvy2 h2{
+    font: Bold 22px "Myriad Pro";
+    color: #990000;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+#otzyvy2 img{
+    padding: 20px 0px 0 25px;
+}
+#otzyvy2 a.bottom{
+    display: block;
+    font: 18px "Myriad Pro";
+    color: #990000;
+    padding: 10px 10px 0 10px;
+}
+
+/* Начало блока 5 проблем*/
+#problems {
+    margin: 30px auto;
+    width: 954px;
+    height: 593px;
+    background-image: url(../images/bgpreim.jpg);
+    background-repeat: no-repeat;
+    
+
+}
+
+#problems h2 {
+    font: bold 25px "Myriad Pro";
+    color: #990000;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#problems p {
+    font: 22px "Myriad Pro";
+    color: #333333;
+    width: 850px;
+    float: left;
+    margin: 0px 0 40px 15px;
+}
+
+#problems p span{
+    font: bold 22px "Myriad Pro";
+    color: #333333;
+}
+
+
+#problems img {
+    float: left;
+    margin: 0px 0 40px 20px;  
+}
+
+/* Конец блока 5 проблем*/
+
+
+/* Начало блока что нужно*/
+
+#kakrabotaem {
+    width: 954px;
+    margin: 30px auto;
+}
+
+/* Начало блока остались вопросы*/
+
+#ostvoprosy {
+    width: 954px;
+    height: 593px;
+    margin: 30px auto;
+    background-image: url(../images/bgostvoprosy.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#ostvoprosy h2{
+    font: bold 25px "Myriad Pro";
+    color: #990000;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+    }
+
+#ostvoprosy p{
+    font: bold 20px "Myriad Pro";
+    color: #333333;
+    padding-top: 20px;
+    line-height: 1.5;
+}
+#ostvoprosy p.link{
+    padding-top: 15px;
+    }
+#ostvoprosy a{
+    font: bold 20px "Myriad Pro";
+    color: #333333;
+    line-height: 1.6;
+}
+
+#ostvoprosy p.ostvoprosy{
+    font: bold 22px "Myriad Pro";
+    color: #333333;
+    padding-top: 20px;
+}
+
+#ostvoprosy p.zakazzv {
+    padding-bottom: 33px;
+}
+/* Конец блока остались вопросы*/
+
+/* Начало блока футер*/
+#footer p{
+    font: 14px "Myriad Pro";
+    color: #000099;
+    padding: 19px 0 0 5px;
+}
+/* Конец блока футер*/
+
+/* Таймер обратного отсчета*/
+
+.counter{
+    margin-left: 38px;
+    padding-top: 8px;
+}
+.counter > p{
+	display: inline-block;
+	font: bold 30px Arial;
+	line-height: 40px;
+	background: url(../images/timer-bg.png) repeat-x;
+	width: 44px;
+	padding: 0 0 0 3px;
+	letter-spacing: 7px;
+	color:#fff;
+	margin-top:0px;
+    text-align: center;
+}
+.counter > div > p{
+	display: inline-block;
+	font: bold 14px Arial;
+    color: #000000;
+	width: 40px;
+    margin-top: 5px;
+    padding-right: 20px;
+    padding-left: 3px;
+    float: left;
+    text-align: center;
+}
+
+.cntSeparator {
+font: bold 30px Arial;
+padding-top: 5px;
+margin-left: 3px;
+margin-right: 3px;
+color: #000;
+}
+/* Конец Таймер обратного отсчета*/
+
+
+
+
+#text {} 
+.hotspot {cursor:pointer;} 
+#tt {     position:absolute;     z-index: 1000;   margin-left: -120px; }  
+#ttcont {     
+  font-family: "Myriad Pro", sans-serif; /* Рубленый шрифт */
+  font-size: 12pt; /* Размер  шрифта */
+  color: #462b1e; /* Цвет текста */
+  text-align: left;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  opacity: 0.9;
+  line-height: 1.5;
+  padding: 10px;
+  display:block;     
+  background: #ede2cc;     
+  width: 300px; 
+  }   
+

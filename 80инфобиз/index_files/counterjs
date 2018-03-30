@@ -1,0 +1,83 @@
+if (typeof webmasterCampaign == 'undefined') {
+
+    function getParameterByName(name)
+    {
+        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regexS = "[\\?&]" + name + "=([^&#]*)";
+        var regex = new RegExp(regexS);
+        var results = regex.exec(window.location.search);
+        if(results == null)
+            return "";
+        else
+            return decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    function cpaAddTranspImageToEndOfBody(trans_img)
+    {
+        document.body.appendChild(trans_img);
+    }
+
+    var webmasterCampaign = getParameterByName('cpawci');
+    if (webmasterCampaign){     //Click
+        Cookie = {
+            get: function(key) {
+                tmp =  document.cookie.match((new RegExp(key +'=[a-zA-Z0-9.()=|%/]+($|;)','g')));
+                if(!tmp || !tmp[0]) return null;
+                else return unescape(tmp[0].substring(key.length+1,tmp[0].length).replace(';','')) || null;
+
+            },
+            set: function(key, value, ttl, path, domain, secure) {
+                cookie = [key+'='+    escape(value),
+                    'path='+    ((!path   || path=='')  ? '/' : path),
+                    'domain='+  ((!domain || domain=='')?  window.location.hostname : domain)];
+
+                if (ttl)         cookie.push(Cookie.hoursToExpireDate(ttl));
+                if (secure)      cookie.push('secure');
+                return document.cookie = cookie.join('; ');
+            },
+            hoursToExpireDate: function(ttl) {
+                if (parseInt(ttl) == 'NaN' ) return '';
+                else {
+                    now = new Date();
+                    now.setTime(now.getTime() + (parseInt(ttl) * 60 * 60 * 1000));
+                    return now.toGMTString();
+                }
+            }
+        }
+
+        Cookie.set("uj3678ni", webmasterCampaign, 24*10);
+    }
+
+    var ref = document.referrer;
+    var ref_raw = ref;
+    if (ref != ""){
+        ref = ref.split("//")[1].split("/")[0].replace(/^www\./, "");
+    }
+
+    var trans_img = document.createElement('img');
+    trans_img.onload = function(){
+        if (typeof (cpa_after) != "undefined"){
+            cpa_after();
+        }
+        if (typeof(cpa_after_conv) != "undefined"){
+            cpa_after_conv();
+        }
+        if (typeof(cpa_after_goal) != "undefined"){
+            cpa_after_goal();
+        }
+        return true;
+    };
+
+    var src = 'http://cpapartner.ru/counterpng';
+
+    if (webmasterCampaign) {
+        src = src + '?webmasterCampaign=' + webmasterCampaign + '&ref=' + ref + '&rraw=' + ref_raw;
+    } else {
+        src = src + '?ref=' + ref + '&rraw=' + ref_raw;
+    }
+
+    trans_img.src = src;
+    trans_img.style.position = "absolute";
+    trans_img.style.top = '-999999px';
+    cpaAddTranspImageToEndOfBody(trans_img);
+}

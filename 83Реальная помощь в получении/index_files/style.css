@@ -1,0 +1,619 @@
+@import url(reset.css);
+
+#wrapper {
+    width: 100%;
+    height: auto;
+    outline:0px solid #cc0000;
+    background-image: url(../index_files/bg.jpg);
+    background-repeat: repeat;
+    
+    }
+
+#content {
+    width: 1000px;
+    height: auto;
+    outline:0px solid #000000;
+    background-color: #ffffff;
+    margin: 0px auto;
+}
+
+#footer {
+    width: 1000px;
+    height: 100px;
+    margin: 0px auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/* Начало блока шапка*/
+
+#logo {
+    outline:0px solid #cc0000;
+    position: relative;
+
+}
+#logo1 {
+    margin:5px 0 0px 50px;
+    float: left;
+}
+
+#logo h1 {
+    margin-left: 200px;
+    width: 500px;
+    font: bold 25px Arial;
+    color:#0033cc;
+    text-align: center;
+    padding-top:15px;
+
+}
+
+#headerleft {
+    float: left;
+}
+
+#logo p{
+    margin: 10px 0 10px 200px;
+    width: 500px;
+    font: 18px Arial;
+    color: #333333;
+    text-align: center;
+}
+
+#gerb {
+    float: left;
+    padding-left: 15px;
+}
+.opyt {
+    margin-left: 15px;
+    }
+#phone {
+    float: right;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.voprosy{
+    font: bold 19px Arial;
+    color: #990000;
+    padding-top: 13px;
+}
+.tel{
+    font: bold 23px Arial;
+    color: #333333;
+    padding-top: 13px;
+}
+.zakazzv {
+    padding-top: 13px;
+}
+
+/* Конец блока шапка*/
+
+/* Начало блока триггеры*/
+
+#triggers {
+    height: 106px;
+    background-color: #e5e5e5;
+}
+
+
+#triggers p {
+    float: left;
+}
+
+#triggers p span {
+    float: left;
+    width: 175px;
+    font: 16px Arial;
+    color: #333333;
+}
+
+#triggers img {
+    float: left;
+}
+
+#triggers p.trigger1{
+    margin: 13px 0 0 22px;
+}
+
+#triggers p.trigger2{
+    margin: 13px 0 0 73px;
+}
+
+#triggers p.trigger3{
+    margin: 23px 0 0 33px;
+}
+
+#triggers p.trigger1 span{
+    margin: 13px 0 0 6px;
+}
+
+#triggers p.trigger2 span{
+    margin: 13px 0 0 6px;
+}
+
+#triggers p.trigger3 span{
+    margin: 5px 0 0 6px;
+}
+
+/* Конец блока триггеры*/
+
+/* Начало блока формы*/
+
+#zayavka {
+    margin-top: 0px;
+    
+}
+
+#bigimg {
+    position: relative;
+}
+
+#bigimg img.bigimg{
+    position: relative;
+}
+
+
+
+#bigimg p span {
+    font: Bold 18px Arial;
+    color: #990000;
+}
+
+
+#form {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    margin-right: 9px;
+}
+
+#input {
+    margin-top: 10px;
+}
+#form p.legend{
+    font: Bold 18px Arial, sans-serif;
+    color: #ffffff;
+    margin-top: 6px;
+}
+
+#form p.legend1{
+    font: Bold 24px Arial, sans-serif;
+    color: #ffff00;
+    margin-top: 6px;
+}
+#form p span{
+    font: Bold 16px Arial, sans-serif;
+    color: #990000;
+}
+
+#form p {
+    text-align: center;
+}
+
+#form p.dokonca {
+    font: Bold 16px Arial, sans-serif;
+    color: #ffffff;
+    margin-top: 14px;
+}
+
+#form p.otpravit {
+    margin-top: 6px;
+}
+
+.input {
+    font: Bold 14px Arial, sans-serif;
+    text-align: center;
+    height: 27px;
+    width: 208px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    border: none;
+    margin: 6px;
+}
+input.input:focus:-moz-placeholder{
+   color: transparent;
+   }
+ 
+input.input:focus::-webkit-input-placeholder{
+   color: transparent;
+   }
+
+.popup p{
+    font: Bold 18px Arial, sans-serif;
+    color: #333333;
+    margin-top: 6px;
+    text-align: center;
+}
+
+
+/* Конец блока формы*/
+
+#hit {
+    height: 59px;
+    background-color: #ffff00;
+}
+
+#hit p {
+    font: Bold 20px Arial;
+    color: #000000;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Начало блока туры*/
+
+#tury {
+    margin-top: 10px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+#tur1 {
+    
+    width: 480px;
+    background-color: #ececec;
+    background-repeat: no-repeat;
+    float: left;
+    border: 1px solid #e9e8e8;
+}
+
+#tur3 {
+    height: 355px;
+    width: 304px;
+    background-color: #ececec;
+    background-repeat: no-repeat;
+    float: right;
+    border: 1px solid #e9e8e8;
+}
+#tur2 {
+    
+    width: 480px;
+    background-color: #ececec;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+    border: 1px solid #e9e8e8;
+}
+
+#tury h2{
+    font: Bold 23px Arial;
+    color: #336600;
+    margin: 15px 0 0 0;
+}
+
+
+#tury p.text {
+    font: 18px Arial;
+    color: #333333;
+    padding: 5px 10px;
+    height: 70px;
+}
+
+#tury p.cena {
+    font: Bold 19px Arial;
+    color: #990000;
+    margin-bottom: 20px;
+}
+
+#tury img {
+    margin: 10px 0 10px 15px;
+}
+#tury img.img {
+    margin-top: 50px;
+}
+
+#pluses{
+    margin-top: 32px;
+    text-align: left;
+}
+
+#pluses p {
+    font: 17px Arial;
+    color: #333333;
+    width: 400px;
+    float: left;
+    margin: 20px 0 0 15px;
+}
+
+#pluses p span{
+    font: bold 17px Arial;
+    color: #990000;
+}
+
+
+#pluses img {
+    float: left;
+    margin: 20px 0 0 25px;  
+}
+
+#pluses h3{
+    font: bold 17px Arial;
+    color: #333333;
+    margin: 10px 0 10px 60px;
+}
+
+p.staraya {
+    font: bold 20px Arial;
+    color: #333333;
+    margin-top: 20px;
+}
+
+p.staraya span{
+    text-decoration: line-through;
+}
+
+p.novaya {
+    font: bold 26px Arial;
+    color: #990000;
+}
+
+p.uspei {
+    font: 17px Arial;
+    color: #333333;
+}
+
+/* Конец блока туры*/
+
+/* Начало блока 5 проблем*/
+
+#problems {
+    padding-top: 32px;
+    width: 1000px;
+    height: 415px;
+    background-color: #e5e5e5;
+
+}
+
+#problems h2 {
+    font: bold 20px Arial;
+    color: #0033cc;
+    text-align: center;
+}
+
+#problems p {
+    font: 16px Arial;
+    color: #333333;
+    width: 905px;
+    float: left;
+    margin: 20px 0 0 15px;
+}
+
+#problems p span{
+    font: bold 16px Arial;
+    color: #333333;
+}
+
+
+#problems img {
+    float: left;
+    margin: 20px 0 0 25px;  
+}
+
+/* Конец блока 5 проблем*/
+
+/* Начало блока почему выбиают нас*/
+
+#vybornas img {
+    float: left;
+    margin: 30px 0 0 25px;  
+}
+
+#vybornas p {
+    float: right;
+    font: 18px Arial;
+    color: #333333;
+    width: 650px;
+    height: 90px;
+    padding-top: 30px;
+    margin-right: 192px;
+}
+
+#vybornas h2 {
+    margin: 35px 0 25px 55px;
+    font: bold 20px Arial;
+    color: #0033cc;
+}
+
+#vybornas span {
+    font: bold 18px Arial;
+}
+
+#vybornas p.vybor5 {
+    margin-top: 20px;
+}
+#button {
+    text-align: center;
+}
+
+/* Конец блока почему выбиают нас*/
+
+/* Начало блока туроператоры*/
+
+#turoperatory h2 {
+    font: bold 24px Arial;
+    color: #0066cc;
+    margin: 40px 0 0 55px;
+}
+#turoperatory p {
+    margin: 30px 0 0 34px;
+}
+
+/* Конец блока туроператоры*/
+
+/* Начало блока отзывы*/
+
+#blockotzyvy{
+    background-color: #e5e5e5;
+
+}
+#otzyvy{
+    width: 900px;
+    margin: 40px auto 0px auto;
+
+}
+
+#otzyvy h2 {
+    margin: 20px auto ;
+    font: bold 25px Arial;
+    color: #990000;
+    text-align: center;
+}
+
+#otzyvy p {
+  
+}
+
+
+#otzyvy img {
+    float: left;
+    margin-left: 60px;
+}
+#otzyvtext{
+    margin-left: 250px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#slider1 p.name {
+    font: bold 18px Arial;
+    color: #333333;
+    margin-bottom: 10px;
+
+}
+
+#slider1 p.name span {
+    font: bold 20px Arial;
+    color: #0033cc;
+    margin-bottom: 10px;
+
+}
+
+#slider1 p.otzyv {
+    font: 16px Arial;
+    color: #333333;
+}
+
+/* Конец блока отзывы*/
+
+
+/* Начало блока что нужно*/
+
+#chtonado {
+    margin-bottom: 30px;
+}
+
+#chtonado h2 {
+    font: bold 20px Arial;
+    color: #0033cc;
+    margin: 40px 0 10px 0px;
+    text-align: center;
+}
+#chtonado p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Конец блока что нужно*/
+
+#dopuslugi h2 {
+    font: bold 24px Arial;
+    color: #0033cc;
+    padding: 30px 0 0 55px;
+}
+
+#uslugi{
+    height: 228px;
+    width: 890px;
+    background-color: #e5e5e5;
+    margin: 20px 0 0 55px;
+    font: bold 20px Arial;
+    color:#001d52;
+}
+#uslugi img {
+    display:inline-block; 
+    vertical-align:middle;
+
+}
+    
+#uslugi p{
+    margin-top: 10px;
+}
+
+#uslugi p span{
+    margin-left: 10px;
+}
+#usl1 {
+    margin: 18px 0 0 10px;
+    float: left;
+}
+
+#usl2 {
+    margin: 18px 0 0 150px;
+    float: left;
+}
+
+/* Начало блока остались вопросы*/
+
+#ostvoprosy {
+    text-align: center;
+}
+
+#ostvoprosy p.voprosy{
+    font: bold 19px Arial;
+    color: #990000;
+    padding-top: 40px;
+}
+#ostvoprosy p.tel{
+    font: bold 23px Arial;
+    color: #333333;
+    padding-top: 10px;
+}
+
+#ostvoprosy p.zakazzv {
+    padding-bottom: 33px;
+}
+/* Конец блока остались вопросы*/
+
+/* Начало блока футер*/
+#footer p{
+    font: 14px Arial;
+    color: #000099;
+    padding: 19px 0 0 5px;
+}
+/* Конец блока футер*/
+
+/* Таймер обратного отсчета*/
+
+#timer {
+    text-align: center;
+
+}
+.p_ost {    /* Текст Дней Минут Секунд*/
+	
+    width: 30px;
+	color: #ffffff;
+	float: left;
+	font: Bold 14px Arial;
+	margin: 0 12px;
+}
+.ost {
+	background-color: #cccccc;
+	color: #990000;
+	width: 45px;
+	height: 35px;
+	font: bold 28px Arial;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -khtml-border-radius:3px;
+    border-radius: 3px;	
+}
+#ost_time {
+    text-align: center;
+	margin-left: 100px;
+	height: 48px;
+}
+/* Конец Таймер обратного отсчета*/

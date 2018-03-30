@@ -1,0 +1,123 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+fieldset { position: relative; }
+:focus { outline: 0; }
+body { line-height: 1; color: black; background: white;  }
+ol, ul { list-style: none; }
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+div.clr { position: relative; display: block; float: none; clear: both; left: 0px; top: 0px; width: 1px; height: 0px; margin: 0px; padding: 0px; overflow: hidden; visibility: hidden;}
+/* reset */
+
+
+@font-face {
+    font-family: 'DINCondLight';
+    src: url('../index_files/din_condensed_light.eot');
+    src: url('../index_files/din_condensed_light.eot?#iefix') format('embedded-opentype'),
+         url('../index_files/din_condensed_light.woff') format('woff'),
+         url('../index_files/din_condensed_light.ttf') format('truetype'),
+         url('../index_files/din_condensed_light.svg#DINCondLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINCondBold';
+    src: url('../index_files/din_condensed_bold.eot');
+    src: url('../index_files/din_condensed_bold.eot?#iefix') format('embedded-opentype'),
+         url('../index_files/din_condensed_bold.woff') format('woff'),
+         url('../index_files/din_condensed_bold.ttf') format('truetype'),
+         url('../index_files/din_condensed_bold.svg#DINCondBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.hash {
+	width: 1px;
+	height: 1px;
+	font-size: 0px;
+	display: inline-block;
+	float: none;
+	clear: both;
+	background: #fff;
+	position: relative;
+	visibility: hidden;
+}
+
+body {
+	background: #decfbc url(../index_files/bg.jpg) repeat;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* */
+
+div.wrp {
+	margin: 0 auto;
+	position: relative;
+}
+
+div.blue {
+	background: #3c88ab url(../index_files/bg_blue.jpg) repeat;
+	width: 100%;
+	position: relative;
+}
+
+div.blue div.rip {
+	width: 100%;
+	height: 60px;
+	background: url(../index_files/blue_rip.png) center 0 repeat-x;
+	position: absolute;
+	bottom: -60px;
+	z-index: 7;
+}
+
+div.blue div.grad {
+	width: 100%;
+	height: 90px;
+	background: url(../index_files/blue_rip_gradient.png) center 0 repeat-x;
+	position: absolute;
+	bottom: 0;
+	z-index: 7;
+}
+
+/* */
+
+div.orange {
+	background: #eba020 url(../index_files/bg_orange.jpg) repeat;
+	width: 100%;
+	position: relative;
+	z-index: 5;
+}
+
+div.orange div.rip {
+	width: 100%;
+	height: 60px;
+	background: url(../index_files/orange_rip.png) center 0 repeat-x;
+	position: absolute;
+	bottom: -60px;
+	z-index: 6;
+}
+
+div.orange div.grad {
+	width: 100%;
+	height: 90px;
+	background: url(../index_files/orange_rip_gradient.png) center 0 repeat-x;
+	position: absolute;
+	bottom: 0;
+	z-index: 6;
+}
+
+div.orange div.wrp {
+	position: relative;
+	z-index: 7;
+}

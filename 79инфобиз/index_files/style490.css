@@ -1,0 +1,35 @@
+
+
+h3  {
+font-family: Arial;
+	font-size:24px;
+}
+
+h2  {
+font-family: Arial;
+	font-size:38px;
+	color: #92000a;
+}
+
+
+h2  ul {
+font-family: Arial;
+	font-size:38px;
+	color: #cccccc;
+}
+
+.problem  {
+
+font-size:26px;
+line-height:2.2;
+}
+
+.sol  {
+
+font-size:26px;
+line-height:2.2;
+}
+
+.style1 {
+font-size:24px;
+}

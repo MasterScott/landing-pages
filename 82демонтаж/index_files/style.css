@@ -1,0 +1,650 @@
+@import url(reset.css);
+
+#wrapper {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    
+    }
+#header{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+#footer{
+    width: 1000px;
+    height: 130px;
+    margin: 0 auto;
+}
+#content {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.clear{
+    height: 0; font-size: 0; overflow: hidden; clear: both;
+}
+
+/* Начало блока шапка*/
+
+#logo {
+    position: relative;
+
+}
+#logo1 {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+#logo2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#logo p.p {
+    text-align: center;
+    font: 17px  Arial, sans-serif;
+    color: #333333;
+    padding-left: 190px;
+    padding-top: 25px;
+}
+
+#logo p.p span{
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+}
+#logo p.p2 {
+    text-align: center;
+    font: 17px  Arial, sans-serif;
+    color: #333333;
+    padding-left: 160px;
+    padding-top: 25px;
+}
+
+#logo p.p2 span{
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+}
+
+#logo a.site {
+    width: 150px;
+    font: 15px  Arial, sans-serif;
+    color: #333333;
+    position: absolute;
+    top: 45px;
+    left: 520px;
+}
+
+#headerleft {
+    float: left;
+}
+
+
+#phone {
+    float: right;
+    text-align: center;
+    padding-right: 10px;
+    padding-top: 12px;
+}
+.voprosy{
+    font: 14px Arial, sans-serif;
+    color: #333333;
+}
+.tel{
+    font: 20px "Arial Black", sans-serif;
+    color: #333333;
+}
+.bespl{
+    font: 14px Arial, sans-serif;
+    color: #333333;
+}
+.adress{
+    font: 15px Arial, sans-serif;
+    color: #333333;
+    padding-top: 4px;
+}
+.zakazzv{
+    padding-top: 10px;
+}
+
+/* Конец блока шапка*/
+
+h1{
+   font: 22px "Arial Black", sans-serif;
+   color: #333333;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 10px; 
+}
+h1 span{
+   display: block;
+   font: 17px Arial, sans-serif;
+   color: #333333;
+   text-align: center;
+   line-height: 1.5;
+   padding-top: 5px;
+   padding-bottom: 5px; 
+}
+/* Начало блока формы*/
+#zayavka {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#bigimg {
+    width: 1000px;
+    position: relative;
+}
+
+#bigimg p.bigimg{
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 370px;
+    font: bold 15px Arial, sans-serif;
+    color: #000033;
+    width: 380px;
+    height: 175px;
+    line-height: 1.5;
+    float: left;
+}
+
+#timer1{
+    position: absolute;
+    top: 125px;
+    left: 420px;
+}
+#bigimg img.strelka{
+    position: absolute;
+    top: 155px;
+    left: 610px;
+}
+#form{
+    float: right;
+    width: 291px;
+    height: 321px;
+    position:absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    background: url(../images/bgform1.png) no-repeat;
+    
+}
+p.legend1{
+    font: 18px "Arial Black", sans-serif;
+    color: #fde910;
+    text-align: center;
+    padding-top: 15px;
+}
+p.legend2{
+    font: bold 15px Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+p.otpravit{
+    padding-top: 4px;
+    text-align: center;
+}
+p.dokonca{
+    padding-bottom: 5px;
+    font: bold 14px Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+}
+p.photo{
+    font: 14px Arial, sans-serif;
+    color: #ffffff;
+    padding-top: 7px;
+}
+p.conf{
+    font: 12px Arial, sans-serif;
+    color: #ffffff;
+    padding-top: 2px;
+}
+.input {
+    font: 17px Arial, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    height: 25px;
+    width: 213px;
+    text-align: center;
+    margin-top: 7px;
+}
+
+
+.input:focus:-moz-placeholder{
+   color: transparent;
+   }
+ 
+.input:focus::-webkit-input-placeholder{
+   color: transparent;
+   }
+
+.input::-webkit-input-placeholder { /* для webkit браузеров */
+	font: 17px Calibri, sans-serif;
+    color: #666666;
+}
+.input:-moz-placeholder { /* для браузеров mozilla */
+	font: 17px Calibri, sans-serif;
+    color: #666666;
+}
+#input p.legend{
+    font: 18px Arial, sans-serif;
+    color: #000033;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#input p.inputbg1{
+    margin-top: 10px;
+}
+#input p.otpravit{
+    margin-top: 10px;
+}
+/* Конец блока формы*/
+
+#triggery {
+    margin-top: 10px;
+}
+#triggery img.img{
+    padding-left: 1px;
+}
+
+#blocks{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#block1 {
+    margin-left: 0px;
+    width: 323px;
+    height: 356px;
+    background-image: url(../images/bgblock.png);
+    background-repeat: no-repeat;
+    float: left;
+    position: relative;
+}
+#block2 {
+    margin-left: 15px;
+    width: 323px;
+    height: 356px;
+    background-image: url(../images/bgblock.png);
+    background-repeat: no-repeat;
+    float: left;
+    position: relative;
+}
+#block3 {
+    margin-left: 15px;
+    width: 323px;
+    height: 356px;
+    background-image: url(../images/bgblock.png);
+    background-repeat: no-repeat;
+    float: left;
+    position: relative;
+}
+#blocks h2{
+    font: bold 20px Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 25px;  
+}
+#blocks h3{
+    font: 19px "Arial Black", sans-serif;
+    color: #333333;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 35px;
+}
+
+#blocks p.knopka{
+    position: absolute;
+    top: 310px;
+    left: 50px;
+}
+
+/* Начало блока почему мы*/
+
+#problems {
+    width: 1000px;
+    margin: 30px auto 0 auto;
+    padding-bottom: 20px;
+    
+}
+
+#problems h2 {
+    font: bold 20px Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#problems p{
+    font: 18px Arial, sans-serif;
+    color: #333333;
+    width: 920px;
+    float: left;
+    padding: 15px 0 0 20px;
+}
+#problems img.spisok {
+    float: left;
+    margin: 15px 0 0 10px;  
+}
+
+
+#problems2 {
+    width: 1000px;
+    margin: 30px auto 0 auto;
+    padding-bottom: 20px;
+    position: relative;
+    
+}
+
+#problems2 h2 {
+    font: bold 20px Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#problems2 p{
+    font: 18px Arial, sans-serif;
+    color: #333333;
+    width: 780px;
+    float: left;
+    padding: 15px 0 0 20px;
+}
+#problems2 img.spisok {
+    float: left;
+    margin: 15px 0 0 160px;  
+}
+#problems2 img.img {
+    position: absolute;
+    top: 20px;
+    left: 0px; 
+}
+
+#kaksnosim {
+    width: 1000px;
+    margin: 30px auto 0px auto;
+    padding-bottom: 20px;
+    position: relative;
+    
+}
+
+#kaksnosim h2 {
+    font: bold 20px Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#kaksnosim p{
+    float: left;
+}
+#kaksnosim p.p1{
+    padding-right: 35px;
+    padding-left: 13px;
+}
+
+
+#kaksnosim2 {
+    width: 898px;
+    margin: 10px auto 30px auto;
+    padding-bottom: 20px;
+    position: relative;
+    
+}
+
+#kaksnosim2 h2 {
+    font: bold 20px Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#kaksnosim2 p{
+    float: left;
+}
+#kaksnosim2 p.p1{
+    padding-right: 35px;
+    padding-left: 13px;
+}
+
+#guaranty {
+    width: 1000px;
+    margin: 50px auto 0 auto;
+    padding-bottom: 20px;
+    
+}
+
+#guaranty h2 {
+    font: bold 20px Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#guaranty p {
+    text-align: center;
+}
+#guaranty img.img{
+    padding-right: 50px;
+}
+#klienty{
+    width: 1000px;
+    margin: 50px auto 0 auto;
+    padding-bottom: 20px;
+}
+
+#klienty h2 {
+    font: bold 20px Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#klienty p {
+    text-align: center;
+}
+
+#proekty{
+    width: 1000px;
+    margin: 50px auto 0 auto;
+    padding-bottom: 20px;
+}
+#proekty h2 {
+    font: bold 20px Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#proekt {
+    margin: 0px auto 30px auto;
+    width: 898px;
+    height: 439px;
+    background-image: url(../images/bgproekt.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#proekt img.strelka2{
+    position: absolute;
+    top: 120px;
+    left: 444px;
+}
+
+#bylo{
+    width: 404px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 50px;    
+}
+#stalo{
+    width: 404px;
+    margin-top: 15px;
+    float: left;
+}
+#proekt p.name{
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#proekt p.opis{
+    font: 18px Arial, sans-serif;
+    color: #333333;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+#proekt p.otzyv{
+    font: 16px Arial, sans-serif;
+    color: #333333;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+#proekt p.otzyv span{
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+}
+#proekt a{
+    display: block;
+    font: 14px Arial, sans-serif;
+    color: #0066cc;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+#sert{
+    width: 1000px;
+    margin: 10px auto 0 auto;
+    padding-bottom: 20px;
+}
+
+#sert h2 {
+    font: bold 20px Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+#sert p {
+    text-align: center;
+}
+
+#shema{
+    width: 1000px;
+    margin: 50px auto 0 auto;
+    padding-bottom: 20px;
+}
+
+#shema h2 {
+    font: bold 20px Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#shema p {
+    text-align: center;
+    margin-left: -13px;
+}
+
+#form2bg{
+    text-align: center;
+    width: 933px;
+    height: 343px;
+    background: url(../images/bgform2.jpg) no-repeat;
+    margin: 40px auto;
+    position: relative;
+}
+
+#form2{
+    width: 291px;
+    height: 321px;
+    text-align: center;
+    background: url(../images/bgform1.png) no-repeat;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+#form2bg p.p{
+    width: 300px;
+    height: 280px;
+    font: 18px Arial, sans-serif;
+    color: #333333;
+    position: absolute;
+    top: 35px;
+    left: 290px;
+}
+#form2bg p.p span{
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+
+}
+#form2bg img.strelka{
+    position: absolute;
+    top: 200px;
+    left: 580px;
+}
+
+#line{
+    margin: 10px auto;
+}
+
+/* Таймер обратного отсчета*/
+.counter{
+    padding-left: 20px;
+}
+.counter > p{
+	display: inline-block;
+	font: 22px "Trebuchet MS", sans-serif;
+	line-height: 36px;
+	background: url(../images/timer-bg.png) repeat-x;
+	width: 37px;
+	padding: 0 0 0 3px;
+	letter-spacing: 9px;
+	color:#fff;
+	margin-top:2px;
+}
+.counter > div > p{
+	display: inline-block;
+	font: bold 14px Arial, sans-serif;
+    color: #000033;
+	width: 30px;
+    margin-top: 0px;
+    padding-left: 8px;
+    padding-right: 14px;
+    float: left;
+}
+
+.cntSeparator {
+font-size: 24px;
+padding-top: 5px;
+margin-left: 3px;
+margin-right: 3px;
+color: #000;
+}
+/* Конец Таймер обратного отсчета*/
+
+.filebg{
+    text-align: center; overflow: hidden; width: 213px; height: 26px; border: none; background: url(../images/bgfile.png); margin: 8px auto 0 auto;
+}
+
+.prikrepit {
+    color: #666666; font: 14px Arial; line-height: 25px; padding-left: 20px;
+}
+
+#file{
+    margin-top: -50px; margin-left:-410px;  -moz-opacity: 0;  filter: alpha(opacity=0);   opacity: 0;  font-size: 150px; height: 25px;
+}
+
+#filename{
+    height: 5px;
+    font: 11px Arial, sans-serif;
+    color: #000000;
+}

@@ -1,0 +1,604 @@
+@import url(reset.css);
+
+
+@font-face {
+    font-family: 'a_futuricaltextrabold';
+	    src: url('a_FuturicaLt-extrabold.eot');
+    src: url('a_FuturicaLt-extrabold.eot?#iefix') format('embedded-opentype'),
+         url('a_FuturicaLt-extrabold.woff') format('woff'),
+         url('a_FuturicaLt-extrabold.ttf') format('truetype'),
+         url('a_FuturicaLt-extrabold.svg#a_futuricaltextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'a_futuricaltregular';
+	    src: url('a_FuturicaLt-extrabold.eot');
+    src: url('a_FuturicaLt-regular.eot?#iefix') format('embedded-opentype'),
+         url('a_FuturicaLt-regular.woff') format('woff'),
+         url('a_FuturicaLt-regular.ttf') format('truetype'),
+         url('a_FuturicaLt-regular.svg#a_futuricaltregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#wrapper {
+    width: 100%;
+    height: auto;
+    background-image: url(../index_files/bg.png);
+    background-repeat: repeat;
+    
+    }
+#headerbg{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    background-repeat: repeat;  
+    }
+    
+#zayavkabg{
+    width: 100%;
+    height: auto;
+    background-image: url(../index_files/bgzayavka.png);
+    background-repeat: repeat;  
+    }
+#header{
+    width: 1000px;
+    height: 228px;
+    margin: 0 auto;
+}
+#contentbg{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    }
+#content {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#footer {
+    width: 1010px;
+    height: 150px;
+    margin: 0px auto;
+}
+
+.clear{
+    height: 0; font-size: 0; overflow: hidden; clear: both;
+}
+
+/* Начало блока шапка*/
+
+#logo {
+    position: relative;
+
+}
+#logo1 {
+    position: absolute;
+    top: 0px;
+    left: 500px;
+}
+
+#logo h1 {
+    padding-top: 15px;
+    width:500px;
+    font: bold 26px a_futuricaltextrabold, Arial, sans-serif;
+    color:#3366cc;
+    text-align: center;
+    line-height: 1.5;
+}
+#logo p {
+    font: 23px a_futuricaltregular, Arial, sans-serif;
+    color:#333333;
+    text-align: center;
+    padding-top: 10px;
+}
+#headerleft {
+    float: left;
+}
+
+
+#phone {
+    float: right;
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.voprosy{
+    font: bold 23px a_futuricaltextrabold, Arial, sans-serif;
+    color: #000000;
+}
+.tel{
+    font: bold 23px a_futuricaltextrabold, Arial, sans-serif;
+    color: #333333;
+}
+
+.rezhim{
+    font: 19px a_futuricaltregular, Arial, sans-serif;
+    color: #000000;
+    padding-top: 10px;
+}
+
+.zakazzv {
+    padding-top: 10px;
+}
+
+/* Конец блока шапка*/
+/* Начало блока триггеры*/
+
+#triggersbg {
+    width: 100%;
+    height: 66px;
+}
+
+#triggers {
+    width: 1000px;
+    height: 66px;
+    margin: 0 auto;
+}
+
+
+#triggers p {
+    float: left;
+}
+
+#triggers p.t1 {
+    float: left;
+    width: 240px;
+    font: 22px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-top: 17px;
+}
+#triggers p.t2 {
+    float: left;
+    width: 266px;
+    font: 22px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-top: 17px;
+}
+#triggers p.t3 {
+    float: left;
+    width: 220px;
+    font: 22px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-top: 17px;
+}
+
+
+#triggers img {
+    float: left;
+    padding-top: 12px;
+}
+
+#triggers p.trigger1{
+    padding-left: 20px;
+}
+#triggers p.trigger2{
+    padding-left: 40px;
+}
+#triggers p.trigger3{
+    padding-left: 40px;
+}
+
+/* Конец блока триггеры*/
+
+/* Начало блока формы*/
+#zayavka {
+    width: 1000px;
+    height: 410px;
+    margin: 0 auto;
+}
+
+#bigimg {
+    width: 1000px;
+    height: 410px;
+    position: relative;
+}
+
+#bigimg p.bigimg{
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font: 22px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+}
+#bigimg p.bigimg span{
+    font: 22px a_futuricaltregular, Arial, sans-serif;
+    color: #3366cc;
+}
+
+#bigimg p.bigimg span.zacherk{
+    text-decoration: line-through;
+    font: 22px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+}
+
+#bigimg img.bigimg{
+    position: absolute;
+    top: 13px;
+    left: 20px;    
+}
+#timer{
+    text-align: center;
+    width: 310px;
+    height: 120px;
+    position: absolute;
+    top: 130px;
+    right: 110px;    
+}
+p.dokonca {
+    font: 20px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+}
+#form{
+    width: 290px;
+    height: 163px;
+    position: absolute;
+    top: 235px;
+    right: 120px;
+    text-align: center; 
+}
+p.legend{
+    font: 20px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+    padding-top: 0px;
+    padding-left: 8px;
+    text-align: center;
+}
+
+
+p.inputbg1{
+    display: block;
+    height: 44px;
+    width: 280px;
+    background-image: url(../index_files/input1.png);
+    background-repeat: no-repeat;
+    margin: 0 auto 15px auto;
+    text-align: center;
+}
+p.inputbg2{
+    display: block;
+    height: 44px;
+    width: 280px;
+    background-image: url(../index_files/input2.png);
+    background-repeat: no-repeat;
+    margin: 0 auto 15px auto;
+    text-align: center;
+}
+
+.input {
+    font: 20px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    width: 260px;
+    text-align: left;
+}
+
+
+.input:focus:-moz-placeholder{
+   color: transparent;
+   }
+ 
+.input:focus::-webkit-input-placeholder{
+   color: transparent;
+   }
+
+.input::-webkit-input-placeholder { /* для webkit браузеров */
+	font: 18px a_futuricaltregular, Arial, sans-serif;
+    color: #666666;
+}
+.input:-moz-placeholder { /* для браузеров mozilla */
+	font: 18px a_futuricaltregular, Arial, sans-serif;
+    color: #666666;
+}
+
+.popup p{
+    font: 18px a_futuricaltregular, Arial, sans-serif, sans-serif;
+    color: #333333;
+    margin-top: 6px;
+    text-align: center;
+}
+.popup p span{
+    font: 16px a_futuricaltregular, Arial, sans-serif, sans-serif;
+    color: #990000;
+    margin-top: 6px;
+    text-align: center;
+}
+
+
+/* Конец блока формы*/
+
+#content p.text{
+    text-align: center;
+    padding-top: 20px;
+    margin: 0px auto;
+    font: 22px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+}
+
+#content p.text span{
+    text-align: center;
+    font: 22px a_futuricaltregular, Arial, sans-serif;
+    color: #3366cc;
+}
+
+#primery{
+    width: 963px;
+    margin: 0px auto 0 auto;
+    padding-bottom: 30px;
+}
+#primery p{
+    text-align: center;
+    padding-top: 25px;
+}
+#primery img.img{
+    margin-left: 20px;
+}
+
+/* Начало блока почему мы*/
+
+#problems {
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 45px;
+    
+}
+
+#problems h2 {
+    font: bold 25px 'a_futuricaltextrabold', Arial, sans-serif;
+    color: #3366cc;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 20px;
+}
+
+#problems p.p1 {
+    font: 23px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+    width: 910px;
+    float: left;
+    padding: 25px 0 0 20px;
+}
+#problems p.p2 {
+    font: 23px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+    width: 910px;
+    float: left;
+    padding: 15px 0 0 20px;
+}
+#problems p.p3 {
+    font: 23px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+    width: 910px;
+    float: left;
+    padding: 25px 0 0 20px;
+}
+
+#problems p.p4 {
+    font: 23px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+    width: 910px;
+    float: left;
+    padding: 15px 0 0 20px;
+}
+#problems p span {
+    font: 23px a_futuricaltregular, Arial, sans-serif;
+    color: #3366cc;
+}
+#problems img.spisok {
+    float: left;
+    margin: 17px 0 0 10px;  
+}
+#problems img.spisok2 {
+    float: left;
+    margin: 17px 0 0 20px;  
+}
+
+#problems2 {
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    
+}
+
+#problems2 h2 {
+    font: bold 25px 'a_futuricaltextrabold', Arial, sans-serif;
+    color: #333333;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+#problems2 p {
+    font: 23px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+    width: 910px;
+    float: left;
+    padding: 25px 0 0 20px;
+}
+#problems2 p span {
+    font: 23px a_futuricaltregular, Arial, sans-serif;
+    color: #3366cc;
+}
+#problems2 img.spisok {
+    float: left;
+    margin: 25px 0 0 40px;  
+}
+
+/* Конец блока почему мы*/
+#form2bg{
+    width: 1000px;
+    height: 350px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#form2bg img.img{
+    position: absolute;
+    top: 32px;
+    left: 21px;
+}
+#form2{
+    text-align: center;
+    width: 490px;
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+#form2 p.legend{
+    font: 22px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+}
+#form2 p.legend span{
+    font: 22px a_futuricaltregular, Arial, sans-serif;
+    color: #3366cc;
+}
+
+#form2 p.inputbg1 {
+    margin-top: 15px;
+}
+
+/* Начало блока отзывы*/
+
+#otzyvy{
+    width: 1000px;
+    height: auto;
+    margin: 0px auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#otzyvy h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font: bold 25px a_futuricaltextrabold, Arial, sans-serif;
+    color: #3366cc;
+    text-align: center;
+}
+
+#otzyvtext{
+    width: 850px;
+    margin: 0 auto;
+}
+#slider1 p.img {
+    float: left;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+#slider1 p.otzyv {
+    width: 650px;
+    font: 20px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+    text-align: left;
+    line-height: 1;
+    float: left;
+}
+#slider1 p.otzyv span{
+    font: 22px a_futuricaltregular, Arial, sans-serif;
+    color: #3366cc;
+}
+
+
+
+/* Конец блока отзывы*/
+#content p.text2 {
+    text-align: center;
+    font: 22px a_futuricaltregular, Arial, sans-serif;
+    color: #333333;
+    padding-top: 30px;
+}
+
+#content p.text2 span{
+    text-align: center;
+    font: 22px a_futuricaltregular, Arial, sans-serif;
+    color: #3366cc;
+}
+
+#content p.knopka {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+/* Начало блока футер*/
+#wide{
+    width: 100%;
+    height: auto;
+    background-image: url(../index_files/bgheader.png);
+    background-repeat: repeat;   
+}
+
+#footer p{
+    font: 22px a_futuricaltregular, Arial, sans-serif;
+    color: #ffffff;
+    padding: 19px 0 0 5px;
+}
+#footer p span{
+    font: 18px a_futuricaltregular, Arial, sans-serif;
+    color: #ffffff;
+    padding: 19px 0 0 5px;
+}
+#footer a{
+    font: 18px a_futuricaltregular, Arial, sans-serif;
+    color: #ffffff;
+}
+
+#footer p.p1{
+    float: left;
+    line-height: 1.5;  
+}
+#footer p.p2{
+    float: right;
+    text-align: right;
+    line-height: 1.5;  
+}
+
+/* Конец блока футер*/
+
+/* Таймер обратного отсчета*/
+
+.counter{
+    margin-left: 65px;
+    margin-top: 0px;
+}
+.counter > p{
+	display: inline-block;
+	font: 28px a_futuricaltregular, Arial, sans-serif;
+	line-height: 45px;
+	background: url(../index_files/timer-bg.png) repeat-x;
+	width: 45px;
+	padding: 0 0 0 5px;
+	letter-spacing: 9px;
+	color:#fff;
+	margin-top:5px;
+}
+.counter > div > p{
+	display: inline-block;
+	font: 17px a_futuricaltregular, Arial, sans-serif;
+	width: 50px;
+    padding-top: 0px;
+    padding-right: 14px;
+    float: left;
+}
+
+.cntSeparator {
+font-size: 34px;
+padding-top: 10px;
+margin-left: 3px;
+margin-right: 3px;
+color: #000;
+}
+/* Конец Таймер обратного отсчета*/

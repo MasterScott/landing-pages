@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0025)http://estetikmassage.ru/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Антицеллюлитный массаж, коррекция фигуры по авторскому методу «Estetikmassage»</title>
+<link rel="icon" type="image/gif" href="http://estetikmassage.ru/favicon.gif">
+<link type="text/css" href="./index_files/style.css" rel="stylesheet">
+<link href="./index_files/modal.css" rel="stylesheet" type="text/css">
+<link type="text/css" href="./index_files/jquery.bxslider.css" rel="stylesheet">
+<!-- jQuery library (served from Google)-->
+<script type="text/javascript" async="" src="./index_files/watch.js"></script><script src="./index_files/jquery.min.js"></script>
+<script src="./index_files/jquery.bxslider.min.js" type="text/javascript"></script>
+<script src="./index_files/jquery.bxslider.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#slider1').bxSlider();
+  });
+</script>
+<script type="text/javascript">// <![CDATA[
+$(document).ready(function(){
+    function counter(){
+        var now = new Date();
+        var finDate = new Date("may,31,2020,00:00:00");
+        var totalRemains = (finDate.getTime() - now.getTime());
+        if (totalRemains > 1){
+            var RemainsSec = (parseInt(totalRemains / 1000));
+            var RemainsFullDays = (parseInt(RemainsSec/(24 * 60 * 60)));
+             if (RemainsFullDays < 10){
+                RemainsFullDays = "0" + RemainsFullDays
+            };
+            var secInLastDay = RemainsSec-RemainsFullDays * 24 * 3600;
+            var RemainsFullHours = (parseInt(secInLastDay / 3600));
+            if (RemainsFullHours < 10){
+                RemainsFullHours = "0" + RemainsFullHours
+            };
+            var secInLastHour = secInLastDay - RemainsFullHours * 3600;
+            var RemainsMinutes = (parseInt(secInLastHour / 60));
+            if (RemainsMinutes < 10){
+                RemainsMinutes = "0" + RemainsMinutes
+            };
+            var lastSec = secInLastHour - RemainsMinutes * 60;
+            if (lastSec < 10){
+                lastSec = "0" + lastSec
+            };
+            $(".counter .days").html(RemainsFullDays);
+            $(".counter .hours").html(RemainsFullHours);
+            $(".counter .minutes").html(RemainsMinutes);
+            $(".counter .seconds").html(lastSec);
+        }
+        else {
+            $(".counter").html("Акция закончилась :(");
+        }
+    };
+    setInterval(counter, 1000);
+});
+// ]]></script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="headerbg">
+        <div id="header">
+            <div id="headerleft">
+                <div id="logo">
+                    <h1>Антицеллюлитный массаж, <br>коррекция фигуры по авторскому<br> методу «Estetikmassage»</h1>
+                    <p>Лучший сервис по коррекции<br>фигуры на дому в Москве.</p>
+                    <a id="logo1" href="./index_files/index.htm"><img src="./index_files/logo1.jpg"></a>                                        
+                </div>
+            </div>             
+            <div id="phone">
+                <p class="tel">8 (916) 981-74-34</p>              
+                <p class="zakazzv"> <a href="http://estetikmassage.ru/#zakazatzvonok" id="join_pop"><img src="./index_files/zakazzv.png"></a></p>
+                <p class="rezhim">время работы<br>с 10:00 – 22:00</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="triggersbg">
+        <div id="triggers">
+            <p class="trigger1"><img src="./index_files/trigger.png" width="46" height="46" align="middle"></p><p class="t1">7 лет успешной работы</p><p></p>
+            <p class="trigger2"><img src="./index_files/trigger.png" width="46" height="46" align="middle"></p><p class="t2">100 % гарантия результата</p><p></p>
+            <p class="trigger3"><img src="./index_files/trigger.png" width="46" height="46" align="middle"></p><p class="t3">Более 700 клиентов</p><p></p>
+            <strong></strong>
+        </div>
+    </div>
+    <div id="zayavkabg">
+        <div id="zayavka">
+            <div id="bigimg">
+                <img class="bigimg" src="./index_files/bigimg.png" width="960" height="385">
+                <p class="bigimg">Получите тело своей мечты <span>со скидкой 12 000 руб.</span><br>Цена за курс из 12 сеансов всего <span class="zacherk">38 000 руб</span><br><span><b>26 000 руб.</b></span> + обертывание в подарок!</p>
+                <div id="timer">
+                    <p class="dokonca">до конца акции осталось:</p>
+                    <div class="counter">
+        				<p class="hours" style="float: left;">04</p><div class="cntSeparator" style="float: left;">:</div>
+        				<p class="minutes" style="float: left;">12</p><div class="cntSeparator" style="float: left;">:</div>
+                        <p class="seconds" style="float: left;">28</p>
+                        <div class="clear"></div>
+        				<div>
+        					<p>час</p>
+  							<p>мин</p>
+                            <p>сек</p>
+   						</div>
+                    </div>
+                </div>           
+                <div id="form">
+                    <form action="http://estetikmassage.ru/formdata_email.php" method="POST" name="form1" target="_blank">
+                        <p class="inputbg1"><input class="input" type="text" name="input_name[0]" placeholder="Введите имя" id="name" required=""></p>
+                        <p class="inputbg2"><input class="input" type="text" name="input_name[1]" placeholder="Введите телефон" id="tel" required=""></p>
+                        <p class="otpravit"><input type="image" src="./index_files/zakazat2.png" name="submit"></p>
+                    </form>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div id="contentbg">
+        <div id="content">
+            <p class="text"><span>Методика Estetikmassage</span> имеет комплексный подход, состоящий из <span>лимфодренажа тела, массажа,<br> вакуумного массажа банками, RF лифтинга на профессиональном аппарате и обертывания.</span><br> Комплекс процедур подбирается индивидуально для каждого клиента. Методика опробирована<br>более чем на 700 клиентах, <span>84% которых получили положительный результат.</span></p>
+            <div id="primery">
+                <p><img src="./index_files/primer1.jpg" width="471" height="276"><img class="img" src="./index_files/primer2.jpg" width="471" height="276"></p>
+                <p><img src="./index_files/primer3.jpg" width="470" height="350"><img class="img" src="./index_files/primer4.jpg" width="470" height="350"></p>
+                <p><img src="./index_files/primer5.jpg" width="461" height="518"><img class="img" src="./index_files/primer6.jpg" width="461" height="518"></p>
+                <p><img src="./index_files/primer7.jpg" width="940"></p>
+            </div>        
+        </div>
+    </div>
+    <div id="problems">
+                    <h2>Преимущества массажа на дому: </h2>
+                   	<img class="spisok" src="./index_files/s1.png">
+                    <p class="p1">В домашней обстановке Вы чувствуете себя <span>спокойно и комфортно.</span></p>
+                    <div class="clear"></div>
+                    <img class="spisok" src="./index_files/s2.png">
+                    <p class="p2">Массаж на дом показывает <span>большую эффективность,</span> чем та же процедура в салоне или другом учреждении. Это связано с тем, что после расслабляющего сеанса Вам не нужно никуда спешить, ехать, а значит, что Вы можете сохранить позитивные впечатления намного дольше.</p>
+                    <div class="clear"></div>
+                    <img class="spisok" src="./index_files/s3.png">
+                    <p class="p3">Вы <span>экономите</span> драгоценное <span>время и средства</span> на дорогу.</p>
+                    <div class="clear"></div>
+                    <img class="spisok2" src="./index_files/s4.png">
+                    <p class="p4">Мы первые,кто предоставляет <span>комплексный подход</span> коррекции фигуры на дому, включая аппаратную косметологию.</p>
+                    <div class="clear"></div>
+    </div>
+    <div id="zayavkabg">
+        <div id="form2bg">
+            <img class="img" src="./index_files/bgform1.png" width="957" height="286">
+            <div id="form2">
+                    <form action="http://estetikmassage.ru/formdata_email.php" method="POST" name="form1" target="_blank">
+                        <p class="legend">Запишитесь на курс из 12 сеансов прямо сейчас<br>и получите <span>лимфодренаж и обертывание<br>в подарок!</span></p>
+                        <p class="inputbg1"><input class="input" type="text" name="input_name[0]" placeholder="Введите имя" id="name" required=""></p>
+                        <p class="inputbg2"><input class="input" type="text" name="input_name[1]" placeholder="Введите телефон" id="tel" required=""></p>
+                        <p class="otpravit"><input type="image" src="./index_files/zakazat2.png" name="submit"></p>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <div id="problems2">
+                    <h2>11 причин доверить свой путь к красивому телу нам:</h2>
+                   	<img class="spisok" src="./index_files/spisok.png">
+                    <p><span>Семь лет</span> успешной работы на рынке.</p>
+                    <div class="clear"></div>
+                    <img class="spisok" src="./index_files/spisok.png">
+                    <p>Более <span>700 довольных клиентов,</span> с потрясающими результатами.</p>
+                    <div class="clear"></div>
+                    <img class="spisok" src="./index_files/spisok.png">
+                    <p>Использование <span>профессиональной</span> французской косметики.</p>
+                    <div class="clear"></div>
+                    <img class="spisok" src="./index_files/spisok.png">
+                    <p><span>Квалифицированные</span> сотрудники.</p>
+                    <div class="clear"></div>
+                    <img class="spisok" src="./index_files/spisok.png">
+                    <p>Наши сотрудники пребывают строго в назначенное время <span>без опозданий.</span></p>
+                    <div class="clear"></div>
+                    <img class="spisok" src="./index_files/spisok.png">
+                    <p><span>100% гарантия</span> возврата денег, если вы остаетесь не довольны результатом.</p>
+                    <div class="clear"></div>
+                    <img class="spisok" src="./index_files/spisok.png">
+                    <p>Гарантия <span>конфиденциальности</span> ваших данных.</p>
+                    <div class="clear"></div>
+                    <img class="spisok" src="./index_files/spisok.png">
+                    <p><span>Большой опыт работы</span> в направлении корреции фигуры на разных стадиях запущенности.</p>
+                    <div class="clear"></div>
+                    <img class="spisok" src="./index_files/spisok.png">
+                    <p>Постоянным клиентам скидки.</p>
+                    <div class="clear"></div>
+                    <img class="spisok" src="./index_files/spisok.png">
+                    <p>Мы не оставляем синяков и наши процедуры максимально <span>приятны и комфортны.</span></p>
+                    <div class="clear"></div>
+                    <img class="spisok" src="./index_files/spisok.png">
+                    <p>У нас <span>комплексный подход за фиксированную стоимость.</span> Вам не нужно думать о дополнительных тратах.</p>
+                    <div class="clear"></div>
+    </div>
+    <div id="contentbg">
+        <div id="otzyvy">
+            <h2>Отзывы наших клиентов:</h2>
+            <div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 210px;"><ul id="slider1" style="width: 4515%; position: relative; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(-1000px, 0px, 0px);"><li style="float: left; list-style: none; position: relative; width: 1000px;" class="bx-clone">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv17.jpg" width="160"></p>
+                    <p class="otzyv"><span>Ксения Романова http://vk.com/romanovaks</span><br>Хочу сказать БОЛЬШОЕ спасибо Дмитрию! Он настоящий волшебник! Самый что ни на есть!!!)))
+Сперва, когда я увидела его работы, то подумала, что да, все классно, но наверное так будет ни у всех... А уже после первой процедуры я почувствовала и увидела результат!!! Сама по себе я девушка миниатюрная, но от пассивного образа жизни у меня стали появляться бока, Дима с ними расправился! Я ему ооооочень благодарна! Девочки, кто также сперва думает, что на фотографиях - это чудо не для всех и у вас такого не будет, не сомневайтесь - БУДЕТ!!! Он реально молодец и ему под силу все!</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv5.jpg" width="160"></p>
+                    <p class="otzyv"><span>Анастасия Кунцевич http://vk.com/krasota_nezemnaya</span><br>Димочка-это лучшее что случилось со мной этим летом!)<br> минус 1,5 размера и я красивая и довольная)<br> Дима, и рассмешит, и выслушает, и когда надо даже накормит, и утешит)))<br> Дима-ты лучший!<br> у тебя руки от Бога!<br> моя осиная талия и стройные ноги буду помнить тебя всегда) вот только от меня теперь тебе ни-ког-да не избавиться) с любовью, постоянная клиентка, похудевшая и довольная!)))</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">  
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv19.jpg" width="160"></p>
+                    <p class="otzyv"><span>Ирина, г.Москва, http://vk.com/isypchenko</span><br>Девочки, этот человек вершит великие дела!!! он по 12 часов в сутки не вылезает из своей норы, чтоб мы стали стройнее и красивее безо всяких на то усилий! могу сказать, что за 12 сеансов Дима добился того, на что у меня уходит несколько месяцев адовых тренировок и диет))) минус 2 кг и сколько-то см (и Дима говорит, что вес будет уходить и дальше), точеные ножки, талия, ушли бока, не говоря уж о том, что кожа в целом стала более гладкой и подтянутой!	в общем, за цену сережек от дольче габбана из вас делают Синди Кроуфорд =) рекомендую всем!! И, да, советую не портить эту красоту и перестать жрать сладкое))</p>
+                </div>   
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">  
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv18.jpg" width="160"></p>
+                    <p class="otzyv"><span>Кристина Козырева, г.Москва, http://vk.com/kristina.kozyreva</span><br>Дима, спасибо тебе большое еще раз! Девочки, я ходила к Диме зимой, а сейчас закончился мой летний курс процедур, и во второй раз это полный восторг! Дима подбирает программу именно для Вас и Ваших проблемных зон, учитывает все пожелания, индивидуально выбирает процедуры для каждой! А главное, от сеанса к сеансу ты видишь результат! да еще какой) К такому мастеру хочется вернуться самой и посоветовать всем окружающим! А еще, Дима - человек с удивительно теплой энергетикой, и от него уходишь с улыбкой даже в самый тяжелый день! Я обязательно приду зимой! Спасибооо)</p>
+                </div>   
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv20.jpg" width="160"></p>
+                    <p class="otzyv"><span>Регина Александрова, г.Москва, http://vk.com/id43790929</span><br>Сказать что довольна - это наверно будет равносильно тому, что я ничего не скажу! я просто в восторге! во-первых, сам Дмитрий более чем приятен в общении. Действительно индивидуальный подход! внимательно выслушивает все проблемы и не менее внимательно и серьезно берется их исправлять! Дает различные рекомендации. Результаты видны уже после первой процедуры! Что уж говорить про мою четвертую процедурку...! Просто в шоке,насколько меняется состояние моей кожи! Растяжки сглаживаются, целлюлит по-тихоньку "убегает". просто супер! спасибо тебе, Дима! до новых встреч!))</p>
+                </div>   
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv21.jpg" width="160"></p>
+                    <p class="otzyv"><span>Анастасия Вертьянова, г.Москва, http://vk.com/nastya_vertu</span><br>Давно хотела попробовать,что же такое антицеллюлитный массаж, и наконец,я испытала на себе! Девочки, не передать словами - эффект будет 100%, даже независимо от вашего веса. Дима, спасибо тебе большое! Результат на лицо, и на тело) Очень довольна! Буду поддерживать наш результат и щеголять стройными ногами)</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv1.jpg" width="160"></p>
+                    <p class="otzyv"><span>Олечка Потапова http://vk.com/id3155228</span><br>Потрясающий результат, попа принимает более круглую форму и конечно становиться более упругой! Изменение состояния кожи и появление тонуса я заметила уже после первой процедуры, целлюлит стал менее заметен а также уменьшились объемы, ушли бока..Ну и ощущения конечно бесподобны!Спасибо, Дима!!</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv2.jpg" width="160"></p>
+                    <p class="otzyv"><span>Мария Финицкая http://vk.com/id1007584</span><br>ну что я могу сказать о Диме....он супер!!!оч общительный, позитивный и, вообще свой парень)))и ко всем его положительным качествам добавляется реальный профессионализм массажиста !результат его работы заметен не только мне, но и окружающим, многие спрашивают Димкин телефончик и пищат :"я тооооже хоооочууууу", так что всем кто читая эти отзывы решает идти -не идти, будет эффект- не будет, больно это или приятно, маньяк Димка или нет, стоит ли его стесняться и тд советую отбросить все сомнения и прийти попробовать хоть раз, думаю разочарованных не будет)))всем удачи,Димка форевер)))))))))</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv3.jpg" width="160"></p>
+                    <p class="otzyv"><span>Наталия Ларионова http://vk.com/nata_430100</span><br>Дим, спасибо тебе огромное!!!<br>Целлюлит уходит...кожа выравнивается =)<br>По сравнению с 1 процедурой прям красавица, но я верю что будет в сто раз лучше!<br>Год как перестала заниматься спортом и с тело (особенно нижняя часть) стала похожа на бугристый холодец.<br>Курс прошла не до конца, но улучшения потрясающие.<br>Кожа сияет, неровности сгладились, кожа подтянулась.<br>Дима просто волшебник!!!!</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv4.jpg" width="160"></p>
+                    <p class="otzyv"><span>Мария Серебрякова http://vk.com/id32075897</span><br>Решилась на массаж и не зря,анти реально помог,Дима-молодчина!убрал мне лишние сантиметры с бедер,с попы убрал ямочки,которые нас всегда некрасят,теперь моя попа-орешек))талия -идеальна,меня мучили бока,и они убрались с помощью НАШЕГО МАССАЖИСТА!кожа упругая,и всего за 4 занятия))Диме спасибо!!!!!!!!!!!а руки и пальчики такие нежные,это главное!!приехала только с моря,не могла удержаться и танцевала прямо на пляже,весь пляж глазел на мою фигурку)))</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv6.jpg" width="160"></p>
+                    <p class="otzyv"><span>Лиза Китова http://vk.com/id3046109</span><br>Примерно 2 недели назад закончился мой курс массажа.... результаты действительно есть! Результаты, которые заметны не только мне, но и окружающим)) Заметно уменьшились бока, талия)) Очень хорошо выровнялась внутренняя поверхность бедра, ушли ненавистные "коленки", которые никакими другими способами убрать нельзя! По весу ничего не могу сказать, на протяжении курса, я не ограничивала себя в питании, и занятия спортом намного сократились, но многие знакомые говорят, что похудела))) Нужно все совмещать, спорт, правильное питание и массаж. Ко второму курсу подойду более ответственно))</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv7.jpg" width="160"></p>
+                    <p class="otzyv"><span>Юся Ермолова http://vk.com/ermolova_julia</span><br>Девушки, дорогие, это стоит всех затрат: и материальных и временных!!!! Во-первых: Димка - приятный молодой человек, умеет находить общий язык с людьми, что, естевственно,способствует приятному времяпрепровождению:) Во-вторых: Результаты, они ЕСТЬ!!!! К середине сеанса, примерно, Вы и сами их увидите:))) А это так приятно- вроде ничего не делаешь, тебя "мнут", а фигура при этом прям таки оттачивается:)))) В-третьих: весь курс хорошо спланирован, однообразия не будет:))) Перепробуете столько всего, что потом под конец будете сожалеть, что перерыв между курсами аж 3 месяца:(((</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv8.jpg" width="160"></p>
+                    <p class="otzyv"><span>Рита Серикова http://vk.com/id4538730</span><br>Очень рада,что попала к Диме на массаж!!!Ходила к нему как на корректирущий так и на массаж спинки. Полностью отходила курс из 12 сеансов. Результатами довольна! Кожа выровнялась, ушли излишки обьемов.Не знаю с чем это было связано, но по прохождению курса ушло 5 кг!!!! Соблюдала рекомендации Димы по питанию,да и вообще он иной раз любит промыть мозги на счет образа жизни. Начинаешь иначе смотреть на вещи,это положительно радует))) Сейчас с радостью хожу на поддерживающие сеансы раз в неделю.Благо живу неподалеку. Спасибо ,Димулька!!!!)))</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv9.jpg" width="160"></p>
+                    <p class="otzyv"><span>Светлана Кацобашвили http://vk.com/sveton_etoya</span><br>Дима в прямом смысле этого слова творит чудеса!<br>За 8 сеансов у меня ушло по 5 сантиметров с талии и с бёдер, сильно уменьшились бока, живот, кожа на попе оооч подтянулась! Плюс, конечно, рекомендации по питанию- и чувствую себя намного лучше и меньше! В общем, радость и хороше настроение вам будет обеспечены после Димкиных сеансов массажа))))) С удовольствием буду ходить на поддерживающие массажи!!! Всем советую однозначно!</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv10.jpg" width="160"></p>
+                    <p class="otzyv"><span>Наталья Викторова http://vk.com/id7688241</span><br>Димка, тебе привет от моей "новой" попы! Она теперь настоящий крепкий орешек! С удовольствием рассказываю о результатах подругам, и фотки показываю в доказательство!
+Девчонки, всем советую! Оказывается, массаж коррекции фигуры - это не только не больно, а даже приятно! Так долой стереотипы о том, что антицеллюлитный массаж надо терпеть со слезами! Все записываемся к Диме и приятно проводим время! Приятное с полезным)))
+А Диме огромное спасибо) Обязательно приду еще)</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv11.jpg" width="160"></p>
+                    <p class="otzyv"><span>Алина Большакова http://vk.com/id10013724</span><br>Прошла у Димы полный курс!!!Я испробовала все возможные методы по борьбе с целлюлитом, Димкин массаж дал наиболее видимый результат!!но мы решили не останавливаться на достигнутом и будем продолжать работать над моей 5-ой точкой))) Дима может справиться с любой проблемой, потому что постоянно совершенствует свои навыки, а отсюда и индивидуальный подход!!!!
+Эффект на лицо!!! СПАСИБО ТЕБЕ ДИМ!!!! Наконец-то я нашла СВОЕГО массажиста!!!!</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv12.jpg" width="160"></p>
+                    <p class="otzyv"><span>Анастасия Маханькова http://vk.com/mama4elu</span><br>лично я в восторге !
+совершенно не ожидала, такого эффекта ! ноги действительно постройнели и стали упругие, этого я не могла добиться даже в зале !
+Дима просто супер, всегда отвечает на все мои вопросы, очень много подсказывает !!!
+я очень ему благодарна !
+от мимостимуляции я просто в шоке ) в хорошем смысле конечно !
+очень приятная и эффективная процедурна ! я довольна результатом !</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv13.jpg" width="160"></p>
+                    <p class="otzyv"><span>Mary Petrenko http://vk.com/mariapetrenko</span><br>Дима - БОГ массажа)
+замечательный человек и профессионал своего дела!
+если вы думаете купить ли вам новое платье или пойти к Диме убрать лишнее с бедер, НЕ РАЗДУМЫВАЯ ИДИТЕ К ДИМЕ!!!(чтобы потом, с упругой и подтянутой попой, вы все таки поехали за новым платьем и джинсами(т.к старые будут вам велики)и все вами восхищались))
+троекратное ура</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv14.jpg" width="160"></p>
+                    <p class="otzyv"><span>Лина Кренгель http://vk.com/lkrengel</span><br>Апельсиновая корка и животик - это у меня наследственно. Мама пробовала антицеллюлитный массаж-не помогло. Долго не могла поверить, что результат может быть, пока угадайте что? правильно, пока не попала в волшебные Димины руки. Кожа уже после первого сеанса стала более подтянутой, а когда муж заметил изменения, точно поняла, что все было не зря. Ножки выровнялись, попа подтянулась, кожа шелковистая и в тонусе. К сожалению, не получилось отходить полный курс, но уже сейчас я нравлюсь себе в мини намного больше!!! Дима, ты и вправду волшебник!!! Спасибо тебе за положительные эмоции!</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv15.jpg" width="160"></p>
+                    <p class="otzyv"><span>Наталья Негинская http://vk.com/id2394987</span><br>Дима, Спасибо тебе большое! Очень довольна результатом, кожа заметно разгладилась и подтянулась. Буду приходить к тебе и рекомендовать. Приятно, что Дима очень любит свою работу и делает ее действительно качественно.</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv16.jpg" width="160"></p>
+                    <p class="otzyv"><span>Ольга Шелковникова http://vk.com/hugsandkisses</span><br>Дим, спасибо за отличную работу! Девочки, даже не сомневайтесь идти/не идти: Димка супер специалист, каждой разработает индивидуальных программу и свой поход) Результаты будут очень-очень: у меня при росте 176 и бедрах 93 ушло 3,5 см, при этом я, к сожалению, не занималась спором/танцами, как планировала, да и ела всякие вредности...а если совместить с зожем, вообще шикарно будет;) Все в наших руках! И в Диминых волшебных тож)))</p>
+                </div>    
+              </li>
+              <li style="float: left; list-style: none; position: relative; width: 1000px;">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv17.jpg" width="160"></p>
+                    <p class="otzyv"><span>Ксения Романова http://vk.com/romanovaks</span><br>Хочу сказать БОЛЬШОЕ спасибо Дмитрию! Он настоящий волшебник! Самый что ни на есть!!!)))
+Сперва, когда я увидела его работы, то подумала, что да, все классно, но наверное так будет ни у всех... А уже после первой процедуры я почувствовала и увидела результат!!! Сама по себе я девушка миниатюрная, но от пассивного образа жизни у меня стали появляться бока, Дима с ними расправился! Я ему ооооочень благодарна! Девочки, кто также сперва думает, что на фотографиях - это чудо не для всех и у вас такого не будет, не сомневайтесь - БУДЕТ!!! Он реально молодец и ему под силу все!</p>
+                </div>    
+              </li>
+              
+           <li style="float: left; list-style: none; position: relative; width: 1000px;" class="bx-clone">
+                <div id="otzyvtext">
+                    <p class="img"><img src="./index_files/otzyv5.jpg" width="160"></p>
+                    <p class="otzyv"><span>Анастасия Кунцевич http://vk.com/krasota_nezemnaya</span><br>Димочка-это лучшее что случилось со мной этим летом!)<br> минус 1,5 размера и я красивая и довольная)<br> Дима, и рассмешит, и выслушает, и когда надо даже накормит, и утешит)))<br> Дима-ты лучший!<br> у тебя руки от Бога!<br> моя осиная талия и стройные ноги буду помнить тебя всегда) вот только от меня теперь тебе ни-ког-да не избавиться) с любовью, постоянная клиентка, похудевшая и довольная!)))</p>
+                </div>    
+              </li></ul></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="" data-slide-index="3" class="bx-pager-link">4</a></div><div class="bx-pager-item"><a href="" data-slide-index="4" class="bx-pager-link">5</a></div><div class="bx-pager-item"><a href="" data-slide-index="5" class="bx-pager-link">6</a></div><div class="bx-pager-item"><a href="" data-slide-index="6" class="bx-pager-link">7</a></div><div class="bx-pager-item"><a href="" data-slide-index="7" class="bx-pager-link">8</a></div><div class="bx-pager-item"><a href="" data-slide-index="8" class="bx-pager-link">9</a></div><div class="bx-pager-item"><a href="" data-slide-index="9" class="bx-pager-link">10</a></div><div class="bx-pager-item"><a href="" data-slide-index="10" class="bx-pager-link">11</a></div><div class="bx-pager-item"><a href="" data-slide-index="11" class="bx-pager-link">12</a></div><div class="bx-pager-item"><a href="" data-slide-index="12" class="bx-pager-link">13</a></div><div class="bx-pager-item"><a href="" data-slide-index="13" class="bx-pager-link">14</a></div><div class="bx-pager-item"><a href="" data-slide-index="14" class="bx-pager-link">15</a></div><div class="bx-pager-item"><a href="" data-slide-index="15" class="bx-pager-link">16</a></div><div class="bx-pager-item"><a href="" data-slide-index="16" class="bx-pager-link">17</a></div><div class="bx-pager-item"><a href="" data-slide-index="17" class="bx-pager-link">18</a></div><div class="bx-pager-item"><a href="" data-slide-index="18" class="bx-pager-link">19</a></div><div class="bx-pager-item"><a href="" data-slide-index="19" class="bx-pager-link">20</a></div><div class="bx-pager-item"><a href="" data-slide-index="20" class="bx-pager-link">21</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="zayavkabg">
+        <div id="form2bg">
+            <img class="img" src="./index_files/bgform2.png" width="957" height="286">
+            <div id="form2">
+                    <form action="http://estetikmassage.ru/formdata_email.php" method="POST" name="form1" target="_blank">
+                        <p class="legend">Запишитесь на курс из 12 сеансов прямо сейчас<br>и получите <span>лимфодренаж и обертывание<br>в подарок!</span></p>
+                        <p class="inputbg1"><input class="input" type="text" name="input_name[0]" placeholder="Введите имя" id="name" required=""></p>
+                        <p class="inputbg2"><input class="input" type="text" name="input_name[1]" placeholder="Введите телефон" id="tel" required=""></p>
+                        <p class="otpravit"><input type="image" src="./index_files/zakazat2.png" name="submit"></p>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <div id="contentbg">
+        <div id="content">
+            <p class="text2">Остались вопросы? Получите <span>бесплатную консультацию</span> от профессионального<br>массажиста прямо сейчас! Просто оставьте заявку на звонок и мы Вам перезвоним.</p>
+            <p class="knopka"><a href="http://estetikmassage.ru/#zakazatzvonok" id="join_pop"><img src="./index_files/zakazzv.png"></a></p>
+        </div>
+    </div>
+    <div id="wide">
+        <div id="footer">
+            <p class="p1">Антицеллюлитный массаж, коррекция фигуры<br>по авторскому методу «Estetikmassage»<br><a href="http://itzabot.net/" target="_blank">создание сайта</a></p>
+            <p class="p2">8 (916) 981-74-34<br><span>zenzerov@gmail.com</span></p>
+        </div>
+    </div>
+</div>
+       <!-- Форма 3 для модального окна заказать звонок-->
+        <a href="http://estetikmassage.ru/#x" class="overlay" id="zakazatzvonok"></a>
+        <div class="popup">
+            <div id="input">
+                <form action="http://estetikmassage.ru/formdata_tel.php" method="POST" name="form1" id="input" target="_blank">
+                    <p class="legend">Введите имя и телефон и<br>мы Вам перезвоним</p>
+                    <p class="inputbg1"><input class="input" type="text" name="input_name[0]" size="39" placeholder="Введите имя" id="name" required=""></p>
+                    <p class="inputbg2"><input class="input" type="text" name="input_name[1]" size="39" placeholder="Введите телефон" id="tel" required=""></p>
+                    <p class="otpravit"><input type="image" src="./index_files/zakazzv.png" name="submit"></p>
+                </form>
+            </div>
+            <a class="close" href="http://estetikmassage.ru/#close"></a>
+        </div>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter24126322 = new Ya.Metrika({id:24126322,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>&lt;div&gt;&lt;img src="//mc.yandex.ru/watch/24126322" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+<div style="border-style: solid; border-width: 2px 0px 2px 2px; border-top-left-radius: 5px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 5px; display: block; box-sizing: content-box; font-style: normal; font-variant: normal; font-weight: normal; font-size: 13px; line-height: 18px; font-family: Arial, Helvetica, sans-serif; width: 10px; height: 20px; padding: 0px; margin: 0px; overflow: hidden; position: fixed; top: 50px; right: 0px; text-align: left; -webkit-transition: all 0.2s; transition: all 0.2s; z-index: 99999; cursor: pointer; border-color: rgb(141, 197, 11); opacity: 0.5; background: rgb(255, 255, 255);"><div title="SaveFrom.net помощник 2.70" style="display: inline-block; box-sizing: content-box; width: 16px; height: 16px; margin: 0px; padding: 2px; overflow: hidden; vertical-align: middle; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAACOklEQVQ4y42TTWgTURSFz3sv00maJqVWg6LiD7VUdGERQQnoQlS6sStxVVBULE0XoiDFjejChaC4qCCIKBQE0U1XpYoLFX9AXLbVVhR/UInGTjKZeTOTee+6aKdO2iAeuJvDd8+73MtjRIRIT2ud5d3GdOsLdP0150VEyLN3LGIiPxGHPE8RDEApAkCLAuboiInE45ArwxIAhKHWWhPiFYak40zdBCMzazpyy9btcsuoIAcEUktuIB0HVUASScAtozIu8n3F359e9m36+j4BAHa1erzqTB7mjK0HAE8qaVB9QOBBAoDt2tvKzuRFIroHYIgDwEC3NWQV3YJlyZn5ADcIFOLlS+UCgGXJGavoFga6rSEAYPErRLozsXqqOUtddfsp4+2Rrd82L2YTDz53nDST2Q1ps42STZlmVdMrBGvmQa1SBwqe5c8qB+8Kg//0Att1/Fnme5WPbHgq026qpjEh2A4A4Ew4XBh2GHor615KJH9oVctoUmkAUIpe+yLoYUSECw8zufZ2MWoYfCf+Q7WaflUqqd7z++3iwg4ujadXpVr4fcPk+X82+/q5rOpD5w4435cs8cwoW7s8mxoxTb6nUbPv6ye/KrLvSi99ibwlVzh9m23M5MwbqTTfF/elox/ZRb//6lH6EPcbnnHwJutsaRPX0q2iBwCcshqrzqpTwydoejHbMAAABq+zLSLDLgOAsunscIEmGnELAYwxBoABEABMAKm9x7AdAB7fwhsAEoAPQM397rnGP/fQK/eKCl8BAAAAAElFTkSuQmCC); background-position: 50% 50%; background-repeat: no-repeat;"></div></div></body></html>
