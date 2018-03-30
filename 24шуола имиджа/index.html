@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>шаблон</title>
+  <link type="text/css" rel="stylesheet" href="css/global.css">     
+  <link type="text/css" rel="stylesheet" href="font/segoe-light.css">
+  <link type="text/css" rel="stylesheet" href="font/segoe-semibold.css">  
+  <link type="text/css" rel="stylesheet" href="font/segoe.css">    
+  <script type="text/javascript" src="js/libs/modernizr-2.6.1.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+  <script src="jquery.maskedinput.min.js"></script>  
+  <script type="text/javascript" src="js/carousel.js"></script>
+  <script type="text/javascript" src="main.js"></script> 
+   <script language="JavaScript" type="text/javascript">
+
+ /*<![CDATA[*/
+
+ var s=[],s_timer=[];
+
+ function show(id,h,spd)
+
+ { s[id]= s[id]==spd? -spd : spd;
+
+ s_timer[id]=setTimeout(function() {
+
+ var obj=document.getElementById(id);
+
+ if(obj.offsetHeight+s[id]>=h){obj.style.height=h+"px";obj.style.overflow="auto";}
+
+ else if(obj.offsetHeight+s[id]<=0){obj.style.height=0+"px";obj.style.display="none";}
+
+ else {obj.style.height=(obj.offsetHeight+s[id])+"px";
+
+ obj.style.overflow="hidden";
+
+ obj.style.display="block";
+
+ setTimeout(arguments.callee, 10);
+
+ }
+
+ }, 10);
+
+ }
+
+ /*]]>*/
+
+ </script> 
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />  
+</head>
+<body>  
+    <!-- /////////////////////////// Поп-ап \\\\\\\\\\\\\\\\\\\\\\\\ -->
+  <div class="center-980-pop">
+    <a href="#x" class="overlay-zvonokt" id="wind-zakaz-top1"></a>  
+    <div class="popup-zvonokt">      
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="wind-zakaz-top">
+        <p><span class="bold">Оставьте запрос и мы с Вами свяжемся</span></p>
+        <form class="s_form" action="index1.php" method="POST">          
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Ваше имя">
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Ваш телефон">
+          <input class="s_text adress" type="text" name="adress" placeholder="Ваш e-mail">
+          <input type="hidden"  name="mail" class="email" value="none@none.ru">                 
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="Отправить">
+        </form>
+      </div>       
+    </div> 
+    <a href="#x" class="overlay-zvonokt" id="wind-zakaz-top"></a>  
+    <div class="popup-zvonokt">      
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="wind-zakaz-top">
+        <p><span class="bold">Заказажите звонок</span></p>
+        <form class="s_form" action="index1.php" method="POST">          
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Ваше имя">
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Ваш телефон">
+          <input class="s_text adress" type="text" name="adress" placeholder="Ваш e-mail">
+          <input type="hidden"  name="mail" class="email" value="none@none.ru">                 
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="Отправить">
+        </form>
+      </div>       
+    </div>
+    <a href="#x" class="overlay-zvonokt" id="order-session1"></a>  
+    <div class="popup-zvonokt">      
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="order-lections">
+        <p class="tren-p2">Базовый курс «Основы макияжа и стиля»<br>
+        <span>20 августа — 1 сентября, Москва</span></p>
+        <p class="mesta-form">осталось 10 мест</p><p class="cena">3 650 руб.</p>
+        <p class="popup-description">Пожалуйста, заполните эту форму, и наш<br>
+          менеджер оперативно свяжется с Вами</p>
+        <form class="s_form" action="index1.php" method="POST">          
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Ваше имя">
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Ваш телефон">
+          <input class="s_text adress" type="text" name="adress" placeholder="Ваш e-mail">
+          <input type="hidden"  name="mail" class="email" value="none@none.ru">                 
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="Отправить">
+        </form>
+      </div>       
+    </div> 
+        <a href="#x" class="overlay-zvonokt" id="order-session2"></a>  
+    <div class="popup-zvonokt">      
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="order-lections">
+        <p class="tren-p2">Базовый курс «Детский макияж и стиль»<br>
+        <span>15 августа — 31 августа</span></p>
+        <p class="mesta-form">осталось 2 места</p><p class="cena">3 650 руб.</p>
+        <p class="popup-description">Пожалуйста, заполните эту форму, и наш<br>
+          менеджер оперативно свяжется с Вами</p>
+        <form class="s_form" action="index1.php" method="POST">          
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Ваше имя">
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Ваш телефон">
+          <input class="s_text adress" type="text" name="adress" placeholder="Ваш e-mail">
+          <input type="hidden"  name="mail" class="email" value="none@none.ru">                 
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="Отправить">
+        </form>
+      </div>       
+    </div> 
+        <a href="#x" class="overlay-zvonokt" id="order-session3"></a>  
+    <div class="popup-zvonokt">      
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="order-lections">
+        <p class="tren-p2">Основной курс «Косметика и визажист»<br>
+        <span>1 сентября — 15 сентября</span></p>
+        <p class="mesta-form">осталось 11 мест</p><p class="cena">3 650 руб.</p>
+        <p class="popup-description">Пожалуйста, заполните эту форму, и наш<br>
+          менеджер оперативно свяжется с Вами</p>
+        <form class="s_form" action="index1.php" method="POST">          
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Ваше имя">
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Ваш телефон">
+          <input class="s_text adress" type="text" name="adress" placeholder="Ваш e-mail">
+          <input type="hidden"  name="mail" class="email" value="none@none.ru">                 
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="Отправить">
+        </form>
+      </div>       
+    </div> 
+
+    <!-- TRANINGS -->
+
+      <a href="#x" class="overlay-zvonokt" id="traning4"></a>  
+      <div class="popup-zvonokt">      
+      <a class="close2" title="Закрыть" href="#close"></a>
+      <div class="tren-details">
+        <p class="detitle">Базовый курс Визажист</p>
+
+<p class="prednaznach">Данный базовый курс предназначен для тех, кто хочет освоить профессию визажиста с нуля и является хорошим и качественным фундаментом для дальнейшего развития мастера по самым разнообразным направлениям в индустрии красоты: салонное направление, свадебная мода, fashion индустрия, фотосессии, визажист косметического бренда и мн. другое.</p>
+
+<p class="proga">Программа курса:</p>
+<div class="text-of-prog"> 
+<p class="t-step">1. занятие ТЕОРИЯ</p>
+<p class="text-text-text">*Теория взаимодействия цвета.<br>
+*Теория цветовых типов.<br>
+*Основы дезинфекции, характеристика рабочего места, препаратов и инструментов для макияжа.<br>
+*Характеристика корректирующих и маскирующих средств.<br>
+*Моделирование овала лица, скульптура лица, пропорции.<br>
+*Особенности коррекции деталей лица, глаза, губы, брови.<br>
+*Строение глаза.<br>
+*Основные схемы нанесения теней: "банан", горизонтальная схема, "птичка", вертикальная схема, диагональная схема</p>
+<p class="t-step">2 занятие ТЕОРИЯ </p>
+<p class="text-text-text">*Коррекция формы бровей<br>
+*Особенности возрастного ( лифтинг) макияжа и мужского макияжа<br>
+ *Натуральный глянцевый макияж "NUDE".<br>
+ *Дневной, деловой ( бизнес) макияж.</p>  
+<p class="t-step">3. Занятие ПРАКТИКА</p>
+<p class="text-text-text">*Свадебный макияж, стилистика свадебной съемки.<br>
+*Вечерний макияж с акцентом на губы.- "hollywood" </p>
+ <p class="t-step">4 занятие ПРАКТИКА.</p>
+<p class="text-text-text">*Вечерний макияж с акцентом на глаза "Smoky Eye"<br>
+*Контрастный макияж. Отработка различных видов стрелок.</p>
+<p class="t-step">ЭКЗАМЕН</p>
+<br>
+<a class="wiv-all" href="#order-session1">Записаться</a>
+</div>
+      </div>       
+    </div>
+
+      <a href="#x" class="overlay-zvonokt" id="traning5"></a>  
+      <div class="popup-zvonokt">      
+      <a class="close2" title="Закрыть" href="#close"></a>
+      <div class="tren-details">
+        <p class="detitle">Авторский курс по имиджу и стилю от имиджмейкера Анны Гельд</p>
+
+<!--<p class="prednaznach"></p>-->
+
+
+<p class="proga">В программе:</p>
+<div class="text-of-prog"> 
+<p class="text-text-text">Цвет и форма, приемы цветового комбинирования, стилевые направления и модные тренды.
+Много практических заданий, направленных  на освоение теории и развитие творческих способностей.
+По итогам курса Вы научитесь: 
+- Безошибочно определять цветотип внешности
+- Сочетать цвета между собой и создавать гармоничные цветовые ансамбли.
+- корректировать недостатки фигуры и подчеркивать достоинства.
+- Создавать яркие образы с помощью аксессуаров.
+- ориентироваться в многообразие стилей
+- соствлять рациональный гардероб
+- ориентироваться в актуальных торговых марках
+- узнаете как не заблудиться  в торговом центре и соврешить максимально результативный шоппинг.
+Курс будет интересен как стилистам, так и всем желающим.
+</p>
+<p class="proga">Подробнее программа курса:</p>
+<p class="t-step">1 день.</p> <p class="prednaznach">понятие хорошего вкуса. стереотипы имиджа. </p>
+<p class="prednaznach">практическое задание:</p>
+<p class="text-text-text">проиллюстрировать основные мужские и женские стереотипы имиджа (вечная студентка, гламурная львица, "синий чулок" и пр..) практическое задание:
+проиллюстрировать основные мужские и женские стереотипы имиджа (вечная студентка, гламурная львица, "синий чулок" и пр..)
+гармония цвета.
+теория впемен года. какие цвета вам подходят. понятие теплгого и холодного. степень светлоты и яркости.
+практическое задание - составить цветовую палитру для каждого из четырех цветотипов.
+правила сочетаний цветов по цветовому кругу. примеры. цвет и фактура. сочетание фактуры между собой.
+рисунки и принты.какмправильно сочетать рисунки.
+Практическое задание: составить примеры цветовых сочетаний для заданного портрета клиента в разных жизненных ситуациях (дом, работа, вечеринка..)
+</p>
+<p class="t-step">2 день.</p>
+<p class="prednaznach">понятие гармонии и пропорциональности.</p>
+<p class="text-text-text">Разбор основных типов фигур. понятие мягкого и жесткого силуэта. создание силуэта спомощью фактруры ткани и рисунка. подходящие фасоны для каждого типа фигур.
+коррекция недостатков с помощью одежды: полные руки, большой живот, короткие ноги и пр.
+коррекция формы с помощью аксессуаров.</p>
+<p class="prednaznach">Практическое задание: разбор фигуры на примере друг друга. подбор гармоничного силуэта.</p>
+<p class="t-step">3 день.</p> 
+<p class="prednaznach">Стилистика. Разбор основных стилевых направлений.</p>
+<p class="text-text-text">классика, драматика, женственность, романтика, треш и пр....<br>
+Сочетаемость стилей друг с другом.</p>
+<p class="prednaznach">Практическое задание:</p>
+<p class="text-text-text">проиллюстрировать основные стилевые направлениямв чистом виде.
+проиллюстрировать примеры смешения стилей.</p>
+<p class="t-step">4 день.</p>
+<p class="prednaznach">понятие рационального гардероба.</p>
+<p class="text-text-text">Как правильно разбирать гардероб, свой или клиента. базовые и ультрамодные вещи в гардеробе.
+мода. "жертвы моды" и трендсеттеры. 
+умный шоппинг. как не заблудиться в торговом центре и совершить максимально результативный шоппинг за минимальное количество времени. обзор марок одежды от масс-маркета до прет-а-порте.</p>
+<br>
+<a class="wiv-all" href="#order-session1">Записаться</a>
+</div>
+      </div>        
+    </div>
+
+      <a href="#x" class="overlay-zvonokt" id="traning6"></a>  
+      <div class="popup-zvonokt">      
+      <a class="close2" title="Закрыть" href="#close"></a>
+      <div class="tren-details">
+<p class="detitle">Мастер класс свадебный стилист</p>
+
+<p class="prednaznach">Данный мастер класс подходит для действующий стилистов и расскажет вам тонкости работы с невестами, ознакомит с тенденциями свадебной моды в макияже и прическах.</p>
+
+<p class="proga">Программа курса:</p>
+
+<div class="text-of-prog"> 
+<p class="t-step">1. занятие ТЕОРИЯ</p>
+<p class="text-text-text">*Теория взаимодействия цвета.<br>
+*Теория цветовых типов.<br>
+*Основы дезинфекции, характеристика рабочего места, препаратов и инструментов для макияжа.<br>
+*Характеристика корректирующих и маскирующих средств.<br>
+*Моделирование овала лица, скульптура лица, пропорции.<br>
+*Особенности коррекции деталей лица, глаза, губы, брови.<br>
+*Строение глаза.<br>
+*Основные схемы нанесения теней: "банан", горизонтальная схема, "птичка", вертикальная схема, диагональная схема</p>
+<p class="t-step">2 занятие ТЕОРИЯ</p>
+<p class="text-text-text">*Коррекция формы бровей<br>
+*Особенности возрастного ( лифтинг) макияжа и мужского макияжа<br>
+ *Натуральный глянцевый макияж "NUDE".<br>
+ *Дневной, деловой ( бизнес) макияж.<br>
+*Свадебный макияж, стилистика свадебной съемки.<br>
+*Вечерний макияж с акцентом на губы.- "hollywood" </p>
+<p class="t-step">4 занятие ПРАКТИКА.</p>
+<p class="text-text-text">*Вечерний макияж с акцентом на глаза "Smoky Eye"
+*Контрастный макияж. Отработка различных видов стрелок.</p>
+<p class="t-step">ЭКЗАМЕН</p>
+<br>
+<a class="wiv-all" href="#order-session1">Записаться</a>
+</div>
+      </div>       
+    </div>
+
+          <a href="#x" class="overlay-zvonokt" id="traning7"></a>  
+      <div class="popup-zvonokt">      
+      <a class="close2" title="Закрыть" href="#close"></a>
+      <div class="tren-details">
+<p class="detitle">Сам себе визажист</p>
+
+
+<p class="proga">Описание:</p>
+
+<p class="text-text-text">Вы устали тратить драгоценные утренние минуты на макияж?
+Даже после потраченного времени Вы не довольны результатом? 
+Просмотр видео уроков не дает видимых изменений в вашем образе? 
+Вы жаждете перемен в повседневном макияже?
+Если хотя бы на один из вопросов Вы ответили "да!", то наш мастер-класс по основам макияжа "Сама себе визажист" именно для Вас!
+На наших занятиях профессиональный визажист-тренер расскажет Вам основы колористики, поможет определить Ваш цветотип, подберет выигрышную для Вас цветовую гамму декоративной косметики, поможет создать "идеальную косметичку" и научит основам дневного и вечернего макияжа!
+Пройдя наш курс вы сможете идеально выполнять повседневный макияж, затрачивая при этом минимум времени!</p>
+
+
+<p class="t-step">В программе курса :</p>
+<p class="text-text-text">- определение типа кожи<br>
+- техника демакияжа<br>
+- дневной макияж (тенденция этого сезона макияж в стиле Nude)<br>
+-вечерний макияж<br>
+- фантазийный макияж для фото-сессий (карандашная техника)<br>
+Курс включает в себя час теории и 2 часа практических отработок (на себе). Во время практических занятий наш тренер уделит каждой внимание и время для наилучшего закрепления материала. На практике выполняется 2 макияжа, т.е научим быстро трансформировать образ из милой принцессы в роковую красавицу.
+По окончанию занятия наш фотограф запечатлит на камеру Ваши новые образы.
+</p>
+<br>
+<a class="wiv-all" href="#order-session1">Записаться</a>
+      </div>       
+    </div>  
+
+              <a href="#x" class="overlay-zvonokt" id="traning8"></a>  
+      <div class="popup-zvonokt">      
+      <a class="close2" title="Закрыть" href="#close"></a>
+      <div class="tren-details">
+<p class="detitle">«Мужское и женское»</p>
+
+<p class="proga">Описание: </p>
+<p class="text-text-text">• Чем отличается мир Мужчин и мир Женщин?<br>
+• Мифы о мире мужчин и мире женщин? <br>
+• Какая я в своих идеальных отношениях?<br>
+• Какая я женщина и что для меня быть идеальной?<br>
+• Кто таков -  мой идеальный мужчина?!<br>
+• Чего хотят женщины и чего хотят мужчины?<br>
+• Секс и сексуальность, с чем их едят?<br>
+• Роли – я - Мужчина и я - Женщина.</p>
+
+<p class="proga">Научимся:</p>
+<p class="text-text-text">Получать Удовольствие  от процесса быть женщиной</p>
+
+<p class="t-step">Мы ждем ВСЕХ,:</p>
+ 
+<p class="text-text-text">• тех, кто хочет открыть в себе женщину, почувствовать себя уверенной …<br>
+• тех, кто хочет узнать о своих возможностях и открыть доступ к новым ресурсам в себе<br>
+• тех, кто хочет провести отлично время и зарядиться энергией на всю весну.</p>
+<br>
+<a class="wiv-all" href="#order-session1">Записаться</a>
+      </div>       
+    </div> 
+
+          <a href="#x" class="overlay-zvonokt" id="traning9"></a>  
+      <div class="popup-zvonokt">      
+      <a class="close2" title="Закрыть" href="#close"></a>
+      <div class="tren-details">
+<p class="detitle">Флиртомания</p>
+
+
+<p class="proga">Описание:</p>
+
+<p class="text-text-text">Тренинги по невербальной коммуникации  -  более известное как язык поз и жестов, включает в себя все формы самовыражения человека, которые не опираются на слова. Психологи считают, что чтение невербальных сигналов является важнейшим условием эффективного общения.</p>
+
+
+<p class="proga">Программа: </p>
+<p class="t-step">Часть первая… язык…<br>
+ Сознательное и бессознательное.  И как последнее влияет на речь.</p>
+<p class="text-text-text">• Язык. И все что с ним связано.<br>
+• Как раскрепоститься и начать заинтересовывать собой  собеседника при помощи языка.<br>
+• Языковые провокации.</p>
+
+  <p class="t-step">Часть вторая… язык тела…</p>
+<p class="text-text-text">• Телесная коммуникация.<br>
+• Сила поз в переговорах. <br>
+• Понимаю, принимаю, проникаю в  собеседника.</p>
+
+  <p class="t-step">Часть третья… язык сна… </p>
+<p class="text-text-text">• История дядюшки Фрейда.<br>
+• Сноведения. </p>
+
+  <p class="t-step">Часть четвертая … конеЦ…</p>
+<p class="text-text-text">• Флюиды… <br>
+• Трансформация и новый уровень. «Да, я такой!»<br>
+• Энергетические потоки  и творчество</p>
+</p>
+<br>
+<a class="wiv-all" href="#order-session1">Записаться</a>
+      </div>       
+    </div>  
+
+          <a href="#x" class="overlay-zvonokt" id="traning10"></a>  
+      <div class="popup-zvonokt">      
+      <a class="close2" title="Закрыть" href="#close"></a>
+      <div class="tren-details">
+<p class="detitle">Искусство видеть</p>
+
+<blockquote class="quote">
+«Счастливейшие люди – те, кто думает самые интересные мысли.<br>
+ Те, кто решает употребить досуг в пользу умственному развитию,<br>
+ любящие хорошую музыку, хорошие книги, хорошие картины,<br>
+ хорошую компанию и славный разговор – счастливейшие люди<br>
+ в мире. И счастливы они те только сами по себе, они пробуждают<br>
+ счастье в окружающих»<br>
+ <br>
+ Уильям Лайан Фэлпс,  английский писатель, критик, профессор 
+</blockquote>
+
+<p class="text-text"><br>Вы – из тех, кто больше всего любит походы в музей за их редкость? Общение с искусством может быть поистине  увлекательным, если знать его язык. На этом языке говорит не каждый, но на нем говорит весь мир. <br><br>
+Настоящий курс ставит цель дать базовые знания о теории, философии и истории искусства,  позволяя ощутить почву для самостоятельных рассуждений и прослыть нескучным собеседником. <br><br>
+Занятия сопровождаются презентацией с изображениями. 
+
+</p>
+
+
+<p class="t-step">1.  Искусство видеть</p>
+<p class="text-text-text">Восприятие – не только родитель интуиции, оно есть навык, который нужно развивать. Какими инструментами располагает человек для восприятия и интерпретации искусства? Мастер-класс введет участников в кабинет арт-критика и познакомит с ударным арсеналом профессии. <br><br>
+В программе: Понятие культуры и ее связь с искусством. История, теория и философия искусства. Теория искусства. Основные методы и понятия. Описание и анализ. Природа символа. Жанры.  Философия искусства и эстетика: подземные течения идей в искусстве.
+</p>
+<blockquote class="quote">
+Мастер-класс включает оцениваемое практическое домашнее задание, <br>
+которое научит участников методам восприятия визуальных медиа.
+ 
+</blockquote>
+
+  <p class="t-step">2.  Мастер-класс включает оцениваемое практическое домашнее задание, <br>
+которое научит участников методам восприятия визуальных медиа.</p>
+<p class="text-text-text">Как человеческие идеи и ход истории готовят почву для создания произведений искусства, и как произведения влияют на идеи и историю? Мастер-класс развернет перед слушателем карту, отражающую общий ход истории искусства и скрытых в ней философских представлений о человеке и мире. Участники узнают основные стили европейского и русского искусства до ХХ века, изучат их уникальные особенности, научатся самостоятельно ориентироваться в них. </p>
+
+<blockquote class="quote">
+Итогом мастер-класса станет интерактивный семинар, в процессе<br>
+ которого участники будут отгадывать стиль и век создания картины,<br>
+ на месте разбираясь в своих «попаданиях» и «промахах». 
+</blockquote>
+
+  <p class="t-step">3.  Цветоведение: психология, история, теория, практика.</p>
+<p class="text-text-text">История искусства полнится великими именами, но лишь немногие из этих художников заслужили звание колористов. Тонкое чувство цвета – один из верных признаков эмоционального интеллекта человека и козырная карта в создании внешнего образа. Не случайно колористика – обязательный курс на факультетах живописи, дизайна и искусствоведения.<br><br> 
+Цель нашей дискуссии о цвете - позволить участникам глубже постичь историю живописи и теорию композиции, узнать особенности физики и психоэмоционального воздействия цвета, а также научить безошибочно сочетать цвета.
+</p>
+<blockquote class="quote">
+В течение и по окончании занятия участники получат уникальные творческие<br>
+ задания, которые обострят чувство цвета, позволят сделать любопытные<br>
+ выводы о собственной психике, а заодно и первые шаги в живописи!  
+</blockquote>
+
+<p class="t-step">4.  «Современное искусство? Терпеть не могу!»</p>
+<p class="text-text-text">Если создать музыкальный трек с этими словами, он наверняка обретет популярность: цитата на слуху в наши дни. Закрытый, узко-интеллектуальный язык «элитарного» искусства, те проблемы, которые оно ставит, зачастую вызывают в людях лишь недоумение. <br><br>
+Но что мы действительно знаем о современном искусстве? Мастер-класс расскажет об истоках, породивших искусство XX и XXI веков, объяснит, какие перемены претерпела организация художественного процесса и как открытия XX века перевернули философию и психологию искусства. Участники разберутся в основополагающих арт-направлениях современности и выяснят что такое постмодернизм, в чём состоит дискурс и как туда попасть. 
+</p>
+<blockquote class="quote">
+Итогом мастер-класса станет совместное создание
+ концептуального объекта современного искусства.
+</blockquote>
+<br>
+<a class="wiv-all" href="#order-session1">Записаться</a>
+</div>       
+    </div>           
+  </div>  
+  <!-- ALL CONTENS -->
+  <div class="container header">
+    <div class="phone">
+      <p>+7 800 000-00-00</p>
+      <p>Адресс</p>
+    </div>
+    <a class="logo" href="index.php"><img src="img/logo.png"></a> 
+    <div class="header-text"> 
+      <p>4-х часовой мастер-класс "Сам себе визажист"</p>
+      <p>по рекордно низкой цене <span>4 500</span> рублей</p>
+      <p>фотосессия в подарок!</p>
+    </div>
+    <a class="zapis" href="#wind-zakaz-top1">Записаться на мастер-класс</a>
+  </div>
+  <div class="container how">
+    <p class="title">Почему именно мы?</p>
+    <ul>
+      <li><img src="img/we-1.png"><br>Группы по 10 человек.<br>Каждому уделяем внимание</li>
+      <li><img src="img/we-2.png"><br>Поможем создать идеальную косметичку за малые деньги</li>
+      <li><img src="img/we-3.png"><br>Сертификат на бесплатную онлайн-консультацию</li>
+      <li><img src="img/we-4.png"><br>Отвечаем на любые вопросы. Тренинг проходит в режиме диалога</li>
+      <li><img src="img/we-5.png"><br>Наши преподаватели - практикующие мастера</li>
+    </ul>
+  </div>
+  <div class="trenings">
+    <div class="container" >
+      <p class="title-trenings">Ближайшие тренинги</p>
+      <div class="trenings-contens">
+        <!-- <div><p class="tren-p1">Базовый курс «Основы макияжа и стиля»<br><span>20 августа — 1 сентября</span></p><p class="mesta">осталось 10 мест</p><a class="wiv-all" href="#order-session1">Записаться</a></div>
+        <div><p class="tren-p1">Базовый курс «Детский макияж и стиль»<br><span>15 августа — 31 августа</span></p><p class="mesta">осталось 2 места</p><a class="wiv-all" href="#order-session2">Записаться</a></div>
+        <div><p class="tren-p1">Основной курс «Косметика и визажист»<br><span>1 сентября — 15 сентября</span></p><p class="mesta">осталось 11 мест</p><a class="wiv-all" href="#order-session3">Записаться</a></div>-->
+<p class="hader-tren">Красота и стиль</p>          
+          <div><p class="tren-p1"><a href="#traning4" class="linkto-detil">Базовый курс Визажист</a><br><span>20 августа — 1 сентября</span></p><p class="mesta">осталось 6 мест</p><a class="wiv-all" href="#order-session1">Записаться</a></div>
+          <div><p class="tren-p1"><a href="#traning5" class="linkto-detil">Авторский курс по имиджу и стилю от имиджмейкера Анны Гельд</a><br><span>15 августа — 31 августа</span></p><p class="mesta">осталось 4 места</p><a class="wiv-all" href="#order-session2">Записаться</a></div>
+          <div><p class="tren-p1"><a href="#traning6" class="linkto-detil">Мастер класс свадебный стилист</a><br><span>1 сентября — 15 сентября</span></p><p class="mesta">осталось 7 мест</p><a class="wiv-all" href="#order-session3">Записаться</a></div>
+        <div id=hidden_1 style="display:none;height:100px;width:960px">
+        
+          <div><p class="tren-p1"><a href="#traning7" class="linkto-detil">Сам себе визажист</a><br><span>1 сентября — 15 сентября</span></p><p class="mesta">осталось 7 мест</p><a class="wiv-all" href="#order-session3">Записаться</a></div>          
+        <p class="hader-tren">Психология</p>
+          <div><p class="tren-p1"><a href="#traning8" class="linkto-detil">Мужское и женское</a><br><span>20 августа — 1 сентября</span></p><p class="mesta">осталось 6 мест</p><a class="wiv-all" href="#order-session1">Записаться</a></div>
+          <div><p class="tren-p1"><a href="#traning9" class="linkto-detil">Флиртомания</a><br><span>15 августа — 31 августа</span></p><p class="mesta">осталось 4 места</p><a class="wiv-all" href="#order-session2">Записаться</a></div>          
+        <p class="hader-tren">Эстетика</p>
+          <div><p class="tren-p1"><a href="#traning10" class="linkto-detil">Искусство видеть</a><br><span>20 августа — 1 сентября</span></p><p class="mesta">осталось 6 мест</p><a class="wiv-all" href="#order-session1">Записаться</a></div>
+        </div>
+
+        </div>
+        <a class="dinamick-height" href="#open1" onclick="show('hidden_1',710,5)">Другие тренинги</a>
+      </div>
+    </div>
+  
+  <div class="photos">
+    <p class="how-we-title">ФОТОГАЛЕРЕЯ</p>
+    <br>
+    <div class="shadow-block" style="padding-left:0px;">
+          <div class="t">
+            <div class="b">
+              <div class="m">
+                <div class="m">
+                  <div class="t">
+                    <div class="t">
+                      <div class="b">
+                        <div class="b">
+                          <div class="carousel-wrapper"> 
+                            <div class="carousel-items"> 
+                              <div class="carousel-block">                 
+                                <a href="#image1" title="Увеличить"><img alt="palestra"  src="img/carousel/1b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">                 
+                                <a href="#image2" title="Увеличить"><img alt="palestra"  src="img/carousel/2b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image3" title="Увеличить"><img alt="palestra"  src="img/carousel/3b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image4" title="Увеличить"><img alt="palestra"  src="img/carousel/4b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image5" title="Увеличить"><img alt="palestra"  src="img/carousel/5b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image6" title="Увеличить"><img alt="palestra"  src="img/carousel/6b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image7" title="Увеличить"><img alt="palestra"  src="img/carousel/7b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image8" title="Увеличить"><img alt="palestra"  src="img/carousel/8b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image9" title="Увеличить"><img alt="palestra"  src="img/carousel/9b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image10" title="Увеличить"><img alt="palestra"  src="img/carousel/10b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image11" title="Увеличить"><img alt="palestra"  src="img/carousel/11b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image12" title="Увеличить"><img alt="palestra"  src="img/carousel/12b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image13" title="Увеличить"><img alt="palestra"  src="img/carousel/13b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image14" title="Увеличить"><img alt="palestra"  src="img/carousel/14b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image15" title="Увеличить"><img alt="palestra"  src="img/carousel/15b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image16" title="Увеличить"><img alt="palestra"  src="img/carousel/16b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image17" title="Увеличить"><img alt="palestra"  src="img/carousel/17b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image18" title="Увеличить"><img alt="palestra"  src="img/carousel/18b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image19" title="Увеличить"><img alt="palestra"  src="img/carousel/19b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image20" title="Увеличить"><img alt="palestra"  src="img/carousel/20b.jpg"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image21" title="Увеличить"><img alt="palestra"  src="img/carousel/21b.jpg"></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+    <a href="#x" class="overlay" id="image1"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/1b.jpg">        
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image2"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/2b.jpg">        
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="imag3"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>                 
+        <img alt="palestra" src="img/carousel/3b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image4"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/4b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image5"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/5b.jpg">
+    </div>      
+    </div>
+
+    <a href="#x" class="overlay" id="image6"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/6b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image7"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/7b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image8"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/8b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image9"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/9b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image10"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/10b.jpg">
+    </div>      
+    </div>
+
+    <a href="#x" class="overlay" id="image11"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/11b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image12"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/12b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image13"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/13b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image14"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/14b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image15"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/15b.jpg">
+    </div>      
+    </div>
+
+    <a href="#x" class="overlay" id="image16"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/16b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image17"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/17b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image18"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/18b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image19"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/19b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image20"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/20b.jpg">
+    </div>      
+    </div>
+
+    <a href="#x" class="overlay" id="image21"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="palestra" src="img/carousel/21b.jpg">
+    </div>      
+    </div>
+
+</div>
+
+
+  <div class="z-index">
+  <p class="pohvala">За год работы мы оставили после себя 340 довольных <br>участников прошли обучение в нашей школе и мы остались <br>хорошими друзьями и продолжаем дружить</p>
+  <div class="container how-we">
+    <p class="how-we-title">Как мы работаем</p>
+    <div class="how-we-cont">      
+    </div>
+  </div>
+  <div class="rewivs">
+    <p class="how-we-title">Отзывы наших выпускниц</p>
+    <ul class="container">
+      <li><img src="img/rev1.png"><p><span>Наталья Реутова, Москва</span><br>Любимая школа Palestra! Была рада познакомиться с таким интересными тренерами и с большими профессионалами своего дела. Узнала много полезного для себя, о некоторых техниках я даже не слышала и спасибо за кисточку! ))</p></li>
+      <li><img src="img/rev2.png"><p><span>Галина Богочева, Москва</span><br>Вы супер!!! Спасибо огромное за проведенный мастер-класс!! Ыы лучшае! Я узнала очень много нового и полезного, а самое главное, интересно слушать интересных тренеров. Огромное спасибо! Я в восторге!!!</p></li>
+      <li><img src="img/rev3.png"><p><span>Алеся Князева, Москва</span><br>Спасибо школе Palestra за потрясающий мастер-класс по make-up! Было очень интересно и супер доходчиво! Теперь с утра я не буду убивать по часу чтобы создать "натуральный" образ, после полученных подсказок на это уходит 10 минут)) а за технику  Smoky Eyes отдельное спасибо) ну и прочие премудрости я думаю в ближайшие выходные мне пригодятся! Жду новых интересных мастер классов!</p></li>
+    </ul>
+  </div>
+
+  </div>
+  <div class="footer">
+    <div class="container foooter">
+      <div class="phone">
+      <p>+7 800 000-00-00</p>
+      <p>Адресс</p>      
+    </div>
+    <a class="logo" href="index.php"><img src="img/logo.png"></a>
+    <a class="zakaz-ring" href="#wind-zakaz-top">Заказать звонок</a>
+    </div>
+  </div>
+    <script src="js/jquery.countdown.js"></script>
+  </body>
+</html>

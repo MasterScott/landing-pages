@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+     <meta charset="utf-8">
+    <title>Шаблон</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="assets/css/style.css" rel="stylesheet" media="screen">
+    <link href="assets/css/jquery.countdown.css" rel="stylesheet" type="text/css"> 
+
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.countdown-ru.js"></script>
+
+<!--[if IE 7]>
+    <link rel="stylesheet" href="assets/font/phone-ie7.css"><![endif]-->
+
+  </head>
+  <body>
+    <div class="menu">
+    	<p class="inmenu">
+        <a href="#poch">Почему мы</a>
+        <a href="#uslug">Наши услуги</a>
+        <a href="#prog">Программы</a>
+        <a href="#how">Порядок работы</a>
+        <a href="#opi">Отзывы</a>
+        <a href="#port">Портфолио</a>
+        <a href="#cont">Контакты</a>
+        </p>
+    </div>
+    <!-- Первый экран -->   
+    <div class="underheader"> 
+     <div class="header">
+    		<div class="container">
+ 	   			<div class="row">
+                	 <div class="col-4">
+                     	<div style="width:259px; height:195px; background:url(assets/img/logo1.png) no-repeat bottom center">
+                        </div>
+                     </div>
+					 <div class="col-4">
+                     	<p class="descr">ОРГАНИЗАЦИЯ ДЕТСКИХ ПРАЗДНИКОВ<br>В МОСКВЕ И ОБЛАСТИ</p>
+                     </div>
+				   	  <div class="col-4 text-right">
+                       		<p style="font-size:32px; padding-top:45px;padding-right: 20px;">+7(800)000-00-00</p>
+                            <p style="padding-right: 20px;">Часы работы: 10:00 - 22:00</p>
+                    </div>
+		       </div>
+         </div>
+    </div>
+    </div>
+
+    	 <!-- id="ajax-contact-form" -->
+    	<div class="first-screen">
+           	<div class="container">
+               	<div class="row" style="position:relative">
+                	<div class="headin">
+                    	<p class="purple-bg">ИСПОЛНИТЕ МЕЧТЫ  РЕБЕНКА - ПОДАРИТЕ ЕМУ СКАЗКУ!<br><span style="font-size:24px">организуем детский праздник всего от 3000 руб</span></p>
+                    </div>
+                	 <div class="akcia">
+                     		 <p style="font-size:31px">АКЦИЯ!</p>
+                            <p style="font-size:24px; line-height:1.4em">ЗАКАЖИТЕ ПРАЗДНИК ОТ ДВУХ<br>АНИМАТОРОВ СЕГОДНЯ И МЫ<br>СДЕЛАЕМ <b>АКВАГРИМ БЕСПЛАТНО!</b></p>
+                            <p style="padding-bottom:10px;">Экономьте по акции более 1000 рублей!</p>
+                            <p><b>ДО КОНЦА:</b></p>
+                            <div id="myCountdown" class="ubuntu">
+                            	 <script>var dt = new Date(); var month = dt.getMonth(); var day = dt.getDate(); if (dt.getHours() >= 20) { var day = dt.getDate()+1;} var year = dt.getFullYear(); $('#myCountdown').countdown({until: new Date(year, month, day, 20)});</script>                              
+                            </div>
+
+                     </div>
+	       			 <div class="forma" style="top:160px;">
+                           <div id="note"></div>
+	 						  <div id="fields">
+ 			           			<p><span class="borbotred" style="font-size:25px">ОСТАВЬТЕ ЗАЯВКУ</span><br><br><span data-toogle="popover" data-content="Введите телефон"  style="font-size:19px">и наши менеджеры<br>бесплатно подберут<br>идеальную программу<br>для Вашего ребенка</span><br></p>
+           	    				<form  action="index1.php" method="Post">
+ 		    	           			<input class="clearble form-control" name="name" type="text" size="20" placeholder="Ваше имя" style="margin-top: 20px;">
+		 							<input data-toogle="popover" data-content="Введите данные" data-placement="top"  id="inp" class="clearble form-control" name="phone" type="text" size="20" placeholder="Ваш телефон" style="margin-top: 15px;">
+ 		            	    		<input required class="btn btn-red" type="submit" value="ЗАКАЗАТЬ">
+       		   					</form>
+ 		        	 		  </div>
+ 		        	 </div>
+                 </div>   
+       		 </div>
+         </div>
+        <!-- <div class="backonhead"></div> -->
+    <!-- О компании -->  
+      <a name="poch"></a>
+<div class="about-us">
+          	<div class="container">
+            	<div class="row text-center" style="font-size:19px">
+                	<div class="headin1">
+                    	<h1><span class="borbotred">НАШИ ПРЕИМУЩЕСТВА:</span></h1>
+                    </div>    
+                	<div class="col-4">
+                    	<img src="assets/img/eggs/1.png" height="142" width="auto" style="margin-bottom:8px">
+                    	<p><b>У нас работают<br>профессионалы!</b></p>
+						<p>Все аниматоры - актеры<br>лучших театров Москвы с<br>опытом работы более 7 лет</p>
+                    </div>
+                	<div class="col-4">
+                    	<img src="assets/img/eggs/2.png" height="125" width="auto" style="margin-bottom:25px">
+	                   	<p><b>Индивидуальный подход<br>к каждому вашему ребенку!</b></p>
+						<p>Разработка уникальных<br>сценариев под увлечения<br>и возраст ребенка</p>
+                    </div>
+                	<div class="col-4">
+                    	<img src="assets/img/eggs/3.png" height="112" width="auto" style="margin-bottom:19px; margin-top:19px">
+                     	<p><b>Персонажи любимых книг<br>и мультфильмов!</b></p>
+						<p>У нас своя собственная<br>костюмерная, насчитывающая<br>более 200 качественных<br>костюмов, привезенных из США</p>
+                    </div>
+              </div>    
+            	<div class="row text-center" style="font-size:19px; margin:60px 0">
+                	<div class="col-1"></div>
+                	<div class="col-5" style="margin:0 -30px 0 30px">
+                    	<img src="assets/img/eggs/4.png" height="99" width="auto" style="margin-bottom:13px">
+	                   	<p><b>Мы работаем - Вы отдыхаете!</b></p>
+						<p>Организация детского праздника<br>под ключ: от подбора площадки<br>до праздничного торта</p>
+                    </div>
+                	<div class="col-5" style="margin:0 30px 0 -30px">
+                    	<img src="assets/img/eggs/5.png" height="102"  width="auto" style="margin-bottom:10px;">
+                     	<p><b>Не торопитесь платить!</b></p>
+						<p>Оплата услуг без предоплаты,<br>по факту</p>
+                    </div>
+             	 </div>    
+        	</div>
+        </div>
+        <div style="background-color:rgb(178,30,182); height:35px; min-width:1024px; box-shadow:0 15px 20px rgba(0,0,0,.3)"></div>        
+    <!-- О компании -->  
+            <a name="uslug"></a>
+<div class="about-us">
+          	<div class="container">
+            	<div class="row text-center" style=" margin:70px 0">
+                	<div style="margin-bottom:70px">
+                    	<h1>НАШИ УСЛУГИ:</h1>
+                    </div>    
+                	<div class="col-6" style="border-right: 2px solid #d80;">
+	                   	<p style="font-size:36px; color:#bc2e88;">Программа:</p>
+						<p class="oneprim" style="padding-left:99px"><img src="assets/img/preim/p1.png" width="37" height="33">Аниматор</p>
+						<p class="oneprim" style="padding-left:104px"><img src="assets/img/preim/p2.png" width="32" height="32">Аквагрим</p>
+						<p class="oneprim" style="padding-left:103px"><img src="assets/img/preim/p3.png" width="33" height="39">Фокусник</p>
+						<p class="oneprim" style="padding-left:107px"><img src="assets/img/preim/p4.png" width="29" height="28">Дрессированные животные</p>
+						<p class="oneprim" style="padding-left:103px"><img src="assets/img/preim/p5.png" width="33" height="33">Цирковые номера</p>
+						<p class="oneprim" style="padding-left:103px"><img src="assets/img/preim/p6.png" width="33" height="30">Шоу мыльных пузырей</p>
+						<p class="oneprim" style="padding-left:115px"><img src="assets/img/preim/p7.png" width="21" height="37">Научное шоу</p>
+						<p class="oneprim" style="padding-left:115px"><img src="assets/img/preim/p8.png" width="21" height="38">Детское бармен шоу</p>
+						<p class="oneprim" style="padding-left:80px"><img src="assets/img/preim/p9.png" width="56" height="37">Игровой квест</p>
+						<p class="oneprim" style="padding-left:105px"><img src="assets/img/preim/p10.png" width="31" height="32">Приглашение DJ</p>
+                    </div>
+                	<div class="col-6">
+	                   	<p style="font-size:36px; color:#bc2e88;">Дополнительно:</p>
+						<p class="oneprim" style="padding-left:67px"><img src="assets/img/preim/d1.png" width="32" height="40">Тематический торт</p>
+						<p class="oneprim" style="padding-left:56px"><img src="assets/img/preim/d2.png" width="43" height="37">Оформление помещения</p>
+						<p class="oneprim" style="padding-left:61px"><img src="assets/img/preim/d3.png" width="38" height="35">Фотосъемка</p>
+						<p class="oneprim" style="padding-left:55px"><img src="assets/img/preim/d4.png" width="44" height="38">Видеосъемка</p>
+						<p class="oneprim" style="padding-left:67px"><img src="assets/img/preim/d5.png" width="32" height="35">Печать плакатов и баннеров</p>
+						<p class="oneprim" style="padding-left:69px"><img src="assets/img/preim/d6.png" width="30" height="31">Печать приглашений</p>
+						<p class="oneprim" style="padding-left:62px"><img src="assets/img/preim/d7.png" width="37" height="31">Шаржист</p>
+						<p class="oneprim" style="padding-left:67px"><img src="assets/img/preim/d8.png" width="32" height="32">Сюрпризы и подарки за конкурсы</p>
+						<p class="oneprim" style="padding-left:66px"><img src="assets/img/preim/d9.png" width="33" height="32">Батуты/надувные аттракционы</p>
+						<p class="oneprim" style="padding-left:67px"><img src="assets/img/preim/d10.png" width="32" height="40">Шоколадный фонтан</p>
+                    </div>
+             	 </div>    
+        	</div>
+        </div>
+
+    <!-- О компании -->  
+      
+		<div class="clamp">
+          	<div class="container">
+            	<div class="row text-center" style=" margin:30px 0; position:relative">
+	       			 <div class="forma" style="top:40px;">
+                           <div id="note2"></div>
+	 						<div id="fields2">
+ 			           			<p><span class="borbotred" style="font-size:25px">ОСТАВЬТЕ ЗАЯВКУ</span><br><br><span data-toogle="popover" data-content="Введите телефон"  style="font-size:19px">и мы вышлем Вам<br><b>прайс-лист</b> с ценами<br>на наши услуги</span><br></p>
+           	    				<form action="index1.php" method="Post">
+ 		    	           			<input class="clearble form-control" name="name" type="text" size="20" placeholder="Ваше имя" style="margin-top: 20px;">
+		 							<input data-toogle="popover" data-content="Введите данные" data-placement="top"  id="inp2" class="clearble form-control" name="phone" type="text" size="20" placeholder="Ваш телефон" style="margin-top: 15px;">
+ 		            	    		<input required class="btn btn-red" type="submit" value="ЗАКАЗАТЬ">
+       		   					</form>
+ 		        	 		  </div>
+ 		        	 </div>                	
+                </div>
+            </div>
+         </div>       
+
+    <!--Программы -->  
+            <a name="prog"></a>
+
+		<div class="programms">
+          	<div class="container">
+            	<div class="row text-center" style=" margin:30px 0; position:relative">
+                	<div style="margin-bottom:70px">
+                    	<h1>НАШИ ПРОГРАММЫ:</h1>
+                    </div>    
+                    <div class="row" style="margin-bottom:40px;">
+                    	<div class="col-4">
+                        	<img src="assets/img/progamms/1.jpg">
+                            <div class="onprog">ГАРРИ ПОТТЕР</div>
+                        </div>
+                    	<div class="col-4">
+                        	<img src="assets/img/progamms/2.jpg">
+                            <div class="onprog">СУПЕРГЕРОИ</div>
+                        </div>
+                    	<div class="col-4">
+                        	<img src="assets/img/progamms/3.jpg">
+                            <div class="onprog">АЛИСА В СТРАНЕ ЧУДЕС</div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom:40px;">
+                    	<div class="col-4">
+                        	<img src="assets/img/progamms/4.jpg">
+                            <div class="onprog" style="font-size:23px">ПИРАТЫ КАРИБСКОГО МОРЯ</div>
+                        </div>
+                    	<div class="col-4">
+                        	<img src="assets/img/progamms/5.jpg">
+                            <div class="onprog">ФЕИ ВИНКС</div>
+                        </div>
+                    	<div class="col-4">
+                        	<img src="assets/img/progamms/6.jpg">
+                            <div class="onprog">ШРЕК</div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom:40px;">
+                    	<div class="col-4">
+                        	<img src="assets/img/progamms/7.jpg">
+                            <div class="onprog">ПРИНЦЕССЫ ДИСНЕЯ</div>
+                        </div>
+                    	<div class="col-4">
+                        	<img src="assets/img/progamms/8.jpg">
+                            <div class="onprog">АВАТАР</div>
+                        </div>
+                    	<div class="col-4">
+                        	<img src="assets/img/progamms/9.jpg">
+                            <div class="onprog">ПИТЕР ПЭН</div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom:40px;">
+                    	<div class="col-4">
+                        	<img src="assets/img/progamms/10.jpg">
+                            <div class="onprog">ЗВЕЗДНЫЕ ВОЙНЫ</div>
+                        </div>
+                    	<div class="col-4">
+                        	<img src="assets/img/progamms/11.jpg">
+                            <div class="onprog">МАТРИЦА</div>
+                        </div>
+                    	<div class="col-4">
+                        	<img src="assets/img/progamms/12.jpg">
+                            <div class="onprog">КЛОУНЫ</div>
+                        </div>
+                    </div>
+                    <div style="margin:0 auto 70px; max-width:250px">
+                    	<a  data-toggle="modal" href="#myModal"  class="btn btn-red" style="font-size:17px">ПОКАЗАТЬ ВСЕ ПРОГРАММЫ</a>
+                    </div>
+                </div>
+            </div>
+         </div>       
+
+    <!-- О компании -->  
+            <a name="how"></a>
+
+		<div class="how-we">
+          	<div class="container">
+            	<div class="row text-center" style=" margin:30px 0; position:relative">
+                	<div style="margin-bottom:50px">
+                    	<h1 style="color:#fff;">КАК МЫ РАБОТАЕМ</h1>
+                    </div>    
+                    <img src="assets/img/how.png" width="947" height="293">
+                    <p class="pinhow" style="left:50px">Вы оставляете<br>заявку на сайте</p>
+                    <p class="pinhow" style="top:430px; left:220px">Менеджер уточняет<br>детали Вашего заказа</p>
+                    <p class="pinhow" style="left:445px">Мы утверждаем<br>смету</p>
+                    <p class="pinhow" style="top:430px; right:250px">Оплата по факту<br>проведения</p>
+                    <p class="pinhow" style="right:15px">Ваш ребенок<br>постояно вспоминает<br>этот волшебный день</p>
+                </div>
+            </div>
+         </div>       
+
+    <!-- О компании -->  
+            <a name="opi"></a>
+
+		<div class="opiour">
+          	<div class="container">
+            	<div class="row" style="margin:30px 0">
+                	<div style="margin-bottom:30px">
+                    	<h1 style="color: #ddd;text-align:center"><span style=" background-color:#bc2e88; padding:10px 15px;">ОТЗЫВЫ НАШИХ КИЕНТОВ</span></h1>
+                    </div>    
+            		<div class="opinion">
+                    	<div class="col-3" style="text-align:center;padding-top: 15px;">
+                        	<img class="img-circle" src="assets/img/opinion/opinion1.png">
+                            <p style="font-size:19px">ВАСИЛИСА<br>
+                            <span style=" font-size:14px">vasilisa-ksintaris@rambler.ru</span></p>
+                        </div>
+                        <div class="col-9">
+                        	<p style="font-size:17px">«Устраивала праздник по поводу дня рождения моего 11-летнего сына и в интернете случайно нашла "Мастерскую мечты" - мечты сбываются! Такого восторга и у детей, и у родителей я, честно говоря, не ожидала. Была анимация по Гарри Поттеру и было полное ощущение, что к ребятам пришел и сам Гарри Поттер и Гермиона. Настолько все было артистично, профессионально, захватывающе. Мы все, независимо от возраста, погрузились в атмосферу сказки. А опыты Сумасшедшего профессора дети смотрели разинув рот. Не говоря уже о четкой, слаженной работе, хочется отметить и финансовую порядочность коллектива. Я очень благодарна вам всем за вашу прекрасную работу, ваш талант, ваше отношение и вашу порядочность. Я с чистой совестью рекомендую своим друзьям и знакомым обращаться только в  "Мастерскую мечты", зная, что все будет организовано на высшем уровне и честно. Большое вам всем СПАСИБО!»</p>
+                        </div>
+                    </div>
+            		<div class="opinion">
+                    	<div class="col-3" style="text-align:center;padding-top: 15px;">
+                        	<img class="img-circle" src="assets/img/opinion/opinion2.png">
+                            <p style="font-size:19px">МАРИЯ<br>
+                            <span style=" font-size:14px">maria.nelepo@gmail.com</span></p>
+                        </div>
+                        <div class="col-9" style="padding-top: 80px;">
+                        	<p style="font-size:17px">«Прекрасная организация дня рождения для моей сестры, 10-летней девочки. Команда профессионалов создала сказочную атмосферу по истории Рапунцель. Различные конкурсы не давали детям ни минуты отдохнуть. Одним словом ребенок мечтает о следующем дне рождении, где еще одна сказка воплотится в реальность»</p>
+                        </div>
+                    </div>
+            		<div class="opinion">
+                    	<div class="col-3" style="text-align:center;padding-top: 15px;">
+                        	<img class="img-circle" src="assets/img/opinion/opinion4.png">
+                            <p style="font-size:19px">АЛЕКСАНДР<br>
+                            <span style=" font-size:14px">woer@rambler.ru</span></p>
+                        </div>
+                        <div class="col-9">
+                        	<p style="font-size:17px">«Был у нас уже один неудачный опыт заказа праздника для сына на прошлый день рождения в другой компании. Пригласили нам клоунов, дети от них постоянно убегали и играли самостоятельно, костюмы совершенно не те, что показывали нам на фотографиях, в общем, осталось после праздника ощущение легкого разочарования, мы бы и сами справились не хуже. В этом году решили с женой подойти ответственней. Знакомые посоветовали обратиться в «Мастерскую мечты». Что сразу нам понравилось, что девушка-организатор сама приехала к нам, подробно рассказала про возможные программы и познакомила с актером. Все прошло на ура! Через  5 минут после начала праздника, дети уже с веселыми визгами носились по всей квартире, собирали какие-то монетки, выполняли задания и искали клад с пиратом. Спасибо команде профессионалов агентства «Мастерская мечты»! Вы знаете, как найти ключ к сердцу ребенка!»</p>
+                        </div>
+                    </div>
+             		<div class="opinion">
+                    	<div class="col-3" style="text-align:center;padding-top: 15px;">
+                        	<img class="img-circle" src="assets/img/opinion/opinion3.png">
+                            <p style="font-size:19px">ДМИТРИЙ<br>
+                            <span style=" font-size:14px">7670864@yandex.ru</span></p>
+                        </div>
+                        <div class="col-9" style="padding-top: 70px;">
+                        	<p style="font-size:17px">«День рождение нашего сына прошел на одном дыхании благодаря профессиональной организации нашего праздника! Спасибо за необыкновенное разнообразие развлечений, за красочность и радость. Особенно неизгладимое впечатление произвело многообразие животных, которые очень полюбились имениннику и его гостям. И отдельное спасибо за понимание и чуткое отношение к работе и пожеланиям своих клиентов.»</p>
+                        </div>
+                    </div>
+            		<div class="opinion">
+                    	<div class="col-3" style="text-align:center;padding-top: 15px;">
+                        	<img class="img-circle" src="assets/img/opinion/opinion5.png">
+                            <p style="font-size:19px">АНАСТАСИЯ<br>
+                            <span style=" font-size:14px">an940@yandex.ru</span></p>
+                        </div>
+                        <div class="col-9">
+                        	<p style="font-size:17px">«Раньше всегда готовила праздник для дочери сама: придумывала конкурсы, рисовала плакаты и готовила. Но на 10 лет решила все-таки устроить ребенку сюрприз и пригласить аниматоров. Подбирая агентство, очень боялась ошибиться. Вдруг игры будут скучные или аниматоры не найдут общий язык с дочкой (она у нас барышня скромная). Решила рискнуть и выбрать агентство через интернет. И ничуть не пожалела! Организаторы из «Мастерской мечты» предложили нам прекрасную программу по «Алисе в стране чудес». Аниматор-Шляпник был безумно похож на персонажа фильма и сразу же сдружился с дочкой и остальными детками. Весело было всем: и девчонкам, и мальчишкам, и даже нам. А белого кролика с мыльным шоу дети долго не отпускали, хотели по несколько раз окунуться в огромный пузырь! Теперь дочка хочет встретиться со Шреком на следующий день рождения, а я теперь совершенно не волнуюсь и знаю к кому обращаться за помощью.»</p>
+                        </div>
+                    </div>
+            	</div>
+      <a name="port"></a>
+            	<div class="row text-center" style=" margin:30px 0 70px">
+                	<div style="margin-bottom:30px">
+                    	<h1 style="color: #bc2e88;">НАШИ ПРАЗДНИКИ</h1>
+                    </div>    
+                    <div class="col-6" style="padding:25px">
+                    	<img src="assets/img/ourworks/1.jpg" style="margin-left: -23px;">
+                     </div>   
+                    <div class="col-6" style="padding:25px">
+                    	<img src="assets/img/ourworks/2.jpg" style="margin-right: -23px;">
+                     </div>   
+                    <div class="col-4" style="padding:30px">
+                    	<img src="assets/img/ourworks/3.jpg">
+                     </div>   
+                    <div class="col-4" style="padding:30px">
+                    	<img src="assets/img/ourworks/4.jpg">
+                     </div>   
+                    <div class="col-4" style="padding:30px">
+                    	<img src="assets/img/ourworks/5.jpg">
+                     </div>   
+                    <div class="col-4" style="padding:30px">
+                    	<img src="assets/img/ourworks/6.jpg">
+                     </div>   
+                    <div class="col-4" style="padding:30px">
+                    	<img src="assets/img/ourworks/7.jpg">
+                     </div>   
+                    <div class="col-4" style="padding:30px">
+                    	<img src="assets/img/ourworks/8.jpg">
+                     </div>   
+                </div>
+            </div>
+         </div>       
+      <a name="cont"></a>
+
+
+
+    <!-- Первый экран -->   
+    <div class="underheader"> 
+     <div class="header">
+    		<div class="container">
+ 	   			<div class="row">
+                	 <div class="col-4">
+                     	<img src="assets/img/logo.png" style="margin-top:-42px">
+                     </div>
+					 <div class="col-4">
+                     	<p style="margin: 40px 0 0 -50px;">Кампания<br>ИНН <br>КПП </p>
+                     </div>
+				   	  <div class="col-4 text-right">
+                       		<p style="font-size:32px; padding-top:45px;padding-right: 20px;">+7(800)000-00-00</p>
+                            <p style="padding-right: 20px;">Часы работы: 10:00 - 22:00</p>
+                    </div>
+		       </div>
+         </div>
+    </div>
+    </div>
+      <!-- ====================== MODAL ================= -->  
+	  <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+	       			 <div class="forma" style="">
+                           <div id="note3"></div>
+	 						  <div id="fields3">
+ 			           			<p><span class="borbotred" style="font-size:25px">ОСТАВЬТЕ ЗАЯВКУ</span><br><br><span data-toogle="popover" data-content="Введите телефон"  style="font-size:19px">и наши менеджеры<br>бесплатно пришлют<br>Вам полный список<br>наших программ</span><br></p>
+           	    				<form action="index1.php" method="Post">
+ 		    	           			<input class="clearble form-control" name="name" type="text" size="20" placeholder="Ваше имя" style="margin-top: 20px;">
+		 							<input data-toogle="popover" data-content="Введите данные" data-placement="top"  id="inp3" class="clearble form-control" name="phone" type="text" size="20" placeholder="Ваш телефон" style="margin-top: 15px;">
+ 		            	    		<input required class="btn btn-red" type="submit" value="ЗАКАЗАТЬ">
+       		   					</form>
+ 		        	 		  </div>
+ 		        	 </div>
+    	</div> 
+        <!-- ====================== MODAL ================= -->
+
+<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter22377703 = new Ya.Metrika({id:22377703, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/22377703" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+    <!--<script src="assets/js/respond.js"></script>-->
+  </body>
+</html>

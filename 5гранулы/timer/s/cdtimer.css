@@ -1,0 +1,101 @@
+
+.cdtimer {
+    color: #000;
+    font-family: 'OpenSansCondensedBold', Arial, Helvetica, sans-serif;    
+    padding: 0;
+    margin: 95px auto;
+    position: relative;
+    width: 290px;
+    height: 150px;
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+
+    box-shadow: 0px 5px 5px #eee;
+    }
+    .cdtimer .days {
+        font-size: 0;
+        font-weight: bold;
+        line-height: 1em;
+        position: absolute;
+        top: 88px;
+        left: 30px;
+        text-align: center;
+        color: #443f3d;
+        background: url(../i/cdtimer/sep.png) right 7px no-repeat;
+        width: 60px;
+        }
+
+        .cdtimer .days SPAN {
+                font-size: 0;
+                font-weight: normal;
+                text-align: center;
+                line-height: 1em;
+                display: block;
+                text-transform: uppercase;
+                padding-top: 5px;
+                -moz-opacity: .75;
+                filter: alpha(opacity=75);
+                opacity: .75;
+                color: #443f3d;
+            }
+
+    .cdtimer .clock {
+        position: absolute;
+        top: 88px;
+        left: 10px;
+        }
+
+        .cdtimer .clock DIV {
+            font-size: 45px;
+            font-weight: 900;
+            line-height: 1em;
+            text-align: center;                      
+            padding-right: 20px;            
+            margin-right: 16px;
+            float: left;   
+            color: #443f3d;
+            background: url(../i/cdtimer/sep.png) right 7px no-repeat;         
+            }
+            .cdtimer .clock DIV:first-child {
+                margin-left: 35px;
+            }
+            .cdtimer .clock DIV:last-child {
+                color: rgba(255,255,255, 0.9);
+                font-size: 1px;
+            }
+            .cdtimer .clock DIV:nth-child(3) {
+                background: none;
+            }
+            .cdtimer .clock DIV SPAN {
+                font-size: 11px;
+                font-weight: normal;
+                text-align: center;
+                line-height: 1em;
+                display: block;
+                text-transform: uppercase;
+                padding-top: 5px;
+                -moz-opacity: .75;
+                filter: alpha(opacity=75);
+                opacity: .75;
+                color: #443f3d;
+                }
+
+        .cdtimer .clock DIV.ms {
+            text-align: left;
+            background: none;
+            padding-right: 0;
+            }
+
+    .cdtimer .expired {
+        color: #443f3d;
+        font-size: 50px;
+        text-align: center;
+        line-height: 150px;
+        position: absolute;
+        top: 25px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        }

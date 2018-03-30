@@ -1,0 +1,364 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Шаблоны</title>
+  <link type="text/css" rel="stylesheet" href="font/fonts.css">  
+  <link type="text/css" rel="stylesheet" href="font/font.css">  
+  <link type="text/css" rel="stylesheet" href="css/global.css">    
+  <script type="text/javascript" src="js/libs/modernizr-2.6.1.min.js"></script>  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+  <script src="jquery.maskedinput.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>    
+  <script type="text/javascript" src="js/carousel.js"></script>  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />  
+</head>
+<body class="body">  
+  <!-- ////////////////////////// ШАПКА-ШАПКА-ШАПКА \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+  <div class="header-bg">
+    <a class="top-logo" href="index.php"><img src="img/top-logo.png"></a>
+    <div class="top-call">
+      <p>Вопросы? Звони!</p>
+      <p><span style="color: #d54072;">+7 (800)</span> 000 00 00</p>
+      <a href="#zakaz">ЗАКАЗАТЬ ЗВОНОК</a>    
+    </div>
+    <div class="top-akcia">
+      <p><span style="color: #d54072;">ЗАКАЖИТЕ <span style="font-weight: bold;">ТАНЕЦ ЖИВОТА</span></span> СЕБЕ НА ПРАЗДНИК<br>
+СЕГОДНЯ И ПОЛУЧИТЕ СКИДКУ</p>
+      <form class="s_form" action="index1.php" method="POST">          
+        <input class="s_text nameinp sinp" type="text" name="name" placeholder="Ваше имя*">          
+        <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Ваш телефон*">
+        <input type="hidden"  name="email" class="email" value="none@none.ru">          
+        <input class="s_text adress" type="hidden" name="adress">          
+        <input type="hidden" value="C" name="button">
+        <input type="hidden"  name="comment" value="None">            
+        <input type="hidden" name="form_id" value="ЗАКАЗ УСЛУГИ">
+        <input class="s_submit" type="button" value="ЗАКАЗАТЬ">
+      </form>
+    </div>
+    <div class="videos">
+      <p>НАШЕ <span style="font-weight: bold;">ВИДЕО</span></p>
+      <a href="#video1"><img src="img/video1.jpg"></a>
+      <a href="#video2"><img src="img/video2.jpg"></a>
+      <a href="#video3"><img src="img/video3.jpg"></a>
+      <a href="#video4"><img src="img/video4.jpg"></a>
+    </div>
+    <div class="select">
+      <p>ПОЧЕМУ БОЛЕЕ<span> 3000</span> ЧЕЛОВЕК <span>ВЫБРАЛИ</span><br>ИМЕННО <span>НАС</span></p>
+      </div>
+    </div>
+<!-- /////////////////////////// ПОП-АП _ ПОП-АП _ ПОП-АП \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+<!-- ЗАКАЗ ЗВОНКА -->
+  <a href="#x" class="overlay" id="zakaz"></a>
+    <div class="popup">       
+      <div class="feedback">
+        <div class="zakaz-form">          
+          <p style="font-size: 23px;"><span>ЗАКАЖИТЕ ЗВОНОК</span><br>И МЫ ОБЯЗАТЕЛЬНО<br>ВАМ ПЕРЕЗВОНИМ</p>
+          <form class="s_form" action="index1.php" method="POST">          
+            <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">          
+            <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Телефон">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">          
+            <input class="s_text adress" type="hidden" name="adress">          
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input type="hidden" name="form_id" value="ЗАКАЗ УСЛУГИ">
+            <input class="s_submit" type="button" value="ЗАКАЗАТЬ">
+          </form>
+        </div>
+      </div>
+    </div>
+<!--/ЗАКАЗ ЗВОНКА -->
+<!-- ///////////////////////// ОСНОВНОЙ КОНТЕНТ \\\\\\\\\\\\\\\\\\\\\\\-->
+<!-- ВИДЕО 1 -->
+  <a href="index.php" class="overlay" id="video1"></a>
+    <div class="popup">       
+      <div class="feedback2">
+        <!-- <a class="close" title="Закрыть" href="#close"></a> -->
+        <iframe width="560" height="315" src="//www.youtube.com/embed/qCKkn6mbxmA" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+<!--/ВИДЕО 1 -->
+<!-- ВИДЕО 2 -->
+  <a href="index.php" class="overlay" id="video2"></a>
+    <div class="popup">       
+      <div class="feedback2">
+        <!-- <a class="close" title="Закрыть" href="#close"></a> -->
+        <iframe width="560" height="315" src="//www.youtube.com/embed/dhwZuuaRRKg" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+<!--/ВИДЕО 2 -->
+<!-- ВИДЕО 3 -->
+  <a href="index.php" class="overlay" id="video3"></a>
+    <div class="popup">       
+      <div class="feedback2">
+        <!-- <a class="close" title="Закрыть" href="#close"></a> -->
+        <iframe width="420" height="315" src="//www.youtube.com/embed/_GEvk_VGg4o" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+<!--/ВИДЕО 3 -->
+<!-- ВИДЕО 4 -->
+  <a href="index.php" class="overlay" id="video4"></a>
+    <div class="popup">       
+      <div class="feedback2">
+        <!-- <a class="close" title="Закрыть" href="#close"></a> -->
+        <iframe width="560" height="315" src="//www.youtube.com/embed/gGSeD-QshCA" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+<!--/ВИДЕО 4 -->
+    <div class="preimushchestva">
+      <div class="preim-left">
+      <ul>
+        <li><img src="img/preim/1.png"><p>Работаем с 2005 года</p></li>
+        <li><img src="img/preim/3.png"><p>Открытые и доступные цены:</p></li>
+        <li><img src="img/preim/5.png"><p>35 профессиональных<br>танцовщиц</p></li>
+        <li><img src="img/preim/7.png"><p>При необходимости заключаем<br>официальный договор</p></li>
+        <li><img src="img/preim/9.png"><p>Среди наших заказчиков<br>крупнейшие банки столицы,<br>торговые бренды</p></li>        
+      </ul>
+      </div>
+      <div class="preim-right">
+        <ul>
+        <li><img src="img/preim/2.png"><p><span>1500</span> рублей</p></li>
+        <li><img src="img/preim/4.png"><p><span>3000</span> рублей</p></li>
+        <li><img src="img/preim/6.png"><p><span>4000</span> рублей</p></li>
+        <li><img src="img/preim/8.png"><p>Вы владелец ресторана? Для<br>Вас специальное предложение<br>по цене</p></li>
+        <li><img src="img/preim/10.png"><p>Бесплатно проконсультируем,<br>как сделать мероприятие<br>незабываемым</p></li>
+        </ul>
+      </div>
+    </div>
+    <div class="zakaz-1">
+        <div class="my-carousel">
+        <div class="carousel-button-left"><a href="javascript:void(0);">&nbsp;</a></div> 
+        <div class="carousel-button-right"><a href="javascript:void(0);">&nbsp;</a></div>   
+        <div class="shadow-block" style="padding-left:0px;">
+          <div class="t">
+            <div class="b">
+              <div class="m">
+                <div class="m">
+                  <div class="t">
+                    <div class="t">
+                      <div class="b">
+                        <div class="b">
+                          <div class="carousel-wrapper"> 
+                            <div class="carousel-items"> 
+                              <div class="carousel-block">                 
+                               <img alt="" src="img/zakaz-1/slide1.png">
+                              </div>       
+                              <div class="carousel-block">                 
+                               <img alt="" src="img/zakaz-1/slide1.png">
+                              </div>                           
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        </div>
+        <div class="zakaz-form">
+          <p><span>ЗАКАЖИТЕ ТАНЕЦ<br>ЖИВОТА</span> НА СВОЙ<br>ПРАЗДНИК</p>
+          <form class="s_form" action="index1.php" method="POST">          
+            <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">          
+            <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Телефон">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">          
+            <input class="s_text adress" type="hidden" name="adress">          
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input type="hidden" name="form_id" value="ЗАКАЗ УСЛУГИ">
+            <input class="s_submit" type="button" value="ЗАКАЗАТЬ">
+          </form>
+        </div>
+      </div>
+      <div class="zakazhite">
+        <div class="zakazhite-header">
+          <p><span>ЗАКАЗАТЬ ТАНЕЦ ЖИВОТА</span> НА<br>СВОЙ ПРАЗДНИК</p>
+        </div>
+      <div class="zakaz-slider">
+        <img src="img/zakazhite/1.png">
+      </div>
+      <div class="zakaz-text">
+        <p>У нас вы легко и удобно можете заказать танец живота. Наши танцоры - это победители международных конкурсов bellydance! Оцените выступление исполнителей прямо сейчас в разделе Танцоры!
+          <br><br>Мы предоставляем профессиональных сольных исполнителей, мужской танец живота, дуэты и целые группы; отдельные номера и целые шоу-программы "под ключ" на ваше мероприятие.</p>
+      </div>
+      </div>
+      <div class="price">
+        <div class="price-header">
+          <p>НАШИ <span>ЦЕНЫ</span></p>
+        </div>
+        <ul>
+          <li><span class="pink"><span class="bold">1</span> ТАНЦОР</span><br>ОТ <span class="bold">1500</span></li>
+          <li><span class="pink"><span class="bold">2</span> ТАНЦОРА</span><br>ОТ <span class="bold">3000</span></li>
+          <li><span class="pink"><span class="bold">3</span> ТАНЦОРА</span><br>ОТ <span class="bold">4000</span></li>
+        </ul>
+        <p class="price-sale">ЗАКАЖИТЕ ТАНЦОРА СЕЙЧАС И ПОЛУЧИТЕ СКИДКУ</p>        
+          <form class="s_form" action="index1.php" method="POST">          
+            <input class="s_text nameinp sinp" type="text" name="name" placeholder="Ваше имя*">          
+            <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Ваш телефон*">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">          
+            <input class="s_text adress" type="hidden" name="adress">          
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input type="hidden" name="form_id" value="ЗАКАЗ УСЛУГИ">
+            <input class="s_submit" type="button" value="ЗАКАЗАТЬ ТАНЦОРА">
+          </form>        
+      </div>
+      <div class="our-dancers">
+        <div class="header-dancers">
+          <p class="pink">НАШИ <span>ТАНЦОРЫ</span></p>
+        </div>
+        <div class="dancer">
+          <img src="img/dancer1.png">
+          <p>Рост 155 см, вес 57кг, размер груди 2. Привлекательно вальяжная танцовщица.</p>
+        </div>
+        <div class="dancer">
+          <img src="img/dancer2.png">
+          <p>Рост 160 см, вес 59 кг, размер груди 2. Горячая и страстная исполнительница изысканного танца</p>
+        </div>
+        <div class="dancer">
+          <img src="img/dancer3.png">
+          <p>Рост 167 см, вес 64 кг, размер груди 2. Обворожительно сладкая танцовщица</p>
+        </div>
+        <div class="dancer">
+          <img src="img/dancer4.png">
+          <p>Рост 170 см, вес 66 кг, размер груди 2. Высококлассная танцовщица bellydance</p>
+        </div>
+        <div class="dancer">
+          <img src="img/dancer5.png">
+          <p>Рост 170см, вес 67 кг, размер груди 3. Многократная чемпионка конкурсов по танцу живота</p>
+        </div>
+        <div class="dancer">
+          <img src="img/dancer6.png">
+          <p>Рост 165 см, вес 62кг, размер груди 3. Зажигательно игривая брюнетка</p>
+        </div>
+        <div class="dancer">
+          <img src="img/dancer7.png">
+          <p>Рост 165 см, вес 63 кг, размер груди 2. Очаровательная исполнительница танца живота</p>
+        </div>
+        <div class="dancer">
+          <img src="img/dancer8.png">
+          <p>Рост 175 см, вес 68 кг, размер груди 2. Захватывающая дух</p>
+        </div>
+        <div class="dancer">
+          <img src="img/dancer9.png">
+          <p>Рост 170, вес 68 кг, размер груди 3. Сногсшибательная танцовщица</p>
+        </div>
+        <div class="dancer">
+          <img src="img/dancer10.png">
+          <p>Рост 180 см, вес 67 кг, размер груди 2. Грациозная и обаятельная танцовщица</p>
+        </div>
+        <div class="dancer">
+          <img src="img/dancer11.png">
+          <p>Рост 170 см, вес 68 кг, размер груди 3. Завораживающая взглядом королева танца</p>
+        </div>
+        <div class="dancer">
+          <img src="img/dancer12.png">
+          <p>Каролина, рост 165 см, вес 55кг, размер груди 2. Страстная богиня востока</p>
+        </div>
+        <div class="dancer-form">
+        <form class="s_form" action="index1.php" method="POST">          
+            <input class="s_text nameinp sinp" type="text" name="name" placeholder="Ваше имя*">          
+            <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Ваш телефон*">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">          
+            <input class="s_text adress" type="hidden" name="adress">          
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input type="hidden" name="form_id" value="ЗАКАЗ УСЛУГИ">
+            <input class="s_submit" type="button" value="ЗАКАЗАТЬ ТАНЦОРА">
+        </form> 
+      </div>
+      </div>
+      <div class="clients">
+        <div class="header-dancers">
+          <p class="pink">НАШИ <span>КЛИЕНТЫ</span></p>
+        </div>
+      </div>
+      <div class="rewivs">
+        <div class="rewivs-hear">
+          <p class="pink">ОТЗЫВЫ <span>О НАС</span></p>
+        </div>
+        <div class="p-style">
+          <div class="rewiv1">
+            <p>Время проведения: 21 декабря 2011г., 20.00<br>
+              Место проведения: г. Москва, "Кофе Хауз",<br>
+              закрытое корпоративное событие</p>
+          </div>          
+          <p class="big-rewiv">Потрясающе красивый танцор Тамерлан украсил наше предновогоднее меоприятие. Получили демонстрационный материал и быстро оформили заказ. Комапния постоянно держалась с нами на связи, танцор приехал точно вовремя. Если вам нужны не только красивые, но надежные и пунктуальные артисты, то это лучший выбор. С уважением, Музыченко Олеся, координатор отдела мотивации.</p>
+          <div class="rewiv3">
+            <p>Время проведения: 20 ноября 2011г., 18.00 - 19.00 Место проведения: ресторан "Южный дворик", г.Москва</p>
+          </div>
+          
+            <p class="big-rewiv">Отмечали юбилей - хотелось сделать сюрприз-подарок в виде танца живота. Поэтому никакой переписки по электронной почте, обо всем легко договорились с компанией по телефону. Предварительно отобрали желаемых исполнителей и сделали заказ танца живота. Все было просто супер! Спасибо вам!
+Елена.</p>     
+           <div class="rewiv5">
+            <p>Время проведения: 14 ноября 2011г., 19.30 - 21.00
+Место проведения: ресторан "Караван", г.Москва</p>
+          </div>     
+          <p class="big-rewiv">Легко нашла в Интернете компанию "TAMERLAND" Global Art Project, предоставляющую помимо прочего услуги танца живота по демократичной цене. И хотя наше событие должно было состояться уже на следующий день, в компании нам очень бысто подобрали танцовщицу. Мы не были уверены до конца в нашем выборе, поэтому воспользовались дополнительной услугой "бронирование исполнителя", и продолжили обмениваться мнениями с коллегами. Подобранная профессиональная танцовщица была просто великолепна! Так что если Вы сомневаетесь, просто позвоните в компанию, и убедитесь в качестве ее обслуживания.
+Ирина.</p>
+        </div>
+      </div> 
+      <br>  
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\ ПОДВАЛ-ПОДВАЛ ///////////////////////////// -->     
+      <div class="zakaz-1">
+        <div class="my-carousel">
+        <div class="carousel-button-left2"><a href="javascript:void(0);">&nbsp;</a></div> 
+        <div class="carousel-button-right2"><a href="javascript:void(0);">&nbsp;</a></div>   
+        <div class="shadow-block" style="padding-left:0px;">
+          <div class="t">
+            <div class="b">
+              <div class="m">
+                <div class="m">
+                  <div class="t">
+                    <div class="t">
+                      <div class="b">
+                        <div class="b">
+                          <div class="carousel-wrapper2"> 
+                            <div class="carousel-items2"> 
+                              <div class="carousel-block2">                 
+                               <img alt="" src="img/zakaz-1/slide1.png">
+                              </div>       
+                              <div class="carousel-block2">                 
+                               <img alt="" src="img/zakaz-1/slide1.png">
+                              </div>                           
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        </div>
+        <div class="zakaz-form">          
+          <p style="font-size: 23px;"><span>ОСТАЛИСЬ ВОПРОСЫ?</span><br>ОТПРАВЬТЕ ЗАЯВКУ<br>И МЫ ВАМ<br>ПЕРЕЗВОНИМ</p>
+          <form class="s_form" action="index1.php" method="POST">          
+            <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">          
+            <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Телефон">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">          
+            <input class="s_text adress" type="hidden" name="adress">          
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input type="hidden" name="form_id" value="ЗАКАЗ УСЛУГИ">
+            <input class="s_submit" type="button" value="ЗАКАЗАТЬ">
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <a class="bottom-logo" href="index.php"><img src="img/top-logo.png"></a>
+          <div class="bottom-call">
+            <p>Вопросы? Звони!</p>
+            <p><span style="color: #d54072;">+7 (800)</span> 000 00 00</p>
+            <a href="#zakaz">ЗАКАЗАТЬ ЗВОНОК</a>    
+          </div>
+      </div>
+      <script src="js/jquery.countdown.js"></script>
+  </body>
+</html>

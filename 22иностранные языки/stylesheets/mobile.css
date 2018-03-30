@@ -1,0 +1,53 @@
+
+
+/* Max width 1024px and orientation: landscape for iPad in landscape */
+@media (max-device-width: 1024px) and (orientation: landscape){
+}
+
+
+
+/* Design for a width of 768px for iPad in portrait */
+@media (max-device-width: 1024px) and (orientation: portrait){
+.mainLogos {
+    bottom: 77px;
+    left: 178px;
+    position: absolute;
+    width: 591px;
+    z-index: 2;
+}}
+
+/* Design for a width of 740px for Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px){
+.mainLogos {
+    bottom: 77px;
+    left: 58px;
+    position: absolute;
+    width: 591px;
+    z-index: 2;
+}}
+
+/* Design for a width of 420px for Mobile (Landscape) */
+@media only screen and (min-width: 601px) and (max-width: 767px){
+}
+
+/* Mobile width < 600px */
+@media (max-width: 600px){
+.mainLogos {
+    bottom: 77px;
+    left: 58px;
+    position: absolute;
+    width: 591px;
+    z-index: 2;
+}}
+
+
+@media only screen 
+and (max-width : 320px) {
+.mainLogos {
+    bottom: 77px;
+    left: 58px;
+    position: absolute;
+    width: 691px;
+    z-index: 2;
+}
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Шаблоны</title>
+  <link type="text/css" rel="stylesheet" href="css/global.css">     
+  <link type="text/css" rel="stylesheet" href="css/timer.css">  
+  <link type="text/css" rel="stylesheet" href="font/segoe-light.css">
+  <link type="text/css" rel="stylesheet" href="font/segoe-semibold.css">  
+  <link type="text/css" rel="stylesheet" href="font/segoe.css">  
+  <link rel="stylesheet" href="css/sliding-style.css" type="text/css" media="screen"> 
+  <script type="text/javascript" src="js/timer.js"></script> 
+  <script type="text/javascript" src="js/libs/modernizr-2.6.1.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+  <script src="jquery.maskedinput.min.js"></script>  
+  <script type="text/javascript" src="main.js"></script>  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />  
+</head>
+<body>  
+    <!-- /////////////////////////// popup \\\\\\\\\\\\\\\\\\\\\\\\ --> 
+    <a href="#x" class="overlay-zvonokt" id="wind-order-top"></a>  
+    <div class="popup-zvonokt">      
+      <!--<a class="close" title="Закрыть" href="#close"></a>-->
+        <div class="wind-order-top">          
+          <p>ОТПРАВЬТЕ ЗАЯВКУ<br>
+            <span>МЫ СВЯЖЕМСЯ С ВАМИ<br>В БЛИЖАЙШЕЕ ВРЕМЯ</span></p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="adress" placeholder="Почта">
+            <input class="s_text nameinp sinp copy-form" type="text" name="phone" placeholder="Телефон">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="Отправить заявку">
+        </form>
+        </div>
+      </div>  
+
+    <a href="#x" class="overlay-zvonokt" id="rewiv-form"></a>  
+    <div class="popup-zvonokt">      
+      <!--<a class="close" title="Закрыть" href="#close"></a>-->
+        <div class="wind-order-top">          
+          <p>ОСТАВЬТЕ ОТЗЫВ<br>
+            <span>НАМ ОЧЕНЬ ИНТЕРЕТСНО ВАШЕ МНЕНИЕ</span></p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="adress" placeholder="Почта">
+            <textarea class="s_text nameinp sinp copy-form" type="text" name="other" placeholder="Отзыв о нас"></textarea>
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="nu-ppc s_submit copy-form nu-ppc" type="button" name="send" value="Отправить заявку">
+        </form>
+        </div>
+      </div>       
+  <!-- ALL CONTENS -->  
+  <div class="header-bg">
+    <div class="container">
+      <a href="index.php"><img src="img/logo.png"></a>
+      <div class="telephone">
+        <p class="number"><span class="light-orange">+7 800</span> 000 00 00</p>
+        <a class="order-call" href="#wind-order-top">ЗАКАЗАТЬ ЗВОНОК</a>
+      </div>
+      <div class="we-make">
+      <p class="blue-background-p">
+        Яндекс.Директ, Google.Adwords <span>«Под ключ».</span>
+      </p>
+      <p class="blue-background-p">
+        <span>Настройка. Контроль.</span>
+      </p>
+      </div>
+      <div class="header-form">
+        <div class="my-form">
+          <p>АКЦИЯ</p>
+          <p>СКИДКА<br><span>40%</span></p>
+          <p>НА 3-х МЕСЯЧНОЕ<br>
+            ВЕДЕНИЕ ВАШЕЙ<br>
+            РЕКЛАМНОЙ<br>
+            КАМПАНИИ В<br>
+            ЯНДЕКС.ДИРЕКТ</p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input class="s_text adress copy-form" type="text" name="adress" placeholder="Почта">
+            <input class="s_text adress copy-form" type="hidden" name="other" value="ОТПРАВЛЕННО С ФОРМЫ &quot;АКЦИЯ&quot;">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="Отправить заявку">
+        </form>
+        <p class="end-action">ДО КОНЦА АКЦИИ ОСТАЛОСЬ</p>
+        </div>
+        <div class="timer">          
+          <div class="countbox"><div id="countbox1"> </div></div>       
+        </div>
+      </div>
+      <ul class="preimushchestva">
+        <li><img src="img/preim1.png"><br>ГАРАНТИЯ<br>НИЗКИХ ЦЕН</li>
+        <li><img src="img/preim2.png"><br>ОТСУТСТВИЕ СКРЫТЫХ<br>ПЛАТЕЖЕЙ</li>
+        <li><img src="img/preim3.png"><br>ПРОЗРАЧНОСТЬ<br>РАБОТЫ НА 100%</li>
+        <li><img src="img/preim4.png"><br>СОБЛЮДЕНИЕ СРОКОВ<br>ИСПОЛНЕНИЯ</li>
+        <li><img src="img/preim5.png"><br>ГАРАНТИЯ ВЫСОКОГО<br>РЕЗУЛЬТАТА</li>
+      </ul>
+      <h2>О КОМПАНИИ В ЦИФРАХ</h2>
+      <p class="numbers-for-company">ЗА БОЛЕЕ ЧЕМ ПОЛУТОРАЛЕТНИЙ ОПЫТ РАБОТЫ, НАШИМИ УСЛУГАМИ<br>ВОСПОЛЬЗОВАЛОСЬ <span class='blue'>БОЛЕЕ 670 УЧАСТНИКОВ СООБЩЕСТВА<br>
+        “БИЗНЕС МОЛОДОСТЬ”</span>, <span class='red'>БОЛЕЕ 240 ОРГАНИЗАЦИЙ И КОМПАНИЙ,<br></span> <span class='yellow'>БОЛЕЕ 70 РУКОВОДИТЕЛЕЙ БЛОГОВ И ЛИЧНЫХ СТРАНИЦ</span></p>
+    </div>
+  </div>
+
+  <div class="container why-we">
+    <h3>ПОЧЕМУ МЫ</h3>
+    <div class="why-we-left">
+      <div class="one-block">
+        <img src="img/how-we1.png">
+        <p class="uno-pee">Анализируем Вашу Целевую аудиторию и ее потребности.</p>
+        <p class="two-pee">Особое внимание мы уделяем сбору и анализу информации о Вашей Целевой аудитории. Рисуем портрет клиента. Выявляем круг людей, которые с наибольшей вероятностью купят Ваш товар или воспользуются услугой. </p>
+      </div>
+
+      <div class="one-block">
+        <img src="img/how-we3.png">
+        <p class="uno-pee">Настраиваем Яндекс.Метрику, устанавливаем цели.</p>
+        <p class="two-pee">С настроенной Яндекс.Метрикой Вы без труда получите доступ к информации о посетителях Вашего сайта, об их активности и достигнутых целях, которые важны в первую очередь для Вас. </p>
+      </div>
+
+      <div class="one-block">
+        <img src="img/how-we5.png">
+        <p class="uno-pee">Составляем индивидуальные заголовки и тексты объявлений.</p>
+        <p class="two-pee">При написании заголовков, текстов объявлений мы учитываем их соотношение, как между собой, так и с ключевыми словами. А использование «продающих-слов», «слов-крючков» и применение техники ODC:
+«O» — offer (предложение) 
+«D» — deadline (ограничение по времени)
+«С» — call to action (призыв к действию)
+позволяет привлечь внимание Вашей Целевой аудитории на 46% больше!</p>
+      </div>
+
+      <div class="one-block">
+        <img src="img/how-we7.png">
+        <p class="uno-pee">Определяем стратегию Вашей рекламной кампании.</p>
+        <p class="two-pee">Очень важно подойти к данному вопросу со всей ответственностью. Малейшая неточность может привести к увеличению бюджета рекламной кампании на 20-30% и снижению кликабельности объявлений, как результат низкой эффективности кампании в целом. Чтобы этого не допустить наши специалисты проводят предварительный анализ, который позволяет выявить подходящую стратегию показов объявлений именно для Вашей рекламной кампании.</p>
+      </div>
+    </div>
+
+    <div class="why-we-right">
+      <div class="one-block">
+        <img src="img/how-we2.png">
+        <p class="uno-pee">Анализируем Ваше конкурентное окружение.</p>
+        <p class="two-pee">Мы знаем, кто из Ваших конкурентов является лидером по продвижению своих товаров (услуг) через контекстную рекламу. Знаем его сильные стороны и отличительные особенности, позволяющие выделяться и привлекать большую часть потенциальных клиентов Вашей ниши. Знаем и о его слабых сторонах, о которых не подозревает он сам. Такие знания позволяют нам создавать новых лидеров рынка, оставляя конкурентов далеко позади!</p>
+      </div>
+
+      <div class="one-block">
+        <img src="img/how-we4.png">
+        <p class="uno-pee">Подбираем ключевые запросы, по которым о Вас узнают потенциальные клиенты. Акцент на продающие ключевые слова!</p>
+        <p class="two-pee">Мы понимаем, что дилетантский подход к составлению основы основ Вашей рекламной кампании может привести к разочарованию контекстной рекламой в целом, что не в коем случае не является нашей задачей.</p>
+      </div>
+
+      <div class="one-block">
+        <img src="img/how-we6.png">
+        <p class="uno-pee">Снижаем стоимость клика в разы за счет собственных наработанных методик.</p>
+        <p class="two-pee">Мы используем авторские наработки настройки и контроля рекламной кампании, позволяющие нам снижать стоимость кликов Ваших объявлений на 24-83% от первоначально установленной Яндекс.Директом.</p>
+      </div>
+
+      <div class="one-block">
+        <img src="img/how-we8.png">
+        <p class="uno-pee">Контролируем и обновляем цены за клик каждые 5 минут.</p>
+        <p class="two-pee">Используемое нами программное обеспечение контролирует ставки Ваших объявлений в онлайн режиме 24 часа в сутки 7 дней в неделю.  Обновление цены за клик каждые 5 минут, позволяет сократить Ваши расходы на рекламу до 60% и защитить от возможных «подпорок», используемых конкурентами, направленных на «слив» Вашего бюджета.</p>
+      </div>
+    </div>    
+  </div>
+
+  <div class="contens-form">
+    <div class="container">
+    <div class="browser">
+
+    </div>
+    <div class="my-form center-contens">
+          <p class="forma-pee">ОТПРАВЬТЕ ЗАЯВКУ<br>
+                              <span>ДЛЯ ПОЛУЧЕНИЯ  БОЛЕЕ<br>
+                              ПОДРОБНОЙ ИНФОРМАЦИИ</span></p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input class="s_text adress copy-form" type="text" name="adress" placeholder="Почта">
+            <input class="s_text adress copy-form" type="hidden" name="other" value="ФОРМА &quot;СТОИМОСТЬ ПЕРЕХОДА НА САЙТ&quot;">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="Отправить заявку">
+        </form>
+        </div>
+       </div> 
+  </div>
+
+  <div class="yes-no container">
+    <div class="why-we-left">
+      <p class="procent">80%</p>
+      <p class="no-italic">КЛИЕНТОВ, СТАЛКИВАЮТСЯ<br>СО СЛЕДУЮЩИМИ ПРОБЛЕМАМИ:</p>
+      <p class="no">Высокими ценами за клики</p>
+      <p class="no">Отсутствием возможности просмотра<br>
+                    рекламной кампании и статистики,<br>
+                    ввиду размещения на аккаунте агентства.</p>
+      <p class="no">Обязательным ежемесячным расходованием фиксированной суммы установленной агентством.</p>
+      <p class="no">Низкими показателями CTR Вашей рекламной кампании! (менее 2%)</p>
+      <p class="no">Получением нецелевого трафика, как результат отсутствием продаж.</p>
+    </div>
+
+    <div class="why-we-right">
+      <p class="yes-yes">КАК РАБОТАЕМ МЫ</p>
+      <p class="yes">Снижаем ставки за клики по Вашим объявлениям уже на стадии запуска. Дальше ставки будут становится еще ниже!</p>
+      <p class="yes">Размещаем Вашу рекламную кампанию
+на Вашем аккаунте. Вы получаете круглосуточный доступ к своей рекламной кампании.</p>
+      <p class="yes">Мы снимаем все ограничения! Тратьте на Вашу рекламу ровно столько, сколько позволяет Ваш бюджет! Это может быть даже 400 рублей в месяц! </p>
+      <p class="yes">Правильная настройка и контроль за ставками, позволяет иметь не менее 4% CTR, в среднем 7,3% CTR рекламной кампании в целом. </p>
+      <p class="yes">Отсеиваем нецелевой трафик, оставляя только целевых клиентов, которые готовы – Купить прямо сейчас!</p>
+    </div>
+  </div>
+  <div class="dinamika">
+    <div class="container">
+      <h2>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+
+      <div class="top-slider">
+        <div class="">
+          <a class="send-rewiv" href="#rewiv-form">ОСТАВИТЬ ОТЗЫЗВ</a>
+        </div>
+        <div id="content">            
+          <div id="wrapper">
+            <div id="steps">                    
+              <fieldset class="step">
+                <div class="left-coment">
+                  <img src="img/comentator1.png">
+                  <p>Спасибо за то, что выполняете работу на высоком уровне! Быстро, профессионально, качественно настроили рекламную кампанию в Яндекс.Директе для нашего сайта и подключили контроль за ставками. Результат не заставил себя долго ждать! Начиная с 2-го дня после настройки, наши продажи увеличились в 2 с половиной раза. Теперь заказали настройку рекламной кампании в Google Adwords. </p>
+                  <p>Руководитель Интернет-магазина Электроники «Беру в дорогу» Евгений Смирнов beruvdorogu.ru</p>
+                </div>
+                <div class="right-coment">
+                  <img src="img/comentator2.png">
+                  <p>Заказывал, заказываю и буду заказывать настройку, а также ведение рекламных кампаний только в кампании Revint Group. Всегда качественно и в срок. Консультации, поддержка всегда на высоте. Уже работаем по 3 нишам - Школа английского языка, Консалтинговая кампания, компания по строительству деревянных домов. Результаты уже с первых дней! Невероятно! Большое спасибо и побольше таких клиентов как я! </p>
+                  <p>Владелец многопрофильной фирмы ЭкоСпецСтрой Илья Жухрин ekostroy.bazium.ru/</p>
+                </div>
+              </fieldset>
+              <fieldset class="step">
+                <div class="left-coment">
+                  <img src="img/comentator3.png">
+                  <p>Громаднейшее спасибо-профессионально! Первая реальная продажа сразу после начала показов в Яндекс.Директе, спустя 2 часа, причем в высоко конкурентной нише! </p>
+                  <p>Индивидуальный предприниматель Екатерина Шемякова nebruliki.ru</p>
+                </div>
+                <div class="right-coment">
+                  <img src="img/comentator4.png">
+                  <p>Заказали настройку рекламной кампании для проведения семинара. Были очень ограничены в сроках. Потребность в наборе 40 человек за 2 недели перевыполнена кампанией Revint Group на 5+. Честно говоря, была очень приятно удивлена! Огромная благодарность!</p>
+                  <p>Координатор Тренинг-центра «Вершина» Анастасия Сивкова vershina.pro/</p>
+                </div>
+              </fieldset>
+              <fieldset class="step">
+                <div class="left-coment">
+                  <img src="img/comentator5.png">
+                  <p>Не люблю, не хочу, не пишу отзывов. Лучшие отзывы - мои деньги, которые несу в очередной раз за работу! Раз несу, значит, доволен и все устраивает. Оперативность. Результат. Цена. Отдача. Все остальное мне не интересно. </p>
+                  <p>Владелец Интернет-магазина Bubble Tea Максим Шатров bubbletea-shop.ru/</p>
+                </div>
+                <div class="right-coment">
+                  <!--<img src="img/comentator6.png">
+                  <p></p>
+                  <p></p>-->
+                </div>
+              </fieldset>
+              <fieldset class="step">
+             </fieldset>
+             <fieldset class="step">
+             </fieldset> 
+             <fieldset class="step">
+             </fieldset>                  
+            </div>
+                <div id="navigation" style="display:none;">
+                    <ul>
+                        <li class="selected">
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    <div class="bottom-form">
+        <div class="contens-form2">
+    <div class="container">
+    <div class="browser2">
+
+    </div>
+    <div class="my-form2 center-contens">
+          <p class="forma-pee">ОТПРАВЬТЕ ЗАЯВКУ<br>
+                              <span>ДЛЯ ПОЛУЧЕНИЯ  БОЛЕЕ<br>
+                              ПОДРОБНОЙ ИНФОРМАЦИИ</span></p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input class="s_text adress copy-form" type="text" name="adress" placeholder="Почта">
+            <input class="s_text adress copy-form" type="hidden" name="other" value="ФОРМА &quot;СТОИМОСТЬ НАСТРОЙКИ КОНТЕКСТНОЙ РЕКЛАМЫ&quot;">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input maxlength="11" type="hidden" name="sender" value="maintest">
+            <input type="hidden" value="89202530578" name="recipients"> 
+            <input class="s_submit copy-form" type="button" name="send" value="Отправить заявку">
+        </form>
+        </div>
+       </div> 
+  </div>
+    </div>
+      <div class="top-slider">
+        <div id="content">            
+          <div id="wrapper">
+            <div id="steps2">                    
+              <fieldset class="step2">
+              </fieldset>
+              <!--<fieldset class="step2 step2-two">
+              </fieldset>-->                               
+            </div>
+               <!-- <div id="navigation2" style="display:none;">
+                    <ul>
+                        <li class="selected2">
+                            <a href="#"></a>
+                        </li>
+                        <a href="#"></a>
+                        </li>                        
+                    </ul>
+                </div>-->
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+    <div class="plan-of-job container">
+      <h3>СХЕМА РАБОТЫ</h3>
+      <ul>
+        <li><img src="img/plan1.png"><br>ЗАКАЗЫВАЕТЕ<br>НАСТРОЙКУ РЕКЛАМНОЙ<br>КАМПАНИИ, ОСТАВИВ<br>ЗАЯВКУ ИЛИ ПОЗВОНИВ<br> ПО ТЕЛЕФОНУ</li>
+        <li><img src="img/plan2.png"><br>ЗАПОЛНЯЕТЕ <br>НЕСКОЛЬКО СТРОК <br>БРИФА, КОТОРЫЙ<br> ПРИШЛЁТ НАШ <br>МЕНЕДЖЕР</li>
+        <li><img src="img/plan3.png"><br>ВНОСИТЕ ПРЕДОПЛАТУ <br>НА ЯНДЕКС.ДЕНЬГИ <br>ЛИБО НА СЧЁТ<br>СБЕРБАНКА</li>
+        <li><img src="img/plan4.png"><br>ПОЛУЧАЕТЕ <br>НАСТРОЕННУЮ <br>РЕКЛАМНУЮ <br>КАМПАНИЮ “ПОД КЛЮЧ”</li>
+      </ul>
+    </div>
+  <div class="bottom">
+    <div class="container">
+        <h5>ЗАКАЖИТЕ НАСТРОЙКУ РЕКЛАМНОЙ КАМПАНИИ</h5>
+        <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input class="s_text adress copy-form" type="text" name="adress" placeholder="Почта">
+            <input class="s_text adress copy-form" type="hidden" name="other" value="ФОРМА &quot;ЗАКАЗ НАСТРОЙКИ РЕКЛАМНОЙ КАМПАНИИ&quot;">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">            
+            <input class="s_submit copy-form" type="button" name="send" value="Подтвердить">
+        </form>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <a href="index.php"><img src="img/logo-bottom.png"></a>
+        <a class="pointer-top" href="#"></a>
+        <div class="telephone">
+        <p class="number-bottom"><span class="light-orange">+7 800</span> 000 00 00</p>
+        <a class="order-call" href="#wind-order-top">ЗАКАЗАТЬ ЗВОНОК</a>
+      </div>
+      </div>
+      <div class="last-text container">
+        <p>Название кампании<br>
+  
+            Адресс</p><p>&copy; 2013 Все права защищены</p>
+      </div>
+    </div>
+  </div>
+    <script src="js/jquery.countdown.js"></script>
+  </body>
+</html>

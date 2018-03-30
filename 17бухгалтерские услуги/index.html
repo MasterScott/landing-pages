@@ -1,0 +1,571 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]>
+<html class="no-js ie6" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="no-js ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie8" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en-US"> <!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Шаблон</title>
+    <!-- ==Favicon== -->
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/16x16.png" type="image/png">
+    <link rel="apple-touch-icon" type="image/x-icon" href="favicon/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="favicon/apple-touch-icon-144x144-precomposed.png">
+
+    <link rel='stylesheet' href='css/bootstrap.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/shortcodes.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/fancybox.default.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='css/woocommerce.css' type='text/css' media='all' />
+    <!--[if lt IE 9]>
+    <link rel='stylesheet' href='css/ie.css' type='text/css' media='all' />
+    <![endif]-->
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='js/jquery.themepunch.revolution.min.js'></script>
+    <script type='text/javascript' src='js/modernizr.js'></script>
+    <link rel="stylesheet" href="css/theme.css" type="text/css" media="screen">
+    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+</head>
+
+<body class="home blog">
+<!-- ==========================HEADER=========================== -->
+<header id="site-header" data-spy="affix" data-offset-top="1">
+    <div class="container">
+        <div id="main_menu" class="menu-top-menu-container">
+            <ul id="menu" class="top_navigation unstyled sf-menu">
+                <li class="menu-item-type-post_type menu-item-object-page">
+                    <a href="#home">Главная</a>
+                </li>
+                <li class="menu-item-type-post_type menu-item-object-page">
+                    <a href="#problems">Проблемы</a>
+                </li>
+                <li class="menu-item-type-post_type menu-item-object-page">
+                    <a href="#services">Услуги</a>
+                </li>
+                <li class="menu-item-type-post_type menu-item-object-page">
+                    <a href="#scheme">Схема работы</a>
+                </li>
+                <li class="menu-item-type-post_type menu-item-object-page">
+                    <a href="#benefits">Преимущества</a>
+                </li>
+                <li class=" menu-item-type-post_type menu-item-object-page">
+                    <a href="#reviews">Отзывы</a>
+                </li>
+                <li class=" menu-item-type-post_type menu-item-object-page">
+                    <a href="#contacts">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div id="logo">
+            <a href="#"><img src="img/logo.png"/></a>
+        </div>
+    </div>
+    <div class="header-border-bot"></div>
+</header>
+<!-- ========== HOME SECTION ========== -->
+
+<div id="home">
+    <section class="serv_intro intro xxx1">
+        <div class="container header">
+            <div class="header-city">
+                РК г.
+            </div>
+            <div class="header-contacts">
+                Есть вопросы?<br>
+                Звоните прямо сейчас!
+                <div class="header-contacts-phone">+7 (000) 000-00-00</div>
+            </div>
+            <div class="header-title">ВЕДЕНИЕ БУХГАЛТЕРИЙ ДЛЯ МАЛОГО И СРЕДНЕГО БИЗНЕСА.</div>
+            <div class="header-text">
+                    Открыли свое дело, но тут вдруг появились все эти проценты, ставки, отчисления<br>
+                и прочие не понятные вещи? <b>Забудьте!</b> Занимайтесь своим бизнесом,<br>
+                а груду бумаг мы возьмем на себя! Оставьте пробежки по кабинетам налоговой,<br>
+                <span class="header-text-callnow">звоните нам сейчас!</span>
+            </div>
+            <div class="header-present">Дарим 50% скидка на 1 месяц обслуживания</div>
+            <div class="header-deadline">Акция до Четверга.</div>
+        </div>
+    </section>
+    <style>
+        .header {
+            padding-top: 30px;
+            color: #fff;
+        }
+        .header-city,
+        .header-contacts {
+            width: 50%;
+            float: left;
+            font-size: 20px;
+            height: 100px;
+        }
+        .header-contacts {
+            text-align: right;
+        }
+        .header-contacts-phone {
+            font-weight: 700;
+            margin-top: 10px;
+        }
+        .header-title {
+            font-size: 50px;
+            text-shadow: 0 1px 0 #000;
+            text-align: center;
+            clear: both;
+            line-height: 1.5;
+            margin: 0 0 10px;
+        }
+        .header-text {
+            text-align: center;
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+        .header-present {
+            font-size: 35px;
+            text-align: center;
+            line-height: 1;
+        }
+        .header-deadline {
+            font-size: 30px;
+            text-align: center;
+            line-height: 1;
+        }
+    </style>
+</div>
+</div>
+<!-- =========================PAGES============================= -->
+<section id="pages">
+<ul class="unstyled">
+
+<!-- ========== SERVICES SECTION ========== -->
+
+<li class="section">
+
+    <section class="serv_intro intro xxx2"></section>
+
+
+    <section class="service_box man_box">
+
+        <!-- ==== BORDERTOP ==== -->
+        <div class="top-border"><div class="top-border-left"></div><div class="top-border-right"></div></div>
+
+        <div id="problems" class="serv_mid section-mid">
+            <div class="container">
+                <h1 class="text-center text-up">Проблемы, с которыми сталкивается <br>большинство наших клиентов</h1>
+
+                <div class="serv_corusel">
+                    <div class="mycont">
+                        <!-- Carousel items -->
+                        <ul class="mycarousel">
+
+                            <li class="item">
+                                <h3></h3>
+                                <img src="/img/problems/01.png" alt="">
+                                <div class="serv_entry text-center">
+                                    <p>Постоянные изменения в налоговом законодательстве.</p>
+                                </div>
+                            </li>
+
+
+                            <li class="item">
+                                <h3></h3>
+                                <img src="/img/problems/02.png" alt="">
+                                <div class="serv_entry text-center">
+                                    <p>Трата времени. Регулярные пробежки по кабинетам налоговой. Сбор разных документов.</p>
+                                </div>
+                            </li>
+
+
+                            <li class="item">
+                                <h3></h3>
+                                <img src="/img/problems/03.png" alt="">
+                                <div class="serv_entry text-center">
+                                    <p>Бухгалтерские программы стоят не дешево, а еще их нужно постоянно обновлять (см. пункт 1), и нужен профессионал, который в них разбирается.</p>
+                                </div>
+                            </li>
+
+
+                            <li class="item">
+                                <h3></h3>
+                                <img src="/img/problems/04.png" alt="">
+                                <div class="serv_entry text-center">
+                                    <p>Незнание налогового календаря приводит к штрафам.</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- ==== BORDERBOTTOM ==== -->
+    <div class="bot-border"><div class="bot-border-left"></div><div class="bot-border-right"></div></div>
+
+</section>
+</li>
+
+
+<!-- ========== PRICING TABLE ========== -->
+
+<li class="section">
+
+    <section class="pricing_table_intro intro xxx3">
+
+        <!-- ======= INTROTEXT ======= -->
+
+        <div class="rubik">
+            <div class="rubik-top-border"></div>
+            <div class="container text-center">
+                <div class="intro_pad">
+                    <div class="h1">Оставьте заявку прямо сейчас</div>
+                    <div class="form" id="form">
+                    <form action="index1.php" method="post">
+                        <input type="text" name="name" class="form-text necessality" placeholder="Ваше имя">
+                        <input type="text" name="email" class="form-text necessality" placeholder="Ваш email">
+                        <input type="text" name="phone" class="form-text necessality" placeholder="Ваш телефон">
+                        <button class="form-button">Отправить</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <div class="rubik-bot-border"></div>
+        </div>
+    </section>
+
+
+    <section class="pricing_table_main man_box">
+
+        <!-- ==== BORDERTOP ==== -->
+        <div class="top-border"><div class="top-border-left"></div><div class="top-border-right"></div></div>
+
+        <div id="services" class="pricing_table_mid section-mid">
+            <div class="container">
+                <h1 class="text-center text-up">НАШИ УСЛУГИ</h1>
+                <div class="lines sub_title text-center">Бухгалтерия от первичных документов до всех государственных отчетностей. (Налоговые отчеты, статистические отчеты, отчеты Нац. Банка РК):</div>
+                <ul class="services">
+                    <li><img src="/img/services/01.png" alt=""><span>Оплата налогов в банке</span></li>
+                    <li><img src="/img/services/02.png" alt=""><span>Решение всех вопросов в налоговых управлениях</span></li>
+                    <li><img src="/img/services/03.png" alt=""><span>Прием и увольнение сотрудников, и все вопросы по ним</span></li>
+                    <li><img src="/img/services/04.png" alt=""><span>Вся документация по отправке в декретный отпуск</span></li>
+                    <li><img src="/img/services/05.png" alt=""><span>Открыtтие и Закрытие ТОО и ИП</span></li>
+                    <li><img src="/img/services/06.png" alt=""><span>Разовая сдача налоговой отчетности по 2000тг</span></li>
+                    <li><img src="/img/services/07.png" alt=""><span>Разовая сдача налоговой отчетности по 2000тг</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ==== BORDERBOTTOM ==== -->
+        <div class="bot-border"><div class="bot-border-left"></div><div class="bot-border-right"></div></div>
+
+    </section>
+</li>
+
+
+<!-- ========== ABOUT TEAM ========== -->
+
+<li class="section">
+    <section class="about_us_intro intro xxx4">
+
+       <section class="pricing_table_intro intro">
+
+        <!-- ======= INTROTEXT ======= -->
+        <section class="pricing_table_intro intro">
+        <div class="rubik">
+            <div class="rubik-top-border"></div>
+            <div class="container text-center">
+                <div class="intro_pad">
+                    <div class="h1">Оставьте заявку прямо сейчас</div>
+                    <div class="form">
+                        <form action="index1.php" method="post">
+                        <input type="text" name="name" class="form-text necessality" placeholder="Ваше имя">
+                        <input type="text" name="email" class="form-text necessality" placeholder="Ваш email">
+                        <input type="text" name="phone" class="form-text necessality" placeholder="Ваш телефон">
+                        <button class="form-button">Отправить</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <div class="rubik-bot-border"></div>
+        </div>
+        </section>
+    </section>
+    </section>
+
+
+    <section class="about_us_main man_box">
+
+        <!-- ==== BORDERTOP ==== -->
+
+
+
+        <div class="top-border"><div class="top-border-left"></div><div class="top-border-right"></div></div>
+
+        <div id="scheme" class="about_us_mid section-mid">
+            <div class="container">
+
+                <h1 class="text-center text-up">Как мы работаем?</h1>
+
+                <div class="team_corusel">
+                    <div class="mycont">
+
+                        <!-- Carousel items -->
+                        <ul class="mycarousel2 unstyled">
+                            <li class="item">
+                                <div class="team_container">
+                                    <div class="rift">
+                                        <img width="600" height="600" src="img/team51.jpg" class="attachment-post-thumbnail wp-post-image" alt="team5" />
+                                    </div>
+                                    <div class="team_entry">
+                                        <div class="team_name"><a href="#">ЗАЯВКА ИЛИ ЗВОНОК</a></div>
+                                        <a href="#form"><button>ЗАЯВКА</button></a>
+                                        <p>Вы просто оставляете заявку на нашем сайте и мы сразу свяжемся с Вами</p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="item">
+                                <div class="team_container">
+                                    <div class="rift">
+                                        <img width="600" height="600" src="img/team81.jpg" class="attachment-post-thumbnail wp-post-image" alt="team8" />
+                                    </div>
+                                    <div class="team_entry">
+                                        <div class="team_name"><a href="#">ВЫЕЗД СПЕЦИАЛИСТА</a></div>
+                                        <a href="#form"><button>ЗАЯВКА</button></a>
+                                        <p>К Вам выезжат наш специалист, который ответит на все Ваши вопросы</p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="item">
+                                <div class="team_container">
+                                    <div class="rift">
+                                        <img width="600" height="600" src="img/team91.jpg" class="attachment-post-thumbnail wp-post-image" alt="team9" />
+
+                                    </div>
+                                    <div class="team_entry">
+                                        <div class="team_name"><a href="#">НИКАКИХ ЗАБОТ</a></div>
+                                        <a href="#form"><button>ЗАЯВКА</button></a>
+                                        <p>Все очень просто, Вы доверяете работу нам, мы делаем ее за Вас. </p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- ==== BORDERBOTTOM ==== -->
+        <div class="bot-border"><div class="bot-border-left"></div><div class="bot-border-right"></div></div>
+
+    </section>
+</li>
+
+
+<!-- ========== PRICING TABLE ========== -->
+
+<li id="benefits" class="section">
+    <section class="woo_main man_box">
+
+        <!-- ==== BORDERTOP ==== -->
+
+        <div class="woo_mid section-mid">
+            <div class="container">
+                <h1 class="text-center text-up">Наши преимущества</h1>
+
+                <div id="woo_2" class="woocommerce">
+
+                    <ul class="mycarousel-woo product_list_widget"><li>
+                        <a class="image-clear" href="#">
+                            <img src="img/placeholder1.png" alt="Placeholder" width="150" height="150" /> Весь спектр бухгалтерский услуг. От регистрации ИП и ТОО до отчетов Нац. Банка РК и подготовка документов для тендеров и гос. закупок.
+                        </a> <span class="amount"></span>
+                    </li><li>
+                        <a class="image-clear" href="#">
+                            <img src="img/placeholder2.png" alt="Placeholder" width="150" height="150" /> У нас всегда актуальные формы документов и отчетности.
+                        </a> <span class="amount"></span>
+                    </li><li>
+                        <a class="image-clear" href="#">
+                            <img src="img/placeholder3.png" alt="Placeholder" width="150" height="150" /> Гарантия, что ваш бухгалтер никуда не пропадет и сделает все во время, чтобы Вы не получили ни одного штрафа.
+                        </a> <span class="amount"></span>
+                    </li></ul>                                        </div>
+                     <div id="woo_2" class="woocommerce">
+
+                    <ul class="mycarousel-woo product_list_widget"><li>
+                        <a class="image-clear" href="#">
+                            <img src="img/placeholder4.png" alt="Placeholder" width="150" height="150" />
+                            <b>Полная ответственность</b> по всем налоговым отчетам
+                        </a>
+                        <span class="amount"></span>
+                    </li><li>
+                        <a class="image-clear" href="#">
+                            <img src="img/placeholder5.png" alt="Placeholder" width="150" height="150" /> Отдайте нам бумажную волокиту, и Вы сможете спокойно заниматься делом.
+                        </a> <span class="amount"></span>
+                    </li><li>
+                        <a class="image-clear" href="#">
+                            <img src="img/placeholder6.png" alt="Placeholder" width="150" height="150" /> Экономьте время, позвоните нам, мы сами к Вам приедем и проконсультируем по любому вопросу.
+                        </a> <span class="amount"></span>
+                    </li></ul>                                        </div>
+
+
+            </div>
+        </div>
+
+        <!-- ==== BORDERBOTTOM ==== -->
+        <div class="bot-border"><div class="bot-border-left"></div><div class="bot-border-right"></div></div>
+
+    </section>
+</li>
+
+<li id="reviews" class="section">
+    <section class="pricing_table_main man_box">
+        <div class="pricing_table_mid section-mid">
+            <div class="container">
+                <h1 class="text-center text-up">Наши отзывы</h1>
+                <div class="lines sub_title text-center">Отзывы о нас и наши сертификаты</div>
+                <div class="hapy_boys">
+
+
+
+                    <div class="testimonial"><div class="hapy_boys_t"></div>
+                        <div class="from">
+                            <h3 class="firm testimonial-name"><center>Благодарственное письмо</center></h3>
+                        </div>
+                        <a href="img/review02.png">
+                            <img src="img/review02.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="testimonial"><div class="hapy_boys_t"></div>
+                        <img width="48" height="48" src="img/review01.png" class="attachment-customer wp-post-image" alt="test3" />                                            <div class="from">
+                            <h3 class="firm testimonial-name">Махатов А.Б.</h3>
+                            <a href="#" class="testimonial-link">"Торговый Дом "Chashma"</a>
+                        </div>
+                        <div class="clear testimonial-exc">
+                            " - Опытная команда. Грамотные,ответственные,опытные, преданные своему делу,красивые сотрудники. За короткий срок, поставили свои Бизнес на высокий уровень. Очень удобно и приятно работать с Капиталом. Можно доверять все свои дела и быть уверенным что они будут в полном порядке. Махатов Азамат Баймухамбетович " <p><br><b>тел:   87077537262 <br>8701 7537262.</b></p></div>
+                    </div>
+
+                    <div class="testimonial"><div class="hapy_boys_t"></div>
+                        <div class="from">
+                            <h3 class="firm testimonial-name"><center>Благодарственное письмо</center></h3>
+                        </div>
+                        <a href="img/review03.png">
+                            <img src="img/review03.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</li>
+<!-- ========== CONTACT US ========== -->
+
+<li id="contact_us" class="section">
+
+
+
+<section class="contact_us_main man_box">
+
+<!-- ==== BORDERTOP ==== -->
+<div id="contacts" class="top-border"><div class="top-border-left"></div><div class="top-border-right"></div></div>
+
+<div class="contact_us_mid section-mid">
+<div class="container">
+<h1 class="text-center text-up">Наши контакты</h1>
+<div class="lines sub_title text-center">Мы всегда рады общению с Вами!</div>
+
+
+<div class="form">
+<div class="row-fluid">
+<div class="google_map span6">
+<div class="gmap" id="gmap"></div>
+<script type="text/javascript">
+    //<![CDATA[
+    jQuery(function ($) {
+        var map = new google.maps.Map(document.getElementById("gmap"), {
+                zoom: 15,
+                center: new google.maps.LatLng(42.324968,69.600038),
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                sensor: 'true'
+            }),
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(42.324968,69.600038),
+                map: map,
+                icon: ''//img/marker.png
+            });
+    });
+</script>
+
+</div>
+<div class="span3">
+    <ul class="more_info_box unstyled">
+        <li><i class="icon-phone firm"></i>8 0000 00-00-00</li>
+        <li><i class="icon-phone firm"></i>8 000 000 00 00</li>
+        <li><i class="icon-map-marker firm"></i> РК г..</li>
+    </ul>
+</div>
+<div class="span3">
+                                              </div>
+</div>
+</div>
+
+</div>
+</div>
+</li>
+
+</ul>
+</section>
+
+<script type='text/javascript' src='js/jquery.form.min.js'></script>
+
+<script type='text/javascript' src='js/scripts.js'></script>
+<script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
+<script type='text/javascript' src='js/jquery.flexslider.min.js'></script>
+<script type='text/javascript' src='js/bootstrap.min.js'></script>
+<script type='text/javascript' src='js/jquery.magnific-popup.min.js'></script>
+<script type='text/javascript' src='js/tinynav.min.js'></script>
+<script type='text/javascript' src='js/cycle2.min.js'></script>
+<script type='text/javascript' src='js/jquery.cycle2.swipe.js'></script>
+<script type='text/javascript' src='js/ios6fix.js'></script>
+<script type='text/javascript' src='js/isotope.min.js'></script>
+<script type='text/javascript' src='js/placeholder.min.js'></script>
+<script type='text/javascript' src='js/scrollTo.min.js'></script>
+<script type='text/javascript' src='js/nav.js'></script>
+<script type='text/javascript' src='js/superfish.js'></script>
+<script type='text/javascript' src='js/supersubs.js'></script>
+<script type='text/javascript' src='js/waypoints.min.js'></script>
+<script type='text/javascript' src='js/jquery.fitvids.js'></script>
+<script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=true&#038;language=en&#038;ver=1.0'></script>
+<script type='text/javascript' src='js/gmap.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+<script type='text/javascript' src='js/fancybox.js'></script>
+<script type='text/javascript' src='js/backstretch.js'></script>
+<script type='text/javascript' src='js/form.js'></script>
+<script>
+    (function($){
+        $('.js-form').each(function () {
+            new DNAForm($(this));
+        });
+        $('.xxx1').backstretch('img/v-slider91.jpg');
+        $('.xxx2').backstretch('img/slider2-21.jpg');
+        $('.xxx3').backstretch('img/v-slider71.jpg');
+        $('.xxx4').backstretch('img/v-slider41.jpg');
+    })(jQuery);
+</script>
+<style>.form-field-text_error{ background: #f00!important; }</style>
+</body>
+</html>
