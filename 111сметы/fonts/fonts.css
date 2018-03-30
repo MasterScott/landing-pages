@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'DINProBold';
+    src: url('dinprobold.eot');
+    src: url('dinprobold.eot') format('embedded-opentype'),
+         url('dinprobold.woff') format('woff'),
+         url('dinprobold.ttf') format('truetype'),
+         url('dinprobold.svg#DINProBold') format('svg');
+}
+@font-face {
+    font-family: 'DINProMedium';
+    src: url('dinpromedium.eot');
+    src: url('dinpromedium.eot') format('embedded-opentype'),
+         url('dinpromedium.woff') format('woff'),
+         url('dinpromedium.ttf') format('truetype'),
+         url('dinpromedium.svg#DINProMedium') format('svg');
+}
+@font-face {
+    font-family: 'DINProRegular';
+    src: url('dinproregular.eot');
+    src: url('dinproregular.eot') format('embedded-opentype'),
+         url('dinproregular.woff') format('woff'),
+         url('dinproregular.ttf') format('truetype'),
+         url('dinproregular.svg#DINProRegular') format('svg');
+}
+@font-face {
+    font-family: 'DINProBlack';
+    src: url('dinpro-black.eot');
+    src: url('dinpro-black.eot') format('embedded-opentype'),
+         url('dinpro-black.woff') format('woff'),
+         url('dinpro-black.ttf') format('truetype'),
+         url('dinpro-black.svg#DINProBlack') format('svg');
+}

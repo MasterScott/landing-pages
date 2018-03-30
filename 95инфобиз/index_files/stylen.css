@@ -1,0 +1,51 @@
+@charset "utf-8";
+#control { width:666px;
+float:none;
+height:302px;
+padding:10px 0px;
+margin: 10px 0 0 50px;
+background:url(controlbg.gif) no-repeat; }
+#left {width: 166px; padding:0px; text-align:center;}
+#right {width: 500px; float:right; }
+#nav {padding:0 0 0 8px; margin:0px;}
+#nav li, #icons ul li {display:block; }
+#nav li a{display:block; width:150px; height:33px; background: url(btn.gif) no-repeat; margin-bottom:8px; font:Arial, Helvetica, sans-serif; color:#06C; font-size: 2em; text-align:center; padding-top:7px;}
+#icons {width:150px; margin-top: 20px; padding-left:18px;}
+#icons ul{width:135px; padding:0px; margin:0px;}
+#icons ul li {float:left; margin:3px;}
+#icons ul li a {display:block; width: 60px; height:60px; text-indent:-9999px;}
+#vk {
+	background-image: url(vk2.png);
+	background-repeat: no-repeat;
+}
+#fb {
+	background-image: url(fb2.png);
+	background-repeat: no-repeat;
+}
+#tw {
+	background-image: url(tw2.png);
+	background-repeat: no-repeat;
+}
+#rss {
+	background-image: url(rs2.png);
+	background-repeat: no-repeat;
+}
+#vk:hover {
+	background-image: url(vk1.png);
+}/*тут вписываешь ссылки на картинки при наведении*/
+#vk:hover {
+	background-image: url(vk1.png);
+}
+#fb:hover {
+	background-image: url(fb1.png);
+}
+#tw:hover {
+	background-image: url(tw1.png);
+}
+#rss:hover {
+	background-image: url(rs1.png);
+}
+#countdown { display: block; height: 45px; padding-top:10px; background:red; color:white; font-size:1.5em;}
+#page #content .post div iframe {
+	text-align: right;
+}

@@ -1,0 +1,38 @@
+@charset "utf-8";
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+	background-color: #ededed;
+	background-image: url(images/repeater.png);
+	background-repeat: repeat-x;
+}
+#optinArea {
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#footerImg {
+	padding-right: 0px;
+	padding-left: 0px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+
+#mainWrapper {
+	background-image: url(images/rep.png);
+	background-repeat: repeat-y;
+	width: 770px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+ul li{list-style:none;padding-left:35px; background: url(images/arrow-check.gif) left no-repeat;line-height:30px}
+h1{margin-top:0}
+
+.checkpoints {width:450px;text-align:left}
+
+.attention { background: url('images/attention.png') no-repeat; width: 682px; height: 24px; font-weight: bold; text-align: left; padding: 2px 0 0 1px; float: left; margin-left: 15px; text-align: center; }
